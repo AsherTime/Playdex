@@ -1,0 +1,326 @@
+import { createHash } from "node:crypto";
+import { parse } from "node-html-parser";
+import Parser from "rss-parser";
+import { createServiceSupabaseClient } from "@/lib/supabase/server";
+import type { Database } from "@/types/database";
+import type { CollectorRunResult } from "@/types/gamedex";
+
+type GameSourceRow = Database["public"]["Tables"]["game_sources"]["Row"];
+type NewsItemInsert = {
+  game_id: string | null;
+  title: string;
+  summary: string;
+  url: string;
+  image_url: string | null;
+  source_name: string;
+  source_type: string;
+  published_at: string;
+  collected_at: string;
+  external_id: string | null;
+  content_hash: string;
+  tags: string[];
+  category: string;
+};
+
+type CollectorError = {
+  sourceId?: string;
+  sourceName?: string;
+  message: string;
+};
+
+type SteamNewsItem = {
+  gid?: string;
+  title?: string;
+  url?: string;
+  contents?: string;
+  date?: number;
+};
+
+const rssParser = new Parser();
+
+function contentHash(value: string) {
+  return createHash("sha256").update(value).digest("hex");
+}
+
+function cleanText(value: string | undefined | null) {
+  return (value ?? "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function absoluteUrl(href: string, baseUrl: string) {
+  try {
+    return new URL(href, baseUrl).toString();
+  } catch {
+    return "";
+  }
+}
+
+function categoryFromTitle(title: string): NewsItemInsert["category"] {
+  const lower = title.toLowerCase();
+  if (lower.includes("esports") || lower.includes("tournament") || lower.includes("champions")) return "Esports";
+  if (lower.includes("release") || lower.includes("launch")) return "Release";
+  if (lower.includes("community")) return "Community";
+  if (lower.includes("rumor")) return "Rumor";
+  return "Update";
+}
+
+function createNewsItem(
+  source: GameSourceRow,
+  input: {
+    title: string;
+    summary?: string | null;
+    url: string;
+    imageUrl?: string | null;
+    publishedAt?: string | null;
+    externalId?: string | null;
+  },
+): NewsItemInsert | null {
+  const title = cleanText(input.title);
+  const url = input.url.trim();
+
+  if (!title || !url) return null;
+
+  const publishedAt = input.publishedAt ? new Date(input.publishedAt) : new Date();
+  const safePublishedAt = Number.isNaN(publishedAt.getTime()) ? new Date() : publishedAt;
+  const externalId = input.externalId ?? url;
+
+  return {
+    game_id: source.game_id,
+    title,
+    summary: cleanText(input.summary) || title,
+    url,
+    image_url: input.imageUrl ?? null,
+    source_name: source.name,
+    source_type: source.source_type,
+    published_at: safePublishedAt.toISOString(),
+    collected_at: new Date().toISOString(),
+    external_id: externalId,
+    content_hash: contentHash(`${source.id}:${externalId}:${url}`),
+    tags: source.tags ?? [],
+    category: categoryFromTitle(title),
+  };
+}
+
+async function collectRssSource(source: GameSourceRow) {
+  if (!source.url) return [];
+
+  const feed = await rssParser.parseURL(source.url);
+
+  return feed.items
+    .slice(0, 12)
+    .map((item) =>
+      createNewsItem(source, {
+        title: item.title ?? "",
+        summary: item.contentSnippet ?? item.content ?? item.summary,
+        url: item.link ? absoluteUrl(item.link, source.url ?? "") : "",
+        imageUrl: (item.enclosure?.url as string | undefined) ?? null,
+        publishedAt: item.isoDate ?? item.pubDate,
+        externalId: item.guid ?? item.id ?? item.link,
+      }),
+    )
+    .filter(Boolean) as NewsItemInsert[];
+}
+
+async function collectSteamSource(source: GameSourceRow) {
+  const appId = source.external_ref;
+  if (!appId) return [];
+
+  const response = await fetch(
+    `https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=${encodeURIComponent(appId)}&count=12&maxlength=500&format=json`,
+    { next: { revalidate: 0 } },
+  );
+
+  if (!response.ok) {
+    throw new Error(`Steam returned ${response.status}`);
+  }
+
+  const payload = (await response.json()) as { appnews?: { newsitems?: SteamNewsItem[] } };
+  const newsItems = payload.appnews?.newsitems ?? [];
+
+  return newsItems
+    .map((item) =>
+      createNewsItem(source, {
+        title: item.title ?? "",
+        summary: item.contents,
+        url: item.url ?? "",
+        publishedAt: item.date ? new Date(item.date * 1000).toISOString() : null,
+        externalId: item.gid ?? item.url,
+      }),
+    )
+    .filter(Boolean) as NewsItemInsert[];
+}
+
+async function collectWebsiteSource(source: GameSourceRow) {
+  if (!source.url) return [];
+
+  const response = await fetch(source.url, {
+    headers: {
+      "User-Agent": "PlaydexBot/0.1 (+https://github.com/Playdex-tracker/playdex-main)",
+    },
+    next: { revalidate: 0 },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Website returned ${response.status}`);
+  }
+
+  const html = await response.text();
+  const root = parse(html);
+  const seen = new Set<string>();
+
+  return root
+    .querySelectorAll("a")
+    .map((anchor) => {
+      const href = anchor.getAttribute("href");
+      if (!href) return null;
+
+      const url = absoluteUrl(href, source.url ?? "");
+      if (!url || seen.has(url)) return null;
+      seen.add(url);
+
+      const lowerUrl = url.toLowerCase();
+      const sourcePath = new URL(source.url ?? "https://example.com").pathname.toLowerCase();
+      const looksLikeArticle =
+        lowerUrl.includes("/news") ||
+        lowerUrl.includes("/article") ||
+        lowerUrl.includes("/articles") ||
+        lowerUrl.includes(sourcePath);
+
+      if (!looksLikeArticle || url === source.url) return null;
+
+      const title = cleanText(anchor.textContent);
+      if (title.length < 12) return null;
+
+      return createNewsItem(source, {
+        title,
+        summary: title,
+        url,
+        externalId: url,
+      });
+    })
+    .filter(Boolean)
+    .slice(0, 12) as NewsItemInsert[];
+}
+
+async function collectSource(source: GameSourceRow) {
+  if (source.source_type === "rss") return collectRssSource(source);
+  if (source.source_type === "steam") return collectSteamSource(source);
+  return collectWebsiteSource(source);
+}
+
+export async function runNewsCollector(): Promise<CollectorRunResult> {
+  const startedAt = new Date().toISOString();
+
+  try {
+    const supabase = createServiceSupabaseClient();
+    const { data: sources, error: sourcesError } = await supabase
+      .from("game_sources")
+      .select("*")
+      .eq("enabled", true)
+      .in("source_type", ["rss", "website", "steam"]);
+
+    if (sourcesError) {
+      throw new Error(sourcesError.message);
+    }
+
+    const errors: CollectorError[] = [];
+    const collected: NewsItemInsert[] = [];
+
+    for (const source of sources ?? []) {
+      try {
+        const items = await collectSource(source);
+        collected.push(...items);
+
+        await supabase
+          .from("game_sources")
+          .update({
+            status: "Healthy",
+            last_collected_at: new Date().toISOString(),
+            last_error: null,
+            updated_at: new Date().toISOString(),
+          })
+          .eq("id", source.id);
+      } catch (error) {
+        const message = error instanceof Error ? error.message : "Unknown collector error";
+        errors.push({ sourceId: source.id, sourceName: source.name, message });
+
+        await supabase
+          .from("game_sources")
+          .update({
+            status: "Error",
+            last_collected_at: new Date().toISOString(),
+            last_error: message,
+            updated_at: new Date().toISOString(),
+          })
+          .eq("id", source.id);
+      }
+    }
+
+    let processedRecords = 0;
+    if (collected.length) {
+      const { data: upserted, error: upsertError } = await supabase
+        .from("news_items")
+        .upsert(collected, { onConflict: "content_hash", ignoreDuplicates: true })
+        .select("id");
+
+      if (upsertError) {
+        throw new Error(upsertError.message);
+      }
+
+      processedRecords = upserted?.length ?? collected.length;
+    }
+
+    const status = errors.length && processedRecords === 0 ? "failed" : errors.length ? "partial" : "completed";
+    const message =
+      status === "completed"
+        ? `News collector completed across ${sources?.length ?? 0} sources.`
+        : `News collector finished with ${errors.length} source error${errors.length === 1 ? "" : "s"}.`;
+
+    await supabase.from("collector_runs").insert({
+      collector: "news",
+      status,
+      started_at: startedAt,
+      finished_at: new Date().toISOString(),
+      processed_records: processedRecords,
+      message,
+      errors,
+    });
+
+    return {
+      collector: "news",
+      status,
+      collectedAt: new Date().toISOString(),
+      processedRecords,
+      message,
+      errors: errors.map((error) => `${error.sourceName ?? error.sourceId}: ${error.message}`),
+    };
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Unknown collector failure";
+
+    try {
+      const supabase = createServiceSupabaseClient();
+      await supabase.from("collector_runs").insert({
+        collector: "news",
+        status: "failed",
+        started_at: startedAt,
+        finished_at: new Date().toISOString(),
+        processed_records: 0,
+        message,
+        errors: [{ message }],
+      });
+    } catch {
+      // If the schema is not applied yet, the API response below is still useful.
+    }
+
+    return {
+      collector: "news",
+      status: "failed",
+      collectedAt: new Date().toISOString(),
+      processedRecords: 0,
+      message,
+      errors: [message],
+    };
+  }
+}
