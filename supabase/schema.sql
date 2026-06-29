@@ -108,6 +108,9 @@ create index if not exists news_items_game_published_idx
 create index if not exists news_items_published_idx
   on public.news_items (published_at desc);
 
+create index if not exists game_news_game_id_idx
+  on public.game_news (game_id);
+
 create table if not exists public.videos (
   id text primary key default gen_random_uuid()::text,
   game_id text references public.games(id) on delete set null,
@@ -122,6 +125,9 @@ create table if not exists public.videos (
   content_hash text not null unique,
   created_at timestamptz not null default now()
 );
+
+create index if not exists videos_game_id_idx
+  on public.videos (game_id);
 
 create table if not exists public.collector_runs (
   id text primary key default gen_random_uuid()::text,
@@ -158,14 +164,30 @@ create table if not exists public.upcoming_games (
 );
 
 alter table public.games enable row level security;
+alter table public.game_metrics_daily enable row level security;
+alter table public.game_news enable row level security;
 alter table public.game_sources enable row level security;
 alter table public.news_items enable row level security;
 alter table public.videos enable row level security;
 alter table public.collector_runs enable row level security;
+alter table public.trend_scores enable row level security;
+alter table public.upcoming_games enable row level security;
 
 drop policy if exists "Public games are readable" on public.games;
 create policy "Public games are readable"
   on public.games for select
+  to anon, authenticated
+  using (true);
+
+drop policy if exists "Public game metrics are readable" on public.game_metrics_daily;
+create policy "Public game metrics are readable"
+  on public.game_metrics_daily for select
+  to anon, authenticated
+  using (true);
+
+drop policy if exists "Public legacy game news is readable" on public.game_news;
+create policy "Public legacy game news is readable"
+  on public.game_news for select
   to anon, authenticated
   using (true);
 
@@ -193,12 +215,42 @@ create policy "Public collector runs are readable"
   to anon, authenticated
   using (true);
 
+drop policy if exists "Public trend scores are readable" on public.trend_scores;
+create policy "Public trend scores are readable"
+  on public.trend_scores for select
+  to anon, authenticated
+  using (true);
+
+drop policy if exists "Public upcoming games are readable" on public.upcoming_games;
+create policy "Public upcoming games are readable"
+  on public.upcoming_games for select
+  to anon, authenticated
+  using (true);
+
 grant usage on schema public to anon, authenticated;
 grant select on public.games to anon, authenticated;
+grant select on public.game_metrics_daily to anon, authenticated;
+grant select on public.game_news to anon, authenticated;
 grant select on public.game_sources to anon, authenticated;
 grant select on public.news_items to anon, authenticated;
 grant select on public.videos to anon, authenticated;
 grant select on public.collector_runs to anon, authenticated;
+grant select on public.trend_scores to anon, authenticated;
+grant select on public.upcoming_games to anon, authenticated;
+
+do $$
+begin
+  if exists (
+    select 1
+    from pg_proc p
+    join pg_namespace n on n.oid = p.pronamespace
+    where n.nspname = 'public'
+      and p.proname = 'rls_auto_enable'
+      and pg_get_function_identity_arguments(p.oid) = ''
+  ) then
+    revoke execute on function public.rls_auto_enable() from public, anon, authenticated;
+  end if;
+end $$;
 
 insert into public.games (id, slug, title, genre, platforms, release_date, cover_tone, description, latest_updates, roadmap)
 values

@@ -37,6 +37,7 @@ type SteamNewsItem = {
 };
 
 const rssParser = new Parser();
+const FETCH_TIMEOUT_MS = 15000;
 
 function contentHash(value: string) {
   return createHash("sha256").update(value).digest("hex");
@@ -129,7 +130,7 @@ async function collectSteamSource(source: GameSourceRow) {
 
   const response = await fetch(
     `https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=${encodeURIComponent(appId)}&count=12&maxlength=500&format=json`,
-    { next: { revalidate: 0 } },
+    { next: { revalidate: 0 }, signal: AbortSignal.timeout(FETCH_TIMEOUT_MS) },
   );
 
   if (!response.ok) {
@@ -160,6 +161,7 @@ async function collectWebsiteSource(source: GameSourceRow) {
       "User-Agent": "PlaydexBot/0.1 (+https://github.com/Playdex-tracker/playdex-main)",
     },
     next: { revalidate: 0 },
+    signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
   });
 
   if (!response.ok) {
@@ -258,7 +260,7 @@ export async function runNewsCollector(): Promise<CollectorRunResult> {
       }
     }
 
-    let processedRecords = 0;
+    let insertedRecords = 0;
     if (collected.length) {
       const { data: upserted, error: upsertError } = await supabase
         .from("news_items")
@@ -269,14 +271,15 @@ export async function runNewsCollector(): Promise<CollectorRunResult> {
         throw new Error(upsertError.message);
       }
 
-      processedRecords = upserted?.length ?? collected.length;
+      insertedRecords = upserted?.length ?? 0;
     }
 
+    const processedRecords = collected.length;
     const status = errors.length && processedRecords === 0 ? "failed" : errors.length ? "partial" : "completed";
     const message =
       status === "completed"
-        ? `News collector completed across ${sources?.length ?? 0} sources.`
-        : `News collector finished with ${errors.length} source error${errors.length === 1 ? "" : "s"}.`;
+        ? `News collector completed across ${sources?.length ?? 0} sources with ${insertedRecords} new item${insertedRecords === 1 ? "" : "s"}.`
+        : `News collector processed ${processedRecords} item${processedRecords === 1 ? "" : "s"} with ${errors.length} source error${errors.length === 1 ? "" : "s"}.`;
 
     await supabase.from("collector_runs").insert({
       collector: "news",
