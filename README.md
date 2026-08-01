@@ -60,14 +60,23 @@ The frontend does **not** call Steam, Twitch, YouTube, Reddit, or news providers
 
 ## Supabase news collectors
 
-News and update cards now read from Supabase first and fall back to the mock data when tables are empty or unavailable.
+News and update cards read from Supabase first and fall back to mock data when tables are empty or unavailable.
 
-Required environment variables:
+### Flow
+
+1. **Collect** — `runNewsCollector()` fetches enabled `game_sources` (RSS, Game8, Riot, Steam, website).
+2. **Store** — upserts into `news_items`; logs runs in `collector_runs`.
+3. **Serve** — `/`, `/news`, and `/api/news/latest` read via `getLatestNews()`.
+
+### Environment variables
+
+See `.env.example`:
 
 ```bash
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
 SUPABASE_SERVICE_ROLE_KEY=
+CRON_SECRET=            # required in production for scheduled runs
 ```
 
 Apply the database schema before running collectors:
@@ -77,21 +86,19 @@ supabase link --project-ref <project-ref>
 supabase db push
 ```
 
-You can also paste `supabase/schema.sql` into the Supabase SQL editor.
+### Scheduling (12 hours)
 
-Manual collector routes:
+Production uses **Vercel Cron** (`vercel.json`):
 
-- `POST /api/collectors/news`
-- `POST /api/collectors/run`
+- `GET /api/collectors/run` every 12 hours
+- Protected by `CRON_SECRET`
+- Sources respect `cadence_minutes` (default **720** = 12 hours)
 
-The first pass intentionally uses free/no-key sources first: registered RSS feeds, official website news pages, and Steam news. YouTube and X/Twitter are not required yet.
+Manual runs: `/admin` → Run News Collector (server action, forces all sources).
 
-## Adding more APIs later
+Full deploy guide: [docs/deployment-vercel.md](docs/deployment-vercel.md)
 
-1. Add source rows to `game_sources`.
-2. Add provider-specific collectors for sources that need APIs.
-3. Add scheduling, retries, rate-limit handling, and secret management through environment variables.
-4. Add YouTube Data API and X API only when their keys/access are available.
+The first pass uses free/no-key sources: RSS, official website pages, Game8, Riot news JSON, and Steam news.
 
 ## Run locally
 

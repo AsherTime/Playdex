@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useTransition } from "react";
+import { backfillImagesAction, runNewsCollectorAction } from "@/app/admin/actions";
 import type { BackfillImagesResult } from "@/lib/backfill-news-images";
 import type { CollectorRunResult } from "@/types/gamedex";
 
@@ -8,27 +9,43 @@ export function CollectorActions() {
   const [collectorResult, setCollectorResult] = useState<CollectorRunResult | null>(null);
   const [backfillResult, setBackfillResult] = useState<BackfillImagesResult | null>(null);
   const [pendingAction, setPendingAction] = useState<"collector" | "backfill" | null>(null);
+  const [, startTransition] = useTransition();
 
-  async function runNewsCollector() {
+  function runNewsCollector() {
     setPendingAction("collector");
     setBackfillResult(null);
-    const response = await fetch("/api/collectors/news", { method: "POST" });
-    const payload = (await response.json()) as CollectorRunResult;
-    setCollectorResult(payload);
-    setPendingAction(null);
+
+    startTransition(async () => {
+      try {
+        const payload = await runNewsCollectorAction();
+        setCollectorResult(payload);
+      } finally {
+        setPendingAction(null);
+      }
+    });
   }
 
-  async function runBackfillImages() {
+  function runBackfillImages() {
     setPendingAction("backfill");
     setCollectorResult(null);
-    const response = await fetch("/api/admin/backfill-images", { method: "POST" });
-    const payload = (await response.json()) as BackfillImagesResult;
-    setBackfillResult(payload);
-    setPendingAction(null);
+
+    startTransition(async () => {
+      try {
+        const payload = await backfillImagesAction();
+        setBackfillResult(payload);
+      } finally {
+        setPendingAction(null);
+      }
+    });
   }
 
   return (
     <div className="space-y-4">
+      <p className="text-xs text-zinc-500">
+        Production runs automatically every 12 hours via Vercel Cron. Use these controls for
+        immediate manual runs.
+      </p>
+
       <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <button
           onClick={runNewsCollector}

@@ -54,6 +54,62 @@ const rssParser = new Parser({
 });
 
 const FETCH_TIMEOUT_MS = 15000;
+const SOURCE_CONCURRENCY = 4;
+const DEFAULT_CADENCE_MINUTES = 720;
+
+function isSourceDue(source: GameSourceRow, force: boolean) {
+  if (force) return true;
+  if (!source.last_collected_at) return true;
+
+  const cadenceMinutes = source.cadence_minutes ?? DEFAULT_CADENCE_MINUTES;
+  const lastCollectedAt = new Date(source.last_collected_at).getTime();
+  if (Number.isNaN(lastCollectedAt)) return true;
+
+  return Date.now() - lastCollectedAt >= cadenceMinutes * 60 * 1000;
+}
+
+async function collectSourcesInParallel(
+  sources: GameSourceRow[],
+  supabase: ReturnType<typeof createServiceSupabaseClient>,
+  errors: CollectorError[],
+  collected: NewsItemInsert[],
+) {
+  for (let index = 0; index < sources.length; index += SOURCE_CONCURRENCY) {
+    const batch = sources.slice(index, index + SOURCE_CONCURRENCY);
+
+    await Promise.all(
+      batch.map(async (source) => {
+        try {
+          const items = await collectSource(source);
+          collected.push(...items);
+
+          await supabase
+            .from("game_sources")
+            .update({
+              status: "Healthy",
+              last_collected_at: new Date().toISOString(),
+              last_error: null,
+              updated_at: new Date().toISOString(),
+            })
+            .eq("id", source.id);
+        } catch (error) {
+          const message = error instanceof Error ? error.message : "Unknown collector error";
+          errors.push({ sourceId: source.id, sourceName: source.name, message });
+
+          await supabase
+            .from("game_sources")
+            .update({
+              status: "Error",
+              last_collected_at: new Date().toISOString(),
+              last_error: message,
+              updated_at: new Date().toISOString(),
+            })
+            .eq("id", source.id);
+        }
+      }),
+    );
+  }
+}
 
 function contentHash(value: string) {
   return createHash("sha256").update(value).digest("hex");
@@ -269,8 +325,11 @@ async function finalizeCollectedItems(items: NewsItemInsert[]) {
   return [...deduped.values()];
 }
 
-export async function runNewsCollector(): Promise<CollectorRunResult> {
+export async function runNewsCollector(options?: {
+  force?: boolean;
+}): Promise<CollectorRunResult> {
   const startedAt = new Date().toISOString();
+  const force = options?.force ?? false;
 
   try {
     const supabase = createServiceSupabaseClient();
@@ -280,46 +339,22 @@ export async function runNewsCollector(): Promise<CollectorRunResult> {
       throw new Error(sourcesError.message);
     }
 
-    const sources = (sourceRows ?? []).filter(
-      (source) =>
-        source.source_type === "trusted_site" ||
-        source.external_ref === "game8" ||
-        source.source_type === "rss" ||
-        source.source_type === "website" ||
-        source.source_type === "steam",
-    );
+    const sources = (sourceRows ?? [])
+      .filter(
+        (source) =>
+          source.source_type === "trusted_site" ||
+          source.external_ref === "game8" ||
+          source.source_type === "rss" ||
+          source.source_type === "website" ||
+          source.source_type === "steam",
+      )
+      .filter((source) => isSourceDue(source, force));
 
     const errors: CollectorError[] = [];
     const collected: NewsItemInsert[] = [];
 
-    for (const source of sources ?? []) {
-      try {
-        const items = await collectSource(source);
-        collected.push(...items);
-
-        await supabase
-          .from("game_sources")
-          .update({
-            status: "Healthy",
-            last_collected_at: new Date().toISOString(),
-            last_error: null,
-            updated_at: new Date().toISOString(),
-          })
-          .eq("id", source.id);
-      } catch (error) {
-        const message = error instanceof Error ? error.message : "Unknown collector error";
-        errors.push({ sourceId: source.id, sourceName: source.name, message });
-
-        await supabase
-          .from("game_sources")
-          .update({
-            status: "Error",
-            last_collected_at: new Date().toISOString(),
-            last_error: message,
-            updated_at: new Date().toISOString(),
-          })
-          .eq("id", source.id);
-      }
+    if (sources.length) {
+      await collectSourcesInParallel(sources, supabase, errors, collected);
     }
 
     let insertedRecords = 0;
@@ -360,11 +395,20 @@ export async function runNewsCollector(): Promise<CollectorRunResult> {
     }
 
     const processedRecords = collected.length;
-    const status = errors.length && processedRecords === 0 ? "failed" : errors.length ? "partial" : "completed";
+    const status =
+      !sources.length && !errors.length
+        ? "completed"
+        : errors.length && processedRecords === 0
+          ? "failed"
+          : errors.length
+            ? "partial"
+            : "completed";
     const message =
-      status === "completed"
-        ? `News collector completed across ${sources?.length ?? 0} sources with ${insertedRecords} new item${insertedRecords === 1 ? "" : "s"}.`
-        : `News collector processed ${processedRecords} item${processedRecords === 1 ? "" : "s"} with ${errors.length} source error${errors.length === 1 ? "" : "s"}.`;
+      !sources.length
+        ? "No sources were due for collection."
+        : status === "completed"
+          ? `News collector completed across ${sources.length} source${sources.length === 1 ? "" : "s"} with ${insertedRecords} new item${insertedRecords === 1 ? "" : "s"}.`
+          : `News collector processed ${processedRecords} item${processedRecords === 1 ? "" : "s"} with ${errors.length} source error${errors.length === 1 ? "" : "s"}.`;
 
     await supabase.from("collector_runs").insert({
       collector: "news",

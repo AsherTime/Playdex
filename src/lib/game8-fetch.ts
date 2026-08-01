@@ -23,16 +23,21 @@ export async function fetchGame8Html(url: string) {
     if (response.ok) {
       return response.text();
     }
-  } catch {
-    // Fall back to curl when Node DNS/fetch fails in some environments.
+
+    throw new Error(`Game8 fetch returned ${response.status}`);
+  } catch (error) {
+    // curl is only available locally; Vercel/Cloudflare serverless cannot exec curl.
+    if (process.env.VERCEL || process.env.CF_PAGES) {
+      throw error instanceof Error ? error : new Error("Game8 fetch failed");
+    }
+
+    const curlBin = process.platform === "win32" ? "curl.exe" : "curl";
+    const { stdout } = await execFileAsync(
+      curlBin,
+      ["-4", "-L", "-A", GAME8_USER_AGENT, "--max-time", "25", url],
+      { maxBuffer: 12 * 1024 * 1024 },
+    );
+
+    return stdout;
   }
-
-  const curlBin = process.platform === "win32" ? "curl.exe" : "curl";
-  const { stdout } = await execFileAsync(
-    curlBin,
-    ["-4", "-L", "-A", GAME8_USER_AGENT, "--max-time", "25", url],
-    { maxBuffer: 12 * 1024 * 1024 },
-  );
-
-  return stdout;
 }
