@@ -1,0 +1,43 @@
+{
+  "id": "1f2b7c89-3fa5-4ad9-87d2-adb55f76a217",
+  "gameType": "wuwa",
+  "teamName": "Qiuyuan, Phrolova, Lucilla",
+  "totalDamage": 1786575.671,
+  "rotation": 26.5,
+  "createdAt": 1782747445313,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "9ec84dbc-62ee-428a-8d8e-5b1b148d13d2",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Support",
+      "share": 14,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a188f176-7822-4a5a-aa32-475f94055441",
+      "name": "Phrolova",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 68,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "41f30d27-01f9-4b31-88f4-7af5775a7582",
+      "name": "Lucilla",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 18,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

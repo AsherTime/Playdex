@@ -1,0 +1,43 @@
+{
+  "id": "a7862258-4a5b-4488-b3ee-569cbe254647",
+  "gameType": "wuwa",
+  "teamName": "Aemeath, Yinlin, Mornye",
+  "totalDamage": 1326867.726,
+  "rotation": 26.5,
+  "createdAt": 1782747445289,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "1a4c4914-a0fb-481a-81d8-8c7de5b93b2b",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "dda7fad4-8b8c-49fe-b8bb-9b1dbe11e251",
+      "name": "Yinlin",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "d9986e7a-f1ec-4104-8c81-c761fc416b48",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

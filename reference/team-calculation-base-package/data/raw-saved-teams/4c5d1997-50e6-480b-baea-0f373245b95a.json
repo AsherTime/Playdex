@@ -1,0 +1,43 @@
+{
+  "id": "4c5d1997-50e6-480b-baea-0f373245b95a",
+  "gameType": "wuwa",
+  "teamName": "Galbrena, Lupa, Shorekeeper",
+  "totalDamage": 1370184.344,
+  "rotation": 26.5,
+  "createdAt": 1782747445320,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "fc2d3c5b-4a1d-43d3-935c-eee9ba6bb52e",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 82,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "7c5a5588-d279-4b20-9fe9-9417ff05d58a",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 15,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "5147c77b-f2d8-40ac-ba51-8ca6aaeff5ac",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

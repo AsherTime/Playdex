@@ -1,0 +1,43 @@
+{
+  "id": "8166327d-722d-4ee1-893d-4f459de440b1",
+  "gameType": "wuwa",
+  "teamName": "Jinhsi, Zhezhi, Shorekeeper",
+  "totalDamage": 1331449.87,
+  "rotation": 26.5,
+  "createdAt": 1782747445336,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "b42547a9-ed57-4c81-9848-2c55be65338d",
+      "name": "Jinhsi",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 73,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "6a586273-50f4-4137-9eae-5da05d773925",
+      "name": "Zhezhi",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 24,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "529681e1-fff7-4ff2-935b-85ec0a8760c6",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

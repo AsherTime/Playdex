@@ -1,0 +1,43 @@
+{
+  "id": "99b60611-9983-4418-8283-566816cde8a2",
+  "gameType": "wuwa",
+  "teamName": "Aemeath, Lupa, Mornye",
+  "totalDamage": 1852655.077,
+  "rotation": 26.5,
+  "createdAt": 1782747445286,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "5e8b5671-d8d8-4ebe-9595-05d3aa3cee16",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "3010c187-1704-4178-b192-464f8d20ba6e",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "02bac955-f18f-49cc-9c4a-a5cb553aba63",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "e18a45eb-ec39-4b47-a7ae-17a51b77e054",
+  "gameType": "wuwa",
+  "teamName": "Lynae, Chisa, Mornye",
+  "totalDamage": 1371447.585,
+  "rotation": 25.0,
+  "createdAt": 1782747445298,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "24f1c835-4b3f-4ee9-9095-2f7e8fd139fc",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "95038d2d-b97f-4c93-9168-d483267143df",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "774eedd8-84fa-40b8-aee3-4011949cc558",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

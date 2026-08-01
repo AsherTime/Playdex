@@ -1,0 +1,43 @@
+{
+  "id": "f5378889-8840-4591-a3ff-9b9279aa58fe",
+  "gameType": "wuwa",
+  "teamName": "Suisui, Xuanling, Phrolova",
+  "totalDamage": 2312818.628,
+  "rotation": 27.5,
+  "createdAt": 1782747445235,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "2d59ef69-6f21-4b2e-91f2-72b02d9ff675",
+      "name": "Suisui",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "789ad0d6-c0fe-4068-81a0-87f430f8e1ba",
+      "name": "Xuanling",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a5407d21-2e67-4dc0-a210-a195aaab0c97",
+      "name": "Phrolova",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

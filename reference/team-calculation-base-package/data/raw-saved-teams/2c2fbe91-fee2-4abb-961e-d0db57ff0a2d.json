@@ -1,0 +1,43 @@
+{
+  "id": "2c2fbe91-fee2-4abb-961e-d0db57ff0a2d",
+  "gameType": "wuwa",
+  "teamName": "Qiuyuan, Iuno, Shorekeeper",
+  "totalDamage": 1384796.329,
+  "rotation": 26.5,
+  "createdAt": 1782747445318,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "f3b1fc16-5b75-479e-aa05-583bd421e065",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 52,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "058eb329-145e-43dd-bb85-3e1c5f70d0f4",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 45,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "de287fee-d21e-4052-8eb7-d00ebb2277cf",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

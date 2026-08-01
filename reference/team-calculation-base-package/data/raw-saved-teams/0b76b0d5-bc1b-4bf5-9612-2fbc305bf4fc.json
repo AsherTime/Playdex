@@ -1,0 +1,50 @@
+{
+  "id": "0b76b0d5-bc1b-4bf5-9612-2fbc305bf4fc",
+  "teamName": "Kinich Durin",
+  "dps": 111.7,
+  "totalDamage": 2.23,
+  "rotation": 20,
+  "createdAt": 1776285655276,
+  "characters": [
+    {
+      "id": "fdb1c222-31d5-47be-9a21-d076a8dad702",
+      "name": "Kinich (C0)",
+      "weaponName": "Shaker",
+      "role": "Main DPS",
+      "share": 61,
+      "element": "Dendro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "48b9641f-5ec7-4c35-a9a8-d0e0b36b848b",
+      "name": "Durin (C0)",
+      "weaponName": "W Fang",
+      "role": "Main DPS",
+      "share": 12,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "408c4144-36c1-40fd-bfb6-80938e4e4bad",
+      "name": "Emilie (C0)",
+      "weaponName": "Deathmatch",
+      "role": "Main DPS",
+      "share": 25,
+      "element": "Dendro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "067cdca5-196a-4ea8-8ad2-d0983f49b465",
+      "name": "Iansan (C6)",
+      "weaponName": "Tamayuratei no Ohanashi",
+      "role": "Main DPS",
+      "share": 2,
+      "element": "Electro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

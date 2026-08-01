@@ -1,0 +1,43 @@
+{
+  "id": "276f2982-6e87-401d-b052-5b3b6f4474e1",
+  "gameType": "wuwa",
+  "teamName": "Sigrika, Qiuyuan, Iuno",
+  "totalDamage": 1975032.133,
+  "rotation": 27.5,
+  "createdAt": 1782747445275,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "78d94380-7e04-4c2e-a7b0-83f6d0b46b66",
+      "name": "Sigrika",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "e5747456-fcc8-4ed3-bfd6-d6e90a240921",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "df4d3f0c-d844-4780-b88f-0ee78fdd5ff8",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

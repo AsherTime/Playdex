@@ -1,0 +1,43 @@
+{
+  "id": "1914ccaa-4888-40ff-8bda-edc49584663f",
+  "gameType": "wuwa",
+  "teamName": "Mornye, Galbrena, Qiuyuan",
+  "totalDamage": 1724500.532,
+  "rotation": 27.5,
+  "createdAt": 1782747445301,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "0645cad4-9186-439f-82ee-017e7c14cd2d",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "64110b57-da9a-43e5-b1d6-202956a9456c",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "d6284396-b9c5-4a9d-bd01-6bd966d1e1c4",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

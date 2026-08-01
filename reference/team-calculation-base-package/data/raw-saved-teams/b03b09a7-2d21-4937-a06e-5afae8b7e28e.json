@@ -1,0 +1,43 @@
+{
+  "id": "b03b09a7-2d21-4937-a06e-5afae8b7e28e",
+  "gameType": "wuwa",
+  "teamName": "Galbrena, Mortefi, Shorekeeper",
+  "totalDamage": 1193370.008,
+  "rotation": 26.5,
+  "createdAt": 1782747445322,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "e33171fd-8cb8-4628-a6b3-e44699e00317",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 80,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "e43c181f-0e7c-4bdd-a2d2-388c2ed8a5bc",
+      "name": "Mortefi",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 17,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "476b5a56-4278-4a1c-8766-44ada4714174",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

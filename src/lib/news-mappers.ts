@@ -1,5 +1,7 @@
 import type { Database } from "@/types/database";
 import type { GameNews, GamePost } from "@/types/gamedex";
+import { formatRelativeTime } from "@/utils/formatters";
+import { normalizeNewsSummary, normalizeNewsTitle } from "@/utils/news-normalize";
 
 type NewsItemRow = Database["public"]["Tables"]["news_items"]["Row"];
 type GameRow = Database["public"]["Tables"]["games"]["Row"];
@@ -15,16 +17,26 @@ function fallbackGameTag(row: NewsItemRow, gameById: Map<string, GameRow>) {
   return gameById.get(row.game_id)?.title ?? row.game_id;
 }
 
+function normalizeRow(row: NewsItemRow) {
+  const title = normalizeNewsTitle(row.title);
+  const summary = normalizeNewsSummary(row.summary, title, row.title);
+
+  return { title, summary };
+}
+
 export function mapNewsItemToGameNews(row: NewsItemRow, gameById: Map<string, GameRow>): GameNews {
+  const { title, summary } = normalizeRow(row);
+  const gameId = row.game_id ?? undefined;
+
   return {
     id: row.id,
-    title: row.title,
+    title,
     source: row.source_name,
     gameTag: fallbackGameTag(row, gameById),
-    summary: row.summary,
+    summary,
     date: row.published_at,
     category: toNewsCategory(row.category),
-    gameId: row.game_id ?? undefined,
+    gameId,
     url: row.url,
     imageUrl: row.image_url ?? undefined,
     sourceType: row.source_type,
@@ -33,17 +45,14 @@ export function mapNewsItemToGameNews(row: NewsItemRow, gameById: Map<string, Ga
 }
 
 export function mapNewsItemToGamePost(row: NewsItemRow, gameById: Map<string, GameRow>): GamePost {
-  const publishedAt = new Date(row.published_at).getTime();
-  const diffMinutes = Math.max(1, Math.round((Date.now() - publishedAt) / 60000));
-  const timeAgo =
-    diffMinutes < 60 ? `${diffMinutes}m ago` : diffMinutes < 1440 ? `${Math.round(diffMinutes / 60)}h ago` : `${Math.round(diffMinutes / 1440)}d ago`;
+  const { title, summary } = normalizeRow(row);
 
   return {
     id: row.id,
     source: row.source_name,
-    timeAgo,
-    title: row.title,
-    summary: row.summary,
+    timeAgo: formatRelativeTime(row.published_at),
+    title,
+    summary,
     gameTag: fallbackGameTag(row, gameById),
     category: toNewsCategory(row.category),
     thumbnailTone: "from-cyan-500/30 to-indigo-500/15",

@@ -1,0 +1,43 @@
+{
+  "id": "a51ac96c-a7dc-4705-8e1f-44272e199760",
+  "gameType": "wuwa",
+  "teamName": "Zani, Phoebe, Shorekeeper",
+  "totalDamage": 1809104.139,
+  "rotation": 26.5,
+  "createdAt": 1782747445308,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "f711efc8-202c-488b-b7ad-ab418253705b",
+      "name": "Zani",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 85,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "415a05f7-bb0a-46d7-82a4-190dbc2420e0",
+      "name": "Phoebe",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 12,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "02ef62ec-3662-4bfd-9532-2e607df4e7af",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

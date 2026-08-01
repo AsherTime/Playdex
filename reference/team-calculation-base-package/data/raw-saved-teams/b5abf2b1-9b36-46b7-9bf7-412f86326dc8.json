@@ -1,0 +1,43 @@
+{
+  "id": "b5abf2b1-9b36-46b7-9bf7-412f86326dc8",
+  "gameType": "wuwa",
+  "teamName": "Hiyuki, Chisa, Mornye",
+  "totalDamage": 1731959.857,
+  "rotation": 27.5,
+  "createdAt": 1782747445265,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "18e93f26-4103-4d0c-8379-a8817eff215f",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 77,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "5554bfc2-9561-4ffc-a524-8c08bf9eb79b",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 19,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "3c63336f-3872-4b6e-8f5d-76e1b53779e2",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 4,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

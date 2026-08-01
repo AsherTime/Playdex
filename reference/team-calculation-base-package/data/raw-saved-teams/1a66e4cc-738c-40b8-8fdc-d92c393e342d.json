@@ -1,0 +1,43 @@
+{
+  "id": "1a66e4cc-738c-40b8-8fdc-d92c393e342d",
+  "gameType": "wuwa",
+  "teamName": "Changli, Brant, Lupa",
+  "totalDamage": 1556872.419,
+  "rotation": 27.5,
+  "createdAt": 1782747445338,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "a3865272-6266-4135-8ab8-b092cc18e72e",
+      "name": "Changli",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 39,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "8bcd2043-410c-4110-bc7f-cca938b84c2c",
+      "name": "Brant",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 39,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "4f6143cc-c8f9-4b68-9a4f-d924d130e862",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 22,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

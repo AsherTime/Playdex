@@ -1,0 +1,43 @@
+{
+  "id": "bb979b0c-42fa-43c4-9a15-abb2751911aa",
+  "gameType": "wuwa",
+  "teamName": "Lucilla, Hiyuki, Chisa",
+  "totalDamage": 2462107.343,
+  "rotation": 27.5,
+  "createdAt": 1782747445243,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "e8e778ba-d0b5-4601-8af0-ce9c8258161e",
+      "name": "Lucilla",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 16,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "e831d06a-fbf0-4dea-a98a-6f20c3069fd6",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 74,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "ee0ad762-4d54-46ee-8069-8516add0fdd0",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 10,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

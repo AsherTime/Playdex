@@ -1,0 +1,43 @@
+{
+  "id": "4bfd846c-bcdc-4148-9acd-f1caeed9a954",
+  "gameType": "wuwa",
+  "teamName": "Qiuyuan, Galbrena, Phrolova",
+  "totalDamage": 2056732.957,
+  "rotation": 26.5,
+  "createdAt": 1782747445314,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "626dbcad-7af6-45ff-be2c-d7b4b9c71e77",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Support",
+      "share": 11,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a2653dcb-5b56-474c-8a06-486a6f5b2978",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 45,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "63aca6f3-cd9f-4f33-8800-70115aae0aa9",
+      "name": "Phrolova",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 44,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

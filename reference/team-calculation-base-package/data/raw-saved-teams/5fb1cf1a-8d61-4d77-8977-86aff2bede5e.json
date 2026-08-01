@@ -1,0 +1,43 @@
+{
+  "id": "5fb1cf1a-8d61-4d77-8977-86aff2bede5e",
+  "gameType": "wuwa",
+  "teamName": "Hiyuki, Yinlin, Shorekeeper",
+  "totalDamage": 1342564.88,
+  "rotation": 27.5,
+  "createdAt": 1782747445271,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "0dabcdff-6405-4f37-8919-b824793ced85",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 82,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "48318803-f59f-4536-ad0b-036d3c8c4d6e",
+      "name": "Yinlin",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 15,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "3243c6ca-3e39-47df-aac6-06da37383ddd",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

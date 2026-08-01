@@ -1,0 +1,43 @@
+{
+  "id": "75a8304a-d2ef-4577-9895-b0cbe23f1d92",
+  "gameType": "wuwa",
+  "teamName": "Aemeath, Jianxin, Mornye",
+  "totalDamage": 1315733.542,
+  "rotation": 26.5,
+  "createdAt": 1782747445290,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "705c78f0-d458-4731-bb87-f9195f414ed6",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "b324656c-c499-475a-a2c8-0871c53d3e01",
+      "name": "Jianxin",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "3cbc4985-55a1-4697-a95e-fa912957e202",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

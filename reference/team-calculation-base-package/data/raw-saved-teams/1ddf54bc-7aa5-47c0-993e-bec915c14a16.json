@@ -1,0 +1,43 @@
+{
+  "id": "1ddf54bc-7aa5-47c0-993e-bec915c14a16",
+  "gameType": "wuwa",
+  "teamName": "Hiyuki, Lynae, Mornye",
+  "totalDamage": 2141203.574,
+  "rotation": 27.5,
+  "createdAt": 1782747445263,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "01a7a57e-8e4e-4db7-8bee-6ffbf04cf84f",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 72,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "66c38057-665a-4d7c-a65a-2f20f287ad2b",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 23,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "0b14ae27-d903-4b72-a01f-757ccbc7071b",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 5,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

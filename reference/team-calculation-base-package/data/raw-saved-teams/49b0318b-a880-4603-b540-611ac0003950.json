@@ -1,0 +1,43 @@
+{
+  "id": "49b0318b-a880-4603-b540-611ac0003950",
+  "gameType": "wuwa",
+  "teamName": "Luuk Herssen, Denia, Shorekeeper",
+  "totalDamage": 1713158.975,
+  "rotation": 27.5,
+  "createdAt": 1782747445281,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "88b64288-aef1-41fa-bbe4-ef262fd62c64",
+      "name": "Luuk Herssen",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "375f6de3-b381-4f20-9a96-29e286dcc798",
+      "name": "Denia",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "4ca38990-cf7b-43d1-be2b-e629787f4628",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

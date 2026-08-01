@@ -1,0 +1,43 @@
+{
+  "id": "a4d26709-1fa7-4e0b-9745-0d4294ed5294",
+  "gameType": "wuwa",
+  "teamName": "Xuanling, Lynae, Chisa",
+  "totalDamage": 2197772.37,
+  "rotation": 27.5,
+  "createdAt": 1782747445239,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "79bb6172-10b7-464c-863e-d621835304c8",
+      "name": "Xuanling",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 86,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "7acd38bc-3a88-4ad5-bd09-6a7a32668b3c",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 7,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "161b8be2-ad0d-49f0-a5f2-e8566935cdec",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 7,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

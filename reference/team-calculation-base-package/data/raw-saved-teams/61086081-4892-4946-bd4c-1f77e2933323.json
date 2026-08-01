@@ -1,0 +1,43 @@
+{
+  "id": "61086081-4892-4946-bd4c-1f77e2933323",
+  "gameType": "wuwa",
+  "teamName": "Hiyuki, Changli, Shorekeeper",
+  "totalDamage": 1461790.135,
+  "rotation": 27.5,
+  "createdAt": 1782747445269,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "8274dbfe-887b-4998-9eb5-56966887e9be",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 65,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "d014e048-d65c-4769-9267-1d45869d9bea",
+      "name": "Changli",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 32,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "e98d798c-c3e4-4553-b395-7bc813746c3b",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

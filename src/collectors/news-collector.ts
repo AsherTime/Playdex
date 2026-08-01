@@ -1,9 +1,14 @@
 import { createHash } from "node:crypto";
 import { parse } from "node-html-parser";
 import Parser from "rss-parser";
-import { createServiceSupabaseClient } from "@/lib/supabase/server";
+import { collectGame8Source } from "@/collectors/game8-collector";
+import { collectRiotNextSource, isRiotNextNewsSource } from "@/collectors/riot-next-collector";
+import { enrichNewsItemImage, extractRssImage, type RssItem } from "@/lib/news-image-extract";
+import { isGachaGame } from "@/lib/gacha-games";
+import { createServiceSupabaseClient } from "@/lib/supabase/service-client";
 import type { Database } from "@/types/database";
 import type { CollectorRunResult } from "@/types/gamedex";
+import { cleanNewsText, normalizeNewsSummary, normalizeNewsTitle } from "@/utils/news-normalize";
 
 type GameSourceRow = Database["public"]["Tables"]["game_sources"]["Row"];
 type NewsItemInsert = {
@@ -12,6 +17,8 @@ type NewsItemInsert = {
   summary: string;
   url: string;
   image_url: string | null;
+  image_source_url?: string | null;
+  image_match_type?: string | null;
   source_name: string;
   source_type: string;
   published_at: string;
@@ -36,18 +43,20 @@ type SteamNewsItem = {
   date?: number;
 };
 
-const rssParser = new Parser();
+const rssParser = new Parser({
+  customFields: {
+    item: [
+      ["media:content", "mediaContent"],
+      ["media:thumbnail", "mediaThumbnail"],
+      ["content:encoded", "contentEncoded"],
+    ],
+  },
+});
+
 const FETCH_TIMEOUT_MS = 15000;
 
 function contentHash(value: string) {
   return createHash("sha256").update(value).digest("hex");
-}
-
-function cleanText(value: string | undefined | null) {
-  return (value ?? "")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
 }
 
 function absoluteUrl(href: string, baseUrl: string) {
@@ -78,11 +87,13 @@ function createNewsItem(
     externalId?: string | null;
   },
 ): NewsItemInsert | null {
-  const title = cleanText(input.title);
+  const rawTitle = cleanNewsText(input.title);
+  const title = normalizeNewsTitle(rawTitle);
   const url = input.url.trim();
 
   if (!title || !url) return null;
 
+  const summary = normalizeNewsSummary(input.summary, title, rawTitle);
   const publishedAt = input.publishedAt ? new Date(input.publishedAt) : new Date();
   const safePublishedAt = Number.isNaN(publishedAt.getTime()) ? new Date() : publishedAt;
   const externalId = input.externalId ?? url;
@@ -90,7 +101,7 @@ function createNewsItem(
   return {
     game_id: source.game_id,
     title,
-    summary: cleanText(input.summary) || title,
+    summary,
     url,
     image_url: input.imageUrl ?? null,
     source_name: source.name,
@@ -111,16 +122,18 @@ async function collectRssSource(source: GameSourceRow) {
 
   return feed.items
     .slice(0, 12)
-    .map((item) =>
-      createNewsItem(source, {
+    .map((item) => {
+      const rssItem = item as RssItem;
+
+      return createNewsItem(source, {
         title: item.title ?? "",
         summary: item.contentSnippet ?? item.content ?? item.summary,
         url: item.link ? absoluteUrl(item.link, source.url ?? "") : "",
-        imageUrl: (item.enclosure?.url as string | undefined) ?? null,
+        imageUrl: extractRssImage(rssItem, source.url ?? ""),
         publishedAt: item.isoDate ?? item.pubDate,
-        externalId: item.guid ?? item.id ?? item.link,
-      }),
-    )
+        externalId: item.guid ?? item.link,
+      });
+    })
     .filter(Boolean) as NewsItemInsert[];
 }
 
@@ -153,6 +166,12 @@ async function collectSteamSource(source: GameSourceRow) {
     .filter(Boolean) as NewsItemInsert[];
 }
 
+function websiteAnchorTitle(anchor: ReturnType<ReturnType<typeof parse>["querySelectorAll"]>[number]) {
+  return cleanNewsText(
+    anchor.getAttribute("aria-label") ?? anchor.getAttribute("title") ?? anchor.textContent ?? "",
+  );
+}
+
 async function collectWebsiteSource(source: GameSourceRow) {
   if (!source.url) return [];
 
@@ -171,45 +190,83 @@ async function collectWebsiteSource(source: GameSourceRow) {
   const html = await response.text();
   const root = parse(html);
   const seen = new Set<string>();
+  const candidates: NewsItemInsert[] = [];
 
-  return root
-    .querySelectorAll("a")
-    .map((anchor) => {
-      const href = anchor.getAttribute("href");
-      if (!href) return null;
+  for (const anchor of root.querySelectorAll("a")) {
+    const href = anchor.getAttribute("href");
+    if (!href) continue;
 
-      const url = absoluteUrl(href, source.url ?? "");
-      if (!url || seen.has(url)) return null;
-      seen.add(url);
+    const url = absoluteUrl(href, source.url ?? "");
+    if (!url || seen.has(url)) continue;
+    seen.add(url);
 
-      const lowerUrl = url.toLowerCase();
-      const sourcePath = new URL(source.url ?? "https://example.com").pathname.toLowerCase();
-      const looksLikeArticle =
-        lowerUrl.includes("/news") ||
-        lowerUrl.includes("/article") ||
-        lowerUrl.includes("/articles") ||
-        lowerUrl.includes(sourcePath);
+    const lowerUrl = url.toLowerCase();
+    const sourcePath = new URL(source.url ?? "https://example.com").pathname.toLowerCase();
+    const looksLikeArticle =
+      lowerUrl.includes("/news") ||
+      lowerUrl.includes("/article") ||
+      lowerUrl.includes("/articles") ||
+      lowerUrl.includes(sourcePath);
 
-      if (!looksLikeArticle || url === source.url) return null;
+    if (!looksLikeArticle || url === source.url) continue;
 
-      const title = cleanText(anchor.textContent);
-      if (title.length < 12) return null;
+    const title = websiteAnchorTitle(anchor);
+    if (title.length < 12) continue;
 
-      return createNewsItem(source, {
-        title,
-        summary: title,
-        url,
-        externalId: url,
-      });
-    })
-    .filter(Boolean)
-    .slice(0, 12) as NewsItemInsert[];
+    const item = createNewsItem(source, {
+      title,
+      summary: null,
+      url,
+      externalId: url,
+    });
+
+    if (item) candidates.push(item);
+    if (candidates.length >= 12) break;
+  }
+
+  const enriched = await Promise.all(
+    candidates.map((item) => enrichNewsItemImage(item)),
+  );
+
+  return enriched;
 }
 
 async function collectSource(source: GameSourceRow) {
+  if (source.source_type === "trusted_site" || source.external_ref === "game8") {
+    return collectGame8Source(source);
+  }
+  if (isRiotNextNewsSource(source)) {
+    return collectRiotNextSource(source, createNewsItem);
+  }
   if (source.source_type === "rss") return collectRssSource(source);
   if (source.source_type === "steam") return collectSteamSource(source);
   return collectWebsiteSource(source);
+}
+
+function shouldKeepCollectedItem(item: NewsItemInsert) {
+  if (isGachaGame(item.game_id) && item.source_type === "rss" && !item.image_url) {
+    return false;
+  }
+  return true;
+}
+
+async function finalizeCollectedItems(items: NewsItemInsert[]) {
+  const enriched = await Promise.all(
+    items.map(async (item) => {
+      if (item.source_type === "trusted_site" || item.image_url) {
+        return item;
+      }
+      return enrichNewsItemImage(item);
+    }),
+  );
+
+  const deduped = new Map<string, NewsItemInsert>();
+  for (const item of enriched) {
+    if (!shouldKeepCollectedItem(item)) continue;
+    deduped.set(item.content_hash, item);
+  }
+
+  return [...deduped.values()];
 }
 
 export async function runNewsCollector(): Promise<CollectorRunResult> {
@@ -217,15 +274,20 @@ export async function runNewsCollector(): Promise<CollectorRunResult> {
 
   try {
     const supabase = createServiceSupabaseClient();
-    const { data: sources, error: sourcesError } = await supabase
-      .from("game_sources")
-      .select("*")
-      .eq("enabled", true)
-      .in("source_type", ["rss", "website", "steam"]);
+    const { data: sourceRows, error: sourcesError } = await supabase.from("game_sources").select("*").eq("enabled", true);
 
     if (sourcesError) {
       throw new Error(sourcesError.message);
     }
+
+    const sources = (sourceRows ?? []).filter(
+      (source) =>
+        source.source_type === "trusted_site" ||
+        source.external_ref === "game8" ||
+        source.source_type === "rss" ||
+        source.source_type === "website" ||
+        source.source_type === "steam",
+    );
 
     const errors: CollectorError[] = [];
     const collected: NewsItemInsert[] = [];
@@ -262,16 +324,39 @@ export async function runNewsCollector(): Promise<CollectorRunResult> {
 
     let insertedRecords = 0;
     if (collected.length) {
+      const finalizedCollected = await finalizeCollectedItems(collected);
+
       const { data: upserted, error: upsertError } = await supabase
         .from("news_items")
-        .upsert(collected, { onConflict: "content_hash", ignoreDuplicates: true })
+        .upsert(finalizedCollected, { onConflict: "content_hash" })
         .select("id");
 
       if (upsertError) {
-        throw new Error(upsertError.message);
-      }
+        const missingOptionalColumns =
+          upsertError.message.includes("image_source_url") || upsertError.message.includes("image_match_type");
+        if (missingOptionalColumns) {
+          const fallbackPayload = finalizedCollected.map((item) => {
+            const copy = { ...item };
+            delete copy.image_source_url;
+            delete copy.image_match_type;
+            return copy;
+          });
+          const retry = await supabase
+            .from("news_items")
+            .upsert(fallbackPayload, { onConflict: "content_hash" })
+            .select("id");
 
-      insertedRecords = upserted?.length ?? 0;
+          if (retry.error) {
+            throw new Error(retry.error.message);
+          }
+
+          insertedRecords = retry.data?.length ?? 0;
+        } else {
+          throw new Error(upsertError.message);
+        }
+      } else {
+        insertedRecords = upserted?.length ?? 0;
+      }
     }
 
     const processedRecords = collected.length;

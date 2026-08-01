@@ -1,0 +1,43 @@
+{
+  "id": "139bec88-772b-4189-be8f-45b1c848b023",
+  "gameType": "wuwa",
+  "teamName": "Cartethyia, Ciaccona, Chisa",
+  "totalDamage": 2153446.355,
+  "rotation": 26.5,
+  "createdAt": 1782747445304,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "4d9ffd5f-b263-4831-8b10-5e68355e4d12",
+      "name": "Cartethyia",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 67,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "26d3d22d-1c9a-479b-98ed-359bc20f0a64",
+      "name": "Ciaccona",
+      "weaponName": "",
+      "role": "Support",
+      "share": 16,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "27995e62-f883-478b-a9fb-bfffaa2d9da8",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 17,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

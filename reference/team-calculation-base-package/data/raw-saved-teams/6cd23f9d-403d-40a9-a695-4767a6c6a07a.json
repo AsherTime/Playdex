@@ -1,0 +1,43 @@
+{
+  "id": "6cd23f9d-403d-40a9-a695-4767a6c6a07a",
+  "gameType": "wuwa",
+  "teamName": "Lupa, Changli, Shorekeeper",
+  "totalDamage": 1164260.56,
+  "rotation": 28.0,
+  "createdAt": 1782747445347,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "c43490c2-ad4a-4bb8-83ae-e4711371640c",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "e532b8fc-5f79-4a06-906b-253cc3b1932c",
+      "name": "Changli",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 67,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1d621d43-23dc-433c-a55f-42c03f8d8f72",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 0,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

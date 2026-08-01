@@ -1,0 +1,43 @@
+{
+  "id": "9cd7b99b-74a1-416f-9ac6-a31afcd96d69",
+  "gameType": "wuwa",
+  "teamName": "Iuno, Zani, Phoebe",
+  "totalDamage": 1411488.061,
+  "rotation": 27.5,
+  "createdAt": 1782747445350,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "85339a31-cba1-4e96-b263-395ac67f5a59",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 62,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "86ad4c02-dccb-4767-aa9e-0a8761f3a5ad",
+      "name": "Zani",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 32,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a428574c-3728-4e98-91df-c5cc744d2d31",
+      "name": "Phoebe",
+      "weaponName": "",
+      "role": "Support",
+      "share": 6,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

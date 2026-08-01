@@ -1,0 +1,43 @@
+{
+  "id": "95aa9480-7ed8-45ae-a085-9589c6dd48da",
+  "gameType": "wuwa",
+  "teamName": "Qiuyuan, Iuno, Ciaccona",
+  "totalDamage": 1596718.386,
+  "rotation": 26.5,
+  "createdAt": 1782747445317,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "4919f10f-c88f-47fb-aa3b-9560d2b4a204",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 42,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "9e52188d-ae39-43c2-b32b-4040e161b453",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 40,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "3e6f0a1e-7ea8-4737-b86c-f48e941f1d60",
+      "name": "Ciaccona",
+      "weaponName": "",
+      "role": "Support",
+      "share": 18,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

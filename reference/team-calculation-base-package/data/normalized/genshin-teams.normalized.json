@@ -1,0 +1,756 @@
+﻿[
+    {
+        "id":  "0122bcb7-9d92-44c4-ad7d-e22b971252a6",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Klee c1 Nicole Durin",
+        "note":  null,
+        "dps":  118.6,
+        "totalDamage":  2.49,
+        "rotation":  21,
+        "createdAt":  1776283859872,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "118.6k",
+        "displayTotalDamageOrDpr":  "2.5k",
+        "characters":  [
+                           {
+                               "id":  "1bd899fe-fe82-43b9-8de4-f757ede09231",
+                               "name":  "Klee (C1)",
+                               "weaponName":  "Widsith",
+                               "role":  "Main DPS",
+                               "share":  62,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "d0c65b0a-05a6-47fc-972b-2b1d6d29af88",
+                               "name":  "Fischl (C6)",
+                               "weaponName":  "Stringless",
+                               "role":  "Main DPS",
+                               "share":  14,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "1bb3f24b-235d-43dd-a3ca-9322fef7a8b4",
+                               "name":  "Nicole (C0)",
+                               "weaponName":  "thrilling tales of dragon slayer",
+                               "role":  "Main DPS",
+                               "share":  1,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "f0dd58c7-8985-49b1-83c1-3939a2287585",
+                               "name":  "Durin (C0)",
+                               "weaponName":  "Lionâ€™s Roar",
+                               "role":  "Main DPS",
+                               "share":  23,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    },
+    {
+        "id":  "0b76b0d5-bc1b-4bf5-9612-2fbc305bf4fc",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Kinich Durin",
+        "note":  null,
+        "dps":  111.7,
+        "totalDamage":  2.23,
+        "rotation":  20,
+        "createdAt":  1776285655276,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "111.7k",
+        "displayTotalDamageOrDpr":  "2.2k",
+        "characters":  [
+                           {
+                               "id":  "fdb1c222-31d5-47be-9a21-d076a8dad702",
+                               "name":  "Kinich (C0)",
+                               "weaponName":  "Shaker",
+                               "role":  "Main DPS",
+                               "share":  61,
+                               "element":  "Dendro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "48b9641f-5ec7-4c35-a9a8-d0e0b36b848b",
+                               "name":  "Durin (C0)",
+                               "weaponName":  "W Fang",
+                               "role":  "Main DPS",
+                               "share":  12,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "408c4144-36c1-40fd-bfb6-80938e4e4bad",
+                               "name":  "Emilie (C0)",
+                               "weaponName":  "Deathmatch",
+                               "role":  "Main DPS",
+                               "share":  25,
+                               "element":  "Dendro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "067cdca5-196a-4ea8-8ad2-d0983f49b465",
+                               "name":  "Iansan (C6)",
+                               "weaponName":  "Tamayuratei no Ohanashi",
+                               "role":  "Main DPS",
+                               "share":  2,
+                               "element":  "Electro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    },
+    {
+        "id":  "0cdccc88-2ea2-47cc-8560-da3f4fe57b90",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Varka Venti Durin",
+        "note":  null,
+        "dps":  110.3,
+        "totalDamage":  1.95,
+        "rotation":  18.2,
+        "createdAt":  1776286587397,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "110.3k",
+        "displayTotalDamageOrDpr":  "2.0k",
+        "characters":  [
+                           {
+                               "id":  "105c4a47-c4fc-4b18-a4c6-d1fe1140d84c",
+                               "name":  "Varka (C0)",
+                               "weaponName":  "Spine",
+                               "role":  "Main DPS",
+                               "share":  73,
+                               "element":  "Anemo",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "3da52da2-a300-47cf-81df-d32911ed5ca9",
+                               "name":  "Venti (C0)",
+                               "weaponName":  "Stringless",
+                               "role":  "Sub DPS",
+                               "share":  13,
+                               "element":  "Anemo",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "e134af4c-f474-46bb-b184-c07163ad16ff",
+                               "name":  "Durin (C0)",
+                               "weaponName":  "Wolf Fang",
+                               "role":  "Sub DPS",
+                               "share":  13,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "c070364d-9541-45ff-aced-0ff39b3d4d8c",
+                               "name":  "Bennett (C6)",
+                               "weaponName":  "Alley Flash",
+                               "role":  "Buffer",
+                               "share":  1,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    },
+    {
+        "id":  "0f90cc87-f56d-4354-97c0-d10f31161945",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Navia Lunar Crytallize",
+        "note":  null,
+        "dps":  122.4,
+        "totalDamage":  2.45,
+        "rotation":  20,
+        "createdAt":  1776282125609,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "122.4k",
+        "displayTotalDamageOrDpr":  "2.5k",
+        "characters":  [
+                           {
+                               "id":  "a82b0ca8-fb32-4354-a4dd-404c9788c533",
+                               "name":  "Navia",
+                               "weaponName":  "Tidal Shadow",
+                               "role":  "Main DPS",
+                               "share":  27,
+                               "element":  "Geo",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "adb999c9-5887-422d-a3a2-492a7285a071",
+                               "name":  "Columbina",
+                               "weaponName":  "Sacrificial Jade",
+                               "role":  "Main DPS",
+                               "share":  32,
+                               "element":  "Hydro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "6d664b11-bcaf-42c7-89f4-bb5a876ed8d9",
+                               "name":  "Furina",
+                               "weaponName":  "Favonius Sword",
+                               "role":  "Main DPS",
+                               "share":  9,
+                               "element":  "Hydro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "1224dfa4-c636-4310-8a75-f4472bddda79",
+                               "name":  "Linnea",
+                               "weaponName":  "Slingshot",
+                               "role":  "Main DPS",
+                               "share":  32,
+                               "element":  "Geo",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    },
+    {
+        "id":  "156f964b-e245-4bbf-9330-7fa163298ca4",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Klee c1 Nicole",
+        "note":  null,
+        "dps":  125.3,
+        "totalDamage":  2.5,
+        "rotation":  20,
+        "createdAt":  1776283763850,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "125.3k",
+        "displayTotalDamageOrDpr":  "2.5k",
+        "characters":  [
+                           {
+                               "id":  "373dd413-670b-4573-a28e-7105a2df928b",
+                               "name":  "Klee",
+                               "weaponName":  "the Widsith",
+                               "role":  "Main DPS",
+                               "share":  78,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "04baa25b-b2b9-4978-89b5-619280113380",
+                               "name":  "Fischl",
+                               "weaponName":  "the stringless",
+                               "role":  "Main DPS",
+                               "share":  19,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "0d799445-3956-4782-b66b-8d86cc2e95a0",
+                               "name":  "Chevreuse",
+                               "weaponName":  "Favonius Lance",
+                               "role":  "Main DPS",
+                               "share":  2,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "865b21de-c23f-4b2c-8193-81588181191b",
+                               "name":  "Nicole",
+                               "weaponName":  "thrilling tales of dragon slayers",
+                               "role":  "Main DPS",
+                               "share":  1,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    },
+    {
+        "id":  "16d9a940-2642-4579-aa29-1ca2007e51dd",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Varka R1 Premium",
+        "note":  null,
+        "dps":  142.5,
+        "totalDamage":  2.88,
+        "rotation":  20.2,
+        "createdAt":  1776286776878,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "142.5k",
+        "displayTotalDamageOrDpr":  "2.9k",
+        "characters":  [
+                           {
+                               "id":  "53f7db06-5c49-476d-8864-0c659a3eebce",
+                               "name":  "Varka (C0)",
+                               "weaponName":  "Wolf",
+                               "role":  "Main DPS",
+                               "share":  75,
+                               "element":  "Anemo",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "5ca0c60b-6d1d-4803-ae3c-e21b79770acc",
+                               "name":  "Venti (C0)",
+                               "weaponName":  "Stringless",
+                               "role":  "Main DPS",
+                               "share":  8,
+                               "element":  "Anemo",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "1056e604-6a63-43de-9fb5-6c3cb6f9fca9",
+                               "name":  "Durin (C0)",
+                               "weaponName":  "Wolf Fang",
+                               "role":  "Main DPS",
+                               "share":  17,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "0a62239f-49ef-48b9-9ac2-9cf67d474b6c",
+                               "name":  "Nicole (C0)",
+                               "weaponName":  "Oathsworn Eye",
+                               "role":  "Main DPS",
+                               "share":  25,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    },
+    {
+        "id":  "1f18b4d7-bd45-449d-bd3f-9064a9604727",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Kinich Premium",
+        "note":  null,
+        "dps":  122.4,
+        "totalDamage":  2.33,
+        "rotation":  19,
+        "createdAt":  1776285400960,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "122.4k",
+        "displayTotalDamageOrDpr":  "2.3k",
+        "characters":  [
+                           {
+                               "id":  "bbca78fc-4430-4317-8422-c1e8921dafea",
+                               "name":  "Kinich (C0)",
+                               "weaponName":  "Spine",
+                               "role":  "Main DPS",
+                               "share":  56,
+                               "element":  "Dendro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "5358196a-ba21-4adc-81b6-0e1a9f5de1c5",
+                               "name":  "Emilie (C0)",
+                               "weaponName":  "Deathmatch",
+                               "role":  "Main DPS",
+                               "share":  29,
+                               "element":  "Dendro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "234096b9-eddf-4240-a0a6-ece8c5128ac0",
+                               "name":  "Nicole (C0)",
+                               "weaponName":  "Oathsworn Eye",
+                               "role":  "Main DPS",
+                               "share":  1,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "afe278ea-85c0-4596-824e-37a3e88c2aba",
+                               "name":  "Durin (C0)",
+                               "weaponName":  "Lionâ€™s Roar",
+                               "role":  "Main DPS",
+                               "share":  14,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    },
+    {
+        "id":  "3a121d57-4883-4cba-a44b-059a71d22ae6",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Varesa Iansan Hexerei",
+        "note":  null,
+        "dps":  113.6,
+        "totalDamage":  2.39,
+        "rotation":  21,
+        "createdAt":  1776284138039,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "113.6k",
+        "displayTotalDamageOrDpr":  "2.4k",
+        "characters":  [
+                           {
+                               "id":  "2d0f2025-c2b3-4600-9093-f44fedb2da84",
+                               "name":  "Varesa (C0)",
+                               "weaponName":  "Widsith",
+                               "role":  "Main DPS",
+                               "share":  69,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "19e89049-4049-42bd-8173-cc93215106c6",
+                               "name":  "Iansan (C6)",
+                               "weaponName":  "Tamayura-tei no Ohanashi",
+                               "role":  "Main DPS",
+                               "share":  2,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "a749a8ed-f4e4-4427-b09e-7fbd4134418d",
+                               "name":  "Nicole (C0)",
+                               "weaponName":  "favounious codex",
+                               "role":  "Main DPS",
+                               "share":  1,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "244ecdf1-a671-485a-a07a-e91b014658f0",
+                               "name":  "Durin (C0)",
+                               "weaponName":  "Lionâ€™s Roar",
+                               "role":  "Main DPS",
+                               "share":  28,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    },
+    {
+        "id":  "4be0cdb2-0b3f-4f56-9cea-66e42435e2cf",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Varesa Nicole Durin ",
+        "note":  null,
+        "dps":  117.4,
+        "totalDamage":  2.47,
+        "rotation":  21,
+        "createdAt":  1776283999496,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "117.4k",
+        "displayTotalDamageOrDpr":  "2.5k",
+        "characters":  [
+                           {
+                               "id":  "d3425ccb-6838-4573-a317-77e3dd7f3c0d",
+                               "name":  "Varesa (C0)",
+                               "weaponName":  "Widsith",
+                               "role":  "Main DPS",
+                               "share":  64,
+                               "element":  "Electro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "8b4d2d93-2157-47ff-a4e0-38a1dcb72f61",
+                               "name":  "Nicole (C0)",
+                               "weaponName":  "favounious codex",
+                               "role":  "Main DPS",
+                               "share":  1,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "98384c8f-6b98-4c67-9450-ec2c0a6b8034",
+                               "name":  "Chevreuse (C6)",
+                               "weaponName":  "Favonius Lance",
+                               "role":  "Main DPS",
+                               "share":  2,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "8b8d9497-ad85-4a92-8e93-ae56a46747dd",
+                               "name":  "Durin (C0)",
+                               "weaponName":  "Lionâ€™s Roar",
+                               "role":  "Main DPS",
+                               "share":  33,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    },
+    {
+        "id":  "9d1646fa-b9aa-4c2d-a236-be6b2643dbed",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Varesa Premium",
+        "note":  null,
+        "dps":  120.4,
+        "totalDamage":  2.41,
+        "rotation":  20,
+        "createdAt":  1776284071570,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "120.4k",
+        "displayTotalDamageOrDpr":  "2.4k",
+        "characters":  [
+                           {
+                               "id":  "545f7914-a4ef-4cfb-9a9e-ce61b9ae6248",
+                               "name":  "Varesa (C0)",
+                               "weaponName":  "Widsith",
+                               "role":  "Main DPS",
+                               "share":  71,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "25d4dd93-8f7b-4897-9117-6ca8d3d6505c",
+                               "name":  "Iansan (C6)",
+                               "weaponName":  "Tamayura-tei no Ohanashi",
+                               "role":  "Main DPS",
+                               "share":  2,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "27beb3c2-0786-40f1-a0eb-c3e077258642",
+                               "name":  "Chevreuse (C6)",
+                               "weaponName":  "Favonius Lance",
+                               "role":  "Main DPS",
+                               "share":  2,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "f3b176f1-68df-4ba2-b109-4fe15320461f",
+                               "name":  "Durin (C0)",
+                               "weaponName":  "Lionâ€™s Roar",
+                               "role":  "Main DPS",
+                               "share":  24,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    },
+    {
+        "id":  "a975fb7f-dfa3-4a69-ab3b-3f3a4eb80df2",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Skirk Premium",
+        "note":  null,
+        "dps":  125,
+        "totalDamage":  2.63,
+        "rotation":  21,
+        "createdAt":  1776287609325,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "125.0k",
+        "displayTotalDamageOrDpr":  "2.6k",
+        "characters":  [
+                           {
+                               "id":  "426dc8a6-55be-40a7-aae2-55e93c40f925",
+                               "name":  "Skirk",
+                               "weaponName":  "Finale of the deep",
+                               "role":  "Main DPS",
+                               "share":  64,
+                               "element":  "Cryo",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "1db333ab-3b8e-4258-a138-dbad25de8341",
+                               "name":  "Furina",
+                               "weaponName":  "Fleuve Cendre Ferryman",
+                               "role":  "Support",
+                               "share":  12,
+                               "element":  "Hydro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "92bbe717-5f68-4c75-820a-435ed3a76b08",
+                               "name":  "Escoffier",
+                               "weaponName":  "Favonius",
+                               "role":  "Sub DPS",
+                               "share":  8,
+                               "element":  "Cryo",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "dc837fd5-34ec-48ec-bf0d-c988ed3fba57",
+                               "name":  "Yelan",
+                               "weaponName":  "Favonius",
+                               "role":  "Sub DPS",
+                               "share":  16,
+                               "element":  "Hydro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    },
+    {
+        "id":  "ecfafe79-d693-429d-9839-5b26c2dae5f9",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Varka Durin Nicole",
+        "note":  null,
+        "dps":  121.8,
+        "totalDamage":  2.46,
+        "rotation":  20.2,
+        "createdAt":  1776286628544,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "121.8k",
+        "displayTotalDamageOrDpr":  "2.5k",
+        "characters":  [
+                           {
+                               "id":  "12ae1365-8d14-4d77-a50a-5a6dbe94dc72",
+                               "name":  "Varka (C0)",
+                               "weaponName":  "Spine",
+                               "role":  "Main DPS",
+                               "share":  68,
+                               "element":  "Anemo",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "f05cb071-1329-4303-928b-e3990e5420dc",
+                               "name":  "Venti (C0)",
+                               "weaponName":  "Stringless",
+                               "role":  "Main DPS",
+                               "share":  11,
+                               "element":  "Anemo",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "d20b4524-f449-4bfd-b186-0e7f984300c3",
+                               "name":  "Durin (C0)",
+                               "weaponName":  "Wolf Fang",
+                               "role":  "Main DPS",
+                               "share":  20,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "981a081c-e5fe-4150-ba99-31951d6510d5",
+                               "name":  "Nicole (C0)",
+                               "weaponName":  "Oathsworn Eye",
+                               "role":  "Main DPS",
+                               "share":  1,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    },
+    {
+        "id":  "f2c6afc3-6ab1-4685-ad4e-78bf96316718",
+        "gameType":  "genshin",
+        "sourceGameType":  null,
+        "teamName":  "Navia Hexerei",
+        "note":  null,
+        "dps":  95.5,
+        "totalDamage":  1.81,
+        "rotation":  20,
+        "createdAt":  1776285798940,
+        "unresolvedWarnings":  null,
+        "unmatchedCount":  null,
+        "unmatchedItems":  null,
+        "displayAvgDps":  "95.5k",
+        "displayTotalDamageOrDpr":  "1.8k",
+        "characters":  [
+                           {
+                               "id":  "392d396c-6f2e-4c68-8a56-bf6f7143065f",
+                               "name":  "Navia (C0)",
+                               "weaponName":  "Spine",
+                               "role":  "Main DPS",
+                               "share":  60,
+                               "element":  "Geo",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "489c5ec5-45c0-4a7c-80f9-2d8b2145a8d3",
+                               "name":  "Xilonen (C0)",
+                               "weaponName":  "Favonius sword",
+                               "role":  "Main DPS",
+                               "share":  1,
+                               "element":  "Geo",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "675409f2-cbda-4e58-bbf2-438126cee279",
+                               "name":  "Nicole (C0)",
+                               "weaponName":  "Oathsworn Eye",
+                               "role":  "Main DPS",
+                               "share":  1,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           },
+                           {
+                               "id":  "2369cbfb-4efe-413c-a49a-44293735c5be",
+                               "name":  "Durin (C0)",
+                               "weaponName":  "Wolf",
+                               "role":  "Main DPS",
+                               "share":  38,
+                               "element":  "Pyro",
+                               "manualCharacterImage":  "",
+                               "manualWeaponImage":  ""
+                           }
+                       ]
+    }
+]

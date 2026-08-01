@@ -1,0 +1,50 @@
+{
+  "id": "156f964b-e245-4bbf-9330-7fa163298ca4",
+  "teamName": "Klee c1 Nicole",
+  "dps": 125.3,
+  "totalDamage": 2.5,
+  "rotation": 20,
+  "createdAt": 1776283763850,
+  "characters": [
+    {
+      "id": "373dd413-670b-4573-a28e-7105a2df928b",
+      "name": "Klee",
+      "weaponName": "the Widsith",
+      "role": "Main DPS",
+      "share": 78,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "04baa25b-b2b9-4978-89b5-619280113380",
+      "name": "Fischl",
+      "weaponName": "the stringless",
+      "role": "Main DPS",
+      "share": 19,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "0d799445-3956-4782-b66b-8d86cc2e95a0",
+      "name": "Chevreuse",
+      "weaponName": "Favonius Lance",
+      "role": "Main DPS",
+      "share": 2,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "865b21de-c23f-4b2c-8193-81588181191b",
+      "name": "Nicole",
+      "weaponName": "thrilling tales of dragon slayers",
+      "role": "Main DPS",
+      "share": 1,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

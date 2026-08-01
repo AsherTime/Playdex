@@ -1,0 +1,43 @@
+{
+  "id": "a1f23bbb-db6d-40f1-943d-5bd00e9dde5d",
+  "gameType": "wuwa",
+  "teamName": "Suisui, Hiyuki, Lucilla",
+  "totalDamage": 2545992.828,
+  "rotation": 27.5,
+  "createdAt": 1782747445232,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "d98f2721-f109-4e0e-8307-e6f7f1ce4f11",
+      "name": "Suisui",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "d6e0534a-e9ec-4d67-8b84-8436275b5ed7",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "566c6886-3927-4bb8-a357-dae913e49b42",
+      "name": "Lucilla",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

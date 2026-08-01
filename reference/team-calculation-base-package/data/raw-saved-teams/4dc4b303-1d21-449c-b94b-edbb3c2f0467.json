@@ -1,0 +1,43 @@
+{
+  "id": "4dc4b303-1d21-449c-b94b-edbb3c2f0467",
+  "gameType": "wuwa",
+  "teamName": "Zani, Phoebe, Chisa",
+  "totalDamage": 1825336.7,
+  "rotation": 26.5,
+  "createdAt": 1782747445307,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "d2648f9c-75a9-4995-ac9d-c36a8c6541aa",
+      "name": "Zani",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 75,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "b0c00c27-2313-4eeb-b2b0-eb12a566e169",
+      "name": "Phoebe",
+      "weaponName": "",
+      "role": "Support",
+      "share": 12,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "69deced7-d2e7-400c-bb58-0d3a28537615",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 13,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

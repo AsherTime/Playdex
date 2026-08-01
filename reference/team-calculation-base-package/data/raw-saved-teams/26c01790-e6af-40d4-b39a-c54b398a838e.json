@@ -1,0 +1,43 @@
+{
+  "id": "26c01790-e6af-40d4-b39a-c54b398a838e",
+  "gameType": "wuwa",
+  "teamName": "Brant, Denia, Lupa",
+  "totalDamage": 1831580.796,
+  "rotation": 27.5,
+  "createdAt": 1782747445256,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "56a1754a-397f-4586-b6d7-6292ddfe409e",
+      "name": "Brant",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 63,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "aff8d4b5-b8db-4b43-975e-1add8b97d245",
+      "name": "Denia",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 19,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "257aea58-bfd0-4804-b697-382bde4f28b4",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 18,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

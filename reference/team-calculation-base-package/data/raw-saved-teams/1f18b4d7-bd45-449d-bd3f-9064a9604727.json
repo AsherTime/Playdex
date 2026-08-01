@@ -1,0 +1,50 @@
+{
+  "id": "1f18b4d7-bd45-449d-bd3f-9064a9604727",
+  "teamName": "Kinich Premium",
+  "dps": 122.4,
+  "totalDamage": 2.33,
+  "rotation": 19,
+  "createdAt": 1776285400960,
+  "characters": [
+    {
+      "id": "bbca78fc-4430-4317-8422-c1e8921dafea",
+      "name": "Kinich (C0)",
+      "weaponName": "Spine",
+      "role": "Main DPS",
+      "share": 56,
+      "element": "Dendro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "5358196a-ba21-4adc-81b6-0e1a9f5de1c5",
+      "name": "Emilie (C0)",
+      "weaponName": "Deathmatch",
+      "role": "Main DPS",
+      "share": 29,
+      "element": "Dendro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "234096b9-eddf-4240-a0a6-ece8c5128ac0",
+      "name": "Nicole (C0)",
+      "weaponName": "Oathsworn Eye",
+      "role": "Main DPS",
+      "share": 1,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "afe278ea-85c0-4596-824e-37a3e88c2aba",
+      "name": "Durin (C0)",
+      "weaponName": "Lion’s Roar",
+      "role": "Main DPS",
+      "share": 14,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

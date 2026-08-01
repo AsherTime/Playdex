@@ -1,0 +1,43 @@
+{
+  "id": "79ea67bc-e903-4056-a584-4db8216a33d0",
+  "gameType": "wuwa",
+  "teamName": "Lynae, Iuno, Mornye",
+  "totalDamage": 1935703.038,
+  "rotation": 25.0,
+  "createdAt": 1782747445291,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "a55c90db-7b75-4513-a9e6-f7af628c7ada",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "05431943-3a83-4de4-9286-1e3685e0698f",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "0bb61e47-19c5-419a-a183-4a6d0bc8b986",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

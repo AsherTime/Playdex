@@ -1,0 +1,43 @@
+{
+  "id": "8d0f88cc-604f-4aaa-8d92-4c4e77a119ce",
+  "gameType": "wuwa",
+  "teamName": "Changli, Brant, Shorekeeper",
+  "totalDamage": 912990.889,
+  "rotation": 27.5,
+  "createdAt": 1782747445339,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "33014b40-0268-4083-b5e0-d8505923d067",
+      "name": "Changli",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 52,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "ee64fe72-083f-4528-a7a1-b5563415bbb3",
+      "name": "Brant",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 44,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "923402cd-fa8a-4b88-9ee9-955e93a430fe",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 4,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

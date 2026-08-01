@@ -1,0 +1,43 @@
+{
+  "id": "e420123e-e914-40ef-92cc-e86bd7b09d44",
+  "gameType": "wuwa",
+  "teamName": "Carlotta, Lucilla, Shorekeeper",
+  "totalDamage": 1388254.362,
+  "rotation": 27.5,
+  "createdAt": 1782747445245,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "d027446e-e3e5-4537-8a64-354b25ced173",
+      "name": "Carlotta",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 75,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "cb1ff2bb-b45e-49ff-bc68-9a9d00e586fc",
+      "name": "Lucilla",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 22,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1d97b642-281d-47d0-b1cd-7bfa0050d96b",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

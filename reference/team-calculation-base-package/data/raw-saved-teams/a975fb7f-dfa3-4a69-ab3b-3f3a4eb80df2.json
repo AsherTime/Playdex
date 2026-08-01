@@ -1,0 +1,50 @@
+{
+  "id": "a975fb7f-dfa3-4a69-ab3b-3f3a4eb80df2",
+  "teamName": "Skirk Premium",
+  "dps": 125,
+  "totalDamage": 2.63,
+  "rotation": 21,
+  "createdAt": 1776287609325,
+  "characters": [
+    {
+      "id": "426dc8a6-55be-40a7-aae2-55e93c40f925",
+      "name": "Skirk",
+      "weaponName": "Finale of the deep",
+      "role": "Main DPS",
+      "share": 64,
+      "element": "Cryo",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1db333ab-3b8e-4258-a138-dbad25de8341",
+      "name": "Furina",
+      "weaponName": "Fleuve Cendre Ferryman",
+      "role": "Support",
+      "share": 12,
+      "element": "Hydro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "92bbe717-5f68-4c75-820a-435ed3a76b08",
+      "name": "Escoffier",
+      "weaponName": "Favonius",
+      "role": "Sub DPS",
+      "share": 8,
+      "element": "Cryo",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "dc837fd5-34ec-48ec-bf0d-c988ed3fba57",
+      "name": "Yelan",
+      "weaponName": "Favonius",
+      "role": "Sub DPS",
+      "share": 16,
+      "element": "Hydro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

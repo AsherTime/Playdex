@@ -1,0 +1,43 @@
+{
+  "id": "c393b2a2-0e24-4cae-911a-15a78fa6d138",
+  "gameType": "wuwa",
+  "teamName": "Suisui, Aemeath, Denia",
+  "totalDamage": 2070791.517,
+  "rotation": 27.5,
+  "createdAt": 1782747445236,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "2094d44b-65e8-4867-9d49-d7217c5b296b",
+      "name": "Suisui",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "4d9a723e-8d32-4e7b-b626-1d13fe807444",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "ae4de15d-10fa-47ee-adb9-0d3624fcb1a7",
+      "name": "Denia",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

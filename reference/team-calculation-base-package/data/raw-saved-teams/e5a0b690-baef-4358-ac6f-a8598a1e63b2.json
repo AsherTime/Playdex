@@ -1,0 +1,43 @@
+{
+  "id": "e5a0b690-baef-4358-ac6f-a8598a1e63b2",
+  "gameType": "wuwa",
+  "teamName": "Luuk Herssen, Lynae, Shorekeeper",
+  "totalDamage": 1931073.721,
+  "rotation": 27.5,
+  "createdAt": 1782747445280,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "e4b55b91-a6c5-416b-87ee-579af9093126",
+      "name": "Luuk Herssen",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "4f2b75f9-2dd2-4aa9-bffc-e6041f89ea54",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "05cd56b4-a7a3-4021-ab59-805789672bf6",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

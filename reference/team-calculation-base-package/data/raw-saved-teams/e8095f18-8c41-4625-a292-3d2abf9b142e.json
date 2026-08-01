@@ -1,0 +1,43 @@
+{
+  "id": "e8095f18-8c41-4625-a292-3d2abf9b142e",
+  "gameType": "wuwa",
+  "teamName": "Galbrena, Mortefi, Lupa",
+  "totalDamage": 1453065.744,
+  "rotation": 26.5,
+  "createdAt": 1782747445319,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "61dfbbef-fed7-462a-ad70-51ce1081943b",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 67,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "38dee78b-ff69-4852-b0d6-711ea5b7ccf9",
+      "name": "Mortefi",
+      "weaponName": "",
+      "role": "Support",
+      "share": 13,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "05f1a2be-ae4f-46da-b112-fedb3f7cf02b",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 20,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

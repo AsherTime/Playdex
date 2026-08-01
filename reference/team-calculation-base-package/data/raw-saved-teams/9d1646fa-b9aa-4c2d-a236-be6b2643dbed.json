@@ -1,0 +1,50 @@
+{
+  "id": "9d1646fa-b9aa-4c2d-a236-be6b2643dbed",
+  "teamName": "Varesa Premium",
+  "dps": 120.4,
+  "totalDamage": 2.41,
+  "rotation": 20,
+  "createdAt": 1776284071570,
+  "characters": [
+    {
+      "id": "545f7914-a4ef-4cfb-9a9e-ce61b9ae6248",
+      "name": "Varesa (C0)",
+      "weaponName": "Widsith",
+      "role": "Main DPS",
+      "share": 71,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "25d4dd93-8f7b-4897-9117-6ca8d3d6505c",
+      "name": "Iansan (C6)",
+      "weaponName": "Tamayura-tei no Ohanashi",
+      "role": "Main DPS",
+      "share": 2,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "27beb3c2-0786-40f1-a0eb-c3e077258642",
+      "name": "Chevreuse (C6)",
+      "weaponName": "Favonius Lance",
+      "role": "Main DPS",
+      "share": 2,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f3b176f1-68df-4ba2-b109-4fe15320461f",
+      "name": "Durin (C0)",
+      "weaponName": "Lion’s Roar",
+      "role": "Main DPS",
+      "share": 24,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

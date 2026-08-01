@@ -1,0 +1,50 @@
+{
+  "id": "0f90cc87-f56d-4354-97c0-d10f31161945",
+  "teamName": "Navia Lunar Crytallize",
+  "dps": 122.4,
+  "totalDamage": 2.45,
+  "rotation": 20,
+  "createdAt": 1776282125609,
+  "characters": [
+    {
+      "id": "a82b0ca8-fb32-4354-a4dd-404c9788c533",
+      "name": "Navia",
+      "weaponName": "Tidal Shadow",
+      "role": "Main DPS",
+      "share": 27,
+      "element": "Geo",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "adb999c9-5887-422d-a3a2-492a7285a071",
+      "name": "Columbina",
+      "weaponName": "Sacrificial Jade",
+      "role": "Main DPS",
+      "share": 32,
+      "element": "Hydro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "6d664b11-bcaf-42c7-89f4-bb5a876ed8d9",
+      "name": "Furina",
+      "weaponName": "Favonius Sword",
+      "role": "Main DPS",
+      "share": 9,
+      "element": "Hydro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1224dfa4-c636-4310-8a75-f4472bddda79",
+      "name": "Linnea",
+      "weaponName": "Slingshot",
+      "role": "Main DPS",
+      "share": 32,
+      "element": "Geo",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

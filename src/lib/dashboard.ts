@@ -6,7 +6,7 @@ function mapSource(source: {
   id: string;
   game_id: string | null;
   name: string;
-  source_type: "rss" | "website" | "steam";
+  source_type: "rss" | "website" | "steam" | "trusted_site";
   url: string | null;
   status: string;
   last_collected_at: string | null;

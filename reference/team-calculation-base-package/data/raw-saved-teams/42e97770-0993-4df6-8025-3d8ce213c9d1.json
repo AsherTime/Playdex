@@ -1,0 +1,43 @@
+{
+  "id": "42e97770-0993-4df6-8025-3d8ce213c9d1",
+  "gameType": "wuwa",
+  "teamName": "Galbrena, Qiuyuan, Lupa",
+  "totalDamage": 1829988.157,
+  "rotation": 26.5,
+  "createdAt": 1782747445312,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "20a33550-da12-4ff3-9791-4984775c450e",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 77,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "6cf74b45-c712-4a9e-8ada-6ea6482b66dd",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Support",
+      "share": 9,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "efad9633-132a-46a4-b285-840ed95d93d7",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 14,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

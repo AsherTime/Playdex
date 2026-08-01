@@ -1,0 +1,43 @@
+{
+  "id": "bad238c0-acdb-431a-b49e-14a9a444b305",
+  "gameType": "wuwa",
+  "teamName": "Phrolova, Jinhsi, Cantarella",
+  "totalDamage": 1590861.764,
+  "rotation": 27.5,
+  "createdAt": 1782747445326,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "1b02a9f5-13d4-4b21-9325-1c6d6235154c",
+      "name": "Phrolova",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 47,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "8812b109-0b3e-4ebc-be3f-fd3c5b8b01e8",
+      "name": "Jinhsi",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 40,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "86d1655f-95ae-443c-a9d1-8747d2c85067",
+      "name": "Cantarella",
+      "weaponName": "",
+      "role": "Support",
+      "share": 13,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -64,6 +64,9 @@ export interface GamePost {
   thumbnailTone: string;
   gameId?: string;
   url?: string;
+  author?: string;
+  publishedAt?: string;
+  isEditorial?: boolean;
 }
 
 export interface Streamer {
@@ -111,7 +114,7 @@ export interface GameSource {
   lastCollectedAt: string;
   cadence: string;
   gameId?: string;
-  sourceType?: "rss" | "website" | "steam";
+  sourceType?: "rss" | "website" | "steam" | "trusted_site";
   url?: string | null;
   lastError?: string | null;
 }

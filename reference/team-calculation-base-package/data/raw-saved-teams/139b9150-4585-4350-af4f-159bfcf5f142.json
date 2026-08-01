@@ -1,0 +1,43 @@
+{
+  "id": "139b9150-4585-4350-af4f-159bfcf5f142",
+  "gameType": "wuwa",
+  "teamName": "Hiyuki, Chisa, Verina",
+  "totalDamage": 1562757.024,
+  "rotation": 27.5,
+  "createdAt": 1782747445267,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "1eb0afc1-4c62-4391-bd92-b63373dae05c",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 80,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "8d73c51f-14cf-42cf-800d-eb3e6a945849",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 19,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "b421f8f9-f8e8-4d3a-948c-9b118cee1d0d",
+      "name": "Verina",
+      "weaponName": "",
+      "role": "Support",
+      "share": 1,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

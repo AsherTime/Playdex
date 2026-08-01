@@ -1,0 +1,43 @@
+{
+  "id": "5c8b91ac-426d-4780-a106-2c09f4cf7a19",
+  "gameType": "wuwa",
+  "teamName": "Augusta, Iuno, Shorekeeper",
+  "totalDamage": 1853823.046,
+  "rotation": 26.5,
+  "createdAt": 1782747445341,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "74259fb5-c09d-43e9-bd2e-15d8369991ea",
+      "name": "Augusta",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 75,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "06630999-fbe7-408f-87a1-fffd32c5fe73",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 23,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "7ce83719-aaff-4c63-86c6-d4d413103ea2",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

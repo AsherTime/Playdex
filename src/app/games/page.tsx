@@ -10,7 +10,7 @@ export default function GamesPage() {
       <SectionHeader
         eyebrow="Library"
         title="Games"
-        description="A clean index of tracked titles, ready for richer filters once real data arrives."
+        description="Tracked titles with live news and official update sources."
       />
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {games.map((game) => (

@@ -1,0 +1,43 @@
+{
+  "id": "035d2085-e320-495a-8b62-b0f02a33d5a1",
+  "gameType": "wuwa",
+  "teamName": "Mornye, Augusta, Iuno",
+  "totalDamage": 1774434.536,
+  "rotation": 27.5,
+  "createdAt": 1782747445300,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "c42302c9-2a3e-4816-8bc9-b66e5b7a20f0",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "6616a62a-dc17-48e3-a270-f4b6f6363147",
+      "name": "Augusta",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a4e12c85-9036-497a-9fb4-53ae18ac5604",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

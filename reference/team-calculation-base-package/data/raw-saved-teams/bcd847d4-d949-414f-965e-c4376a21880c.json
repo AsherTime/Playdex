@@ -1,0 +1,43 @@
+{
+  "id": "bcd847d4-d949-414f-965e-c4376a21880c",
+  "gameType": "wuwa",
+  "teamName": "Suisui, Cartethyia, Ciaccona",
+  "totalDamage": 1913170.651,
+  "rotation": 27.5,
+  "createdAt": 1782747445237,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "08f48608-7eb7-442c-ad91-c77ee4bd47e7",
+      "name": "Suisui",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "0d256c11-d930-4d34-823b-ad3910b744b6",
+      "name": "Cartethyia",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "95a34075-1090-42c7-a1b0-5c48c44dc070",
+      "name": "Ciaccona",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

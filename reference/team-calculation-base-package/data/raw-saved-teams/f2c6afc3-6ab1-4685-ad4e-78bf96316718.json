@@ -1,0 +1,50 @@
+{
+  "id": "f2c6afc3-6ab1-4685-ad4e-78bf96316718",
+  "teamName": "Navia Hexerei",
+  "dps": 95.5,
+  "totalDamage": 1.81,
+  "rotation": 20,
+  "createdAt": 1776285798940,
+  "characters": [
+    {
+      "id": "392d396c-6f2e-4c68-8a56-bf6f7143065f",
+      "name": "Navia (C0)",
+      "weaponName": "Spine",
+      "role": "Main DPS",
+      "share": 60,
+      "element": "Geo",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "489c5ec5-45c0-4a7c-80f9-2d8b2145a8d3",
+      "name": "Xilonen (C0)",
+      "weaponName": "Favonius sword",
+      "role": "Main DPS",
+      "share": 1,
+      "element": "Geo",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "675409f2-cbda-4e58-bbf2-438126cee279",
+      "name": "Nicole (C0)",
+      "weaponName": "Oathsworn Eye",
+      "role": "Main DPS",
+      "share": 1,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "2369cbfb-4efe-413c-a49a-44293735c5be",
+      "name": "Durin (C0)",
+      "weaponName": "Wolf",
+      "role": "Main DPS",
+      "share": 38,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

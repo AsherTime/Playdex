@@ -1,0 +1,50 @@
+{
+  "id": "4be0cdb2-0b3f-4f56-9cea-66e42435e2cf",
+  "teamName": "Varesa Nicole Durin ",
+  "dps": 117.4,
+  "totalDamage": 2.47,
+  "rotation": 21,
+  "createdAt": 1776283999496,
+  "characters": [
+    {
+      "id": "d3425ccb-6838-4573-a317-77e3dd7f3c0d",
+      "name": "Varesa (C0)",
+      "weaponName": "Widsith",
+      "role": "Main DPS",
+      "share": 64,
+      "element": "Electro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "8b4d2d93-2157-47ff-a4e0-38a1dcb72f61",
+      "name": "Nicole (C0)",
+      "weaponName": "favounious codex",
+      "role": "Main DPS",
+      "share": 1,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "98384c8f-6b98-4c67-9450-ec2c0a6b8034",
+      "name": "Chevreuse (C6)",
+      "weaponName": "Favonius Lance",
+      "role": "Main DPS",
+      "share": 2,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "8b8d9497-ad85-4a92-8e93-ae56a46747dd",
+      "name": "Durin (C0)",
+      "weaponName": "Lion’s Roar",
+      "role": "Main DPS",
+      "share": 33,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

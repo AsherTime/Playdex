@@ -1,0 +1,43 @@
+{
+  "id": "574cc090-8310-4efe-8b33-063b03b709ab",
+  "gameType": "wuwa",
+  "teamName": "Lynae, Xiangli Yao, Mornye",
+  "totalDamage": 1480525.847,
+  "rotation": 25.0,
+  "createdAt": 1782747445297,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "29d593d6-b9c7-4a6c-8c48-28e3a90ea28b",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "b2dec87c-17f4-428e-8866-867576e97454",
+      "name": "Xiangli Yao",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "33535a01-9658-4e5f-bb2d-3dba88a9328e",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

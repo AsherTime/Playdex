@@ -1,0 +1,43 @@
+{
+  "id": "ec435dd8-8645-4c89-8480-d028b34c9cca",
+  "gameType": "wuwa",
+  "teamName": "Phoebe, Rover (Spectro), Shorekeeper",
+  "totalDamage": 1337930.713,
+  "rotation": 26.5,
+  "createdAt": 1782747445310,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "2b5c7c09-42e4-4907-bb8c-11b9c6f4e738",
+      "name": "Phoebe",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 68,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "aa18d637-933c-4a96-8c4d-de54d578c90c",
+      "name": "Rover (Spectro)",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 29,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "494db86c-458d-41d4-8643-6696d5a543ed",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

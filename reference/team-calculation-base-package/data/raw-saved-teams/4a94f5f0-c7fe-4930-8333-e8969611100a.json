@@ -1,0 +1,43 @@
+{
+  "id": "4a94f5f0-c7fe-4930-8333-e8969611100a",
+  "gameType": "wuwa",
+  "teamName": "Hiyuki, Zhezhi, Shorekeeper",
+  "totalDamage": 1423938.146,
+  "rotation": 27.5,
+  "createdAt": 1782747445270,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "9dc85006-e301-452b-bba2-eef7275d0c20",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 78,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f65d8ea1-acda-4bd5-8c31-cf7102dbfc49",
+      "name": "Zhezhi",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 19,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a56cd45e-d415-49f4-aebc-15bcaf4df6dd",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

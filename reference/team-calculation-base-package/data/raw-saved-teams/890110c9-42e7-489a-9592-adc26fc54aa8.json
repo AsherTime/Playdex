@@ -1,0 +1,43 @@
+{
+  "id": "890110c9-42e7-489a-9592-adc26fc54aa8",
+  "gameType": "wuwa",
+  "teamName": "Hiyuki, Lynae, Shorekeeper",
+  "totalDamage": 1877252.38,
+  "rotation": 27.5,
+  "createdAt": 1782747445264,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "ab19c976-93f6-4546-86a1-9e32bc4946a6",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 78,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "d37d6ecb-8013-4c89-85bf-b535db491105",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 20,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "26374a7e-f4d9-42e7-ad39-9e92b9cf5305",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

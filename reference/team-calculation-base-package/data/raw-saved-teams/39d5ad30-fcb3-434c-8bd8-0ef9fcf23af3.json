@@ -1,0 +1,43 @@
+{
+  "id": "39d5ad30-fcb3-434c-8bd8-0ef9fcf23af3",
+  "gameType": "wuwa",
+  "teamName": "Xuanling, Iuno, Chisa",
+  "totalDamage": 2042593.481,
+  "rotation": 27.5,
+  "createdAt": 1782747445241,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "7904008e-4291-4282-a863-004bf19a8e2d",
+      "name": "Xuanling",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 87,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a836ca57-bf4f-4f9a-85fc-009692a57024",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 7,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "0f266b0a-7690-4b64-a235-26c902c5c5bd",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 6,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

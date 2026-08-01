@@ -1,0 +1,43 @@
+{
+  "id": "92aa0219-4e81-428d-aa8b-66ef25694c96",
+  "gameType": "wuwa",
+  "teamName": "Mornye, Galbrena, Lupa",
+  "totalDamage": 1740896.017,
+  "rotation": 27.5,
+  "createdAt": 1782747445302,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "5f98c9ee-58c8-40f3-98f1-d6547ac9d259",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "7f7f9605-26d4-4eae-b3f4-b6d570654157",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "e1cba8c6-2dc7-498f-ac51-b748bf14dc57",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

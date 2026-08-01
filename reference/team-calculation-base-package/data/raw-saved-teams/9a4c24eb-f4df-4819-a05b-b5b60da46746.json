@@ -1,0 +1,43 @@
+{
+  "id": "9a4c24eb-f4df-4819-a05b-b5b60da46746",
+  "gameType": "wuwa",
+  "teamName": "Lucy, Rebecca, Mornye",
+  "totalDamage": 2042816.341,
+  "rotation": 27.5,
+  "createdAt": 1782747445250,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "45534578-49b7-41eb-9668-c88962d1b88d",
+      "name": "Lucy",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "8015565f-12fa-47b6-8c9f-314623970a2b",
+      "name": "Rebecca",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "af83fba9-95b2-4ec6-9d65-50c107b15f7b",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

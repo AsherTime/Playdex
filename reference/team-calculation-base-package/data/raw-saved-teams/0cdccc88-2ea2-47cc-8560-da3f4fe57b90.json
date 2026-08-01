@@ -1,0 +1,50 @@
+{
+  "id": "0cdccc88-2ea2-47cc-8560-da3f4fe57b90",
+  "teamName": "Varka Venti Durin",
+  "dps": 110.3,
+  "totalDamage": 1.95,
+  "rotation": 18.2,
+  "createdAt": 1776286587397,
+  "characters": [
+    {
+      "id": "105c4a47-c4fc-4b18-a4c6-d1fe1140d84c",
+      "name": "Varka (C0)",
+      "weaponName": "Spine",
+      "role": "Main DPS",
+      "share": 73,
+      "element": "Anemo",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "3da52da2-a300-47cf-81df-d32911ed5ca9",
+      "name": "Venti (C0)",
+      "weaponName": "Stringless",
+      "role": "Sub DPS",
+      "share": 13,
+      "element": "Anemo",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "e134af4c-f474-46bb-b184-c07163ad16ff",
+      "name": "Durin (C0)",
+      "weaponName": "Wolf Fang",
+      "role": "Sub DPS",
+      "share": 13,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "c070364d-9541-45ff-aced-0ff39b3d4d8c",
+      "name": "Bennett (C6)",
+      "weaponName": "Alley Flash",
+      "role": "Buffer",
+      "share": 1,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

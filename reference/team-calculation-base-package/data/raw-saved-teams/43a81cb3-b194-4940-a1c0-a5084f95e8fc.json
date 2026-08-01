@@ -1,0 +1,43 @@
+{
+  "id": "43a81cb3-b194-4940-a1c0-a5084f95e8fc",
+  "gameType": "wuwa",
+  "teamName": "Suisui, Hiyuki, Chisa",
+  "totalDamage": 2435394.727,
+  "rotation": 27.5,
+  "createdAt": 1782747445233,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "feb282aa-fb15-46d5-9375-84ce9475ee7d",
+      "name": "Suisui",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "16354dad-9ef2-471d-aeb5-0328e141dea8",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f554a509-a6c3-4d37-b10e-90206a751fbc",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

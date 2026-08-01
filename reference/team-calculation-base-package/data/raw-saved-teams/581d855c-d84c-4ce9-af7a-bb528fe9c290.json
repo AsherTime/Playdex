@@ -1,0 +1,43 @@
+{
+  "id": "581d855c-d84c-4ce9-af7a-bb528fe9c290",
+  "gameType": "wuwa",
+  "teamName": "Carlotta, Lynae, Shorekeeper",
+  "totalDamage": 1582189.737,
+  "rotation": 25.0,
+  "createdAt": 1782747445332,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "3a46902d-7a1f-412c-a4ea-62f8bb4342d3",
+      "name": "Carlotta",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 74,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "6f2dcfb0-b7e5-4337-87e5-26ec42339ffc",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 24,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f8de5ace-5cb9-4991-8b23-94d1826b9f06",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

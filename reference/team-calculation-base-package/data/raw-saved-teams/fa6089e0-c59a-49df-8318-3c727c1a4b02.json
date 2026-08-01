@@ -1,0 +1,43 @@
+{
+  "id": "fa6089e0-c59a-49df-8318-3c727c1a4b02",
+  "gameType": "wuwa",
+  "teamName": "Qiuyuan, Phrolova, Cantarella",
+  "totalDamage": 1660573.354,
+  "rotation": 26.5,
+  "createdAt": 1782747445315,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "5d869097-d6d4-4a53-9733-8b69f9da4ee5",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 13,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "63b8cb5b-7165-4214-8dc3-62efa56dfe0a",
+      "name": "Phrolova",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 75,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "3271b934-7bb5-4257-b865-d0ec6c7c8ced",
+      "name": "Cantarella",
+      "weaponName": "",
+      "role": "Support",
+      "share": 12,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

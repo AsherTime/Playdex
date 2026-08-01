@@ -1,0 +1,43 @@
+{
+  "id": "55922411-a1be-4e21-b904-d15ddb76065d",
+  "gameType": "wuwa",
+  "teamName": "Jinhsi, Cantarella, Shorekeeper",
+  "totalDamage": 1322739.657,
+  "rotation": 26.5,
+  "createdAt": 1782747445337,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "d97eed7e-dc96-4113-a78e-b2bf06d89f4f",
+      "name": "Jinhsi",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 73,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "6ea139e9-06ca-498c-8c4a-838b898b2770",
+      "name": "Cantarella",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 24,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "91959d92-6585-47bc-a862-cff8dccca9d2",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

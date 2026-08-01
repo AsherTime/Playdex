@@ -1,0 +1,43 @@
+{
+  "id": "2e42d8d8-f08b-4804-bc72-6896c6840790",
+  "gameType": "wuwa",
+  "teamName": "Lynae, Augusta, Iuno",
+  "totalDamage": 1924445.437,
+  "rotation": 25.0,
+  "createdAt": 1782747445293,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "8dd9e31f-7a43-414a-bae6-c17c2eeeee7c",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "457687c7-88d1-4aff-bc28-45db3a60fe5d",
+      "name": "Augusta",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "6db12e9c-30bf-4bcc-afd6-cfba61237bc9",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

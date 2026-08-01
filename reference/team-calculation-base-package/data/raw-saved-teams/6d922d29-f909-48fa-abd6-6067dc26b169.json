@@ -1,0 +1,43 @@
+{
+  "id": "6d922d29-f909-48fa-abd6-6067dc26b169",
+  "gameType": "wuwa",
+  "teamName": "Sigrika, Qiuyuan, Mornye",
+  "totalDamage": 2027681.525,
+  "rotation": 27.5,
+  "createdAt": 1782747445274,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "d8fa5707-03ec-4642-bcc3-0dfabb5e0b80",
+      "name": "Sigrika",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "bb753889-e7d4-4545-bcfd-6c0b15bee426",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "8d720127-c8a0-41c0-8ced-667c6db39655",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

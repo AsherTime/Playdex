@@ -1,0 +1,43 @@
+{
+  "id": "e845bc56-f832-4c9b-9fb6-b1dde688bca8",
+  "gameType": "wuwa",
+  "teamName": "Hiyuki, Lynae, Verina",
+  "totalDamage": 1538727.725,
+  "rotation": 27.5,
+  "createdAt": 1782747445268,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "eccca056-ae87-444b-aec7-78b7ffe46a5c",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 75,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "969752af-8698-4652-9265-7cabafd5c939",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 24,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "01598c53-e1c7-425c-9def-cce1f944f79e",
+      "name": "Verina",
+      "weaponName": "",
+      "role": "Support",
+      "share": 1,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

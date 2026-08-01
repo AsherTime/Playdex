@@ -1,0 +1,43 @@
+{
+  "id": "8bac63a5-7369-40a3-aab9-9745ed8306f0",
+  "gameType": "wuwa",
+  "teamName": "Lucy, Rebecca, Shorekeeper",
+  "totalDamage": 1923846.589,
+  "rotation": 27.5,
+  "createdAt": 1782747445251,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "17477044-4c73-4cde-ba01-81609e5402f2",
+      "name": "Lucy",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "4d043717-7308-44ec-b260-e799f3904d36",
+      "name": "Rebecca",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "7131c366-b799-491c-89c1-2cbb0c919fde",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "09e463f7-34ed-445f-88f5-d7f4ed6fb65e",
+  "gameType": "wuwa",
+  "teamName": "Lucy, Rebecca, Rover (Spectro)",
+  "totalDamage": 1867171.931,
+  "rotation": 27.5,
+  "createdAt": 1782747445252,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "e4c0828b-9132-494b-b1f9-fd579927c09a",
+      "name": "Lucy",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 62,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "88239c0f-9df5-491a-b271-f15e7e439c47",
+      "name": "Rebecca",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 23,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "33474403-e8ef-4a08-a02d-c26d9848f311",
+      "name": "Rover (Spectro)",
+      "weaponName": "",
+      "role": "Support",
+      "share": 15,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

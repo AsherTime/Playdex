@@ -1,0 +1,43 @@
+{
+  "id": "d0b47190-57bd-4871-970b-bc77584255d8",
+  "gameType": "wuwa",
+  "teamName": "Carlotta, Zhezhi, Buling",
+  "totalDamage": 1298106.123,
+  "rotation": 25.0,
+  "createdAt": 1782747445335,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "5c079e1b-e7b3-4bb2-aed9-2dc3ec9c147d",
+      "name": "Carlotta",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 78,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a05eebc4-72d9-496b-97f4-82d1c75199f9",
+      "name": "Zhezhi",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 16,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "70d8661a-3212-4252-bff6-18610daae26c",
+      "name": "Buling",
+      "weaponName": "",
+      "role": "Support",
+      "share": 6,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

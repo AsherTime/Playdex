@@ -1,0 +1,43 @@
+{
+  "id": "3ac5ad6f-33b7-4647-9136-0726d4e2ccc5",
+  "gameType": "wuwa",
+  "teamName": "Hiyuki, Zhezhi, Chisa",
+  "totalDamage": 1730991.195,
+  "rotation": 27.5,
+  "createdAt": 1782747445266,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "24535524-7431-4413-a53d-3ecc27452613",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 75,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "08b81867-5574-45ca-8724-d249ce7a38e9",
+      "name": "Zhezhi",
+      "weaponName": "",
+      "role": "Support",
+      "share": 12,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "b0f66f92-2b9f-46ce-bbeb-2af935fd3ee8",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 13,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "fcbc16bd-4a5c-4c42-8dfa-53489f451611",
+  "gameType": "wuwa",
+  "teamName": "Galbrena, Changli, Lupa",
+  "totalDamage": 1527740.483,
+  "rotation": 26.5,
+  "createdAt": 1782747445324,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "5705cf80-859d-44e5-83bc-8e1a81992628",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 52,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "18ec72b0-d87b-499d-9830-c72b208f367b",
+      "name": "Changli",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "441ecd5c-02db-4b5a-92ff-c03d0ca56690",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 15,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

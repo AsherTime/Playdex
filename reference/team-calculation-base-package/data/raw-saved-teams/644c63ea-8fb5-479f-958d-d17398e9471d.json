@@ -1,0 +1,43 @@
+{
+  "id": "644c63ea-8fb5-479f-958d-d17398e9471d",
+  "gameType": "wuwa",
+  "teamName": "Iuno, Ciaccona, Shorekeeper",
+  "totalDamage": 1549408.934,
+  "rotation": 27.5,
+  "createdAt": 1782747445328,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "de4a92a9-c09a-4aa8-9f19-7479bffb6008",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 73,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f4369dd3-95d9-4c7d-ba78-664a0bbb0c51",
+      "name": "Ciaccona",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 25,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "bc1d8865-8a7e-4406-bacc-5e6e2e16c500",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

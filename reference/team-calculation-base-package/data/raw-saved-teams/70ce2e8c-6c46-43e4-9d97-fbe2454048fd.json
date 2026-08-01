@@ -1,0 +1,43 @@
+{
+  "id": "70ce2e8c-6c46-43e4-9d97-fbe2454048fd",
+  "gameType": "wuwa",
+  "teamName": "Denia, Aemeath, Shorekeeper",
+  "totalDamage": 1745076.325,
+  "rotation": 27.5,
+  "createdAt": 1782747445258,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "a32906e7-ff80-47b6-ba87-19fde4558f8e",
+      "name": "Denia",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 25,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f0eabffa-9f4d-494b-9559-c346b42adab7",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 73,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "aa758524-5ee0-4abe-85dc-447516f767fb",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "52ecf767-7b21-4784-b0c4-bc1f333a5586",
+  "gameType": "wuwa",
+  "teamName": "Sigrika, Lynae, Mornye",
+  "totalDamage": 1773191.46,
+  "rotation": 27.5,
+  "createdAt": 1782747445276,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "90bd4164-d474-4598-8136-0fd1e7cf78d1",
+      "name": "Sigrika",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "683475d1-0316-4081-a40f-7654ffee55be",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "fda1e3bd-8086-494f-907e-4c6839073745",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

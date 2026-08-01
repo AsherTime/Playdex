@@ -1,6 +1,4 @@
-"use client";
-
-import { createClient } from "@supabase/supabase-js";
+import { createBrowserClient } from "@supabase/ssr";
 import type { Database } from "@/types/database";
 
 export function createBrowserSupabaseClient() {
@@ -11,5 +9,5 @@ export function createBrowserSupabaseClient() {
     throw new Error("Missing browser Supabase environment variables.");
   }
 
-  return createClient<Database>(supabaseUrl, supabaseAnonKey);
+  return createBrowserClient<Database>(supabaseUrl, supabaseAnonKey);
 }

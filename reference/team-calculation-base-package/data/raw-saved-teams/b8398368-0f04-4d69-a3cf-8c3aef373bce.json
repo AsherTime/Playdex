@@ -1,0 +1,43 @@
+{
+  "id": "b8398368-0f04-4d69-a3cf-8c3aef373bce",
+  "gameType": "wuwa",
+  "teamName": "Xuanling, Phrolova, Chisa",
+  "totalDamage": 2203248.795,
+  "rotation": 27.5,
+  "createdAt": 1782747445240,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "f3e8fe5c-b6cf-494e-b4ff-990dd87abc23",
+      "name": "Xuanling",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 80,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "59b29609-b01e-4809-82d9-3a9ca20ef2b3",
+      "name": "Phrolova",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 14,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "81571335-eb52-4dad-ab18-f1d40d6e6219",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 6,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

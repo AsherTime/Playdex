@@ -1,0 +1,50 @@
+{
+  "id": "ecfafe79-d693-429d-9839-5b26c2dae5f9",
+  "teamName": "Varka Durin Nicole",
+  "dps": 121.8,
+  "totalDamage": 2.46,
+  "rotation": 20.2,
+  "createdAt": 1776286628544,
+  "characters": [
+    {
+      "id": "12ae1365-8d14-4d77-a50a-5a6dbe94dc72",
+      "name": "Varka (C0)",
+      "weaponName": "Spine",
+      "role": "Main DPS",
+      "share": 68,
+      "element": "Anemo",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f05cb071-1329-4303-928b-e3990e5420dc",
+      "name": "Venti (C0)",
+      "weaponName": "Stringless",
+      "role": "Main DPS",
+      "share": 11,
+      "element": "Anemo",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "d20b4524-f449-4bfd-b186-0e7f984300c3",
+      "name": "Durin (C0)",
+      "weaponName": "Wolf Fang",
+      "role": "Main DPS",
+      "share": 20,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "981a081c-e5fe-4150-ba99-31951d6510d5",
+      "name": "Nicole (C0)",
+      "weaponName": "Oathsworn Eye",
+      "role": "Main DPS",
+      "share": 1,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

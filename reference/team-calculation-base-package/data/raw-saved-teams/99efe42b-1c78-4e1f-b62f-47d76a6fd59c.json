@@ -1,0 +1,43 @@
+{
+  "id": "99efe42b-1c78-4e1f-b62f-47d76a6fd59c",
+  "gameType": "wuwa",
+  "teamName": "Galbrena, Iuno, Shorekeeper",
+  "totalDamage": 1327565.711,
+  "rotation": 26.5,
+  "createdAt": 1782747445321,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "4e6cb672-7367-4a10-9e38-0258c95b27e3",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 55,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f3456bc3-a937-4b60-a084-9993c9c5e87e",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 42,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "096ec286-5680-4793-9c09-e3802e58c67d",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

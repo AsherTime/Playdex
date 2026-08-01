@@ -1,0 +1,43 @@
+{
+  "id": "c6517d9c-8c97-4856-a57b-348c12b77bb2",
+  "gameType": "wuwa",
+  "teamName": "Lynae, Iuno, Shorekeeper",
+  "totalDamage": 1835121.524,
+  "rotation": 25.0,
+  "createdAt": 1782747445292,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "d9b483c3-12d0-4c04-b6cf-c69dd659aebe",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "b39d9202-1733-49ce-ac39-5c62b04c5e22",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "cf7a6195-9021-4003-a972-021432b83b4c",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

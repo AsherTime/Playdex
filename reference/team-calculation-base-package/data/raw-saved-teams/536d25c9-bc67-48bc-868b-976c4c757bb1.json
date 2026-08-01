@@ -1,0 +1,43 @@
+{
+  "id": "536d25c9-bc67-48bc-868b-976c4c757bb1",
+  "gameType": "wuwa",
+  "teamName": "Suisui, Hiyuki, Lynae",
+  "totalDamage": 2342720.792,
+  "rotation": 27.5,
+  "createdAt": 1782747445234,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "25496ec0-e99c-4a64-bda3-54194e3bd7de",
+      "name": "Suisui",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "e6faa853-b538-4af1-bb02-83e00a8aa1a4",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "044297f6-fa68-42b6-87d2-bd4eac918f82",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "a6ed4b98-d032-4ece-bba2-d5498f944727",
+  "gameType": "wuwa",
+  "teamName": "Phrolova, Brant, Sanhua",
+  "totalDamage": 1267221.202,
+  "rotation": 27.5,
+  "createdAt": 1782747445327,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "08b7de5a-5e9f-4616-9f4c-b3fec56c561c",
+      "name": "Phrolova",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 57,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "afc49680-bf85-488e-a1f9-014948370a93",
+      "name": "Brant",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 36,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "b0a89795-3a64-4a85-9d18-48c77608548e",
+      "name": "Sanhua",
+      "weaponName": "",
+      "role": "Support",
+      "share": 7,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

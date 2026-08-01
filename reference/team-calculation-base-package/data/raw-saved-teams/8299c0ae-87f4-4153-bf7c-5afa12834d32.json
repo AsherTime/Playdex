@@ -1,0 +1,43 @@
+{
+  "id": "8299c0ae-87f4-4153-bf7c-5afa12834d32",
+  "gameType": "wuwa",
+  "teamName": "Lynae, Denia, Mornye",
+  "totalDamage": 1511840.465,
+  "rotation": 27.5,
+  "createdAt": 1782747445261,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "44d4d15f-ccef-4ad5-82f6-81aa0ee84d1b",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 32,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "08079731-95c9-4716-a338-d4e434f01cc3",
+      "name": "Denia",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 62,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "bbc2cd29-cee6-4858-92dd-ae973e695319",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 6,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

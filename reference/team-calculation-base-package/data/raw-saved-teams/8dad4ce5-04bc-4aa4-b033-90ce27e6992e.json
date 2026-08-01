@@ -1,0 +1,43 @@
+{
+  "id": "8dad4ce5-04bc-4aa4-b033-90ce27e6992e",
+  "gameType": "wuwa",
+  "teamName": "Aemeath, Lynae, Mornye",
+  "totalDamage": 2243782.686,
+  "rotation": 26.5,
+  "createdAt": 1782747445285,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "860200af-b01a-4244-aa55-8f57b05050ea",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "02a4e2b9-fbe0-41ae-916c-602e679ef640",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "86fdeb11-587e-4082-a85b-1dd959a9c129",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

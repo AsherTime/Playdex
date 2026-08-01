@@ -1,0 +1,50 @@
+{
+  "id": "0122bcb7-9d92-44c4-ad7d-e22b971252a6",
+  "teamName": "Klee c1 Nicole Durin",
+  "dps": 118.6,
+  "totalDamage": 2.49,
+  "rotation": 21,
+  "createdAt": 1776283859872,
+  "characters": [
+    {
+      "id": "1bd899fe-fe82-43b9-8de4-f757ede09231",
+      "name": "Klee (C1)",
+      "weaponName": "Widsith",
+      "role": "Main DPS",
+      "share": 62,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "d0c65b0a-05a6-47fc-972b-2b1d6d29af88",
+      "name": "Fischl (C6)",
+      "weaponName": "Stringless",
+      "role": "Main DPS",
+      "share": 14,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1bb3f24b-235d-43dd-a3ca-9322fef7a8b4",
+      "name": "Nicole (C0)",
+      "weaponName": "thrilling tales of dragon slayer",
+      "role": "Main DPS",
+      "share": 1,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f0dd58c7-8985-49b1-83c1-3939a2287585",
+      "name": "Durin (C0)",
+      "weaponName": "Lion’s Roar",
+      "role": "Main DPS",
+      "share": 23,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

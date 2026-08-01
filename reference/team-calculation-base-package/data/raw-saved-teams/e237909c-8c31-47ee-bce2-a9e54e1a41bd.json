@@ -1,0 +1,43 @@
+{
+  "id": "e237909c-8c31-47ee-bce2-a9e54e1a41bd",
+  "gameType": "wuwa",
+  "teamName": "Lucilla, Hiyuki, Mornye",
+  "totalDamage": 1815233.64,
+  "rotation": 27.5,
+  "createdAt": 1782747445244,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "e4808c3e-d13f-4572-b7d2-a867b40eba00",
+      "name": "Lucilla",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 19,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "0ccdc637-76b7-4ae7-991b-c0d7c0a098a4",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 78,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "544b5c56-3afa-4d84-abdf-2da889743796",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

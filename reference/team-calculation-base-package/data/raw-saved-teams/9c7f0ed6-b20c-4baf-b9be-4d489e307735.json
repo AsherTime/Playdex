@@ -1,0 +1,43 @@
+{
+  "id": "9c7f0ed6-b20c-4baf-b9be-4d489e307735",
+  "gameType": "wuwa",
+  "teamName": "Augusta, Rebecca, Shorekeeper",
+  "totalDamage": 1654502.464,
+  "rotation": 27.5,
+  "createdAt": 1782747445253,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "383582e3-3ca6-4007-bef9-220c55b6b27e",
+      "name": "Augusta",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 74,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "74a507f0-ffb2-40fb-b14e-044a4472e3fb",
+      "name": "Rebecca",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 24,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "cdef35b6-420b-482f-9d97-6ba3e5296747",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

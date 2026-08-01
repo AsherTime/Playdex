@@ -1,0 +1,43 @@
+{
+  "id": "3c6f187d-987d-48ef-b94b-21a79f079d41",
+  "gameType": "wuwa",
+  "teamName": "Galbrena, Brant, Lupa",
+  "totalDamage": 1666853.261,
+  "rotation": 26.5,
+  "createdAt": 1782747445323,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "0faa0b43-6e11-41be-aee9-1ff5dd34bf19",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 48,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "e182654e-346b-4c03-a2d3-a1a10e70d2a5",
+      "name": "Brant",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 38,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "d9c0a134-d036-4686-83d9-2ab4f08982ac",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 14,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

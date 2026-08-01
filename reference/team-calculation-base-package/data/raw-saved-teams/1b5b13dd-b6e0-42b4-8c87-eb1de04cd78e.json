@@ -1,0 +1,43 @@
+{
+  "id": "1b5b13dd-b6e0-42b4-8c87-eb1de04cd78e",
+  "gameType": "wuwa",
+  "teamName": "Aemeath, Brant, Lupa",
+  "totalDamage": 1770178.645,
+  "rotation": 26.5,
+  "createdAt": 1782747445288,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "1fc10b4e-77cf-4af6-b760-c8db83686239",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "9c12208d-bd53-4309-ad72-accfaea83bae",
+      "name": "Brant",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a62fbed3-e8e6-4c1a-9771-5b3470b161b5",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

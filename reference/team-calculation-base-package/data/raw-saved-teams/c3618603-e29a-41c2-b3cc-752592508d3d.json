@@ -1,0 +1,43 @@
+{
+  "id": "c3618603-e29a-41c2-b3cc-752592508d3d",
+  "gameType": "wuwa",
+  "teamName": "Lynae, Augusta, Mornye",
+  "totalDamage": 1699253.928,
+  "rotation": 25.0,
+  "createdAt": 1782747445295,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "c8969e0d-b80d-4c8e-8224-598de0ec550e",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "40b72bea-d2b4-42f2-bee2-1955089a1418",
+      "name": "Augusta",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "4a33f2a6-52b2-4c21-8fdf-b9c6227f1184",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

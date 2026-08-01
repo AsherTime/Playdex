@@ -1,0 +1,43 @@
+{
+  "id": "b3c4efba-cef3-419e-b6a1-7611bda30415",
+  "gameType": "wuwa",
+  "teamName": "Sigrika, Qiuyuan, Ciaccona",
+  "totalDamage": 2172745.706,
+  "rotation": 27.5,
+  "createdAt": 1782747445273,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "2bd216fd-9a74-45d6-8ada-2aac8014697b",
+      "name": "Sigrika",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "99e54a41-7d2d-4eae-ac36-4e69984d9b31",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "34295989-bbc2-4b13-97e7-a12864920745",
+      "name": "Ciaccona",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

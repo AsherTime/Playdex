@@ -1,0 +1,43 @@
+{
+  "id": "12a3c033-060a-4b33-887f-a38f97de3ade",
+  "gameType": "wuwa",
+  "teamName": "Hiyuki, Lynae, Chisa",
+  "totalDamage": 2232653.862,
+  "rotation": 27.5,
+  "createdAt": 1782747445262,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "b631db6c-cc92-4b2d-b306-e5b7f029eed4",
+      "name": "Hiyuki",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 73,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "4ab08245-c22f-4f37-87cc-a759ea830e35",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 15,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "0a1b83e5-52e0-474f-b2f8-51cc4ce3a5c8",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 12,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

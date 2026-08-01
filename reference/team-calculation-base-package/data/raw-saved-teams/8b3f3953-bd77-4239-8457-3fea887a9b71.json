@@ -1,0 +1,43 @@
+{
+  "id": "8b3f3953-bd77-4239-8457-3fea887a9b71",
+  "gameType": "wuwa",
+  "teamName": "Iuno, Jianxin, Shorekeeper",
+  "totalDamage": 1318562.858,
+  "rotation": 27.5,
+  "createdAt": 1782747445331,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "3f24953f-c7cd-4d44-a817-a3e7fc48fdc9",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 87,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "cb3f72e2-9d2c-4c7c-a8e2-38b5c583932c",
+      "name": "Jianxin",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 10,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "7cf76998-84ca-463b-8f4b-d77e03739458",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

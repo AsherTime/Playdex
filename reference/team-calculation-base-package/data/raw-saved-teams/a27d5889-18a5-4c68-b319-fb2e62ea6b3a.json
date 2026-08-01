@@ -1,0 +1,43 @@
+{
+  "id": "a27d5889-18a5-4c68-b319-fb2e62ea6b3a",
+  "gameType": "wuwa",
+  "teamName": "Xuanling, Rebecca, Chisa",
+  "totalDamage": 2297283.411,
+  "rotation": 27.5,
+  "createdAt": 1782747445238,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "0f22a338-9b78-42a7-9193-29db58247d3c",
+      "name": "Xuanling",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 85,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "9a44ac79-639d-471f-aca5-1afc5f70bc28",
+      "name": "Rebecca",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 8,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "19353d2c-8a17-4b7a-8f7f-f0eecdd88f1d",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 7,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "16d9a940-2642-4579-aa29-1ca2007e51dd",
+  "teamName": "Varka R1 Premium",
+  "dps": 142.5,
+  "totalDamage": 2.88,
+  "rotation": 20.2,
+  "createdAt": 1776286776878,
+  "characters": [
+    {
+      "id": "53f7db06-5c49-476d-8864-0c659a3eebce",
+      "name": "Varka (C0)",
+      "weaponName": "Wolf",
+      "role": "Main DPS",
+      "share": 75,
+      "element": "Anemo",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "5ca0c60b-6d1d-4803-ae3c-e21b79770acc",
+      "name": "Venti (C0)",
+      "weaponName": "Stringless",
+      "role": "Main DPS",
+      "share": 8,
+      "element": "Anemo",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1056e604-6a63-43de-9fb5-6c3cb6f9fca9",
+      "name": "Durin (C0)",
+      "weaponName": "Wolf Fang",
+      "role": "Main DPS",
+      "share": 17,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "0a62239f-49ef-48b9-9ac2-9cf67d474b6c",
+      "name": "Nicole (C0)",
+      "weaponName": "Oathsworn Eye",
+      "role": "Main DPS",
+      "share": 25,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

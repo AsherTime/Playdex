@@ -1,0 +1,43 @@
+{
+  "id": "356f91d9-27a3-4e74-b350-cda88567da84",
+  "gameType": "wuwa",
+  "teamName": "Aemeath, Changli, Lupa",
+  "totalDamage": 1852067.803,
+  "rotation": 26.5,
+  "createdAt": 1782747445283,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "cabc4bdd-4be7-4f52-989b-9bbb61fbf781",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 57,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "2cdfe6d5-8b6f-4909-932d-b32313b68cd7",
+      "name": "Changli",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 28,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "2884145a-f182-4cbc-b680-10a4ab2a3ad7",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 15,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

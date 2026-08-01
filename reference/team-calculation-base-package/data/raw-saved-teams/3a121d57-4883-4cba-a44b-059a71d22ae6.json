@@ -1,0 +1,50 @@
+{
+  "id": "3a121d57-4883-4cba-a44b-059a71d22ae6",
+  "teamName": "Varesa Iansan Hexerei",
+  "dps": 113.6,
+  "totalDamage": 2.39,
+  "rotation": 21,
+  "createdAt": 1776284138039,
+  "characters": [
+    {
+      "id": "2d0f2025-c2b3-4600-9093-f44fedb2da84",
+      "name": "Varesa (C0)",
+      "weaponName": "Widsith",
+      "role": "Main DPS",
+      "share": 69,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "19e89049-4049-42bd-8173-cc93215106c6",
+      "name": "Iansan (C6)",
+      "weaponName": "Tamayura-tei no Ohanashi",
+      "role": "Main DPS",
+      "share": 2,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a749a8ed-f4e4-4427-b09e-7fbd4134418d",
+      "name": "Nicole (C0)",
+      "weaponName": "favounious codex",
+      "role": "Main DPS",
+      "share": 1,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "244ecdf1-a671-485a-a07a-e91b014658f0",
+      "name": "Durin (C0)",
+      "weaponName": "Lion’s Roar",
+      "role": "Main DPS",
+      "share": 28,
+      "element": "Pyro",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

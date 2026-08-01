@@ -1,0 +1,43 @@
+{
+  "id": "0475ada5-ae80-4faf-82d3-131e756fd05a",
+  "gameType": "wuwa",
+  "teamName": "Qiuyuan, Galbrena, Shorekeeper",
+  "totalDamage": 1831651.838,
+  "rotation": 26.5,
+  "createdAt": 1782747445311,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "402ccec7-55f6-4268-baa3-9b5fad79f1ee",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 13,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "eb873fef-8f1c-46c0-a9e1-94cdf0250b58",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 85,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a935170f-17fe-43aa-ae00-607f7da0dc60",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

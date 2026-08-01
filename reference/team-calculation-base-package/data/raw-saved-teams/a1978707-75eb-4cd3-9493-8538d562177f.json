@@ -1,0 +1,43 @@
+{
+  "id": "a1978707-75eb-4cd3-9493-8538d562177f",
+  "gameType": "wuwa",
+  "teamName": "Lupa, Encore, Mortefi",
+  "totalDamage": 1226795.544,
+  "rotation": 28.0,
+  "createdAt": 1782747445348,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "0c17e066-5741-49e0-94b7-fa2a75ad26f6",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 24,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "0c285717-2622-4127-8472-d05b9327793c",
+      "name": "Encore",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 60,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1abf3ab2-1152-42d3-b8fd-b21895109e2f",
+      "name": "Mortefi",
+      "weaponName": "",
+      "role": "Support",
+      "share": 16,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

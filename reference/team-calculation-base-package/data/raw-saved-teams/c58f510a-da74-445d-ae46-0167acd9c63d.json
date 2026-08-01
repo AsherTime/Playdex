@@ -1,0 +1,43 @@
+{
+  "id": "c58f510a-da74-445d-ae46-0167acd9c63d",
+  "gameType": "wuwa",
+  "teamName": "Denia, Aemeath, Chisa",
+  "totalDamage": 2209968.153,
+  "rotation": 27.5,
+  "createdAt": 1782747445254,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "19ae0bf9-2848-4e28-aa53-00c97e34f674",
+      "name": "Denia",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 20,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "ff65c408-8a99-4d3e-a920-c1b27f966d0c",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 67,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "201a7e19-bb3d-4b8e-971b-ddb3da1d3823",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 13,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

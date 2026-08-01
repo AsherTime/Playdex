@@ -2,7 +2,6 @@ import { CollectorActions } from "@/components/admin/collector-actions";
 import { SectionHeader } from "@/components/section-header";
 import { StatCard } from "@/components/stat-card";
 import { getDashboardSummary } from "@/lib/dashboard";
-import { formatDate } from "@/utils/formatters";
 
 export default async function AdminPage() {
   const dashboard = await getDashboardSummary();
@@ -12,17 +11,12 @@ export default async function AdminPage() {
       <SectionHeader
         eyebrow="Internal"
         title="Admin / Data Dashboard"
-        description="A compact control room for collection health and data freshness."
+        description="Collection health and data freshness for tracked games and news sources."
       />
 
-      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         <StatCard label="Games tracked" value={dashboard.totalGamesTracked} />
         <StatCard label="News items" value={dashboard.totalNewsItems} />
-        <StatCard
-          label="Latest metrics"
-          value={dashboard.latestCollectedMetrics}
-          helper={formatDate(dashboard.latestMetricDate)}
-        />
         <StatCard label="Update sources" value={dashboard.sources.length} helper="Collector inputs" />
       </div>
 

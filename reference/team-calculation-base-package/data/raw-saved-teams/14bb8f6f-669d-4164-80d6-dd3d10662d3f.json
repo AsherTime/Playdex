@@ -1,0 +1,43 @@
+{
+  "id": "14bb8f6f-669d-4164-80d6-dd3d10662d3f",
+  "gameType": "wuwa",
+  "teamName": "Aemeath, Denia, Lupa",
+  "totalDamage": 2187934.118,
+  "rotation": 27.5,
+  "createdAt": 1782747445255,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "9888af3d-ff50-435a-bf6b-b1f4e383f876",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 66,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "88ab4511-974c-42ed-9328-a52665080c93",
+      "name": "Denia",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 21,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "15471dcb-d895-4a3a-990d-7c15ad218fb3",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 13,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

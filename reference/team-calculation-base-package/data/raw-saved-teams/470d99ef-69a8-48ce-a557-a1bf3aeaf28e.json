@@ -1,0 +1,43 @@
+{
+  "id": "470d99ef-69a8-48ce-a557-a1bf3aeaf28e",
+  "gameType": "wuwa",
+  "teamName": "Luuk Herssen, Mornye, Denia",
+  "totalDamage": 2172070.933,
+  "rotation": 27.5,
+  "createdAt": 1782747445260,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "5387afc6-6163-40de-8929-9f1d9416d6bb",
+      "name": "Luuk Herssen",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 80,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f3299c27-b992-4d80-8dfb-c9b5a86d69b6",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "9efdd25b-5675-4f98-b066-cddc64d39dd8",
+      "name": "Denia",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 17,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

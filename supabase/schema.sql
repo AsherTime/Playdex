@@ -64,7 +64,7 @@ create table if not exists public.game_sources (
   tags text[] not null default '{}',
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
-  constraint game_sources_type_check check (source_type in ('rss', 'website', 'steam')),
+  constraint game_sources_type_check check (source_type in ('rss', 'website', 'steam', 'trusted_site')),
   constraint game_sources_status_check check (status in ('Pending', 'Healthy', 'Delayed', 'Offline', 'Error'))
 );
 
@@ -90,6 +90,8 @@ create table if not exists public.news_items (
   summary text not null default '',
   url text not null,
   image_url text,
+  image_source_url text,
+  image_match_type text,
   source_name text not null,
   source_type text not null,
   published_at timestamptz not null,
@@ -254,35 +256,34 @@ end $$;
 
 delete from public.news_items
 where game_id is not null
-  and game_id not in ('genshin-impact', 'honkai-star-rail', 'zenless-zone-zero', 'wuthering-waves', 'valorant', 'league-of-legends');
+  and game_id not in ('genshin-impact', 'wuthering-waves', 'valorant', 'league-of-legends', 'free-fire');
 
 delete from public.videos
 where game_id is not null
-  and game_id not in ('genshin-impact', 'honkai-star-rail', 'zenless-zone-zero', 'wuthering-waves', 'valorant', 'league-of-legends');
+  and game_id not in ('genshin-impact', 'wuthering-waves', 'valorant', 'league-of-legends', 'free-fire');
 
 delete from public.game_news
 where game_id is not null
-  and game_id not in ('genshin-impact', 'honkai-star-rail', 'zenless-zone-zero', 'wuthering-waves', 'valorant', 'league-of-legends');
+  and game_id not in ('genshin-impact', 'wuthering-waves', 'valorant', 'league-of-legends', 'free-fire');
 
 delete from public.game_metrics_daily
-where game_id not in ('genshin-impact', 'honkai-star-rail', 'zenless-zone-zero', 'wuthering-waves', 'valorant', 'league-of-legends');
+where game_id not in ('genshin-impact', 'wuthering-waves', 'valorant', 'league-of-legends', 'free-fire');
 
 delete from public.trend_scores
-where game_id not in ('genshin-impact', 'honkai-star-rail', 'zenless-zone-zero', 'wuthering-waves', 'valorant', 'league-of-legends');
+where game_id not in ('genshin-impact', 'wuthering-waves', 'valorant', 'league-of-legends', 'free-fire');
 
 delete from public.game_sources
 where game_id is not null
-  and game_id not in ('genshin-impact', 'honkai-star-rail', 'zenless-zone-zero', 'wuthering-waves', 'valorant', 'league-of-legends');
+  and game_id not in ('genshin-impact', 'wuthering-waves', 'valorant', 'league-of-legends', 'free-fire');
 
 delete from public.games
-where id not in ('genshin-impact', 'honkai-star-rail', 'zenless-zone-zero', 'wuthering-waves', 'valorant', 'league-of-legends');
+where id not in ('genshin-impact', 'wuthering-waves', 'valorant', 'league-of-legends', 'free-fire');
 
 insert into public.games (id, slug, title, genre, platforms, release_date, cover_tone, description, latest_updates, roadmap)
 values
   ('genshin-impact', 'genshin-impact', 'Genshin Impact', 'Action RPG', array['PC', 'PlayStation', 'Mobile'], '2020-09-28', 'from-cyan-500/35 to-indigo-500/20', 'Open-world action RPG with a massive live-service audience and steady official update cadence.', array['Genshin Feed RSS registered', 'HoYoLAB feed registered', 'Official news tracking enabled'], array['Track official posts', 'Add YouTube later', 'Keep X/Twitter disabled']),
-  ('honkai-star-rail', 'honkai-star-rail', 'Honkai: Star Rail', 'Turn-based RPG', array['PC', 'PlayStation', 'Mobile'], '2023-04-26', 'from-violet-500/35 to-blue-500/20', 'Turn-based RPG with strong update cadence, theorycrafting, and creator-friendly story beats.', array['HoYoLAB feed registered', 'Official site tracking disabled until needed', 'RSS collector ready'], array['Track official posts', 'Add YouTube later', 'Keep X/Twitter disabled']),
-  ('zenless-zone-zero', 'zenless-zone-zero', 'Zenless Zone Zero', 'Action RPG', array['PC', 'PlayStation', 'Mobile'], '2024-07-04', 'from-yellow-500/35 to-zinc-500/20', 'Urban fantasy action RPG with frequent HoYoverse updates and event-driven engagement.', array['HoYoLAB feed registered', 'Official site tracking disabled until needed', 'RSS collector ready'], array['Track official posts', 'Add YouTube later', 'Keep X/Twitter disabled']),
   ('wuthering-waves', 'wuthering-waves', 'Wuthering Waves', 'Action RPG', array['PC', 'PlayStation', 'Mobile'], '2024-05-23', 'from-slate-400/30 to-cyan-500/20', 'Fast-combat open-world RPG with official site updates and Steam news available for collection.', array['Official news page registered', 'Steam news registered', 'Website collector ready'], array['Track official posts', 'Track Steam news', 'Add YouTube later']),
+  ('free-fire', 'free-fire', 'Free Fire', 'Battle Royale', array['Mobile'], '2017-12-04', 'from-orange-500/35 to-amber-500/20', 'Global mobile battle royale with frequent patch notes, collaborations, and esports events.', array['Garena official news registered', 'Website collector ready', 'Patch notes tracked'], array['Track official posts', 'Add esports sources later', 'Keep X/Twitter disabled']),
   ('valorant', 'valorant', 'Valorant', 'Tactical Shooter', array['PC', 'Console'], '2020-06-02', 'from-rose-500/35 to-orange-500/20', 'Competitive shooter with dependable esports spikes and a durable official news cadence.', array['Official Riot news source registered', 'Website collector ready', 'RSS not required'], array['Track official posts', 'Add esports sources later', 'Keep X/Twitter disabled']),
   ('league-of-legends', 'league-of-legends', 'League of Legends', 'MOBA', array['PC'], '2009-10-27', 'from-blue-500/35 to-indigo-500/20', 'Massive competitive ecosystem with frequent official Riot news, patch notes, and event updates.', array['Official Riot news source registered', 'Website collector ready', 'RSS not required'], array['Track official posts', 'Add esports sources later', 'Keep X/Twitter disabled'])
 on conflict (id) do update set
@@ -297,16 +298,23 @@ on conflict (id) do update set
   roadmap = excluded.roadmap,
   updated_at = now();
 
-insert into public.game_sources (id, game_id, name, source_type, url, external_ref, cadence, cadence_minutes, tags)
+insert into public.game_sources (id, game_id, name, source_type, url, external_ref, cadence, cadence_minutes, tags, enabled)
 values
-  ('genshin-impact-genshin-feed', 'genshin-impact', 'Genshin Feed RSS', 'rss', 'https://genshin-feed.com/feed/rss-en-all-articles.xml', null, '60 min', 60, array['official', 'rss', 'genshin-feed']),
-  ('genshin-impact-hoyolab-rss', 'genshin-impact', 'Genshin Impact HoYoLAB RSS', 'rss', 'https://feeds.c3kay.de/genshin.xml', null, '60 min', 60, array['official', 'rss', 'hoyolab']),
-  ('honkai-star-rail-hoyolab-rss', 'honkai-star-rail', 'Honkai: Star Rail HoYoLAB RSS', 'rss', 'https://feeds.c3kay.de/starrail.xml', null, '60 min', 60, array['official', 'rss', 'hoyolab']),
-  ('zenless-zone-zero-hoyolab-rss', 'zenless-zone-zero', 'Zenless Zone Zero HoYoLAB RSS', 'rss', 'https://feeds.c3kay.de/zenless.xml', null, '60 min', 60, array['official', 'rss', 'hoyolab']),
-  ('wuthering-waves-official-news', 'wuthering-waves', 'Wuthering Waves Official News', 'website', 'https://wutheringwaves.kurogames.com/en/main/news', null, '60 min', 60, array['official', 'website']),
-  ('wuthering-waves-steam-news', 'wuthering-waves', 'Wuthering Waves Steam News', 'steam', null, '3513350', '60 min', 60, array['official', 'steam']),
-  ('valorant-official-news', 'valorant', 'Valorant Official News', 'website', 'https://playvalorant.com/en-us/news/', null, '60 min', 60, array['official', 'website']),
-  ('league-of-legends-official-news', 'league-of-legends', 'League of Legends Official News', 'website', 'https://www.leagueoflegends.com/en-us/news/', null, '60 min', 60, array['official', 'website'])
+  ('genshin-impact-genshin-feed', 'genshin-impact', 'Genshin Feed RSS', 'rss', 'https://genshin-feed.com/feed/rss-en-all-articles.xml', null, '60 min', 60, array['official', 'rss', 'genshin-feed', 'backup'], false),
+  ('genshin-impact-hoyolab-rss', 'genshin-impact', 'Genshin Impact HoYoLAB RSS', 'rss', 'https://feeds.c3kay.de/genshin.xml', null, '60 min', 60, array['official', 'rss', 'hoyolab', 'backup'], false),
+  ('genshin-impact-game8-news', 'genshin-impact', 'Game8 Latest News', 'trusted_site', 'https://game8.co/games/Genshin-Impact/archives/296701', 'game8', '60 min', 60, array['game8', 'news', 'primary'], true),
+  ('genshin-impact-game8-banners', 'genshin-impact', 'Game8 Banner Schedule', 'trusted_site', 'https://game8.co/games/Genshin-Impact/archives/305012', 'game8', '60 min', 60, array['game8', 'banners', 'primary'], true),
+  ('genshin-impact-game8-v66', 'genshin-impact', 'Game8 Version 6.6', 'trusted_site', 'https://game8.co/games/Genshin-Impact/archives/594202', 'game8', '60 min', 60, array['game8', 'events', 'primary'], true),
+  ('genshin-impact-game8-v67', 'genshin-impact', 'Game8 Version 6.7', 'trusted_site', 'https://game8.co/games/Genshin-Impact/archives/602045', 'game8', '60 min', 60, array['game8', 'events', 'primary'], true),
+  ('wuthering-waves-game8-news', 'wuthering-waves', 'Game8 Latest News', 'trusted_site', 'https://game8.co/games/Wuthering-Waves/archives/452488', 'game8', '60 min', 60, array['game8', 'news', 'primary'], true),
+  ('wuthering-waves-game8-banners', 'wuthering-waves', 'Game8 Convene Banners', 'trusted_site', 'https://game8.co/games/Wuthering-Waves/archives/453303', 'game8', '60 min', 60, array['game8', 'banners', 'primary'], true),
+  ('wuthering-waves-game8-v35', 'wuthering-waves', 'Game8 Version 3.5', 'trusted_site', 'https://game8.co/games/Wuthering-Waves/archives/605253', 'game8', '60 min', 60, array['game8', 'events', 'primary'], true),
+  ('wuthering-waves-game8-v34', 'wuthering-waves', 'Game8 Version 3.4', 'trusted_site', 'https://game8.co/games/Wuthering-Waves/archives/599097', 'game8', '60 min', 60, array['game8', 'events', 'primary'], true),
+  ('wuthering-waves-official-news', 'wuthering-waves', 'Wuthering Waves Official News', 'website', 'https://wutheringwaves.kurogames.com/en/main/news', null, '60 min', 60, array['official', 'website', 'backup'], true),
+  ('wuthering-waves-steam-news', 'wuthering-waves', 'Wuthering Waves Steam News', 'steam', null, '3513350', '60 min', 60, array['official', 'steam', 'backup'], true),
+  ('free-fire-official-news', 'free-fire', 'Free Fire Official News', 'website', 'https://ff.garena.com/en/news/', null, '60 min', 60, array['official', 'website'], true),
+  ('valorant-official-news', 'valorant', 'Valorant Official News', 'website', 'https://playvalorant.com/en-us/news/', null, '60 min', 60, array['official', 'website'], true),
+  ('league-of-legends-official-news', 'league-of-legends', 'League of Legends Official News', 'website', 'https://www.leagueoflegends.com/en-us/news/', null, '60 min', 60, array['official', 'website'], true)
 on conflict (id) do update set
   game_id = excluded.game_id,
   name = excluded.name,
@@ -316,17 +324,24 @@ on conflict (id) do update set
   cadence = excluded.cadence,
   cadence_minutes = excluded.cadence_minutes,
   tags = excluded.tags,
-  enabled = true,
+  enabled = excluded.enabled,
   updated_at = now();
 
 delete from public.game_sources
 where id not in (
   'genshin-impact-genshin-feed',
   'genshin-impact-hoyolab-rss',
-  'honkai-star-rail-hoyolab-rss',
-  'zenless-zone-zero-hoyolab-rss',
+  'genshin-impact-game8-news',
+  'genshin-impact-game8-banners',
+  'genshin-impact-game8-v66',
+  'genshin-impact-game8-v67',
+  'wuthering-waves-game8-news',
+  'wuthering-waves-game8-banners',
+  'wuthering-waves-game8-v35',
+  'wuthering-waves-game8-v34',
   'wuthering-waves-official-news',
   'wuthering-waves-steam-news',
+  'free-fire-official-news',
   'valorant-official-news',
   'league-of-legends-official-news'
 );

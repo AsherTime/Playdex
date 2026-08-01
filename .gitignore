@@ -34,6 +34,9 @@ dev.log
 # env files (can opt-in for committing if needed)
 .env*
 
+# local Cursor MCP config (machine-specific)
+.cursor/
+
 # supabase
 supabase/.temp/
 

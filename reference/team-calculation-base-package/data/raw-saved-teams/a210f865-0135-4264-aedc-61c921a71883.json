@@ -1,0 +1,43 @@
+{
+  "id": "a210f865-0135-4264-aedc-61c921a71883",
+  "gameType": "wuwa",
+  "teamName": "Mornye, Brant, Lupa",
+  "totalDamage": 1697182.679,
+  "rotation": 27.5,
+  "createdAt": 1782747445303,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "9f1b4443-5e90-4d58-86c2-7c884bb34496",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "37f69d9b-962b-402f-a706-ead12549f91b",
+      "name": "Brant",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "2971d38e-2f77-423d-9ff1-d35215f5ae56",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

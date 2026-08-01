@@ -1,0 +1,43 @@
+{
+  "id": "b2bd1d2f-59e2-4eae-8601-5deeb8a9095c",
+  "gameType": "wuwa",
+  "teamName": "Iuno, Yinlin, Shorekeeper",
+  "totalDamage": 1333309.113,
+  "rotation": 27.5,
+  "createdAt": 1782747445329,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "cc8ba99e-38d9-493d-adf6-50e4ee7c17a9",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 77,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "32fa51f9-bc83-41fb-8967-8b9d10e1c6fe",
+      "name": "Yinlin",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 20,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "8e67eed4-ae1b-48db-8595-91208dfa48b6",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

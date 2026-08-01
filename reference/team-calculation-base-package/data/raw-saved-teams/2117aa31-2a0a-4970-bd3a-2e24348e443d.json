@@ -1,0 +1,43 @@
+{
+  "id": "2117aa31-2a0a-4970-bd3a-2e24348e443d",
+  "gameType": "wuwa",
+  "teamName": "Qiuyuan, Phrolova, Shorekeeper",
+  "totalDamage": 1585545.893,
+  "rotation": 26.5,
+  "createdAt": 1782747445316,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "2b6c527c-3365-446b-af72-e53222c6f5c4",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 16,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "fa9129e3-96af-431d-a728-d8515c5374cc",
+      "name": "Phrolova",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 82,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "350aca77-3a02-43fc-a79b-2c2cb544b898",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

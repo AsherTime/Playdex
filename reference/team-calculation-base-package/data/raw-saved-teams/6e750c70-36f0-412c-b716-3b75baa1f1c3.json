@@ -1,0 +1,43 @@
+{
+  "id": "6e750c70-36f0-412c-b716-3b75baa1f1c3",
+  "gameType": "wuwa",
+  "teamName": "Lynae, Carlotta, Mornye",
+  "totalDamage": 1625712.497,
+  "rotation": 25.0,
+  "createdAt": 1782747445296,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "62d3d614-7b49-4083-b3a1-a2cc5ed59f16",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "47d5ea35-ef43-41b7-9f3e-ea1c7611c7dc",
+      "name": "Carlotta",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "8199d210-b24e-4853-afc3-d7364da4a037",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

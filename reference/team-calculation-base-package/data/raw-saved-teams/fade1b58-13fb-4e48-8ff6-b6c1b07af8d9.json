@@ -1,0 +1,43 @@
+{
+  "id": "fade1b58-13fb-4e48-8ff6-b6c1b07af8d9",
+  "gameType": "wuwa",
+  "teamName": "Lucilla, Galbrena, Shorekeeper",
+  "totalDamage": 1929818.185,
+  "rotation": 27.5,
+  "createdAt": 1782747445247,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "30069efc-0b82-49ce-8ae1-691f809f48de",
+      "name": "Lucilla",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 13,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "36f47bee-a6a6-4c63-87ce-cba80f4def4d",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 85,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "d2740d81-1890-49b3-bbc0-9d62a1a77404",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "000b28bc-2eed-4248-be74-8b5e3df742ec",
+  "gameType": "wuwa",
+  "teamName": "Sigrika, Qiuyuan, Shorekeeper",
+  "totalDamage": 2281240.677,
+  "rotation": 27.5,
+  "createdAt": 1782747445272,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "89d27e9d-71ee-4505-ab86-42e57881cb3a",
+      "name": "Sigrika",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "8748909f-72b7-4be0-ad89-f942ec8779f3",
+      "name": "Qiuyuan",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a74cd8a4-754c-4818-8434-af1f7fdea540",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

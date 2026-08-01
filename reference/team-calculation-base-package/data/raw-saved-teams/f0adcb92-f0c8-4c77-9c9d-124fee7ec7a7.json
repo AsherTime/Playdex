@@ -1,0 +1,43 @@
+{
+  "id": "f0adcb92-f0c8-4c77-9c9d-124fee7ec7a7",
+  "gameType": "wuwa",
+  "teamName": "Zani, Phoebe, Rover (Spectro)",
+  "totalDamage": 1896713.225,
+  "rotation": 26.5,
+  "createdAt": 1782747445306,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "cb8c1254-9cdb-4efb-9e28-e427e48ef0d2",
+      "name": "Zani",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 76,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "545fce2f-9cae-41ef-ad30-39439eeb1304",
+      "name": "Phoebe",
+      "weaponName": "",
+      "role": "Support",
+      "share": 10,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "53a469f8-d588-4ef5-8b65-8e6df4868f4c",
+      "name": "Rover (Spectro)",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 14,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

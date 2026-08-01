@@ -1,0 +1,43 @@
+{
+  "id": "840d096b-fc29-435b-b6e9-3d77ea287345",
+  "gameType": "wuwa",
+  "teamName": "Galbrena, Denia, Lupa",
+  "totalDamage": 1774792.503,
+  "rotation": 27.5,
+  "createdAt": 1782747445257,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "b3d8fc38-d8f4-4757-bc9d-16e0640c92f1",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 65,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "ba731409-3ab8-4377-b674-29af2d2e0456",
+      "name": "Denia",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 21,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1756c72a-e343-45ca-a38a-0f69b2d85ecc",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 14,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "8faae02c-c368-49e8-b7bd-dc50479c85ca",
+  "gameType": "wuwa",
+  "teamName": "Aemeath, Lynae, Shorekeeper",
+  "totalDamage": 1788173.774,
+  "rotation": 26.5,
+  "createdAt": 1782747445287,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "eea53982-99b3-4645-a5ed-b13f2fc9a39d",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "5e38bf02-ad00-4687-a1c8-2c597ee265d2",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a8914dd8-dff4-48c9-9ce4-f893cd0bf565",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "b8b47621-47c5-43e8-83bc-69c4af60a973",
+  "gameType": "wuwa",
+  "teamName": "Lynae, Galbrena, Mornye",
+  "totalDamage": 1700082.826,
+  "rotation": 25.0,
+  "createdAt": 1782747445294,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "892a135f-6fe0-4a7e-9367-2aa05615b620",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "be2f1725-b9bc-4c8a-942a-9c34caf1eed7",
+      "name": "Galbrena",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "14593352-a3ce-4865-8ecd-2b046fb18deb",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

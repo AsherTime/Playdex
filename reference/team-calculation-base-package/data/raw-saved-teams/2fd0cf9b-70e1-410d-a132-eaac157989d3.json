@@ -1,0 +1,43 @@
+{
+  "id": "2fd0cf9b-70e1-410d-a132-eaac157989d3",
+  "gameType": "wuwa",
+  "teamName": "Phrolova, Cantarella, Shorekeeper",
+  "totalDamage": 1691992.711,
+  "rotation": 27.5,
+  "createdAt": 1782747445325,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "bcaa9255-e405-4216-9fa2-d0e8f4e4bf64",
+      "name": "Phrolova",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 79,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "db5eec0e-e58b-42a1-923c-cacb0b39e1a2",
+      "name": "Cantarella",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 19,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "77a3231d-3149-4467-9b7d-8fb41873b24e",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "8671b34e-57af-424b-b683-b7d6b4209b8c",
+  "gameType": "wuwa",
+  "teamName": "Lucilla, Phrolova, Shorekeeper",
+  "totalDamage": 1628473.863,
+  "rotation": 27.5,
+  "createdAt": 1782747445248,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "69889ebf-1b9d-4421-911c-ce1692164df9",
+      "name": "Lucilla",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 16,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a36d6005-d036-4b49-a585-faa792a10bb1",
+      "name": "Phrolova",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 82,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "6e40a1d1-e0ae-4bcd-bd20-577376cf32af",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

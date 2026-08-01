@@ -1,0 +1,43 @@
+{
+  "id": "28876364-c27d-4094-8600-6c2d348b2476",
+  "gameType": "wuwa",
+  "teamName": "Iuno, Jiyan, Ciaccona",
+  "totalDamage": 1596969.188,
+  "rotation": 27.5,
+  "createdAt": 1782747445349,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "7519c224-9fbb-4a29-8d6d-cf18b2e1aca2",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 68,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "87768126-a555-44e2-bd16-a445831b5b9a",
+      "name": "Jiyan",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 25,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f0d25779-6a5d-4319-9f1e-e6b4675bdeb2",
+      "name": "Ciaccona",
+      "weaponName": "",
+      "role": "Support",
+      "share": 7,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "5ff899cb-20c4-405a-a489-b1ec8591e6b9",
+  "gameType": "wuwa",
+  "teamName": "Augusta, Jiyan, Iuno",
+  "totalDamage": 1461286.886,
+  "rotation": 26.5,
+  "createdAt": 1782747445344,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "c43d7b27-fef2-4dc2-8596-33663d6f1f37",
+      "name": "Augusta",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 43,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "74e34d3d-707f-4979-b7b4-cd9c74f343b9",
+      "name": "Jiyan",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "4948043d-e431-4624-9de5-9af55360801e",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Support",
+      "share": 23,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

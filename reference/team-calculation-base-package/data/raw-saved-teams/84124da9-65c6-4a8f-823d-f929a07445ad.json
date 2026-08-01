@@ -1,0 +1,43 @@
+{
+  "id": "84124da9-65c6-4a8f-823d-f929a07445ad",
+  "gameType": "wuwa",
+  "teamName": "Luuk Herssen, Lynae, Mornye",
+  "totalDamage": 2027503.037,
+  "rotation": 27.5,
+  "createdAt": 1782747445279,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "b83c9051-6814-417a-9c10-bd10e047eb03",
+      "name": "Luuk Herssen",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "c0f7b3ba-b31b-4bbb-9c74-c7eeb2585c21",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "e03fb74f-7f36-4c59-91d4-e978d6e87910",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

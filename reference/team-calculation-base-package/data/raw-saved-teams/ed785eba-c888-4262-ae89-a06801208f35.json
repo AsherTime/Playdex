@@ -1,0 +1,43 @@
+{
+  "id": "ed785eba-c888-4262-ae89-a06801208f35",
+  "gameType": "wuwa",
+  "teamName": "Cartethyia, Chisa, Shorekeeper",
+  "totalDamage": 1376618.984,
+  "rotation": 26.5,
+  "createdAt": 1782747445305,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "2c0579a0-b971-46e2-b4f6-03143833550d",
+      "name": "Cartethyia",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 69,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f97a9137-12cd-4935-a6bf-c46490246b5f",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 28,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "940d03e0-f2e7-4edd-9d71-4519c7f8cdfa",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

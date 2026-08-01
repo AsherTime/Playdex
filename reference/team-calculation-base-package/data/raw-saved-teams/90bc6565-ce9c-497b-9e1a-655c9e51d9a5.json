@@ -1,0 +1,43 @@
+{
+  "id": "90bc6565-ce9c-497b-9e1a-655c9e51d9a5",
+  "gameType": "wuwa",
+  "teamName": "Lucilla, Sigrika, Shorekeeper",
+  "totalDamage": 2356942.033,
+  "rotation": 27.5,
+  "createdAt": 1782747445246,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "f283261c-1f9c-4a74-b5c0-c061eee53133",
+      "name": "Lucilla",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 11,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "6c57fda8-a6b8-4f5b-92ad-ff0bad1ee8b7",
+      "name": "Sigrika",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 87,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1f4fa62f-3c84-4f6b-bfc1-7126b27713ce",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

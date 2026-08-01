@@ -1,0 +1,43 @@
+{
+  "id": "e6aa4d4b-4fd0-4dc4-b488-f15bbeb7422d",
+  "gameType": "wuwa",
+  "teamName": "Aemeath, Lupa, Chisa",
+  "totalDamage": 1748165.174,
+  "rotation": 26.5,
+  "createdAt": 1782747445284,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "7e1c2a3c-5b1d-406d-bd52-59e5344f4f7d",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 64,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "74301db9-aaa7-413e-bdd0-9d585982ae93",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 18,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "29d4e86c-4da6-4fd2-bee4-e59e6d7b2bf3",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 18,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

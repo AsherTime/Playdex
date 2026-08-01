@@ -1,0 +1,43 @@
+{
+  "id": "491c3fac-be36-4922-99dc-3ec22806d18a",
+  "gameType": "wuwa",
+  "teamName": "Sigrika, Iuno, Ciaccona",
+  "totalDamage": 1547595.234,
+  "rotation": 27.5,
+  "createdAt": 1782747445277,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "5940bec0-8546-42ad-8a36-d0bfa8600245",
+      "name": "Sigrika",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "48c374f5-5258-4769-b1c0-19024dcd8235",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "2f975bbb-f495-47d2-869d-911065fdff8a",
+      "name": "Ciaccona",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

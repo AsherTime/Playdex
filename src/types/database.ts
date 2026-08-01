@@ -25,7 +25,7 @@ type GameSourceRow = {
   id: string;
   game_id: string | null;
   name: string;
-  source_type: "rss" | "website" | "steam";
+  source_type: "rss" | "website" | "steam" | "trusted_site";
   url: string | null;
   external_ref: string | null;
   status: string;
@@ -46,6 +46,8 @@ type NewsItemRow = {
   summary: string;
   url: string;
   image_url: string | null;
+  image_source_url: string | null;
+  image_match_type: string | null;
   source_name: string;
   source_type: string;
   published_at: string;
@@ -68,6 +70,35 @@ type CollectorRunRow = {
   message: string | null;
   errors: Json;
   created_at: string;
+};
+
+type ProfileRow = {
+  id: string;
+  email: string;
+  name: string | null;
+  age: number | null;
+  created_at: string;
+  updated_at: string;
+};
+
+type UserFollowedGameRow = {
+  id: string;
+  user_id: string;
+  game_slug: string;
+  created_at: string;
+};
+
+type UserTrainingProgressRow = {
+  id: string;
+  user_id: string;
+  game_slug: string;
+  plan_day: number;
+  task_id: string;
+  task_title: string;
+  is_completed: boolean;
+  completed_at: string | null;
+  created_at: string;
+  updated_at: string;
 };
 
 export interface Database {
@@ -146,8 +177,8 @@ export interface Database {
       };
       news_items: {
         Row: NewsItemRow;
-        Insert: Omit<NewsItemRow, "id" | "created_at" | "updated_at" | "collected_at" | "summary" | "image_url" | "external_id" | "tags" | "category"> &
-          Partial<Pick<NewsItemRow, "id" | "created_at" | "updated_at" | "collected_at" | "summary" | "image_url" | "external_id" | "tags" | "category">>;
+        Insert: Omit<NewsItemRow, "id" | "created_at" | "updated_at" | "collected_at" | "summary" | "image_url" | "image_source_url" | "image_match_type" | "external_id" | "tags" | "category"> &
+          Partial<Pick<NewsItemRow, "id" | "created_at" | "updated_at" | "collected_at" | "summary" | "image_url" | "image_source_url" | "image_match_type" | "external_id" | "tags" | "category">>;
         Update: Partial<NewsItemRow>;
         Relationships: [];
       };
@@ -234,6 +265,47 @@ export interface Database {
           created_at?: string;
         };
         Update: Partial<Database["public"]["Tables"]["upcoming_games"]["Insert"]>;
+        Relationships: [];
+      };
+      profiles: {
+        Row: ProfileRow;
+        Insert: {
+          id: string;
+          email: string;
+          name?: string | null;
+          age?: number | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: Partial<Omit<ProfileRow, "id">>;
+        Relationships: [];
+      };
+      user_followed_games: {
+        Row: UserFollowedGameRow;
+        Insert: {
+          id?: string;
+          user_id: string;
+          game_slug: string;
+          created_at?: string;
+        };
+        Update: Partial<Omit<UserFollowedGameRow, "id">>;
+        Relationships: [];
+      };
+      user_training_progress: {
+        Row: UserTrainingProgressRow;
+        Insert: {
+          id?: string;
+          user_id: string;
+          game_slug: string;
+          plan_day: number;
+          task_id: string;
+          task_title?: string;
+          is_completed?: boolean;
+          completed_at?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: Partial<Omit<UserTrainingProgressRow, "id">>;
         Relationships: [];
       };
     };

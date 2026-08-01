@@ -1,0 +1,43 @@
+{
+  "id": "f871e91b-b2d4-43df-b7bc-0946759ccc86",
+  "gameType": "wuwa",
+  "teamName": "Aemeath, Lynae, Chisa",
+  "totalDamage": 1891003.718,
+  "rotation": 26.5,
+  "createdAt": 1782747445282,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "5ceead1f-de59-463c-8e28-fcd27d239d33",
+      "name": "Aemeath",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 65,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a3839abc-4e0e-4887-8fae-bc1d71693c8d",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 19,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "89b0afff-be82-4672-bb82-768b5f469f1f",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 16,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

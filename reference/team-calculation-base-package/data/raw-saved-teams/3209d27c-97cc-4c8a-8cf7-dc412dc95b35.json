@@ -1,0 +1,43 @@
+{
+  "id": "3209d27c-97cc-4c8a-8cf7-dc412dc95b35",
+  "gameType": "wuwa",
+  "teamName": "Xuanling, Lynae, Suisui",
+  "totalDamage": 2028940.646,
+  "rotation": 27.5,
+  "createdAt": 1782747445242,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "31a37dcd-6aad-4dc3-9496-31919ddb1979",
+      "name": "Xuanling",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 88,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "d6f16a1f-4b7d-4add-bb95-051355cafa69",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 10,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a967985a-6337-4f20-a873-18e3bcced5dc",
+      "name": "Suisui",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

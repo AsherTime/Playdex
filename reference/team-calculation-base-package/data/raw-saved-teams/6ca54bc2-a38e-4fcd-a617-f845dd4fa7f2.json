@@ -1,0 +1,43 @@
+{
+  "id": "6ca54bc2-a38e-4fcd-a617-f845dd4fa7f2",
+  "gameType": "wuwa",
+  "teamName": "Lynae, Mornye, Shorekeeper",
+  "totalDamage": 1126639.18,
+  "rotation": 25.0,
+  "createdAt": 1782747445299,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "36b4cbdf-4e0c-4b87-a8ca-127453f348f5",
+      "name": "Lynae",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 88,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "56fe7620-08fb-4654-94b9-991fced93509",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 9,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "985911d6-5bc9-4115-9b33-d902ff0c0f3a",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

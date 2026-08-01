@@ -1,0 +1,43 @@
+{
+  "id": "7c2e9132-7336-4297-9e1a-6f30eaaa23e6",
+  "gameType": "wuwa",
+  "teamName": "Augusta, Phrolova, Shorekeeper",
+  "totalDamage": 1530049.535,
+  "rotation": 26.5,
+  "createdAt": 1782747445343,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "5224501f-d5d9-4c3e-a839-8d9020de4bf7",
+      "name": "Augusta",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 54,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "43910b47-e062-4a97-aa3e-f4401d960a8e",
+      "name": "Phrolova",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 43,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "ff16b472-4da2-46f7-bd91-6c829d48ce5b",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

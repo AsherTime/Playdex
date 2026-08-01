@@ -1,0 +1,43 @@
+{
+  "id": "560067ea-2d46-498a-b442-181849146b76",
+  "gameType": "wuwa",
+  "teamName": "Carlotta, Rebecca, Shorekeeper",
+  "totalDamage": 1569484.224,
+  "rotation": 25.0,
+  "createdAt": 1782747445333,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "b52a3f50-77eb-45bc-a87e-e067faa6ffbf",
+      "name": "Carlotta",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 72,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "6bef2952-2c50-47a7-995d-5f01275df5c7",
+      "name": "Rebecca",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 26,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "04e2c307-9912-432c-a771-e46e04127382",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "28144222-ef8c-45fd-9bd6-86ff39c15cba",
+  "gameType": "wuwa",
+  "teamName": "Phrolova, Lucilla, Cantarella",
+  "totalDamage": 1748763.842,
+  "rotation": 27.5,
+  "createdAt": 1782747445249,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "2fdeb5c6-da77-44cd-aa4f-9c1a948955ec",
+      "name": "Phrolova",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 73,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1a91af9b-135a-4bbc-b3ad-f1afe7dc696b",
+      "name": "Lucilla",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 15,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1ee62351-d76f-445f-9955-b132d57e939e",
+      "name": "Cantarella",
+      "weaponName": "",
+      "role": "Support",
+      "share": 12,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

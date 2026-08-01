@@ -1,0 +1,43 @@
+{
+  "id": "0f096129-f757-4188-87c2-77548dd68e63",
+  "gameType": "wuwa",
+  "teamName": "Carlotta, Zhezhi, Shorekeeper",
+  "totalDamage": 1457526.383,
+  "rotation": 25.0,
+  "createdAt": 1782747445334,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "41be38b1-dbbf-4ade-bbc5-4df4ee2f1963",
+      "name": "Carlotta",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 81,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "617071ee-4774-4310-b5eb-49b842b9b151",
+      "name": "Zhezhi",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 16,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "c845d695-690b-44b1-871b-572d5c989e5c",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

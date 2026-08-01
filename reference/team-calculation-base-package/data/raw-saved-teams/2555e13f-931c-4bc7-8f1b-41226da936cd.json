@@ -1,0 +1,43 @@
+{
+  "id": "2555e13f-931c-4bc7-8f1b-41226da936cd",
+  "gameType": "wuwa",
+  "teamName": "Lupa, Denia, Mornye",
+  "totalDamage": 1231876.765,
+  "rotation": 27.5,
+  "createdAt": 1782747445259,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "260092bd-9539-433c-9291-881fbc082d10",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 28,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "d7e77c36-1903-4369-8491-cf09de09cd6f",
+      "name": "Denia",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 63,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "cd55ab8e-376c-460e-873b-c18b359b2087",
+      "name": "Mornye",
+      "weaponName": "",
+      "role": "Support",
+      "share": 9,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

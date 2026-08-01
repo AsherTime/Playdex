@@ -1,0 +1,43 @@
+{
+  "id": "441382d8-01e6-40bc-8187-aadf03a2a3e1",
+  "gameType": "wuwa",
+  "teamName": "Zani, Rover (Spectro), Shorekeeper",
+  "totalDamage": 1374179.584,
+  "rotation": 26.5,
+  "createdAt": 1782747445340,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "2def196d-3e93-4e42-b314-2800e54ebe61",
+      "name": "Zani",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 74,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a0504f73-0712-4a38-a46f-b0fe01c5cbb1",
+      "name": "Rover (Spectro)",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 23,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "83a69c3f-fac9-4170-9d5b-36e1afe67934",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

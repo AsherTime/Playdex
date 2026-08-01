@@ -1,0 +1,43 @@
+{
+  "id": "d1b90358-e8d9-4c6e-8481-5083c32ba281",
+  "gameType": "wuwa",
+  "teamName": "Suisui, Xuanling, Chisa",
+  "totalDamage": 2602374.907,
+  "rotation": 27.5,
+  "createdAt": 1782747445231,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "75028fd5-0ffe-444e-af0b-c6bf058b8637",
+      "name": "Suisui",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "547bb07b-a6d2-4ec8-a43b-80425d952a3f",
+      "name": "Xuanling",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "03b9d7ce-9c05-4736-a7b4-aeee46d25609",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

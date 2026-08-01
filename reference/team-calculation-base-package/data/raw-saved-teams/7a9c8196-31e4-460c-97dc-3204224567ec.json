@@ -1,0 +1,43 @@
+{
+  "id": "7a9c8196-31e4-460c-97dc-3204224567ec",
+  "gameType": "wuwa",
+  "teamName": "Augusta, Yinlin, Shorekeeper",
+  "totalDamage": 1234626.319,
+  "rotation": 26.5,
+  "createdAt": 1782747445345,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "938c1ac9-cf8c-4478-88b4-43604ce4a5c7",
+      "name": "Augusta",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 81,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "faffc47c-2e07-46f7-abb0-f94fc577b13c",
+      "name": "Yinlin",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 16,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1a698b10-7aa3-45dd-9ff1-59f45288f2af",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 3,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

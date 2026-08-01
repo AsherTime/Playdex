@@ -1,0 +1,43 @@
+{
+  "id": "998acaf3-a795-4466-bc65-1dd5925f73a6",
+  "gameType": "wuwa",
+  "teamName": "Sigrika, Ciaccona, Shorekeeper",
+  "totalDamage": 1467103.326,
+  "rotation": 27.5,
+  "createdAt": 1782747445278,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "43d6047a-3528-4134-b247-36b8327c2f74",
+      "name": "Sigrika",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 34,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "a8f7e568-266d-4739-b48b-79441af4282e",
+      "name": "Ciaccona",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "b40b2619-5908-445e-8056-6dc143993c0b",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 33,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

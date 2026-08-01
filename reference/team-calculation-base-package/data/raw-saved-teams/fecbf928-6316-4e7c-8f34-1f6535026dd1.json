@@ -1,0 +1,43 @@
+{
+  "id": "fecbf928-6316-4e7c-8f34-1f6535026dd1",
+  "gameType": "wuwa",
+  "teamName": "Iuno, Jiyan, Shorekeeper",
+  "totalDamage": 1428815.447,
+  "rotation": 27.5,
+  "createdAt": 1782747445351,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "b2157e89-b025-4664-8a9f-3a840f152827",
+      "name": "Iuno",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 69,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "f31b03c4-9e95-4969-bc60-511db17a9c5f",
+      "name": "Jiyan",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 29,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "bb9e4a81-a395-4eda-999c-a35a25175148",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 2,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "2c934742-e13c-4408-9853-1b524b25da12",
+  "gameType": "wuwa",
+  "teamName": "Phoebe, Rover (Spectro), Chisa",
+  "totalDamage": 1520480.476,
+  "rotation": 26.5,
+  "createdAt": 1782747445309,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "82d053ec-be71-488f-943e-7ed8747d3f68",
+      "name": "Phoebe",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 57,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "77bb00a7-b43a-4207-bf49-6cc9ddb70565",
+      "name": "Rover (Spectro)",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 27,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "0962b926-000d-470a-b22e-50f59bc51215",
+      "name": "Chisa",
+      "weaponName": "",
+      "role": "Support",
+      "share": 16,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}

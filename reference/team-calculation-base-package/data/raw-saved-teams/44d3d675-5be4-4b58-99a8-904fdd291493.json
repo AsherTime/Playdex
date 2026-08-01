@@ -1,0 +1,43 @@
+{
+  "id": "44d3d675-5be4-4b58-99a8-904fdd291493",
+  "gameType": "wuwa",
+  "teamName": "Lupa, Brant, Shorekeeper",
+  "totalDamage": 1450818.404,
+  "rotation": 28.0,
+  "createdAt": 1782747445346,
+  "unresolvedWarnings": false,
+  "unmatchedItems": [],
+  "unmatchedCount": 0,
+  "characters": [
+    {
+      "id": "8d091fcc-29a9-4fdb-b53c-16a17c70979f",
+      "name": "Lupa",
+      "weaponName": "",
+      "role": "Sub DPS",
+      "share": 24,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "2625ebd9-2a1d-4d49-baa1-5286c90fb516",
+      "name": "Brant",
+      "weaponName": "",
+      "role": "Main DPS",
+      "share": 76,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    },
+    {
+      "id": "1b1c34e1-b44f-490e-bf9a-3349fef77175",
+      "name": "Shorekeeper",
+      "weaponName": "",
+      "role": "Support",
+      "share": 0,
+      "element": "Aero",
+      "manualCharacterImage": "",
+      "manualWeaponImage": ""
+    }
+  ]
+}
