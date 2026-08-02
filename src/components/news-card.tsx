@@ -1,8 +1,10 @@
 import type { GameNews } from "@/types/gamedex";
 import { NewsCardImage } from "@/components/news-card-image";
+import { hasFeedThumbnail } from "@/lib/news-images";
 import { formatRelativeTime } from "@/utils/formatters";
 
 export function NewsCard({ item }: { item: GameNews }) {
+  if (!hasFeedThumbnail(item.imageUrl)) return null;
   const body = (
     <article className="group flex min-h-[9.5rem] overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.045] to-white/[0.02] shadow-[0_10px_40px_-20px_rgba(0,0,0,0.8)] transition duration-200 hover:border-white/20 hover:from-white/[0.06] hover:to-white/[0.025] hover:shadow-[0_16px_48px_-16px_rgba(0,0,0,0.9)] sm:min-h-[11rem] md:min-h-[12rem]">
       <NewsCardImage imageUrl={item.imageUrl} gameId={item.gameId} />

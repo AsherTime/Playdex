@@ -1,8 +1,10 @@
 import type { GameNews } from "@/types/gamedex";
 import { NewsTrackerThumb } from "@/components/news-tracker-thumb";
+import { hasFeedThumbnail } from "@/lib/news-images";
 import { formatRelativeTime } from "@/utils/formatters";
 
 export function NewsTrackerCard({ item }: { item: GameNews }) {
+  if (!hasFeedThumbnail(item.imageUrl)) return null;
   const body = (
     <article className="group flex w-[248px] shrink-0 gap-3 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.05] to-white/[0.02] p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition duration-200 hover:-translate-y-0.5 hover:border-cyan-400/25 hover:from-white/[0.07] hover:to-white/[0.03] sm:w-[268px]">
       <NewsTrackerThumb imageUrl={item.imageUrl} gameId={item.gameId} />

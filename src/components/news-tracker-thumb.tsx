@@ -1,32 +1,29 @@
 "use client";
 
-import { resolveNewsImageUrl } from "@/lib/news-images";
+import { useState } from "react";
+import { hasFeedThumbnail } from "@/lib/news-images";
 
 export function NewsTrackerThumb({
   imageUrl,
-  gameId,
 }: {
   imageUrl?: string;
   gameId?: string;
 }) {
-  const initialSrc = resolveNewsImageUrl(imageUrl, gameId);
-  const isRemoteImage = initialSrc.startsWith("http");
+  const [failed, setFailed] = useState(false);
+
+  if (!hasFeedThumbnail(imageUrl) || failed) {
+    return null;
+  }
 
   return (
     <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg bg-zinc-900">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={initialSrc}
+        src={imageUrl}
         alt=""
         loading="lazy"
-        className={`h-full w-full ${isRemoteImage ? "object-cover" : "object-contain p-1.5"}`}
-        onError={(event) => {
-          const target = event.currentTarget;
-          const fallback = resolveNewsImageUrl(null, gameId);
-          if (target.src !== fallback) {
-            target.src = fallback;
-          }
-        }}
+        className="h-full w-full object-cover"
+        onError={() => setFailed(true)}
       />
     </div>
   );
