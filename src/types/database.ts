@@ -310,7 +310,14 @@ export interface Database {
       };
     };
     Views: Record<string, never>;
-    Functions: Record<string, never>;
+    Functions: {
+      check_auth_email_status: {
+        Args: {
+          check_email: string;
+        };
+        Returns: "confirmed" | "unconfirmed" | "not_found";
+      };
+    };
     Enums: Record<string, never>;
     CompositeTypes: Record<string, never>;
   };

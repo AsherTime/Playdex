@@ -10,11 +10,11 @@ export default function SignupPage() {
         </p>
         <h1 className="mt-2 text-2xl font-semibold text-white">Sign up</h1>
         <p className="mt-2 text-sm text-zinc-400">
-          Create an account with email and password. We&apos;ll email you a confirmation link —
+          Create an account with email and password. We&apos;ll email you a confirmation link -
           finish your profile after you log in.
         </p>
         <div className="mt-6">
-          <Suspense fallback={<p className="text-sm text-zinc-400">Loading…</p>}>
+          <Suspense fallback={<p className="text-sm text-zinc-400">Loading...</p>}>
             <SignupForm />
           </Suspense>
         </div>

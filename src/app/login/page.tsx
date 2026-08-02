@@ -13,7 +13,7 @@ export default function LoginPage() {
           Use your email and password to access your profile and training progress.
         </p>
         <div className="mt-6">
-          <Suspense fallback={<p className="text-sm text-zinc-400">Loading…</p>}>
+          <Suspense fallback={<p className="text-sm text-zinc-400">Loading...</p>}>
             <LoginForm />
           </Suspense>
         </div>
