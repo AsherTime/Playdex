@@ -4,7 +4,6 @@ import Parser from "rss-parser";
 import { collectGame8Source } from "@/collectors/game8-collector";
 import { collectRiotNextSource, isRiotNextNewsSource } from "@/collectors/riot-next-collector";
 import { enrichNewsItemImage, extractRssImage, type RssItem } from "@/lib/news-image-extract";
-import { isGachaGame } from "@/lib/gacha-games";
 import { createServiceSupabaseClient } from "@/lib/supabase/service-client";
 import type { Database } from "@/types/database";
 import type { CollectorRunResult } from "@/types/gamedex";
@@ -300,10 +299,7 @@ async function collectSource(source: GameSourceRow) {
 }
 
 function shouldKeepCollectedItem(item: NewsItemInsert) {
-  if (isGachaGame(item.game_id) && item.source_type === "rss" && !item.image_url) {
-    return false;
-  }
-  return true;
+  return Boolean(item.image_url?.trim());
 }
 
 async function finalizeCollectedItems(items: NewsItemInsert[]) {

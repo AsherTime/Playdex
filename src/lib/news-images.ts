@@ -17,6 +17,10 @@ function isHttpUrl(value: string) {
   }
 }
 
+export function hasFeedThumbnail(imageUrl: string | null | undefined) {
+  return Boolean(imageUrl?.trim() && isHttpUrl(imageUrl.trim()));
+}
+
 export function getGameNewsFallback(gameId?: string | null) {
   if (!gameId) return DEFAULT_FALLBACK;
   return GAME_NEWS_FALLBACKS[gameId] ?? DEFAULT_FALLBACK;

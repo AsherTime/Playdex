@@ -45,9 +45,17 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
         ))}
       </div>
       <div className="space-y-3">
-        {latestNews.map((item) => (
-          <NewsCard key={item.id} item={item} />
-        ))}
+        {latestNews.length ? (
+          latestNews.map((item) => <NewsCard key={item.id} item={item} />)
+        ) : (
+          <p className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-6 text-sm text-zinc-400">
+            No tracked updates with thumbnails yet. Run the news collector from{" "}
+            <Link href="/admin" className="text-indigo-300 hover:text-indigo-200">
+              /admin
+            </Link>{" "}
+            or check back after the next scheduled sync.
+          </p>
+        )}
       </div>
     </div>
   );

@@ -1,12 +1,11 @@
 import type { Database } from "@/types/database";
-import { isGachaGame } from "@/lib/gacha-games";
+import { hasFeedThumbnail } from "@/lib/news-images";
 
 type NewsItemRow = Database["public"]["Tables"]["news_items"]["Row"];
 
 function feedPriority(row: NewsItemRow) {
   if (row.source_type === "trusted_site" || row.source_name === "Game8") return 4;
   if (row.image_url) return 3;
-  if (isGachaGame(row.game_id) && row.source_type === "rss") return 0;
   return 2;
 }
 
@@ -18,13 +17,9 @@ export function prioritizeNewsRows<T extends NewsItemRow>(rows: T[]) {
   });
 }
 
+/** Feed surfaces only show articles with a real remote thumbnail. */
 export function filterFeedNewsRows<T extends NewsItemRow>(rows: T[]) {
-  return rows.filter((row) => {
-    if (isGachaGame(row.game_id) && row.source_type === "rss" && !row.image_url) {
-      return false;
-    }
-    return true;
-  });
+  return rows.filter((row) => hasFeedThumbnail(row.image_url));
 }
 
 function perGameCap(limit: number, gameCount: number) {

@@ -1,6 +1,7 @@
 import { games, news as mockNews } from "@/data/mock-data";
 import { mapNewsItemToGameNews } from "@/lib/news-mappers";
 import { prepareFeedRows } from "@/lib/news-feed";
+import { hasFeedThumbnail } from "@/lib/news-images";
 import { createPublicSupabaseClient } from "@/lib/supabase/public";
 import type { Database } from "@/types/database";
 import type { GameNews } from "@/types/gamedex";
@@ -8,24 +9,33 @@ import type { GameNews } from "@/types/gamedex";
 type GameRow = Database["public"]["Tables"]["games"]["Row"];
 
 function mockNewsForGame(gameIdOrSlug?: string) {
-  if (!gameIdOrSlug) return [...mockNews].sort((a, b) => b.date.localeCompare(a.date));
+  const withImages = (items: GameNews[]) =>
+    items.filter((item) => hasFeedThumbnail(item.imageUrl));
+
+  if (!gameIdOrSlug) {
+    return withImages([...mockNews].sort((a, b) => b.date.localeCompare(a.date)));
+  }
 
   const game = games.find((item) => item.id === gameIdOrSlug || item.slug === gameIdOrSlug);
   if (!game) return [];
 
-  const gameNews = mockNews.filter((item) => item.gameId === game.id).sort((a, b) => b.date.localeCompare(a.date));
+  const gameNews = withImages(
+    mockNews.filter((item) => item.gameId === game.id).sort((a, b) => b.date.localeCompare(a.date)),
+  );
   if (gameNews.length) return gameNews;
 
-  return game.latestUpdates.map((update, index) => ({
-    id: `${game.id}-fallback-news-${index + 1}`,
-    title: update,
-    source: "Seed Updates",
-    gameTag: game.title,
-    summary: `${game.title} seed update used until live collector data is available.`,
-    date: new Date(Date.now() - index * 86400000).toISOString(),
-    category: "Update" as const,
-    gameId: game.id,
-  }));
+  return withImages(
+    game.latestUpdates.map((update, index) => ({
+      id: `${game.id}-fallback-news-${index + 1}`,
+      title: update,
+      source: "Seed Updates",
+      gameTag: game.title,
+      summary: `${game.title} seed update used until live collector data is available.`,
+      date: new Date(Date.now() - index * 86400000).toISOString(),
+      category: "Update" as const,
+      gameId: game.id,
+    })),
+  );
 }
 
 async function getGameRows() {
@@ -73,7 +83,12 @@ export async function getLatestNews(
     );
   }
 
-  let query = supabase.from("news_items").select("*").order("published_at", { ascending: false });
+  let query = supabase
+    .from("news_items")
+    .select("*")
+    .not("image_url", "is", null)
+    .neq("image_url", "")
+    .order("published_at", { ascending: false });
 
   if (gameFilter) {
     query = query.eq("game_id", gameFilter.id).limit(limit * 2);
@@ -132,6 +147,8 @@ export async function getLatestNewsForGame(gameIdOrSlug: string, limit = 12): Pr
     .from("news_items")
     .select("*")
     .eq("game_id", game.id)
+    .not("image_url", "is", null)
+    .neq("image_url", "")
     .order("published_at", { ascending: false })
     .limit(limit * 2);
 
