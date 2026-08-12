@@ -23,7 +23,9 @@ Next.js (Vercel)  ←── HTTPS ──  Capacitor WebView (Android app)
 
 **Trade-off:** The installed app needs network access to your Vercel URL. This avoids breaking server features and avoids maintaining a second frontend.
 
-**Play Store note:** Google may scrutinize pure website wrappers. This project adds native value: back button handling, status bar, splash screen, bottom navigation, external link handling, and deep-link scaffolding.
+**Play Store note:** Google may scrutinize pure website wrappers. This project adds native value: back button handling, status bar, splash screen, bottom navigation, external link handling, device game tracking (Usage Access), and deep-link scaffolding.
+
+See also: [Android Device Game Tracker](./android-device-tracker.md).
 
 ## Package ID
 

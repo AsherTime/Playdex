@@ -1,15 +1,28 @@
 import Link from "next/link";
-import { HomeHero } from "@/components/home-hero";
+import { GamingDashboard } from "@/components/home/GamingDashboard";
+import { HomeTodayPlanCard } from "@/components/home/HomeTodayPlanCard";
 import { ImproveQuickStartCard } from "@/components/improve-quick-start-card";
 import { NewsCard } from "@/components/news-card";
 import { NewsTrackerStrip } from "@/components/news-tracker-strip";
 import { TrendingGamesPanel } from "@/components/trending-games-panel";
-import { getServerFollowedGameSlugs } from "@/lib/auth-server-helpers";
+import {
+  getServerFollowedGameSlugs,
+  getServerProfile,
+  getServerUser,
+} from "@/lib/auth-server-helpers";
+import { getServerGamingDashboardStats } from "@/lib/gaming-stats";
 import { getTrendingGames } from "@/lib/games";
 import { getLatestNews } from "@/lib/news";
 
 export default async function HomePage() {
-  const followedSlugs = await getServerFollowedGameSlugs();
+  const [followedSlugs, user, profile] = await Promise.all([
+    getServerFollowedGameSlugs(),
+    getServerUser(),
+    getServerProfile(),
+  ]);
+
+  const syncedStats = user ? await getServerGamingDashboardStats(user.id) : null;
+
   const [feedNews, trendingGames] = await Promise.all([
     getLatestNews(24, undefined, followedSlugs),
     Promise.resolve(getTrendingGames().slice(0, 5)),
@@ -19,7 +32,14 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-6">
-      <HomeHero followedCount={followedSlugs.length} />
+      <GamingDashboard
+        profile={profile}
+        syncedStats={syncedStats}
+        userId={user?.id ?? null}
+        isLoggedIn={Boolean(user)}
+      />
+
+      {user ? <HomeTodayPlanCard /> : null}
 
       <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_280px]">
         <div className="min-w-0 space-y-6">

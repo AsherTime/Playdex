@@ -77,6 +77,19 @@ type ProfileRow = {
   email: string;
   name: string | null;
   age: number | null;
+  username: string | null;
+  bio: string | null;
+  avatar_url: string | null;
+  profile_visibility: "public" | "private";
+  show_playtime: boolean;
+  show_weekly_playtime: boolean;
+  show_recent_games: boolean;
+  show_improvement_plan: boolean;
+  show_favorite_games: boolean;
+  show_streak: boolean;
+  main_game_slug: string | null;
+  show_platform: boolean;
+  improvement_snapshot: import("@/lib/public-profile").ImprovementSnapshot | null;
   created_at: string;
   updated_at: string;
 };
@@ -97,6 +110,19 @@ type UserTrainingProgressRow = {
   task_title: string;
   is_completed: boolean;
   completed_at: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+type UserGameUsageDailyRow = {
+  id: string;
+  user_id: string;
+  usage_date: string;
+  game_slug: string;
+  playtime_seconds: number;
+  session_count: number;
+  last_played_at: string | null;
+  source: string;
   created_at: string;
   updated_at: string;
 };
@@ -274,6 +300,19 @@ export interface Database {
           email: string;
           name?: string | null;
           age?: number | null;
+          username?: string | null;
+          bio?: string | null;
+          avatar_url?: string | null;
+          profile_visibility?: "public" | "private";
+          show_playtime?: boolean;
+          show_weekly_playtime?: boolean;
+          show_recent_games?: boolean;
+          show_improvement_plan?: boolean;
+          show_favorite_games?: boolean;
+          show_streak?: boolean;
+          main_game_slug?: string | null;
+          show_platform?: boolean;
+          improvement_snapshot?: ProfileRow["improvement_snapshot"];
           created_at?: string;
           updated_at?: string;
         };
@@ -308,6 +347,23 @@ export interface Database {
         Update: Partial<Omit<UserTrainingProgressRow, "id">>;
         Relationships: [];
       };
+      user_game_usage_daily: {
+        Row: UserGameUsageDailyRow;
+        Insert: {
+          id?: string;
+          user_id: string;
+          usage_date: string;
+          game_slug: string;
+          playtime_seconds?: number;
+          session_count?: number;
+          last_played_at?: string | null;
+          source?: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: Partial<Omit<UserGameUsageDailyRow, "id">>;
+        Relationships: [];
+      };
     };
     Views: Record<string, never>;
     Functions: {
@@ -316,6 +372,35 @@ export interface Database {
           check_email: string;
         };
         Returns: "confirmed" | "unconfirmed" | "not_found";
+      };
+      get_gaming_usage_aggregates: {
+        Args: {
+          p_user_id: string;
+          p_days?: number;
+        };
+        Returns: Array<{
+          game_slug: string;
+          total_playtime_seconds: number;
+          last_played_at: string | null;
+          active_days: number;
+        }>;
+      };
+      get_gaming_usage_totals: {
+        Args: {
+          p_user_id: string;
+          p_days?: number;
+        };
+        Returns: Array<{
+          total_playtime_seconds: number;
+          games_played: number;
+          active_days: number;
+        }>;
+      };
+      get_public_gaming_profile: {
+        Args: {
+          p_username: string;
+        };
+        Returns: import("@/lib/public-profile").PublicGamingProfile;
       };
     };
     Enums: Record<string, never>;

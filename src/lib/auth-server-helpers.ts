@@ -1,4 +1,7 @@
 import { createServerSupabaseClient } from "@/lib/supabase/auth-server";
+import type { Database } from "@/types/database";
+
+export type ServerProfile = Database["public"]["Tables"]["profiles"]["Row"];
 
 export async function getServerFollowedGameSlugs(): Promise<string[]> {
   try {
@@ -27,6 +30,27 @@ export async function getServerUser() {
       data: { user },
     } = await supabase.auth.getUser();
     return user;
+  } catch {
+    return null;
+  }
+}
+
+export async function getServerProfile(): Promise<ServerProfile | null> {
+  try {
+    const supabase = await createServerSupabaseClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    if (!user) return null;
+
+    const { data, error } = await supabase
+      .from("profiles")
+      .select("*")
+      .eq("id", user.id)
+      .maybeSingle();
+
+    if (error || !data) return null;
+    return data;
   } catch {
     return null;
   }
