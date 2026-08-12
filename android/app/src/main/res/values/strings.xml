@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Gamedex</string>
+    <string name="title_activity_main">Gamedex</string>
+    <string name="package_name">com.gamedex.app</string>
+    <string name="custom_url_scheme">gamedex</string>
+    <!-- Replace before Play Store release (no https:// prefix). Example: playdex.vercel.app -->
+    <string name="deep_link_host">REPLACE_WITH_PRODUCTION_HOST</string>
+</resources>

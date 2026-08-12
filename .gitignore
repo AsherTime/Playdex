@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+.idea/
 
 # debug
 npm-debug.log*
@@ -46,3 +47,14 @@ supabase/.temp/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Capacitor / Android (keep android/ project; ignore local/build secrets)
+android/.gradle/
+android/.idea/
+android/local.properties
+android/app/build/
+android/build/
+android/capacitor-cordova-android-plugins/build/
+*.jks
+*.keystore
+android/keystore.properties

@@ -6,9 +6,24 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "cap:sync": "npx cap sync android",
+    "cap:copy": "npx cap copy android",
+    "cap:open:android": "npx cap open android",
+    "cap:run:android": "npx cap run android",
+    "android:sync": "npx cap sync android",
+    "android:open": "npx cap open android",
+    "android:run": "npx cap run android",
+    "android:sync:prod": "node scripts/capacitor-sync-prod.mjs",
+    "android:sync:dev": "node scripts/capacitor-sync-dev.mjs"
   },
   "dependencies": {
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/browser": "^8.0.4",
+    "@capacitor/core": "^8.5.0",
+    "@capacitor/keyboard": "^8.0.5",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.3",
     "@supabase/ssr": "^0.12.3",
     "@supabase/supabase-js": "^2.108.2",
     "next": "16.2.6",
@@ -20,6 +35,8 @@
     "rss-parser": "^3.13.0"
   },
   "devDependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/cli": "^8.5.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
