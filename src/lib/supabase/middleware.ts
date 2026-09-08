@@ -1,6 +1,17 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
+let lastSessionRefreshWarningAt = 0;
+
+function hasSupabaseAuthCookie(request: NextRequest, supabaseUrl: string) {
+  const projectRef = new URL(supabaseUrl).hostname.split(".")[0];
+  const authCookiePrefix = `sb-${projectRef}-auth-token`;
+
+  return request.cookies
+    .getAll()
+    .some((cookie) => cookie.name === authCookiePrefix || cookie.name.startsWith(`${authCookiePrefix}.`));
+}
+
 export async function updateSession(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request });
 
@@ -8,6 +19,10 @@ export async function updateSession(request: NextRequest) {
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   if (!supabaseUrl || !supabaseAnonKey) {
+    return supabaseResponse;
+  }
+
+  if (!hasSupabaseAuthCookie(request, supabaseUrl)) {
     return supabaseResponse;
   }
 
@@ -28,6 +43,15 @@ export async function updateSession(request: NextRequest) {
     },
   });
 
-  await supabase.auth.getUser();
+  try {
+    await supabase.auth.getUser();
+  } catch (error) {
+    const now = Date.now();
+    if (now - lastSessionRefreshWarningAt > 60_000) {
+      lastSessionRefreshWarningAt = now;
+      console.warn("Supabase session refresh skipped:", error instanceof Error ? error.message : error);
+    }
+  }
+
   return supabaseResponse;
 }
