@@ -13,7 +13,7 @@ export function GamingHistorySection({
       <section className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6">
         <h2 className="text-lg font-semibold text-white">Gaming History</h2>
         <p className="mt-2 text-sm text-zinc-500">
-          Synced playtime from your Android tracker will appear here over time.
+          Playtime from your Android app will appear here over time.
         </p>
       </section>
     );
@@ -22,7 +22,7 @@ export function GamingHistorySection({
   return (
     <section className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6">
       <h2 className="text-lg font-semibold text-white">Gaming History</h2>
-      <p className="mt-1 text-sm text-zinc-500">Last 90 days of synced activity</p>
+      <p className="mt-1 text-sm text-zinc-500">Last 90 days of activity</p>
       <ul className="mt-4 space-y-2">
         {history.map((game) => {
           const icon = getGameDisplayIcon(game.gameSlug) ?? "/game-fallbacks/default.svg";

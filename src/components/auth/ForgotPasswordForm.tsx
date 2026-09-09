@@ -42,7 +42,7 @@ export function ForgotPasswordForm() {
 
       if (account.status === "unconfirmed") {
         setMessage(
-          "That account is not confirmed yet. We still sent a reset link if Supabase allows it; check your inbox or sign up again to resend confirmation.",
+          "That account is not confirmed yet. Check your inbox for the reset link, or sign up again to resend confirmation.",
         );
       } else {
         setMessage("Password reset link sent. Check your inbox and follow the secure link.");

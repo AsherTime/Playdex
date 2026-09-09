@@ -57,11 +57,15 @@ export function CharacterGuidePage({
             <h1 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
               {character.name}
             </h1>
-            <p className="mt-1 text-sm text-zinc-400">
-              {character.hasBuild ? "Build data imported from Icy Veins." : "Build guide data unavailable."}
-              {" "}
-              {character.hasTeams ? "Team data imported from Icy Veins." : "Team data unavailable."}
-            </p>
+            {!character.hasBuild || !character.hasTeams ? (
+              <p className="mt-1 text-sm text-zinc-400">
+                {!character.hasBuild && !character.hasTeams
+                  ? "Build and team guide unavailable."
+                  : !character.hasBuild
+                    ? "Build guide unavailable."
+                    : "Team guide unavailable."}
+              </p>
+            ) : null}
           </div>
 
           <div className="flex flex-wrap gap-2">

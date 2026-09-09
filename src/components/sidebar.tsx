@@ -6,7 +6,6 @@ const navigation = [
   { href: "/games", label: "Games" },
   { href: "/improve", label: "Improvement" },
   { href: "/news", label: "News" },
-  { href: "/admin", label: "Admin" },
 ];
 
 const improveGames = [

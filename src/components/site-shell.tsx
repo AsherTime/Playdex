@@ -13,7 +13,6 @@ const mobileWebLinks = [
   { href: "/games", label: "Games" },
   { href: "/improve", label: "Improve" },
   { href: "/news", label: "News" },
-  { href: "/admin", label: "Admin" },
 ];
 
 function SiteShellInner({ children }: { children: React.ReactNode }) {

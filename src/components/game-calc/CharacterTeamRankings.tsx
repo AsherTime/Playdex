@@ -36,7 +36,7 @@ export function CharacterTeamRankings({
   characterName,
   activeTeamSlug,
   title = "Top teams with",
-  description = "Ranked team results for this character. Placeholder data — real calculations coming soon.",
+  description = "Popular team options for this character.",
 }: {
   gameId: CalcGameId;
   characterSlug: string;
@@ -53,7 +53,7 @@ export function CharacterTeamRankings({
     <section className="space-y-4 rounded-2xl border border-white/10 bg-white/[0.03] p-4 sm:p-5">
       <div className="space-y-1">
         <p className="text-[10px] font-medium uppercase tracking-[0.24em] text-indigo-300/80">
-          Team calculations
+          Teams
         </p>
         <h2 className="text-lg font-semibold text-white sm:text-xl">
           {title} {characterName}

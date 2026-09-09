@@ -18,7 +18,7 @@ export function HomeHero({
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-300 opacity-60" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-cyan-300" />
             </span>
-            Live gaming intel
+            Gaming hub
           </div>
 
           <div className="space-y-3">
@@ -26,10 +26,10 @@ export function HomeHero({
               Track the meta. Train smarter. Stay ahead.
             </h1>
             <p className="max-w-xl text-sm leading-7 text-zinc-400 sm:text-[15px]">
-              Gamedex pulls live updates, editorial guides, and personal improvement plans into one
-              dark command center for competitive and live-service games.
+              Gamedex brings updates, guides, and personal improvement plans into one place for
+              competitive and live-service games.
               {followedCount > 0
-                ? ` Your ${followedCount} followed game${followedCount === 1 ? "" : "s"} are prioritized in the tracker.`
+                ? ` Your ${followedCount} followed game${followedCount === 1 ? "" : "s"} shape what you see first.`
                 : null}
             </p>
           </div>
@@ -39,7 +39,7 @@ export function HomeHero({
               href="/news"
               className="inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-5 py-2.5 text-sm font-medium text-cyan-50 transition hover:bg-cyan-400/20"
             >
-              Open live tracker
+              Read latest news
             </Link>
             <Link
               href="/improve"
@@ -52,9 +52,9 @@ export function HomeHero({
 
         <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
           {[
-            { label: "Tracked feeds", value: "News + patches", tone: "text-cyan-200" },
+            { label: "News", value: "Updates + patches", tone: "text-cyan-200" },
             { label: "Training loops", value: "Valorant · Free Fire", tone: "text-indigo-200" },
-            { label: "Personalization", value: "Followed-game first", tone: "text-emerald-200" },
+            { label: "Personalization", value: "Favorites first", tone: "text-emerald-200" },
           ].map((item) => (
             <div
               key={item.label}

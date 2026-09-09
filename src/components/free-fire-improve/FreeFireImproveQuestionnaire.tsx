@@ -354,7 +354,7 @@ export function FreeFireImproveQuestionnaire() {
         <QuestionShell
           step={10}
           title="What are your sensitivity settings?"
-          description="Saved for future aim routine personalization."
+          description="Keep a record of your current sensitivity settings."
         >
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {(

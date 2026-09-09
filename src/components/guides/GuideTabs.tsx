@@ -128,7 +128,7 @@ function BuildTab({ character }: { character: GuideCharacterDetail }) {
                   <StatLine label="Sands" value={build.mainStats.sand} />
                   <StatLine label="Goblet" value={build.mainStats.goblet} />
                   <StatLine label="Circlet" value={build.mainStats.circlet} />
-                  {build.mainStats.raw ? <StatLine label="Source" value={build.mainStats.raw} /> : null}
+                  {build.mainStats.raw ? <StatLine label="Notes" value={build.mainStats.raw} /> : null}
                 </dl>
               </div>
             ) : null}

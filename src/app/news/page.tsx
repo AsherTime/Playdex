@@ -21,11 +21,7 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
       <SectionHeader
         eyebrow="Feed"
         title="Latest Gaming News"
-        description={
-          followedSlugs.length
-            ? "Official updates with your followed games shown first."
-            : "Official updates and announcements from tracked games and sources."
-        }
+        description={followedSlugs.length ? "Updates and announcements from games you follow." : undefined}
       />
       <div className="flex flex-wrap gap-2">
         <Link
@@ -49,11 +45,7 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
           latestNews.map((item) => <NewsCard key={item.id} item={item} />)
         ) : (
           <p className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-6 text-sm text-zinc-400">
-            No tracked updates with thumbnails yet. Run the news collector from{" "}
-            <Link href="/admin" className="text-indigo-300 hover:text-indigo-200">
-              /admin
-            </Link>{" "}
-            or check back after the next scheduled sync.
+            No news to show yet. Check back soon.
           </p>
         )}
       </div>

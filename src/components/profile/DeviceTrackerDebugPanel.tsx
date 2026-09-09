@@ -20,8 +20,7 @@ export function DeviceTrackerDebugPanel() {
   );
   const [hasAccess, setHasAccess] = useState<boolean | null>(null);
 
-  const showDebug =
-    process.env.NODE_ENV === "development" || searchParams.get("debug") === "tracker";
+  const showDebug = process.env.NODE_ENV === "development" && searchParams.get("debug") === "tracker";
 
   useEffect(() => {
     if (!showDebug || !isAndroid) return;

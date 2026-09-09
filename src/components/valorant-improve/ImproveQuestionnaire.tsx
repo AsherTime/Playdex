@@ -337,7 +337,7 @@ export function ImproveQuestionnaire() {
         <QuestionShell
           step={10}
           title="What is your sensitivity setup?"
-          description="Saved for future aim routine personalization."
+          description="Keep a record of your current sensitivity settings."
         >
           <div className="grid gap-4 sm:grid-cols-3">
             <label className="space-y-2">

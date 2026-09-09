@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { GameCard } from "@/components/game-card";
 import { GameCalcHubPage } from "@/components/game-calc/GameCalcHubPage";
 import { GameDetailHeader } from "@/components/game-detail-header";
-import { GenshinGuidePrototypePage } from "@/components/guides/GenshinGuidePrototypePage";
+import { GenshinGuidePage } from "@/components/guides/GenshinGuidePage";
 import { NewsCard } from "@/components/news-card";
 import { SectionHeader } from "@/components/section-header";
 import { games } from "@/data/mock-data";
@@ -21,7 +21,7 @@ export default async function GameDetailPage({
   const { slug } = await params;
 
   if (slug === "genshin-impact") {
-    return <GenshinGuidePrototypePage />;
+    return <GenshinGuidePage />;
   }
 
   if (isCalcGame(slug)) {

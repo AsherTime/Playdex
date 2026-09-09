@@ -275,8 +275,7 @@ export function FreeFireImprovePlanView() {
         </p>
         <h2 className="mt-2 text-xl font-semibold text-white">How did today go?</h2>
         <p className="mt-2 text-sm text-zinc-400">
-          Quick reflection prompts. Saved locally for now — future versions can refresh your
-          plan.
+          Use a quick reflection to note what changed after today&apos;s practice.
         </p>
 
         <div className="mt-5 space-y-4">
@@ -322,23 +321,13 @@ export function FreeFireImprovePlanView() {
             />
           </label>
 
-          <div className="flex flex-wrap gap-3">
-            <button
-              type="button"
-              onClick={handleRecheckSave}
-              className="rounded-full border border-orange-400/35 bg-orange-500/15 px-5 py-2.5 text-sm font-medium text-orange-50 transition hover:bg-orange-500/25"
-            >
-              Save reflection
-            </button>
-            <button
-              type="button"
-              disabled
-              title="Plan regeneration coming soon"
-              className="rounded-full border border-white/10 px-5 py-2.5 text-sm text-zinc-500"
-            >
-              Update plan (coming soon)
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={handleRecheckSave}
+            className="rounded-full border border-orange-400/35 bg-orange-500/15 px-5 py-2.5 text-sm font-medium text-orange-50 transition hover:bg-orange-500/25"
+          >
+            Save reflection
+          </button>
         </div>
       </FreeFireImproveCard>
 

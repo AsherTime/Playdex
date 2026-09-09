@@ -1,7 +1,7 @@
 import type { GameNews } from "@/types/gamedex";
 import { NewsTrackerThumb } from "@/components/news-tracker-thumb";
 import { hasFeedThumbnail } from "@/lib/news-images";
-import { formatRelativeTime } from "@/utils/formatters";
+import { formatRelativeTime, formatSourceLabel } from "@/utils/formatters";
 
 export function NewsTrackerCard({ item }: { item: GameNews }) {
   if (!hasFeedThumbnail(item.imageUrl)) return null;
@@ -13,7 +13,7 @@ export function NewsTrackerCard({ item }: { item: GameNews }) {
           <span className="rounded-md border border-indigo-400/20 bg-indigo-400/15 px-1.5 py-0.5 font-medium text-indigo-100/90">
             {item.gameTag}
           </span>
-          <span className="truncate">{item.source}</span>
+          <span className="truncate">{formatSourceLabel(item.source, item.gameTag)}</span>
         </div>
         <h3 className="line-clamp-2 text-sm font-medium leading-snug text-white transition group-hover:text-cyan-50">
           {item.title}

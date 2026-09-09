@@ -74,7 +74,7 @@ function WebOnlyNotice() {
       <h2 className="mt-2 text-lg font-semibold text-white">Android app only</h2>
       <p className="mt-2 text-sm text-zinc-400">
         Voluntary device playtime tracking is available in the Gamedex Android app using Android&apos;s
-        official Usage Access API. Install the app to see how much time you spend in supported games.
+        Usage Access permission. Install the app to see how much time you spend in supported games.
       </p>
     </section>
   );
@@ -120,7 +120,7 @@ export function DeviceGameActivity() {
       setCache(next);
       if (user?.id) {
         await syncTodayUsageToSupabase(user.id, next.today.games);
-        setSyncMessage("Synced today's summary to your account.");
+        setSyncMessage("Saved today's summary to your account.");
         const rows = await fetchRecentSyncedUsage(user.id, 7);
         const byDate = new Map<string, number>();
         for (const row of rows) {
@@ -236,8 +236,8 @@ export function DeviceGameActivity() {
         <h2 className="mt-2 text-lg font-semibold text-white">Track playtime on this device</h2>
         <p className="mt-2 text-sm text-zinc-400">
           Opt in to see how much time you spend in supported games installed on this phone. Gamedex
-          uses Android&apos;s Usage Access API — not accessibility, screen recording, or VPN
-          tracking. Only {verifiedGameCount} verified game package IDs are queried.
+          uses Android&apos;s Usage Access permission — not accessibility, screen recording, or VPN
+          tracking. Only the {verifiedGameCount} supported games are included.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <button
@@ -268,7 +268,7 @@ export function DeviceGameActivity() {
           </p>
           <h2 className="mt-2 text-lg font-semibold text-white">Supported games on this device</h2>
           <p className="mt-1 text-xs text-zinc-500">
-            Local-first summaries · {verifiedGameCount} supported titles
+            On-device summaries · {verifiedGameCount} supported titles
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -295,7 +295,7 @@ export function DeviceGameActivity() {
           <p className="text-sm font-medium text-amber-50">Usage Access required</p>
           {showEnableInfo ? (
             <p className="mt-2 text-sm text-amber-100/90">
-              Gamedex needs Usage Access so Android can share foreground time for supported games
+              Gamedex needs Usage Access so Android can share how long you spend in supported games
               only. Open Settings, find Gamedex, and enable &quot;Permit usage access&quot;. Return
               here and we&apos;ll check automatically.
             </p>
@@ -353,7 +353,7 @@ export function DeviceGameActivity() {
           {dailyTrend.length >= 2 ? (
             <div className="rounded-xl border border-white/10 bg-black/20 px-4 py-4">
               <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-zinc-500">
-                Daily trend (synced)
+                Daily trend
               </p>
               <div className="mt-3 flex items-end gap-2">
                 {dailyTrend.map((day) => {

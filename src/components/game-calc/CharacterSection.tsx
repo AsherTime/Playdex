@@ -30,7 +30,7 @@ export function CharacterSection({
         <div className="space-y-1">
           <p className="text-[10px] font-medium uppercase tracking-[0.24em] text-indigo-300/80">Team builder</p>
           <h2 className="text-lg font-semibold text-white sm:text-xl">Characters</h2>
-          <p className="text-sm text-zinc-400">Browse roster and open team calculations per character.</p>
+          <p className="text-sm text-zinc-400">Browse the roster and open team options per character.</p>
         </div>
         <label className="relative w-full sm:max-w-xs">
           <span className="sr-only">Search characters</span>

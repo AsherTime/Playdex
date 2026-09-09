@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CharacterGuideBrowser } from "@/components/guides/CharacterGuideBrowser";
 import { getGenshinGuideCharacters } from "@/lib/guides/genshin";
 
-export async function GenshinGuidePrototypePage() {
+export async function GenshinGuidePage() {
   const characters = await getGenshinGuideCharacters();
 
   return (
@@ -16,9 +16,6 @@ export async function GenshinGuidePrototypePage() {
             <h1 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
               Character Guides
             </h1>
-            <p className="max-w-2xl text-sm leading-6 text-zinc-400">
-              Compact Supabase-backed guide data for the current imported roster.
-            </p>
           </div>
           <Link
             href="/games"

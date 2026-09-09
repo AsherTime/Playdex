@@ -1,7 +1,7 @@
 import type { GameNews } from "@/types/gamedex";
 import { NewsCardImage } from "@/components/news-card-image";
 import { hasFeedThumbnail } from "@/lib/news-images";
-import { formatRelativeTime } from "@/utils/formatters";
+import { formatRelativeTime, formatSourceLabel } from "@/utils/formatters";
 
 export function NewsCard({ item }: { item: GameNews }) {
   if (!hasFeedThumbnail(item.imageUrl)) return null;
@@ -15,7 +15,7 @@ export function NewsCard({ item }: { item: GameNews }) {
             {item.category}
           </span>
           <span className="rounded-md bg-indigo-400/10 px-2 py-0.5 font-medium text-indigo-100/90">{item.gameTag}</span>
-          <span className="text-zinc-500">{item.source}</span>
+          <span className="text-zinc-500">{formatSourceLabel(item.source, item.gameTag)}</span>
           <time className="ml-auto shrink-0 text-zinc-500" dateTime={item.date}>
             {formatRelativeTime(item.date)}
           </time>

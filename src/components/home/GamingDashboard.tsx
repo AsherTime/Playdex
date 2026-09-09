@@ -239,8 +239,8 @@ export function GamingDashboard({
             Build your gaming history
           </h1>
           <p className="max-w-xl text-sm leading-7 text-zinc-400">
-            Install Gamedex on Android to automatically build your gaming history. Synced summaries
-            will appear here once you refresh from the app.
+            Install Gamedex on Android to automatically build your gaming history. Your playtime
+            summaries will appear here once you refresh from the app.
           </p>
           {profile?.username ? (
             <Link

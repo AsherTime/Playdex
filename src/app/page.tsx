@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { GamingDashboard } from "@/components/home/GamingDashboard";
 import { HomeTodayPlanCard } from "@/components/home/HomeTodayPlanCard";
 import { ImproveQuickStartCard } from "@/components/improve-quick-start-card";
@@ -50,21 +49,11 @@ export default async function HomePage() {
             <section className="space-y-4">
               <div className="space-y-1">
                 <p className="text-[10px] font-medium uppercase tracking-[0.24em] text-indigo-300/80">
-                  Updates feed
+                  News
                 </p>
                 <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
-                  Latest news & patches
+                  Latest Gaming News
                 </h2>
-                <p className="text-sm text-zinc-400">
-                  Only tracked articles with thumbnails are shown here. Browse the full feed on{" "}
-                  <Link href="/news" className="text-indigo-300 hover:text-indigo-200">
-                    /news
-                  </Link>
-                  .
-                  {followedSlugs.length ? (
-                    <> Your followed games are prioritized.</>
-                  ) : null}
-                </p>
               </div>
 
               <div className="space-y-3">

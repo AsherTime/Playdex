@@ -14,7 +14,7 @@ export function TrendingGamesPanel({ games }: { games: GameWithTrend[] }) {
             Pulse
           </p>
           <h2 className="mt-1 text-sm font-semibold text-white">Trending games</h2>
-          <p className="mt-1 text-xs text-zinc-500">Ranked by current platform heat.</p>
+          <p className="mt-1 text-xs text-zinc-500">Games getting attention right now.</p>
         </div>
 
         <div className="space-y-2 p-3">

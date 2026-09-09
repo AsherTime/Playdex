@@ -234,7 +234,7 @@ const WUWA_BREAKDOWNS: Record<string, Omit<MockTeamBreakdown, "teamSlug">> = {
       {
         id: "fusion-burst",
         name: "Fusion Burst",
-        role: "Extra Source",
+        role: "Bonus Damage",
         element: "Fusion",
         share: 17,
         portraitPath: WUWA_ASSET.weapon("Fusion Accretion.png"),

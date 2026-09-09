@@ -19,17 +19,11 @@ export function NewsTrackerStrip({
       <div className="relative p-4 sm:p-5">
         <div className="mb-4 flex items-center justify-between gap-3">
           <div className="space-y-1">
-            <div className="flex items-center gap-2">
-              <p className="text-[10px] font-medium uppercase tracking-[0.24em] text-cyan-300/80">
-                Live tracker
-              </p>
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-2 py-0.5 text-[10px] font-medium text-emerald-100">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-300" />
-                Live
-              </span>
-            </div>
+            <p className="text-[10px] font-medium uppercase tracking-[0.24em] text-cyan-300/80">
+              Updates
+            </p>
             <h2 className="text-sm font-semibold text-white sm:text-base">
-              Latest tracked updates
+              Latest Updates
             </h2>
           </div>
           <Link
