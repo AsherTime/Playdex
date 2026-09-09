@@ -20,9 +20,11 @@ export default async function CharacterDetailPage({
   const { slug, characterSlug } = await params;
 
   if (slug === "genshin-impact") {
-    const guideCharacter = await getGenshinGuideCharacter(characterSlug);
+    const [guideCharacter, user] = await Promise.all([
+      getGenshinGuideCharacter(characterSlug),
+      getCurrentUserWithRole(),
+    ]);
     if (guideCharacter) {
-      const user = await getCurrentUserWithRole();
       return <CharacterGuidePage character={guideCharacter} gameSlug={slug} canEdit={canEditGuides(user?.role)} />;
     }
   }

@@ -6,7 +6,7 @@ import {
   resolveCharacterIcon,
   resolveWeaponIcon,
 } from "@/lib/guides/assets";
-import type { Json } from "@/types/database";
+import type { Database, Json } from "@/types/database";
 
 const GAME_ID = "genshin-impact";
 const GAME_SLUG = "genshin-impact";
@@ -21,6 +21,18 @@ type CharacterRow = {
   release_date: string | null;
   portrait_url: string | null;
   metadata: Json;
+};
+
+type GuideTables = Database["public"]["Tables"];
+type JoinedCharacter = CharacterRow & {
+  character_kits: GuideTables["character_kits"]["Row"] | null;
+  character_builds: GuideTables["character_builds"]["Row"][];
+  character_team_comps: (GuideTables["character_team_comps"]["Row"] & {
+    character_team_members: Pick<GuideTables["character_team_members"]["Row"],
+      "team_id" | "slot_number" | "character_name" | "role" | "character_id">[];
+  })[];
+  character_guide_source_records: Pick<GuideTables["character_guide_source_records"]["Row"],
+    "source_site" | "source_type" | "status" | "missing_fields" | "error">[];
 };
 
 type KitEntry = {
@@ -171,47 +183,31 @@ export async function getGenshinGuideCharacter(
 
   const { data: character, error } = await supabase
     .from("game_characters")
-    .select("id, slug, display_name, element, weapon_type, rarity, release_date, portrait_url, metadata")
+    .select(`
+      id, slug, display_name, element, weapon_type, rarity, release_date, portrait_url, metadata,
+      character_kits(*),
+      character_builds(*),
+      character_team_comps(*, character_team_members(team_id, slot_number, character_name, role, character_id)),
+      character_guide_source_records(source_site, source_type, status, missing_fields, error)
+    `)
     .eq("game_id", GAME_ID)
     .eq("slug", characterSlug)
-    .maybeSingle();
+    .maybeSingle()
+    .overrideTypes<JoinedCharacter | null, { merge: false }>();
 
   if (error || !character) {
     console.error("Failed to load Genshin guide character", error);
     return null;
   }
 
-  const [kitResult, buildResult, teamResult, sourceRecordsResult] = await Promise.all([
-    supabase.from("character_kits").select("*").eq("character_id", character.id).maybeSingle(),
-    supabase.from("character_builds").select("*").eq("character_id", character.id),
-    supabase
-      .from("character_team_comps")
-      .select("*")
-      .eq("character_id", character.id)
-      .order("rank_order", { ascending: true }),
-    supabase
-      .from("character_guide_source_records")
-      .select("source_site, source_type, status, missing_fields, error")
-      .eq("character_id", character.id),
-  ]);
-
-  if (kitResult.error || buildResult.error || teamResult.error || sourceRecordsResult.error) {
-    console.error("Failed to load guide detail data", {
-      kit: kitResult.error,
-      build: buildResult.error,
-      teams: teamResult.error,
-      sourceRecords: sourceRecordsResult.error,
-    });
-  }
-
-  const teamRows = selectPublishedTeams(teamResult.data ?? []);
-  const { data: members } = teamRows.length
-    ? await supabase
-        .from("character_team_members")
-        .select("team_id, slot_number, character_name, role, character_id")
-        .in("team_id", teamRows.map((team) => team.id))
-        .order("slot_number", { ascending: true })
-    : { data: [] };
+  // Fetch related rows together to avoid three sequential network round trips.
+  const kitResult = { data: character.character_kits };
+  const buildResult = { data: character.character_builds };
+  const sourceRecordsResult = { data: character.character_guide_source_records };
+  const teamRows = selectPublishedTeams(character.character_team_comps)
+    .sort((a, b) => a.rank_order - b.rank_order);
+  const members = teamRows.flatMap((team) => team.character_team_members)
+    .sort((a, b) => a.slot_number - b.slot_number);
 
   const characterCard = toGuideCharacterCard(character as CharacterRow, {
     role: selectPublishedBuild(buildResult.data ?? [])?.role ?? null,
