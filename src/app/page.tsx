@@ -24,7 +24,7 @@ export default async function HomePage() {
   const syncedStats = user ? await getServerGamingDashboardStats(user.id) : null;
 
   const [feedNews, trendingGames] = await Promise.all([
-    getLatestNews(24, undefined, followedSlugs),
+    getLatestNews(24, undefined, followedSlugs, "homepage"),
     Promise.resolve(getTrendingGames().slice(0, 5)),
   ]);
 

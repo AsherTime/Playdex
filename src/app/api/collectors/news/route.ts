@@ -8,5 +8,6 @@ export async function POST(request: Request) {
   const unauthorized = verifyCollectorCronRequest(request);
   if (unauthorized) return unauthorized;
 
-  return Response.json(await runNewsCollector({ force: false }));
+  const force = new URL(request.url).searchParams.get("force") === "1";
+  return Response.json(await runNewsCollector({ force }));
 }

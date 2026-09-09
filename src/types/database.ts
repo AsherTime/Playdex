@@ -30,7 +30,12 @@ type GameSourceRow = {
   external_ref: string | null;
   status: string;
   last_collected_at: string | null;
+  last_attempted_at: string | null;
+  last_success_at: string | null;
   last_error: string | null;
+  consecutive_failures: number;
+  last_item_discovered_at: string | null;
+  disabled_reason: string | null;
   cadence: string;
   cadence_minutes: number;
   enabled: boolean;
@@ -43,19 +48,31 @@ type NewsItemRow = {
   id: string;
   game_id: string | null;
   title: string;
+  original_title: string | null;
+  normalized_title: string | null;
   summary: string;
   url: string;
+  canonical_url: string | null;
   image_url: string | null;
   image_source_url: string | null;
   image_match_type: string | null;
+  image_source: string | null;
+  image_quality: number;
+  image_is_fallback: boolean;
   source_name: string;
   source_type: string;
   published_at: string;
+  publication_date_confidence: "source" | "article" | "title" | "fallback";
   collected_at: string;
   external_id: string | null;
   content_hash: string;
   tags: string[];
   category: string;
+  importance_score: number;
+  quality_score: number;
+  duplicate_of: string | null;
+  homepage_eligible: boolean;
+  filtering_reason: string | null;
   created_at: string;
   updated_at: string;
 };
@@ -381,15 +398,15 @@ export interface Database {
       };
       game_sources: {
         Row: GameSourceRow;
-        Insert: Omit<GameSourceRow, "created_at" | "updated_at" | "status" | "last_collected_at" | "last_error" | "cadence" | "cadence_minutes" | "enabled" | "tags" | "source_type"> &
-          Partial<Pick<GameSourceRow, "created_at" | "updated_at" | "status" | "last_collected_at" | "last_error" | "cadence" | "cadence_minutes" | "enabled" | "tags" | "source_type">>;
+        Insert: Omit<GameSourceRow, "created_at" | "updated_at" | "status" | "last_collected_at" | "last_attempted_at" | "last_success_at" | "last_error" | "consecutive_failures" | "last_item_discovered_at" | "disabled_reason" | "cadence" | "cadence_minutes" | "enabled" | "tags" | "source_type"> &
+          Partial<Pick<GameSourceRow, "created_at" | "updated_at" | "status" | "last_collected_at" | "last_attempted_at" | "last_success_at" | "last_error" | "consecutive_failures" | "last_item_discovered_at" | "disabled_reason" | "cadence" | "cadence_minutes" | "enabled" | "tags" | "source_type">>;
         Update: Partial<GameSourceRow>;
         Relationships: [];
       };
       news_items: {
         Row: NewsItemRow;
-        Insert: Omit<NewsItemRow, "id" | "created_at" | "updated_at" | "collected_at" | "summary" | "image_url" | "image_source_url" | "image_match_type" | "external_id" | "tags" | "category"> &
-          Partial<Pick<NewsItemRow, "id" | "created_at" | "updated_at" | "collected_at" | "summary" | "image_url" | "image_source_url" | "image_match_type" | "external_id" | "tags" | "category">>;
+        Insert: Omit<NewsItemRow, "id" | "created_at" | "updated_at" | "collected_at" | "summary" | "original_title" | "normalized_title" | "canonical_url" | "image_url" | "image_source_url" | "image_match_type" | "image_source" | "image_quality" | "image_is_fallback" | "publication_date_confidence" | "external_id" | "tags" | "category" | "importance_score" | "quality_score" | "duplicate_of" | "homepage_eligible" | "filtering_reason"> &
+          Partial<Pick<NewsItemRow, "id" | "created_at" | "updated_at" | "collected_at" | "summary" | "original_title" | "normalized_title" | "canonical_url" | "image_url" | "image_source_url" | "image_match_type" | "image_source" | "image_quality" | "image_is_fallback" | "publication_date_confidence" | "external_id" | "tags" | "category" | "importance_score" | "quality_score" | "duplicate_of" | "homepage_eligible" | "filtering_reason">>;
         Update: Partial<NewsItemRow>;
         Relationships: [];
       };

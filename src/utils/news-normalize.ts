@@ -15,6 +15,9 @@ const CATEGORY_PREFIXES = [
 
 const ISO_TIMESTAMP =
   /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z?|\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})?/g;
+const REDUNDANT_DATE_PREFIX =
+  /^(?:\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{4}[/-]\d{1,2}[/-]\d{1,2}|[A-Z][a-z]{2,8}\s+\d{1,2},\s+\d{4})\s+/;
+const DUPLICATED_LEADING_WORD = /^(\b[\w'-]+\b)(?:\s+\1\b)+\s+/i;
 
 const GLUED_HEADING =
   /\b(Notes|Patch|Update|Dev|Recap|Primer|Reveal|Launch|Trailer|Preview|Hotfix|Maintenance)(\s*)([A-Z])/g;
@@ -62,6 +65,12 @@ function normalizeAuthorSeparators(value: string) {
   return value.replace(/\s+[-–—]\s+/g, " — ");
 }
 
+function stripDuplicatedFragments(value: string) {
+  return value
+    .replace(DUPLICATED_LEADING_WORD, "$1 ")
+    .replace(/\b(Announcement|Update|Patch|News)(?:\s+\1\b)+/gi, "$1");
+}
+
 function summaryFromTitle(title: string) {
   const colonParts = title.split(/:\s+/);
   if (colonParts.length > 1) {
@@ -89,7 +98,9 @@ export function normalizeNewsTitle(raw: string | undefined | null) {
   if (!title) return "";
 
   title = title.replace(ISO_TIMESTAMP, " ");
+  title = title.replace(REDUNDANT_DATE_PREFIX, "");
   title = stripCategoryPrefixes(title);
+  title = stripDuplicatedFragments(title);
   title = splitGluedSubtitle(title);
   title = normalizeAuthorSeparators(title);
   title = collapseWhitespace(title);

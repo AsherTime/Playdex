@@ -6,10 +6,12 @@ import { normalizeNewsSummary, normalizeNewsTitle } from "@/utils/news-normalize
 type NewsItemRow = Database["public"]["Tables"]["news_items"]["Row"];
 type GameRow = Database["public"]["Tables"]["games"]["Row"];
 
-const allowedCategories = new Set(["Update", "Esports", "Release", "Rumor", "Community"]);
-
 function toNewsCategory(category: string): GameNews["category"] {
-  return allowedCategories.has(category) ? (category as GameNews["category"]) : "Update";
+  if (category === "Esports") return "Esports";
+  if (category === "Release") return "Release";
+  if (category === "Rumor") return "Rumor";
+  if (category === "Community") return "Community";
+  return "Update";
 }
 
 function fallbackGameTag(row: NewsItemRow, gameById: Map<string, GameRow>) {

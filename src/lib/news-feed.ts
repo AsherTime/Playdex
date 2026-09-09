@@ -4,6 +4,8 @@ import { hasFeedThumbnail } from "@/lib/news-images";
 type NewsItemRow = Database["public"]["Tables"]["news_items"]["Row"];
 
 function feedPriority(row: NewsItemRow) {
+  const scoredPriority = (row.importance_score ?? 0) + Math.round((row.quality_score ?? 0) / 2);
+  if (scoredPriority > 0) return scoredPriority;
   if (row.source_type === "trusted_site" || row.source_name === "Game8") return 4;
   if (row.image_url) return 3;
   return 2;
@@ -19,7 +21,7 @@ export function prioritizeNewsRows<T extends NewsItemRow>(rows: T[]) {
 
 /** Feed surfaces only show articles with a real remote thumbnail. */
 export function filterFeedNewsRows<T extends NewsItemRow>(rows: T[]) {
-  return rows.filter((row) => hasFeedThumbnail(row.image_url));
+  return rows.filter((row) => hasFeedThumbnail(row.image_url) && row.duplicate_of === null);
 }
 
 function perGameCap(limit: number, gameCount: number) {

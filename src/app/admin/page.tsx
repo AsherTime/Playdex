@@ -1,7 +1,9 @@
 import { CollectorActions } from "@/components/admin/collector-actions";
+import { NewsCollectorHealthPanel } from "@/components/admin/NewsCollectorHealthPanel";
 import { SectionHeader } from "@/components/section-header";
 import { StatCard } from "@/components/stat-card";
 import { getDashboardSummary } from "@/lib/dashboard";
+import { getNewsCollectorHealth } from "@/lib/news-health";
 import { getCurrentUserWithRole } from "@/lib/roles";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
@@ -10,7 +12,10 @@ export default async function AdminPage() {
   const user = await getCurrentUserWithRole();
   if (!user) redirect("/login?next=/admin");
   if (user.role !== "admin") notFound();
-  const dashboard = await getDashboardSummary();
+  const [dashboard, newsHealth] = await Promise.all([
+    getDashboardSummary(),
+    getNewsCollectorHealth(),
+  ]);
 
   return (
     <div className="space-y-6">
@@ -32,6 +37,8 @@ export default async function AdminPage() {
         <StatCard label="News items" value={dashboard.totalNewsItems} />
         <StatCard label="Update sources" value={dashboard.sources.length} helper="Collector inputs" />
       </div>
+
+      <NewsCollectorHealthPanel health={newsHealth} />
 
       <section className="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-5">

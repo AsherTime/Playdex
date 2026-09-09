@@ -12,7 +12,7 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
   const { game } = await searchParams;
   const followedSlugs = game ? [] : await getServerFollowedGameSlugs();
   const [latestNews, trackedGames] = await Promise.all([
-    getLatestNews(24, game, followedSlugs),
+    getLatestNews(24, game, followedSlugs, "news"),
     getTrackedGames(),
   ]);
 

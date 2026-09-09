@@ -7,7 +7,7 @@ Gamedex is a Next.js app with Supabase-backed news collectors. **Vercel is the r
 | | Vercel | Cloudflare Pages |
 |---|--------|------------------|
 | Next.js App Router | Native, first-class | Requires adapter; more setup |
-| Cron for news collectors | Built-in (`vercel.json`) | Separate Worker + cron trigger |
+| Cron for news collectors | Supabase Cron calls Vercel route; Vercel Cron can remain as fallback | Separate Worker + cron trigger |
 | Long collector runs | Up to 60s (Hobby) / 300s (Pro) | Workers CPU limits (~30s free) |
 | Supabase | Standard pattern | Works, but cron is extra work |
 | Middleware / auth | Works as-is | May need edge compatibility checks |
@@ -19,21 +19,24 @@ Gamedex is a Next.js app with Supabase-backed news collectors. **Vercel is the r
 ## How news collection works
 
 ```text
-Vercel Cron (every 12h)
+Supabase Cron (hourly)
     → GET /api/collectors/run  (Authorization: Bearer CRON_SECRET)
         → runNewsCollector()
             → reads enabled game_sources from Supabase
-            → skips sources collected within cadence_minutes (720 = 12h)
+            → skips sources collected within cadence_minutes
             → fetches RSS / Game8 / Riot / Steam / website sources
+            → normalizes title/date/image/category/quality metadata
             → upserts into news_items
             → logs collector_runs + updates game_sources health
 
 Homepage /news pages
     → getLatestNews() reads news_items from Supabase
+    → homepage uses homepage_eligible + importance/freshness ranking
     → falls back to mock data if empty
 ```
 
-Manual runs from `/admin` use server actions (no public API key needed).
+Vercel Cron remains as a daily fallback through `vercel.json`, but Supabase Cron is the primary
+automation path. Manual runs from `/admin` use server actions and are only for testing/emergency use.
 
 ---
 
@@ -41,7 +44,7 @@ Manual runs from `/admin` use server actions (no public API key needed).
 
 ### 1. Supabase
 
-Apply migrations (includes auth + 12-hour cadence):
+Apply migrations:
 
 ```bash
 supabase link --project-ref <your-ref>
@@ -49,6 +52,22 @@ supabase db push
 ```
 
 Or run SQL from `supabase/migrations/` in the Supabase SQL editor.
+
+The news automation migration creates `pg_cron`, `pg_net`, the private
+`app_private.collector_settings` table, the `app_private.invoke_news_collector()` function, and
+the hourly cron job `playdex-news-collector-hourly`.
+
+After choosing the production URL and secret, set the private Supabase cron settings:
+
+```sql
+update app_private.collector_settings
+set value = 'https://YOUR-DOMAIN.vercel.app', updated_at = now()
+where key = 'app_url';
+
+update app_private.collector_settings
+set value = 'THE-SAME-VALUE-AS-VERCEL-CRON_SECRET', updated_at = now()
+where key = 'cron_secret';
+```
 
 ### 2. Push to GitHub
 
@@ -66,25 +85,32 @@ Repo: `https://github.com/Playdex-tracker/playdex-main`
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase → Project Settings → API |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Same |
 | `SUPABASE_SERVICE_ROLE_KEY` | Same (server only — never expose to client) |
-| `CRON_SECRET` | Generate: `openssl rand -hex 32` or any long random string |
+| `CRON_SECRET` | Generate a long random string; this must match `app_private.collector_settings.cron_secret` in Supabase |
 
 5. Deploy
 
-Vercel reads `vercel.json` and registers a cron job:
+Vercel reads `vercel.json` and registers a daily fallback cron job:
 
 ```json
 {
-  "crons": [{ "path": "/api/collectors/run", "schedule": "0 */12 * * *" }]
+  "crons": [{ "path": "/api/collectors/run", "schedule": "0 0 * * *" }]
 }
 ```
 
-That runs at **00:00 and 12:00 UTC** every day.
+That runs at **00:00 UTC** every day. Supabase Cron runs hourly at minute 7.
 
 ### 4. Verify cron
 
 After deploy:
 
-1. Vercel → Project → **Settings → Cron Jobs** — confirm `/api/collectors/run` is listed
+1. Supabase SQL editor:
+
+```sql
+select jobid, schedule, active, command
+from cron.job
+where jobname = 'playdex-news-collector-hourly';
+```
+
 2. Trigger manually once:
 
 ```bash
@@ -92,7 +118,7 @@ curl -X GET "https://YOUR-DOMAIN.vercel.app/api/collectors/run" \
   -H "Authorization: Bearer YOUR_CRON_SECRET"
 ```
 
-3. Check Supabase `collector_runs` and `game_sources.last_collected_at`
+3. Check Supabase `collector_runs`, `game_sources.last_success_at`, and `/admin`.
 
 ---
 
@@ -116,8 +142,8 @@ Run collector manually:
 
 | Issue | Fix |
 |-------|-----|
-| Cron returns 401 | `CRON_SECRET` in Vercel must match; Vercel auto-sends it on cron invocations |
-| Cron returns 503 | Set `CRON_SECRET` in Vercel env vars |
+| Cron returns 401 | `CRON_SECRET` in Vercel must match `app_private.collector_settings.cron_secret` in Supabase |
+| Cron returns 503 | Set `CRON_SECRET` in Vercel env vars and the Supabase private cron setting |
 | Collector times out | Upgrade to Vercel Pro for 300s `maxDuration`, or reduce enabled sources |
 | Game8 sources fail on Vercel | Node `fetch` only (curl disabled in serverless); check source URL reachability |
 | News empty on site | Run collector once; confirm Supabase env vars on Vercel |

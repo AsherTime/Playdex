@@ -61,6 +61,7 @@ export async function getLatestNews(
   limit = 24,
   gameIdOrSlug?: string,
   preferredGameSlugs: string[] = [],
+  surface: "homepage" | "news" = "homepage",
 ): Promise<GameNews[]> {
   const supabase = createPublicSupabaseClient();
   if (!supabase) {
@@ -86,9 +87,21 @@ export async function getLatestNews(
   let query = supabase
     .from("news_items")
     .select("*")
-    .not("image_url", "is", null)
-    .neq("image_url", "")
-    .order("published_at", { ascending: false });
+    .is("duplicate_of", null);
+
+  if (surface === "homepage") {
+    query = query
+      .eq("homepage_eligible", true)
+      .not("image_url", "is", null)
+      .neq("image_url", "")
+      .order("importance_score", { ascending: false })
+      .order("published_at", { ascending: false });
+  } else {
+    query = query
+      .gte("quality_score", 35)
+      .gte("importance_score", 25)
+      .order("published_at", { ascending: false });
+  }
 
   if (gameFilter) {
     query = query.eq("game_id", gameFilter.id).limit(limit * 2);
@@ -147,8 +160,12 @@ export async function getLatestNewsForGame(gameIdOrSlug: string, limit = 12): Pr
     .from("news_items")
     .select("*")
     .eq("game_id", game.id)
+    .is("duplicate_of", null)
+    .gte("quality_score", 35)
+    .gte("importance_score", 25)
     .not("image_url", "is", null)
     .neq("image_url", "")
+    .order("importance_score", { ascending: false })
     .order("published_at", { ascending: false })
     .limit(limit * 2);
 

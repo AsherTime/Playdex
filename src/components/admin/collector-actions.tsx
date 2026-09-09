@@ -42,8 +42,8 @@ export function CollectorActions() {
   return (
     <div className="space-y-4">
       <p className="text-xs text-zinc-500">
-        Production runs automatically every 12 hours via Vercel Cron. Use these controls for
-        immediate manual runs.
+        Production runs hourly via Supabase Cron. Use these controls only for immediate testing or
+        emergency runs.
       </p>
 
       <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">

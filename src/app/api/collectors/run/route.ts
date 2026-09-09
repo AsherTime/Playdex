@@ -10,11 +10,12 @@ async function handleCollectorRun(request: Request) {
   const unauthorized = verifyCollectorCronRequest(request);
   if (unauthorized) return unauthorized;
 
-  const news = await runNewsCollector({ force: false });
+  const force = new URL(request.url).searchParams.get("force") === "1";
+  const news = await runNewsCollector({ force });
   return collectorRunResponse(news);
 }
 
-/** Vercel Cron invokes GET on this path every 12 hours (see vercel.json). */
+/** Supabase Cron invokes this hourly; Vercel Cron is only a daily fallback. */
 export async function GET(request: Request) {
   return handleCollectorRun(request);
 }

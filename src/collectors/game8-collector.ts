@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { parse } from "node-html-parser";
 import { fetchGame8Html } from "@/lib/game8-fetch";
+import { canonicalNewsUrl, scoreNewsItem, type PublicationDateConfidence } from "@/lib/news-quality";
 import type { Database } from "@/types/database";
 import { cleanNewsText, normalizeNewsSummary, normalizeNewsTitle } from "@/utils/news-normalize";
 
@@ -9,19 +10,31 @@ type GameSourceRow = Database["public"]["Tables"]["game_sources"]["Row"];
 export type Game8NewsItemInsert = {
   game_id: string | null;
   title: string;
+  original_title: string | null;
+  normalized_title: string | null;
   summary: string;
   url: string;
+  canonical_url: string | null;
   image_url: string | null;
   image_source_url: string | null;
   image_match_type: string | null;
+  image_source: string | null;
+  image_quality: number;
+  image_is_fallback: boolean;
   source_name: string;
   source_type: string;
   published_at: string;
+  publication_date_confidence: PublicationDateConfidence;
   collected_at: string;
   external_id: string | null;
   content_hash: string;
   tags: string[];
   category: string;
+  importance_score: number;
+  quality_score: number;
+  duplicate_of: string | null;
+  homepage_eligible: boolean;
+  filtering_reason: string | null;
 };
 
 export type ParsedGame8Card = {
@@ -178,30 +191,59 @@ function categoryFromTitle(title: string): Game8NewsItemInsert["category"] {
 }
 
 function toNewsItem(source: GameSourceRow, card: ParsedGame8Card): Game8NewsItemInsert | null {
-  const title = normalizeNewsTitle(card.title);
+  const originalTitle = cleanNewsText(card.title);
+  const title = normalizeNewsTitle(originalTitle);
   if (!title) return null;
 
   const summary = normalizeNewsSummary(card.summary, title, card.title);
-  const canonicalUrl = canonicalArticleUrl(card.url);
+  const canonicalUrl = canonicalNewsUrl(canonicalArticleUrl(card.url));
   const publishedAt = card.publishedAt ? new Date(card.publishedAt) : new Date();
   const safePublishedAt = Number.isNaN(publishedAt.getTime()) ? new Date() : publishedAt;
+  const publicationDateConfidence: PublicationDateConfidence =
+    card.publishedAt && !Number.isNaN(new Date(card.publishedAt).getTime()) ? "source" : "fallback";
+  const tags = [...(source.tags ?? []), "game8"];
+  const scored = scoreNewsItem({
+    gameId: source.game_id,
+    title,
+    summary,
+    url: canonicalUrl,
+    sourceName: "Game8",
+    sourceType: "trusted_site",
+    tags,
+    publishedAt: safePublishedAt,
+    publicationDateConfidence,
+    imageUrl: card.imageUrl,
+    imageIsFallback: false,
+  });
 
   return {
     game_id: source.game_id,
     title,
+    original_title: originalTitle,
+    normalized_title: scored.normalizedTitle,
     summary,
     url: canonicalUrl,
+    canonical_url: canonicalUrl,
     image_url: card.imageUrl,
     image_source_url: card.imageSourceUrl,
     image_match_type: card.imageUrl ? "source_page" : null,
+    image_source: card.imageUrl ? "source_page" : null,
+    image_quality: card.imageUrl ? 70 : 0,
+    image_is_fallback: false,
     source_name: "Game8",
     source_type: "trusted_site",
     published_at: safePublishedAt.toISOString(),
+    publication_date_confidence: publicationDateConfidence,
     collected_at: new Date().toISOString(),
     external_id: canonicalUrl,
-    content_hash: contentHash(`trusted_site:${canonicalUrl}`),
-    tags: [...(source.tags ?? []), "game8"],
-    category: categoryFromTitle(title),
+    content_hash: contentHash(`news:${canonicalUrl}`),
+    tags,
+    category: scored.category || categoryFromTitle(title),
+    importance_score: scored.importanceScore,
+    quality_score: scored.qualityScore,
+    duplicate_of: null,
+    homepage_eligible: scored.homepageEligible,
+    filtering_reason: scored.filteringReason,
   };
 }
 
