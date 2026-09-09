@@ -1,4 +1,4 @@
-import type { EditableGuideData, EditableRankedItem, RevisionDiffLine } from "@/lib/guides/revision-types";
+import type { EditableGuideData, EditableMainStats, EditableRankedItem, RevisionDiffLine } from "@/lib/guides/revision-types";
 
 export function getChangedSections(base: EditableGuideData, draft: EditableGuideData): string[] {
   const sections = new Set<string>();
@@ -22,6 +22,10 @@ export function getGuideRevisionDiff(base: EditableGuideData, draft: EditableGui
   compareRankedItems(lines, "Weapons", "F2P weapon", base.build?.f2pWeapons ?? [], draft.build?.f2pWeapons ?? []);
   compareRankedItems(lines, "Artifacts", "Best artifact", base.build?.bestArtifacts ?? [], draft.build?.bestArtifacts ?? []);
   compareRankedItems(lines, "Artifacts", "Alternative artifact", base.build?.alternativeArtifacts ?? [], draft.build?.alternativeArtifacts ?? []);
+  compareText(lines, "Artifacts", "Sands main stat", readMainStat(base.build?.mainStats, "sand"), readMainStat(draft.build?.mainStats, "sand"));
+  compareText(lines, "Artifacts", "Goblet main stat", readMainStat(base.build?.mainStats, "goblet"), readMainStat(draft.build?.mainStats, "goblet"));
+  compareText(lines, "Artifacts", "Circlet main stat", readMainStat(base.build?.mainStats, "circlet"), readMainStat(draft.build?.mainStats, "circlet"));
+  compareRankedItems(lines, "Artifacts", "Substat priority", base.build?.substatPriority ?? [], draft.build?.substatPriority ?? []);
 
   compareText(lines, "Build", "Role", base.build?.role, draft.build?.role);
   compareText(lines, "Build", "Energy recharge / stat targets", base.build?.energyRecharge, draft.build?.energyRecharge);
@@ -126,4 +130,8 @@ function formatTeamMembers(team: EditableGuideData["teams"][number]) {
     .sort((a, b) => a.slotNumber - b.slotNumber)
     .map((member) => `${member.slotNumber}. ${member.characterName}${member.role ? ` (${member.role})` : ""}`)
     .join("\n");
+}
+
+function readMainStat(value: EditableMainStats | null | undefined, key: "sand" | "goblet" | "circlet") {
+  return value?.[key] ?? "";
 }

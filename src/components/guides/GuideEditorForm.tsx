@@ -2,7 +2,14 @@
 
 import { useMemo, useState, useTransition, type ReactNode } from "react";
 import { saveGuideDraftAction, submitGuideRevisionAction } from "@/app/writer/guides/actions";
-import type { EditableGuideData, EditableRankedItem, GuideRevisionStatus } from "@/lib/guides/revision-types";
+import { EntityAutocomplete, type AutocompleteOption } from "@/components/guides/EntityAutocomplete";
+import type { GuideEditorCatalogs } from "@/lib/guides/revision-types";
+import type {
+  EditableGuideData,
+  EditableMainStats,
+  EditableRankedItem,
+  GuideRevisionStatus,
+} from "@/lib/guides/revision-types";
 
 type EditorTab = "kit" | "build" | "teams";
 
@@ -16,9 +23,11 @@ export function GuideEditorForm({
   characterSlug,
   initialData,
   initialRevision,
+  catalogs,
 }: {
   characterSlug: string;
   initialData: EditableGuideData;
+  catalogs: GuideEditorCatalogs;
   initialRevision?: {
     id: string;
     status: GuideRevisionStatus;
@@ -33,6 +42,24 @@ export function GuideEditorForm({
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
+
+  const weaponOptions = useMemo(
+    () => catalogs.weapons.map((name) => ({ id: name, label: name })),
+    [catalogs.weapons],
+  );
+  const artifactOptions = useMemo(
+    () => catalogs.artifacts.map((name) => ({ id: name, label: name })),
+    [catalogs.artifacts],
+  );
+  const characterOptions = useMemo(
+    () =>
+      catalogs.characters.map((character) => ({
+        id: character.id,
+        label: character.name,
+        description: character.slug,
+      })),
+    [catalogs.characters],
+  );
 
   const canSubmit = status !== "pending_review" && status !== "published";
   const changedLabel = useMemo(
@@ -134,8 +161,17 @@ export function GuideEditorForm({
       </div>
 
       {activeTab === "kit" ? <KitEditor data={data} update={update} /> : null}
-      {activeTab === "build" ? <BuildEditor data={data} update={update} /> : null}
-      {activeTab === "teams" ? <TeamsEditor data={data} update={update} /> : null}
+      {activeTab === "build" ? (
+        <BuildEditor
+          data={data}
+          update={update}
+          weaponOptions={weaponOptions}
+          artifactOptions={artifactOptions}
+        />
+      ) : null}
+      {activeTab === "teams" ? (
+        <TeamsEditor data={data} update={update} characterOptions={characterOptions} />
+      ) : null}
     </div>
   );
 }
@@ -173,7 +209,15 @@ function KitEditor({ data, update }: EditorProps) {
   );
 }
 
-function BuildEditor({ data, update }: EditorProps) {
+function BuildEditor({
+  data,
+  update,
+  weaponOptions,
+  artifactOptions,
+}: EditorProps & {
+  weaponOptions: AutocompleteOption[];
+  artifactOptions: AutocompleteOption[];
+}) {
   const build = data.build;
   if (!build) return <EmptyPanel label="No build guide data exists for this character yet." />;
   const currentBuild = build;
@@ -182,26 +226,92 @@ function BuildEditor({ data, update }: EditorProps) {
     update({ ...data, build: { ...currentBuild, ...next } });
   }
 
+  function setMainStats(next: Partial<EditableMainStats>) {
+    setBuild({ mainStats: { ...currentBuild.mainStats, ...next } });
+  }
+
   return (
     <Panel title="Build Guide">
       <TextInput label="Role" value={build.role ?? ""} onChange={(role) => setBuild({ role })} />
-      <RankedListEditor label="Best Weapons" items={build.bestWeapons} onChange={(bestWeapons) => setBuild({ bestWeapons })} />
-      <RankedListEditor label="Alternative Weapons" items={build.alternativeWeapons} onChange={(alternativeWeapons) => setBuild({ alternativeWeapons })} />
-      <RankedListEditor label="F2P Weapons" items={build.f2pWeapons} onChange={(f2pWeapons) => setBuild({ f2pWeapons })} />
-      <RankedListEditor label="Best Artifacts" items={build.bestArtifacts} onChange={(bestArtifacts) => setBuild({ bestArtifacts })} allowDescription />
+      <RankedListEditor
+        label="Best Weapons"
+        items={build.bestWeapons}
+        options={weaponOptions}
+        placeholder="Search weapons..."
+        onChange={(bestWeapons) => setBuild({ bestWeapons })}
+      />
+      <RankedListEditor
+        label="Alternative Weapons"
+        items={build.alternativeWeapons}
+        options={weaponOptions}
+        placeholder="Search weapons..."
+        onChange={(alternativeWeapons) => setBuild({ alternativeWeapons })}
+      />
+      <RankedListEditor
+        label="F2P Weapons"
+        items={build.f2pWeapons}
+        options={weaponOptions}
+        placeholder="Search weapons..."
+        onChange={(f2pWeapons) => setBuild({ f2pWeapons })}
+      />
+      <RankedListEditor
+        label="Best Artifacts"
+        items={build.bestArtifacts}
+        options={artifactOptions}
+        placeholder="Search artifacts..."
+        onChange={(bestArtifacts) => setBuild({ bestArtifacts })}
+        allowDescription
+      />
       <RankedListEditor
         label="Alternative Artifacts"
         items={build.alternativeArtifacts}
+        options={artifactOptions}
+        placeholder="Search artifacts..."
         onChange={(alternativeArtifacts) => setBuild({ alternativeArtifacts })}
         allowDescription
       />
+
+      <div className="space-y-3 rounded-xl border border-white/10 bg-black/20 p-3">
+        <h3 className="text-sm font-semibold text-white">Artifact Stats</h3>
+        <p className="text-xs text-zinc-500">
+          Use `/` for multiple recommendations, e.g. ATK% / EM
+        </p>
+        <div className="grid gap-3 md:grid-cols-3">
+          <TextInput
+            label="Sands main stat"
+            value={build.mainStats.sand ?? ""}
+            onChange={(sand) => setMainStats({ sand })}
+          />
+          <TextInput
+            label="Goblet main stat"
+            value={build.mainStats.goblet ?? ""}
+            onChange={(goblet) => setMainStats({ goblet })}
+          />
+          <TextInput
+            label="Circlet main stat"
+            value={build.mainStats.circlet ?? ""}
+            onChange={(circlet) => setMainStats({ circlet })}
+          />
+        </div>
+        <RankedListEditor
+          label="Substat priority"
+          items={build.substatPriority}
+          onChange={(substatPriority) => setBuild({ substatPriority })}
+          placeholder="e.g. CRIT Rate"
+        />
+      </div>
+
       <Textarea label="Recommended Stat Targets" value={build.energyRecharge ?? ""} onChange={(energyRecharge) => setBuild({ energyRecharge })} />
       <Textarea label="Rotation & Playstyle" value={build.rotationPlaystyle} onChange={(rotationPlaystyle) => setBuild({ rotationPlaystyle })} />
     </Panel>
   );
 }
 
-function TeamsEditor({ data, update }: EditorProps) {
+function TeamsEditor({
+  data,
+  update,
+  characterOptions,
+}: EditorProps & { characterOptions: AutocompleteOption[] }) {
   return (
     <Panel title="Teams">
       <div className="space-y-3">
@@ -227,12 +337,18 @@ function TeamsEditor({ data, update }: EditorProps) {
             <div className="mt-3 grid gap-2 md:grid-cols-2">
               {team.members.map((member, memberIndex) => (
                 <div key={`${team.id}-${member.slotNumber}`} className="rounded-lg border border-white/10 bg-white/[0.03] p-2">
-                  <TextInput
+                  <EntityAutocomplete
                     label={`Slot ${member.slotNumber}`}
                     value={member.characterName}
-                    onChange={(characterName) => {
+                    options={characterOptions}
+                    placeholder="Search characters..."
+                    onSelect={(option) => {
                       const members = [...team.members];
-                      members[memberIndex] = { ...member, characterName };
+                      members[memberIndex] = {
+                        ...member,
+                        characterId: option.id,
+                        characterName: option.label,
+                      };
                       updateTeam(data, update, index, { ...team, members });
                     }}
                   />
@@ -302,11 +418,15 @@ function RankedListEditor({
   label,
   items,
   onChange,
+  options,
+  placeholder,
   allowDescription = false,
 }: {
   label: string;
   items: EditableRankedItem[];
   onChange: (items: EditableRankedItem[]) => void;
+  options?: AutocompleteOption[];
+  placeholder?: string;
   allowDescription?: boolean;
 }) {
   function updateItem(index: number, item: EditableRankedItem) {
@@ -338,7 +458,21 @@ function RankedListEditor({
       {items.map((item, index) => (
         <div key={`${item.rank}-${index}`} className="rounded-xl border border-white/10 bg-black/20 p-3">
           <div className="grid gap-2 md:grid-cols-[1fr_auto]">
-            <TextInput label={`#${item.rank}`} value={item.name} onChange={(name) => updateItem(index, { ...item, name })} />
+            {options ? (
+              <EntityAutocomplete
+                label={`#${item.rank}`}
+                value={item.name}
+                options={options}
+                placeholder={placeholder}
+                onSelect={(option) => updateItem(index, { ...item, name: option.label })}
+              />
+            ) : (
+              <TextInput
+                label={`#${item.rank}`}
+                value={item.name}
+                onChange={(name) => updateItem(index, { ...item, name })}
+              />
+            )}
             <div className="flex items-end gap-1">
               <button type="button" onClick={() => move(index, -1)} className="rounded-md border border-white/10 px-2 py-2 text-xs text-zinc-300">Up</button>
               <button type="button" onClick={() => move(index, 1)} className="rounded-md border border-white/10 px-2 py-2 text-xs text-zinc-300">Down</button>

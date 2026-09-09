@@ -8,6 +8,25 @@ export type EditableRankedItem = {
   description?: string | null;
 };
 
+export type EditableMainStats = {
+  sand?: string;
+  goblet?: string;
+  circlet?: string;
+  raw?: string;
+};
+
+export type GuideEditorCharacterOption = {
+  id: string;
+  slug: string;
+  name: string;
+};
+
+export type GuideEditorCatalogs = {
+  weapons: string[];
+  artifacts: string[];
+  characters: GuideEditorCharacterOption[];
+};
+
 export type EditableKitEntry = {
   id: string;
   type: string;
@@ -41,7 +60,7 @@ export type EditableGuideData = {
     f2pWeapons: EditableRankedItem[];
     bestArtifacts: EditableRankedItem[];
     alternativeArtifacts: EditableRankedItem[];
-    mainStats: Json;
+    mainStats: EditableMainStats;
     substatPriority: EditableRankedItem[];
     talentPriority: EditableRankedItem[];
     energyRecharge: string | null;

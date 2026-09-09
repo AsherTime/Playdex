@@ -4,6 +4,7 @@ import { getChangedSections } from "@/lib/guides/revision-diff";
 import type {
   EditableGuideData,
   EditableKitEntry,
+  EditableMainStats,
   EditableRankedItem,
   GuideRevisionDetail,
   GuideRevisionSummary,
@@ -435,6 +436,7 @@ function toRevisionSummary(
 }
 
 function revisionDataFromRow(row: RevisionRow, prefix: "base" | "draft"): EditableGuideData {
+  const build = (prefix === "base" ? row.base_build : row.draft_build) as EditableGuideData["build"];
   return {
     character: {
       id: row.character_id,
@@ -443,7 +445,13 @@ function revisionDataFromRow(row: RevisionRow, prefix: "base" | "draft"): Editab
       gameId: row.game_id,
     },
     kit: (prefix === "base" ? row.base_kit : row.draft_kit) as EditableGuideData["kit"],
-    build: (prefix === "base" ? row.base_build : row.draft_build) as EditableGuideData["build"],
+    build: build
+      ? {
+          ...build,
+          mainStats: asEditableMainStats(build.mainStats as Json),
+          substatPriority: Array.isArray(build.substatPriority) ? build.substatPriority : [],
+        }
+      : null,
     teams: ((prefix === "base" ? row.base_teams : row.draft_teams) as EditableGuideData["teams"]) ?? [],
   };
 }
@@ -488,7 +496,7 @@ function toEditableGuideData(
           f2pWeapons: asRankedItems(build.f2p_weapons),
           bestArtifacts: asRankedItems(build.best_artifacts),
           alternativeArtifacts: asRankedItems(build.alternative_artifacts),
-          mainStats: build.main_stats,
+          mainStats: asEditableMainStats(build.main_stats),
           substatPriority: asRankedItems(build.substat_priority),
           talentPriority: asRankedItems(build.talent_priority),
           energyRecharge: build.energy_recharge,
@@ -561,7 +569,7 @@ async function publishGuideData(revision: GuideRevisionDetail) {
           f2p_weapons: revision.draft.build.f2pWeapons as Json,
           best_artifacts: revision.draft.build.bestArtifacts as Json,
           alternative_artifacts: revision.draft.build.alternativeArtifacts as Json,
-          main_stats: revision.draft.build.mainStats,
+          main_stats: revision.draft.build.mainStats as Json,
           substat_priority: revision.draft.build.substatPriority as Json,
           talent_priority: revision.draft.build.talentPriority as Json,
           energy_recharge: revision.draft.build.energyRecharge,
@@ -656,6 +664,16 @@ function asRankedItems(value: Json): EditableRankedItem[] {
       },
     ];
   });
+}
+
+function asEditableMainStats(value: Json): EditableMainStats {
+  if (!isRecord(value)) return {};
+  return {
+    sand: typeof value.sand === "string" ? value.sand : undefined,
+    goblet: typeof value.goblet === "string" ? value.goblet : undefined,
+    circlet: typeof value.circlet === "string" ? value.circlet : undefined,
+    raw: typeof value.raw === "string" ? value.raw : undefined,
+  };
 }
 
 function asKitEntry(value: Json): EditableKitEntry | null {

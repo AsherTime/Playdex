@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { GuideEditorForm } from "@/components/guides/GuideEditorForm";
+import { getGuideEditorCatalogs } from "@/lib/guides/editor-catalog";
 import { getEditableGuideForCharacter } from "@/lib/guides/revisions";
 import { getCurrentUserWithRole } from "@/lib/roles";
 
@@ -18,7 +19,10 @@ export default async function EditCharacterGuidePage({
   if (!user) redirect(`/login?next=/games/${slug}/characters/${characterSlug}/edit`);
   if (!["writer", "admin"].includes(user.role)) notFound();
 
-  const guide = await getEditableGuideForCharacter(characterSlug, revision);
+  const [guide, catalogs] = await Promise.all([
+    getEditableGuideForCharacter(characterSlug, revision),
+    getGuideEditorCatalogs(),
+  ]);
   if (!guide) notFound();
 
   return (
@@ -34,6 +38,7 @@ export default async function EditCharacterGuidePage({
       </nav>
       <GuideEditorForm
         characterSlug={characterSlug}
+        catalogs={catalogs}
         initialData={guide.initialData}
         initialRevision={
           guide.revision
