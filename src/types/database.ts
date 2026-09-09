@@ -77,6 +77,7 @@ type ProfileRow = {
   email: string;
   name: string | null;
   age: number | null;
+  app_role: "user" | "writer" | "admin";
   username: string | null;
   bio: string | null;
   avatar_url: string | null;
@@ -125,6 +126,190 @@ type UserGameUsageDailyRow = {
   source: string;
   created_at: string;
   updated_at: string;
+};
+
+type GuideSourceRow = {
+  id: string;
+  game_id: string;
+  source_site: "nanoka" | "icy-veins" | "ign" | "manual";
+  source_type: "roster" | "kit" | "build" | "team";
+  name: string;
+  base_url: string;
+  enabled: boolean;
+  status: "pending" | "healthy" | "partial" | "missing" | "failed" | "disabled";
+  last_checked_at: string | null;
+  last_success_at: string | null;
+  last_error: string | null;
+  metadata: Json;
+  created_at: string;
+  updated_at: string;
+};
+
+type GameCharacterRow = {
+  id: string;
+  game_id: string;
+  slug: string;
+  name: string;
+  display_name: string;
+  source_character_id: string | null;
+  rarity: number | null;
+  element: string | null;
+  weapon_type: string | null;
+  release_date: string | null;
+  icon_key: string | null;
+  portrait_url: string | null;
+  is_playable: boolean;
+  metadata: Json;
+  created_at: string;
+  updated_at: string;
+};
+
+type CharacterAliasRow = {
+  id: string;
+  character_id: string;
+  game_id: string;
+  alias: string;
+  normalized_alias: string;
+  source_site: string;
+  source_character_id: string | null;
+  source_slug: string | null;
+  source_url: string | null;
+  created_at: string;
+};
+
+type CharacterGuideSourceRecordRow = {
+  id: string;
+  game_id: string;
+  character_id: string | null;
+  guide_source_id: string | null;
+  source_site: "nanoka" | "icy-veins" | "ign" | "manual";
+  source_type: "roster" | "kit" | "build" | "team";
+  source_url: string;
+  source_character_id: string | null;
+  source_slug: string | null;
+  status: "success" | "partial" | "missing" | "failed";
+  content_hash: string | null;
+  error: string | null;
+  missing_fields: string[];
+  metadata: Json;
+  imported_at: string;
+  last_checked_at: string;
+  updated_at: string;
+};
+
+type CharacterKitRow = {
+  id: string;
+  character_id: string;
+  guide_source_record_id: string | null;
+  source_site: string;
+  source_url: string;
+  source_version: string | null;
+  normal_attack: Json;
+  elemental_skill: Json;
+  elemental_burst: Json;
+  passive_talents: Json;
+  constellations: Json;
+  rule_terms: Json;
+  imported_at: string;
+  last_checked_at: string;
+  updated_at: string;
+};
+
+type CharacterBuildRow = {
+  id: string;
+  character_id: string;
+  guide_source_record_id: string | null;
+  source_site: string;
+  source_url: string;
+  build_name: string;
+  role: string | null;
+  patch: string | null;
+  best_weapons: Json;
+  alternative_weapons: Json;
+  f2p_weapons: Json;
+  best_artifacts: Json;
+  alternative_artifacts: Json;
+  main_stats: Json;
+  substat_priority: Json;
+  talent_priority: Json;
+  energy_recharge: string | null;
+  rotation: Json;
+  rotation_playstyle: string | null;
+  structured_sections: Json;
+  imported_at: string;
+  last_checked_at: string;
+  updated_at: string;
+};
+
+type GuideRevisionStatus = "draft" | "pending_review" | "approved" | "published" | "rejected";
+
+type GuideRevisionRow = {
+  id: string;
+  game_id: string;
+  character_id: string;
+  author_user_id: string;
+  status: GuideRevisionStatus;
+  title: string | null;
+  sections_changed: string[];
+  base_kit: Json;
+  draft_kit: Json;
+  base_build: Json;
+  draft_build: Json;
+  base_teams: Json;
+  draft_teams: Json;
+  base_version: Json;
+  submitted_at: string | null;
+  reviewed_at: string | null;
+  reviewed_by: string | null;
+  review_note: string | null;
+  published_at: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+type CharacterTeamCompRow = {
+  id: string;
+  character_id: string;
+  guide_source_record_id: string | null;
+  source_site: string;
+  source_url: string;
+  team_name: string | null;
+  team_type: string | null;
+  rank_order: number;
+  description: string | null;
+  metadata: Json;
+  imported_at: string;
+  last_checked_at: string;
+  updated_at: string;
+};
+
+type CharacterTeamMemberRow = {
+  id: string;
+  team_id: string;
+  slot_number: number;
+  character_id: string | null;
+  character_name: string;
+  role: string | null;
+  is_flex: boolean;
+  alternatives: string[];
+  metadata: Json;
+  created_at: string;
+};
+
+type GuideImportRunRow = {
+  id: string;
+  game_id: string | null;
+  importer: string;
+  scope: string;
+  status: "running" | "completed" | "partial" | "failed";
+  started_at: string;
+  finished_at: string | null;
+  processed_characters: number;
+  successful_records: number;
+  failed_records: number;
+  errors: Json;
+  report: Json;
+  created_at: string;
 };
 
 export interface Database {
@@ -300,6 +485,7 @@ export interface Database {
           email: string;
           name?: string | null;
           age?: number | null;
+          app_role?: "user" | "writer" | "admin";
           username?: string | null;
           bio?: string | null;
           avatar_url?: string | null;
@@ -362,6 +548,104 @@ export interface Database {
           updated_at?: string;
         };
         Update: Partial<Omit<UserGameUsageDailyRow, "id">>;
+        Relationships: [];
+      };
+      guide_sources: {
+        Row: GuideSourceRow;
+        Insert: Omit<GuideSourceRow, "created_at" | "updated_at"> &
+          Partial<Pick<GuideSourceRow, "created_at" | "updated_at">>;
+        Update: Partial<GuideSourceRow>;
+        Relationships: [];
+      };
+      game_characters: {
+        Row: GameCharacterRow;
+        Insert: Omit<GameCharacterRow, "created_at" | "updated_at"> &
+          Partial<Pick<GameCharacterRow, "created_at" | "updated_at">>;
+        Update: Partial<GameCharacterRow>;
+        Relationships: [];
+      };
+      character_aliases: {
+        Row: CharacterAliasRow;
+        Insert: Omit<CharacterAliasRow, "id" | "created_at"> &
+          Partial<Pick<CharacterAliasRow, "id" | "created_at">>;
+        Update: Partial<CharacterAliasRow>;
+        Relationships: [];
+      };
+      character_guide_source_records: {
+        Row: CharacterGuideSourceRecordRow;
+        Insert: Omit<CharacterGuideSourceRecordRow, "imported_at" | "last_checked_at" | "updated_at"> &
+          Partial<Pick<CharacterGuideSourceRecordRow, "imported_at" | "last_checked_at" | "updated_at">>;
+        Update: Partial<CharacterGuideSourceRecordRow>;
+        Relationships: [];
+      };
+      character_kits: {
+        Row: CharacterKitRow;
+        Insert: Omit<CharacterKitRow, "imported_at" | "last_checked_at" | "updated_at"> &
+          Partial<Pick<CharacterKitRow, "imported_at" | "last_checked_at" | "updated_at">>;
+        Update: Partial<CharacterKitRow>;
+        Relationships: [];
+      };
+      character_builds: {
+        Row: CharacterBuildRow;
+        Insert: Omit<CharacterBuildRow, "imported_at" | "last_checked_at" | "updated_at"> &
+          Partial<Pick<CharacterBuildRow, "imported_at" | "last_checked_at" | "updated_at" | "rotation_playstyle">>;
+        Update: Partial<CharacterBuildRow>;
+        Relationships: [];
+      };
+      character_team_comps: {
+        Row: CharacterTeamCompRow;
+        Insert: Omit<CharacterTeamCompRow, "imported_at" | "last_checked_at" | "updated_at"> &
+          Partial<Pick<CharacterTeamCompRow, "imported_at" | "last_checked_at" | "updated_at">>;
+        Update: Partial<CharacterTeamCompRow>;
+        Relationships: [];
+      };
+      character_team_members: {
+        Row: CharacterTeamMemberRow;
+        Insert: Omit<CharacterTeamMemberRow, "id" | "created_at"> &
+          Partial<Pick<CharacterTeamMemberRow, "id" | "created_at">>;
+        Update: Partial<CharacterTeamMemberRow>;
+        Relationships: [];
+      };
+      guide_import_runs: {
+        Row: GuideImportRunRow;
+        Insert: Omit<GuideImportRunRow, "id" | "started_at" | "created_at" | "processed_characters" | "successful_records" | "failed_records" | "errors" | "report" | "finished_at"> &
+          Partial<Pick<GuideImportRunRow, "id" | "started_at" | "created_at" | "processed_characters" | "successful_records" | "failed_records" | "errors" | "report" | "finished_at">>;
+        Update: Partial<GuideImportRunRow>;
+        Relationships: [];
+      };
+      guide_revisions: {
+        Row: GuideRevisionRow;
+        Insert: Omit<
+          GuideRevisionRow,
+          | "id"
+          | "status"
+          | "sections_changed"
+          | "base_version"
+          | "submitted_at"
+          | "reviewed_at"
+          | "reviewed_by"
+          | "review_note"
+          | "published_at"
+          | "created_at"
+          | "updated_at"
+        > &
+          Partial<
+            Pick<
+              GuideRevisionRow,
+              | "id"
+              | "status"
+              | "sections_changed"
+              | "base_version"
+              | "submitted_at"
+              | "reviewed_at"
+              | "reviewed_by"
+              | "review_note"
+              | "published_at"
+              | "created_at"
+              | "updated_at"
+            >
+          >;
+        Update: Partial<Omit<GuideRevisionRow, "id" | "author_user_id" | "created_at">>;
         Relationships: [];
       };
     };

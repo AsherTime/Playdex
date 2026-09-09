@@ -3,13 +3,49 @@
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
 import { buildImprovementSnapshotFromLocal } from "@/lib/improvement-snapshot";
+import type { ImprovementSnapshot } from "@/lib/public-profile";
 
-function subscribe() {
-  return () => {};
+type TodayPlanSnapshot = ImprovementSnapshot | null;
+
+let cachedSnapshot: TodayPlanSnapshot | undefined;
+let cachedSnapshotKey: string | null = null;
+const listeners = new Set<() => void>();
+
+function notifySnapshotChanged() {
+  cachedSnapshot = undefined;
+  cachedSnapshotKey = null;
+  listeners.forEach((listener) => listener());
+}
+
+function subscribe(listener: () => void) {
+  if (typeof window === "undefined") return () => {};
+
+  listeners.add(listener);
+  window.addEventListener("storage", notifySnapshotChanged);
+  window.addEventListener("focus", notifySnapshotChanged);
+  window.addEventListener("pageshow", notifySnapshotChanged);
+
+  return () => {
+    listeners.delete(listener);
+    if (listeners.size === 0) {
+      window.removeEventListener("storage", notifySnapshotChanged);
+      window.removeEventListener("focus", notifySnapshotChanged);
+      window.removeEventListener("pageshow", notifySnapshotChanged);
+    }
+  };
 }
 
 function getSnapshot() {
-  return buildImprovementSnapshotFromLocal();
+  const nextSnapshot = buildImprovementSnapshotFromLocal();
+  const nextSnapshotKey = JSON.stringify(nextSnapshot);
+
+  if (cachedSnapshot !== undefined && cachedSnapshotKey === nextSnapshotKey) {
+    return cachedSnapshot;
+  }
+
+  cachedSnapshot = nextSnapshot;
+  cachedSnapshotKey = nextSnapshotKey;
+  return cachedSnapshot;
 }
 
 export function HomeTodayPlanCard() {

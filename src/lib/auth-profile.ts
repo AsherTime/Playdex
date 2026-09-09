@@ -55,54 +55,110 @@ export async function upsertOwnProfile(input: ProfileUpdateInput) {
     }
   }
 
-  const payload: Database["public"]["Tables"]["profiles"]["Insert"] = {
+  const insertPayload: Database["public"]["Tables"]["profiles"]["Insert"] = {
     id: user.id,
     email: input.email ?? user.email ?? "",
     name: input.name,
     age: input.age,
   };
+  const updatePayload: Database["public"]["Tables"]["profiles"]["Update"] = {
+    name: input.name,
+    age: input.age,
+  };
 
   if (input.username !== undefined) {
-    payload.username = input.username ? normalizeUsername(input.username) : null;
+    const username = input.username ? normalizeUsername(input.username) : null;
+    insertPayload.username = username;
+    updatePayload.username = username;
   }
-  if (input.bio !== undefined) payload.bio = input.bio;
-  if (input.avatarUrl !== undefined) payload.avatar_url = input.avatarUrl;
+  if (input.bio !== undefined) {
+    insertPayload.bio = input.bio;
+    updatePayload.bio = input.bio;
+  }
+  if (input.avatarUrl !== undefined) {
+    insertPayload.avatar_url = input.avatarUrl;
+    updatePayload.avatar_url = input.avatarUrl;
+  }
   if (input.profileVisibility !== undefined) {
-    payload.profile_visibility = input.profileVisibility;
+    insertPayload.profile_visibility = input.profileVisibility;
+    updatePayload.profile_visibility = input.profileVisibility;
   }
-  if (input.showPlaytime !== undefined) payload.show_playtime = input.showPlaytime;
+  if (input.showPlaytime !== undefined) {
+    insertPayload.show_playtime = input.showPlaytime;
+    updatePayload.show_playtime = input.showPlaytime;
+  }
   if (input.showWeeklyPlaytime !== undefined) {
-    payload.show_weekly_playtime = input.showWeeklyPlaytime;
+    insertPayload.show_weekly_playtime = input.showWeeklyPlaytime;
+    updatePayload.show_weekly_playtime = input.showWeeklyPlaytime;
   }
   if (input.showRecentGames !== undefined) {
-    payload.show_recent_games = input.showRecentGames;
+    insertPayload.show_recent_games = input.showRecentGames;
+    updatePayload.show_recent_games = input.showRecentGames;
   }
   if (input.showImprovementPlan !== undefined) {
-    payload.show_improvement_plan = input.showImprovementPlan;
+    insertPayload.show_improvement_plan = input.showImprovementPlan;
+    updatePayload.show_improvement_plan = input.showImprovementPlan;
   }
   if (input.showFavoriteGames !== undefined) {
-    payload.show_favorite_games = input.showFavoriteGames;
+    insertPayload.show_favorite_games = input.showFavoriteGames;
+    updatePayload.show_favorite_games = input.showFavoriteGames;
   }
-  if (input.showStreak !== undefined) payload.show_streak = input.showStreak;
-  if (input.showPlatform !== undefined) payload.show_platform = input.showPlatform;
-  if (input.mainGameSlug !== undefined) payload.main_game_slug = input.mainGameSlug;
+  if (input.showStreak !== undefined) {
+    insertPayload.show_streak = input.showStreak;
+    updatePayload.show_streak = input.showStreak;
+  }
+  if (input.showPlatform !== undefined) {
+    insertPayload.show_platform = input.showPlatform;
+    updatePayload.show_platform = input.showPlatform;
+  }
+  if (input.mainGameSlug !== undefined) {
+    insertPayload.main_game_slug = input.mainGameSlug;
+    updatePayload.main_game_slug = input.mainGameSlug;
+  }
   if (input.improvementSnapshot !== undefined) {
-    payload.improvement_snapshot = input.improvementSnapshot;
+    insertPayload.improvement_snapshot = input.improvementSnapshot;
+    updatePayload.improvement_snapshot = input.improvementSnapshot;
   }
 
-  const { data, error } = await supabase
+  const { data: updated, error: updateError } = await supabase
     .from("profiles")
-    .upsert(payload, { onConflict: "id" })
+    .update(updatePayload)
+    .eq("id", user.id)
+    .select("*")
+    .maybeSingle();
+
+  if (updateError) {
+    if (updateError.code === "23505") {
+      throw new Error("That username is already taken.");
+    }
+    throw updateError;
+  }
+  if (updated) return updated;
+
+  const { data: inserted, error: insertError } = await supabase
+    .from("profiles")
+    .insert(insertPayload)
     .select("*")
     .single();
 
-  if (error) {
-    if (error.code === "23505") {
-      throw new Error("That username is already taken.");
+  if (insertError) {
+    if (insertError.code === "23505") {
+      const { data: retried, error: retryError } = await supabase
+        .from("profiles")
+        .update(updatePayload)
+        .eq("id", user.id)
+        .select("*")
+        .single();
+
+      if (retryError) {
+        if (retryError.code === "23505") throw new Error("That username is already taken.");
+        throw retryError;
+      }
+      return retried;
     }
-    throw error;
+    throw insertError;
   }
-  return data;
+  return inserted;
 }
 
 export async function getFollowedGameSlugs(): Promise<string[]> {

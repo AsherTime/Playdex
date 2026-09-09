@@ -2,8 +2,14 @@ import { CollectorActions } from "@/components/admin/collector-actions";
 import { SectionHeader } from "@/components/section-header";
 import { StatCard } from "@/components/stat-card";
 import { getDashboardSummary } from "@/lib/dashboard";
+import { getCurrentUserWithRole } from "@/lib/roles";
+import Link from "next/link";
+import { notFound, redirect } from "next/navigation";
 
 export default async function AdminPage() {
+  const user = await getCurrentUserWithRole();
+  if (!user) redirect("/login?next=/admin");
+  if (user.role !== "admin") notFound();
   const dashboard = await getDashboardSummary();
 
   return (
@@ -13,6 +19,13 @@ export default async function AdminPage() {
         title="Admin / Data Dashboard"
         description="Collection health and data freshness for tracked games and news sources."
       />
+
+      <Link
+        href="/admin/reviews"
+        className="inline-flex rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2 text-sm font-medium text-zinc-200 transition hover:bg-white/[0.08]"
+      >
+        Review Guide Submissions
+      </Link>
 
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         <StatCard label="Games tracked" value={dashboard.totalGamesTracked} />

@@ -2,7 +2,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CharacterHero } from "@/components/game-calc/CharacterHero";
 import { CharacterTeamRankings } from "@/components/game-calc/CharacterTeamRankings";
+import { CharacterGuidePage } from "@/components/guides/CharacterGuidePage";
 import { getCharacter, getAllCalcCharacterParams } from "@/lib/characters";
+import { getGenshinGuideCharacter } from "@/lib/guides/genshin";
+import { canEditGuides, getCurrentUserWithRole } from "@/lib/roles";
 import { isCalcGame } from "@/lib/team-games";
 
 export function generateStaticParams() {
@@ -15,6 +18,14 @@ export default async function CharacterDetailPage({
   params: Promise<{ slug: string; characterSlug: string }>;
 }) {
   const { slug, characterSlug } = await params;
+
+  if (slug === "genshin-impact") {
+    const guideCharacter = await getGenshinGuideCharacter(characterSlug);
+    if (guideCharacter) {
+      const user = await getCurrentUserWithRole();
+      return <CharacterGuidePage character={guideCharacter} gameSlug={slug} canEdit={canEditGuides(user?.role)} />;
+    }
+  }
 
   if (!isCalcGame(slug)) notFound();
 
