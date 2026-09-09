@@ -23,10 +23,16 @@ export async function saveGuideDraftAction(input: {
   };
 }
 
-export async function submitGuideRevisionAction(revisionId: string) {
-  const revision = await submitGuideRevision(revisionId);
+export async function submitGuideRevisionAction(input: {
+  characterSlug: string;
+  revisionId?: string | null;
+  payload: EditableGuideData;
+}) {
+  const revision = await submitGuideRevision(input);
   revalidatePath("/writer/guides");
+  revalidatePath("/admin");
   revalidatePath("/admin/reviews");
+  revalidatePath(`/games/genshin-impact/characters/${input.characterSlug}/edit`);
   return {
     id: revision.id,
     status: revision.status,

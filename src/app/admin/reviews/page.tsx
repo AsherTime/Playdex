@@ -15,12 +15,12 @@ export default async function AdminGuideReviewsPage() {
     <div className="space-y-6">
       <SectionHeader
         eyebrow="Admin"
-        title="Guide Reviews"
-        description="Review writer submissions and publish approved guide updates."
+        title={revisions.length ? `Reviews (${revisions.length})` : "Reviews"}
+        description="Pending writer submissions waiting for approval."
       />
 
       <section className="rounded-2xl border border-white/10 bg-white/[0.035] p-4">
-        <h2 className="text-base font-semibold text-white">Submissions</h2>
+        <h2 className="text-base font-semibold text-white">Pending review</h2>
         <div className="mt-3 space-y-2">
           {revisions.length ? (
             revisions.map((revision) => (
@@ -40,7 +40,7 @@ export default async function AdminGuideReviewsPage() {
                       {revision.sectionsChanged.join(", ") || "No changed sections"}
                     </p>
                   </div>
-                  <span className="w-fit rounded-md border border-white/10 bg-white/[0.04] px-2 py-1 text-xs capitalize text-zinc-300">
+                  <span className="w-fit rounded-md border border-amber-300/20 bg-amber-300/10 px-2 py-1 text-xs capitalize text-amber-100">
                     {revision.status.replace("_", " ")}
                   </span>
                 </div>
@@ -48,7 +48,7 @@ export default async function AdminGuideReviewsPage() {
             ))
           ) : (
             <p className="rounded-xl border border-dashed border-white/10 bg-black/20 px-4 py-8 text-center text-sm text-zinc-400">
-              No guide submissions yet.
+              No pending reviews.
             </p>
           )}
         </div>

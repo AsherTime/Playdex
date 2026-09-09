@@ -3,6 +3,7 @@ import { NewsCollectorHealthPanel } from "@/components/admin/NewsCollectorHealth
 import { SectionHeader } from "@/components/section-header";
 import { StatCard } from "@/components/stat-card";
 import { getDashboardSummary } from "@/lib/dashboard";
+import { countPendingGuideReviews } from "@/lib/guides/revisions";
 import { getNewsCollectorHealth } from "@/lib/news-health";
 import { getCurrentUserWithRole } from "@/lib/roles";
 import Link from "next/link";
@@ -12,9 +13,10 @@ export default async function AdminPage() {
   const user = await getCurrentUserWithRole();
   if (!user) redirect("/login?next=/admin");
   if (user.role !== "admin") notFound();
-  const [dashboard, newsHealth] = await Promise.all([
+  const [dashboard, newsHealth, pendingReviews] = await Promise.all([
     getDashboardSummary(),
     getNewsCollectorHealth(),
+    countPendingGuideReviews(),
   ]);
 
   return (
@@ -29,7 +31,7 @@ export default async function AdminPage() {
         href="/admin/reviews"
         className="inline-flex rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2 text-sm font-medium text-zinc-200 transition hover:bg-white/[0.08]"
       >
-        Review Guide Submissions
+        Reviews{pendingReviews > 0 ? ` (${pendingReviews})` : ""}
       </Link>
 
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">

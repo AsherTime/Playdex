@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useMemo, useState } from "react";
 import { MissingAssetIcon } from "@/components/guides/MissingAssetIcon";
 import { getElementStyle } from "@/lib/character-elements";
 import type { GuideCharacterCard } from "@/lib/guides/genshin";
@@ -11,26 +14,63 @@ export function CharacterGuideBrowser({
   characters: GuideCharacterCard[];
   gameSlug: string;
 }) {
+  const [query, setQuery] = useState("");
+
+  const normalizedQuery = query.trim().toLowerCase();
+
+  const visibleCharacters = useMemo(() => {
+    if (!normalizedQuery) return characters;
+    return characters.filter((character) =>
+      character.name.toLowerCase().includes(normalizedQuery),
+    );
+  }, [characters, normalizedQuery]);
+
   return (
     <section id="characters" className="space-y-3">
-      <div className="flex items-center justify-between gap-3">
-        <div>
-          <h2 className="text-base font-semibold text-white">Characters</h2>
+      <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between">
+        <h2 className="text-base font-semibold text-white">Characters</h2>
+
+        <div className="flex items-center gap-2">
+          <div className="relative w-full sm:w-56">
+            <input
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Search characters..."
+              aria-label="Search characters"
+              className="w-full rounded-lg border border-white/10 bg-black/25 py-2 pl-3 pr-8 text-sm text-white outline-none transition placeholder:text-zinc-500 focus:border-cyan-300/40 [&::-webkit-search-cancel-button]:appearance-none"
+            />
+            {query ? (
+              <button
+                type="button"
+                onClick={() => setQuery("")}
+                aria-label="Clear search"
+                className="absolute right-1 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-md text-zinc-500 transition hover:bg-white/10 hover:text-white"
+              >
+                <span aria-hidden="true" className="text-base leading-none">
+                  ×
+                </span>
+              </button>
+            ) : null}
+          </div>
+
+          <span className="shrink-0 rounded-lg border border-white/10 bg-black/25 px-2.5 py-1 text-xs text-zinc-400">
+            {normalizedQuery
+              ? `${visibleCharacters.length} of ${characters.length}`
+              : `${characters.length} characters`}
+          </span>
         </div>
-        <span className="rounded-lg border border-white/10 bg-black/25 px-2.5 py-1 text-xs text-zinc-400">
-          {characters.length} characters
-        </span>
       </div>
 
-      {characters.length ? (
+      {visibleCharacters.length ? (
         <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-          {characters.map((character) => (
+          {visibleCharacters.map((character) => (
             <CharacterGuideCard key={character.id} character={character} gameSlug={gameSlug} />
           ))}
         </div>
       ) : (
         <p className="rounded-xl border border-dashed border-white/10 bg-black/20 px-4 py-8 text-center text-sm text-zinc-400">
-          Guide data unavailable.
+          {characters.length ? "No characters found" : "Guide data unavailable."}
         </p>
       )}
     </section>

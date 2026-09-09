@@ -34,7 +34,7 @@ export function GuideEditorForm({
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
 
-  const canSubmit = status === "draft" || status === "rejected";
+  const canSubmit = status !== "pending_review" && status !== "published";
   const changedLabel = useMemo(
     () => initialRevision?.sectionsChanged?.join(", ") || "Changes will appear after saving.",
     [initialRevision?.sectionsChanged],
@@ -61,15 +61,16 @@ export function GuideEditorForm({
   }
 
   function submitDraft() {
-    if (!revisionId) {
-      setError("Save a draft before submitting it for review.");
-      return;
-    }
     setError(null);
     setMessage(null);
     startTransition(async () => {
       try {
-        const result = await submitGuideRevisionAction(revisionId);
+        const result = await submitGuideRevisionAction({
+          characterSlug,
+          revisionId,
+          payload: data,
+        });
+        setRevisionId(result.id);
         setStatus(result.status);
         setMessage("Submitted for admin review.");
       } catch (err) {

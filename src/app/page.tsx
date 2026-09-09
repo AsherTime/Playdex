@@ -1,8 +1,7 @@
 import { GamingDashboard } from "@/components/home/GamingDashboard";
+import { HomeNewsExplorer } from "@/components/home/HomeNewsExplorer";
 import { HomeTodayPlanCard } from "@/components/home/HomeTodayPlanCard";
 import { ImproveQuickStartCard } from "@/components/improve-quick-start-card";
-import { NewsCard } from "@/components/news-card";
-import { NewsTrackerStrip } from "@/components/news-tracker-strip";
 import { TrendingGamesPanel } from "@/components/trending-games-panel";
 import {
   getServerFollowedGameSlugs,
@@ -27,8 +26,6 @@ export default async function HomePage() {
     Promise.resolve(getTrendingGames().slice(0, 5)),
   ]);
 
-  const trackerNews = feedNews.slice(0, 12);
-
   return (
     <div className="space-y-6">
       <GamingDashboard
@@ -41,28 +38,10 @@ export default async function HomePage() {
       {user ? <HomeTodayPlanCard /> : null}
 
       <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_280px]">
-        <div className="min-w-0 space-y-6">
-          <NewsTrackerStrip items={trackerNews} />
-          <ImproveQuickStartCard />
-
-          {feedNews.length ? (
-            <section className="space-y-4">
-              <div className="space-y-1">
-                <p className="text-[10px] font-medium uppercase tracking-[0.24em] text-indigo-300/80">
-                  News
-                </p>
-                <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
-                  Latest Gaming News
-                </h2>
-              </div>
-
-              <div className="space-y-3">
-                {feedNews.map((item) => (
-                  <NewsCard key={item.id} item={item} />
-                ))}
-              </div>
-            </section>
-          ) : null}
+        <div className="min-w-0">
+          <HomeNewsExplorer items={feedNews}>
+            <ImproveQuickStartCard />
+          </HomeNewsExplorer>
         </div>
 
         <TrendingGamesPanel games={trendingGames} />

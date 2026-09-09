@@ -75,12 +75,24 @@ export async function listPendingGuideReviews(): Promise<GuideRevisionSummary[]>
   const { data, error } = await supabase
     .from("guide_revisions")
     .select("*")
-    .in("status", ["pending_review", "published", "rejected"])
+    .eq("status", "pending_review")
     .order("submitted_at", { ascending: false, nullsFirst: false })
     .limit(80);
 
   if (error) throw error;
   return hydrateRevisionSummaries(data ?? []);
+}
+
+export async function countPendingGuideReviews(): Promise<number> {
+  await requireAdmin();
+  const supabase = createServiceSupabaseClient();
+  const { count, error } = await supabase
+    .from("guide_revisions")
+    .select("id", { count: "exact", head: true })
+    .eq("status", "pending_review");
+
+  if (error) throw error;
+  return count ?? 0;
 }
 
 export async function getAdminGuideReview(revisionId: string): Promise<GuideRevisionDetail | null> {
@@ -165,31 +177,82 @@ export async function saveGuideDraft(characterSlug: string, payload: EditableGui
   return hydrateRevisionDetail(data);
 }
 
-export async function submitGuideRevision(revisionId: string) {
+export async function submitGuideRevision(input: {
+  characterSlug: string;
+  payload: EditableGuideData;
+  revisionId?: string | null;
+}) {
   const user = await requireGuideWriter();
-  const existing = await getRevisionForUser(revisionId, user);
-  if (!existing || !["draft", "rejected"].includes(existing.status)) {
-    throw new Error("Only your draft or rejected revisions can be submitted.");
+  const published = await getPublishedEditableGuide(input.characterSlug);
+  if (!published || published.character.id !== input.payload.character.id) {
+    throw new Error("Guide character not found.");
   }
-  if (!existing.sectionsChanged.length) {
+
+  const sectionsChanged = getChangedSections(published, input.payload);
+  if (!sectionsChanged.length) {
     throw new Error("No changes to submit.");
   }
 
   const supabase = createServiceSupabaseClient();
+  const now = new Date().toISOString();
+  const title = `${published.character.name} guide update`;
+  const revisionFields = {
+    status: "pending_review" as const,
+    title,
+    sections_changed: sectionsChanged,
+    base_kit: published.kit as Json,
+    draft_kit: input.payload.kit as Json,
+    base_build: published.build as Json,
+    draft_build: input.payload.build as Json,
+    base_teams: published.teams as Json,
+    draft_teams: input.payload.teams as Json,
+    base_version: buildBaseVersion(published) as Json,
+    submitted_at: now,
+    reviewed_at: null,
+    reviewed_by: null,
+    review_note: null,
+  };
+
+  if (input.revisionId) {
+    const existing = await getRevisionForUser(input.revisionId, user);
+    if (!existing || !["draft", "rejected"].includes(existing.status)) {
+      throw new Error("Only your draft or rejected revisions can be submitted.");
+    }
+
+    const { data, error } = await supabase
+      .from("guide_revisions")
+      .update(revisionFields)
+      .eq("id", input.revisionId)
+      .eq("author_user_id", user.id)
+      .in("status", ["draft", "rejected"])
+      .select("*");
+
+    if (error) throw error;
+    if (!data?.length) {
+      throw new Error("Could not submit revision for review.");
+    }
+    if (data[0].status !== "pending_review" || !data[0].submitted_at) {
+      throw new Error("Submit did not reach pending review.");
+    }
+    return hydrateRevisionDetail(data[0]);
+  }
+
   const { data, error } = await supabase
     .from("guide_revisions")
-    .update({
-      status: "pending_review",
-      submitted_at: new Date().toISOString(),
-      review_note: null,
-      reviewed_at: null,
-      reviewed_by: null,
+    .insert({
+      game_id: GAME_ID,
+      character_id: published.character.id,
+      author_user_id: user.id,
+      ...revisionFields,
+      base_version: { ...buildBaseVersion(published), createdAt: now } as Json,
     })
-    .eq("id", revisionId)
     .select("*")
     .single();
 
   if (error) throw error;
+  if (data.status !== "pending_review" || !data.submitted_at) {
+    throw new Error("Submit did not reach pending review.");
+  }
   return hydrateRevisionDetail(data);
 }
 
