@@ -6,6 +6,7 @@ import {
   resolveCharacterIcon,
   resolveWeaponIcon,
 } from "@/lib/guides/assets";
+import type { GuideEquipmentSummary } from "@/lib/guides/equipment-types";
 import type { Database, Json } from "@/types/database";
 
 const GAME_ID = "genshin-impact";
@@ -24,9 +25,26 @@ type CharacterRow = {
 };
 
 type GuideTables = Database["public"]["Tables"];
+type JoinedBuild = GuideTables["character_builds"]["Row"] & {
+  character_build_equipment_recommendations: Array<
+    Pick<GuideTables["character_build_equipment_recommendations"]["Row"],
+      "recommendation_group" | "rank_order"> & {
+      game_equipment: Pick<GuideTables["game_equipment"]["Row"],
+        "id" | "name" | "equipment_type" | "rarity"> | null;
+    }
+  >;
+  character_build_set_recommendations: Array<
+    Pick<GuideTables["character_build_set_recommendations"]["Row"],
+      "recommendation_group" | "rank_order"> & {
+      game_equipment_sets: Pick<GuideTables["game_equipment_sets"]["Row"],
+        "id" | "name" | "set_category" | "rarities"> | null;
+    }
+  >;
+};
+
 type JoinedCharacter = CharacterRow & {
   character_kits: GuideTables["character_kits"]["Row"] | null;
-  character_builds: GuideTables["character_builds"]["Row"][];
+  character_builds: JoinedBuild[];
   character_team_comps: (GuideTables["character_team_comps"]["Row"] & {
     character_team_members: Pick<GuideTables["character_team_members"]["Row"],
       "team_id" | "slot_number" | "character_name" | "role" | "character_id">[];
@@ -51,6 +69,7 @@ type RankedItem = {
   iconPath?: string | null;
   assetMissing?: boolean;
   description?: string | null;
+  canonical?: GuideEquipmentSummary | null;
 };
 
 type MainStats = {
@@ -186,7 +205,16 @@ export async function getGenshinGuideCharacter(
     .select(`
       id, slug, display_name, element, weapon_type, rarity, release_date, portrait_url, metadata,
       character_kits(*),
-      character_builds(*),
+      character_builds(*,
+        character_build_equipment_recommendations(
+          recommendation_group, rank_order,
+          game_equipment(id, name, equipment_type, rarity)
+        ),
+        character_build_set_recommendations(
+          recommendation_group, rank_order,
+          game_equipment_sets(id, name, set_category, rarities)
+        )
+      ),
       character_team_comps(*, character_team_members(team_id, slot_number, character_name, role, character_id)),
       character_guide_source_records(source_site, source_type, status, missing_fields, error)
     `)
@@ -229,11 +257,21 @@ export async function getGenshinGuideCharacter(
   const build = buildRow
     ? {
         sourceUrl: buildRow.source_url,
-        bestWeapons: withWeaponAssets(asRankedItems(buildRow.best_weapons), missingAssets),
-        alternativeWeapons: withWeaponAssets(asRankedItems(buildRow.alternative_weapons), missingAssets),
-        f2pWeapons: withWeaponAssets(asRankedItems(buildRow.f2p_weapons), missingAssets),
-        bestArtifacts: withArtifactAssets(asRankedItems(buildRow.best_artifacts), missingAssets),
-        alternativeArtifacts: withArtifactAssets(asRankedItems(buildRow.alternative_artifacts), missingAssets),
+        bestWeapons: withWeaponAssets(
+          asRankedItems(buildRow.best_weapons), missingAssets, buildRow, "best_weapon",
+        ),
+        alternativeWeapons: withWeaponAssets(
+          asRankedItems(buildRow.alternative_weapons), missingAssets, buildRow, "alternative_weapon",
+        ),
+        f2pWeapons: withWeaponAssets(
+          asRankedItems(buildRow.f2p_weapons), missingAssets, buildRow, "f2p_weapon",
+        ),
+        bestArtifacts: withArtifactAssets(
+          asRankedItems(buildRow.best_artifacts), missingAssets, buildRow, "best_artifact",
+        ),
+        alternativeArtifacts: withArtifactAssets(
+          asRankedItems(buildRow.alternative_artifacts), missingAssets, buildRow, "alternative_artifact",
+        ),
         mainStats: asMainStats(buildRow.main_stats),
         substatPriority: asRankedItems(buildRow.substat_priority),
         talentPriority: asRankedItems(buildRow.talent_priority),
@@ -328,28 +366,86 @@ function toGuideCharacterCard(
   };
 }
 
-function withWeaponAssets(items: RankedItem[], missingAssets: GuideMissingAsset[]) {
+function withWeaponAssets(
+  items: RankedItem[],
+  missingAssets: GuideMissingAsset[],
+  build: JoinedBuild,
+  recommendationGroup: string,
+) {
   return items.map((item) => {
-    if (item.assetPath) return { ...item, iconPath: item.assetPath, assetMissing: false };
+    const canonical = findCanonicalEquipment(build, recommendationGroup, item.rank);
+    if (item.assetPath) {
+      return { ...item, canonical, iconPath: item.assetPath, assetMissing: false };
+    }
 
     const asset = resolveWeaponIcon(GAME_SLUG, item.name);
     if (asset.missing) {
       missingAssets.push({ type: "weapon", label: item.name, candidates: asset.checkedCandidates });
     }
-    return { ...item, iconPath: asset.path, assetMissing: asset.missing };
+    return { ...item, canonical, iconPath: asset.path, assetMissing: asset.missing };
   });
 }
 
-function withArtifactAssets(items: RankedItem[], missingAssets: GuideMissingAsset[]) {
+function withArtifactAssets(
+  items: RankedItem[],
+  missingAssets: GuideMissingAsset[],
+  build: JoinedBuild,
+  recommendationGroup: string,
+) {
   return items.map((item) => {
-    if (item.assetPath) return { ...item, iconPath: item.assetPath, assetMissing: false };
+    const canonical = findCanonicalSet(build, recommendationGroup, item.rank);
+    if (item.assetPath) {
+      return { ...item, canonical, iconPath: item.assetPath, assetMissing: false };
+    }
 
     const asset = resolveArtifactIcon(GAME_SLUG, item.name);
     if (asset.missing) {
       missingAssets.push({ type: "artifact", label: item.name, candidates: asset.checkedCandidates });
     }
-    return { ...item, iconPath: asset.path, assetMissing: asset.missing };
+    return { ...item, canonical, iconPath: asset.path, assetMissing: asset.missing };
   });
+}
+
+function findCanonicalEquipment(
+  build: JoinedBuild,
+  recommendationGroup: string,
+  rank: number,
+): GuideEquipmentSummary | null {
+  const link = build.character_build_equipment_recommendations.find(
+    (item) => item.recommendation_group === recommendationGroup && item.rank_order === rank,
+  );
+  const equipment = link?.game_equipment;
+  if (!equipment) return null;
+
+  return {
+    id: equipment.id,
+    kind: "equipment",
+    name: equipment.name,
+    type: equipment.equipment_type ?? "weapon",
+    rarity: equipment.rarity,
+    rarities: null,
+  };
+}
+
+function findCanonicalSet(
+  build: JoinedBuild,
+  recommendationGroup: string,
+  rank: number,
+): GuideEquipmentSummary | null {
+  const link = build.character_build_set_recommendations.find(
+    (item) => item.recommendation_group === recommendationGroup && item.rank_order === rank,
+  );
+  const equipmentSet = link?.game_equipment_sets;
+  if (!equipmentSet) return null;
+
+  return {
+    id: equipmentSet.id,
+    kind: "set",
+    name: equipmentSet.name,
+    type: equipmentSet.set_category,
+    rarity: null,
+    rarities: equipmentSet.rarities,
+  };
 }
 
 function asRankedItems(value: Json): RankedItem[] {

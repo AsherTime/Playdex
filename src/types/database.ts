@@ -6,6 +6,59 @@ export type Json =
   | { [key: string]: Json | undefined }
   | Json[];
 
+type CanonicalEquipmentRow = {
+  id: string;
+  game_id: string;
+  source_site: string;
+  source_id: string;
+  slug: string;
+  name: string;
+  icon_url: string | null;
+  source_url: string;
+  source_data_url: string | null;
+  source_version: string | null;
+  metadata: Json;
+  raw_data: Json;
+  content_hash: string | null;
+  imported_at: string;
+  last_checked_at: string;
+  updated_at: string;
+};
+
+type EquipmentRow = CanonicalEquipmentRow & {
+  equipment_category: string;
+  equipment_type: string | null;
+  rarity: number | null;
+};
+type EquipmentSetRow = CanonicalEquipmentRow & {
+  set_category: string;
+  rarities: number[] | null;
+};
+type EquipmentStatRow = {
+  equipment_id: string; stat_key: string; stat_name: string | null;
+  value: number | null; display_value: string | null;
+  level: number | null; ascension: number | null; sort_order: number; metadata: Json;
+};
+type EquipmentEffectRow = {
+  equipment_id: string; effect_type: string; effect_key: string; name: string | null;
+  rank: number; description: string | null; parameters: Json; sort_order: number; metadata: Json;
+};
+type EquipmentSetBonusRow = {
+  set_id: string; pieces_required: number; effect_key: string;
+  description: string | null; parameters: Json; sort_order: number; metadata: Json;
+};
+type BuildEquipmentRecommendationRow = {
+  build_id: string; equipment_id: string; recommendation_group: string;
+  rank_order: number; recommendation_text: string | null;
+};
+type BuildSetRecommendationRow = {
+  build_id: string; set_id: string; recommendation_group: string;
+  rank_order: number; pieces: number | null; recommendation_text: string | null;
+};
+type EquipmentInsert<T extends CanonicalEquipmentRow> = Pick<T,
+  "game_id" | "source_site" | "source_id" | "slug" | "name" | "source_url"
+> & Partial<T>;
+
 type GameRow = {
   id: string;
   slug: string;
@@ -332,6 +385,48 @@ type GuideImportRunRow = {
 export interface Database {
   public: {
     Tables: {
+      game_equipment: {
+        Row: EquipmentRow;
+        Insert: EquipmentInsert<EquipmentRow> & Pick<EquipmentRow, "equipment_category">;
+        Update: Partial<EquipmentRow>;
+        Relationships: [{ foreignKeyName: "game_equipment_game_id_fkey"; columns: ["game_id"]; isOneToOne: false; referencedRelation: "games"; referencedColumns: ["id"] }];
+      };
+      game_equipment_sets: {
+        Row: EquipmentSetRow;
+        Insert: EquipmentInsert<EquipmentSetRow> & Pick<EquipmentSetRow, "set_category">;
+        Update: Partial<EquipmentSetRow>;
+        Relationships: [{ foreignKeyName: "game_equipment_sets_game_id_fkey"; columns: ["game_id"]; isOneToOne: false; referencedRelation: "games"; referencedColumns: ["id"] }];
+      };
+      game_equipment_stats: {
+        Row: EquipmentStatRow;
+        Insert: Pick<EquipmentStatRow, "equipment_id" | "stat_key"> & Partial<EquipmentStatRow>;
+        Update: Partial<EquipmentStatRow>;
+        Relationships: [{ foreignKeyName: "game_equipment_stats_equipment_id_fkey"; columns: ["equipment_id"]; isOneToOne: false; referencedRelation: "game_equipment"; referencedColumns: ["id"] }];
+      };
+      game_equipment_effects: {
+        Row: EquipmentEffectRow;
+        Insert: Pick<EquipmentEffectRow, "equipment_id" | "effect_type" | "effect_key"> & Partial<EquipmentEffectRow>;
+        Update: Partial<EquipmentEffectRow>;
+        Relationships: [{ foreignKeyName: "game_equipment_effects_equipment_id_fkey"; columns: ["equipment_id"]; isOneToOne: false; referencedRelation: "game_equipment"; referencedColumns: ["id"] }];
+      };
+      game_equipment_set_bonuses: {
+        Row: EquipmentSetBonusRow;
+        Insert: Pick<EquipmentSetBonusRow, "set_id" | "pieces_required" | "effect_key"> & Partial<EquipmentSetBonusRow>;
+        Update: Partial<EquipmentSetBonusRow>;
+        Relationships: [{ foreignKeyName: "game_equipment_set_bonuses_set_id_fkey"; columns: ["set_id"]; isOneToOne: false; referencedRelation: "game_equipment_sets"; referencedColumns: ["id"] }];
+      };
+      character_build_equipment_recommendations: {
+        Row: BuildEquipmentRecommendationRow;
+        Insert: Pick<BuildEquipmentRecommendationRow, "build_id" | "equipment_id"> & Partial<BuildEquipmentRecommendationRow>;
+        Update: Partial<BuildEquipmentRecommendationRow>;
+        Relationships: [{ foreignKeyName: "character_build_equipment_recommendations_build_id_fkey"; columns: ["build_id"]; isOneToOne: false; referencedRelation: "character_builds"; referencedColumns: ["id"] }, { foreignKeyName: "character_build_equipment_recommendations_equipment_id_fkey"; columns: ["equipment_id"]; isOneToOne: false; referencedRelation: "game_equipment"; referencedColumns: ["id"] }];
+      };
+      character_build_set_recommendations: {
+        Row: BuildSetRecommendationRow;
+        Insert: Pick<BuildSetRecommendationRow, "build_id" | "set_id"> & Partial<BuildSetRecommendationRow>;
+        Update: Partial<BuildSetRecommendationRow>;
+        Relationships: [{ foreignKeyName: "character_build_set_recommendations_build_id_fkey"; columns: ["build_id"]; isOneToOne: false; referencedRelation: "character_builds"; referencedColumns: ["id"] }, { foreignKeyName: "character_build_set_recommendations_set_id_fkey"; columns: ["set_id"]; isOneToOne: false; referencedRelation: "game_equipment_sets"; referencedColumns: ["id"] }];
+      };
       games: {
         Row: GameRow;
         Insert: Omit<GameRow, "created_at" | "updated_at"> & Partial<Pick<GameRow, "created_at" | "updated_at">>;
@@ -668,6 +763,14 @@ export interface Database {
     };
     Views: Record<string, never>;
     Functions: {
+      import_game_equipment: {
+        Args: { p_record: Json; p_children: Json; p_effects?: Json };
+        Returns: string;
+      };
+      import_game_equipment_set: {
+        Args: { p_record: Json; p_children: Json; p_effects?: Json };
+        Returns: string;
+      };
       check_auth_email_status: {
         Args: {
           check_email: string;

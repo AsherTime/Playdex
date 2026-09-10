@@ -1,0 +1,1396 @@
+{
+  "generated_at": "2026-09-10T17:37:21.344Z",
+  "matching_rules_current": [
+    "source_id == recommendation.sourceRef when present",
+    "exact normalized name match (lowercase, strip non-alphanumeric, strip trailing 1-5 stars)"
+  ],
+  "summary": {
+    "unmatched_weapon_rows": 20,
+    "unmatched_artifact_rows": 8,
+    "distinct_unmatched_weapons": 15,
+    "distinct_unmatched_artifacts": 7
+  },
+  "unmatched_weapons": [
+    {
+      "kind": "weapon",
+      "recommendation_name": "7.1 Event 4-Star Sword",
+      "normalized_name": "71event4starsword",
+      "source_ref": "icons/weapons/generic-sword.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-sword.webp); normalized name has no exact canonical match (71event4starsword)",
+      "closest_matches": [
+        {
+          "id": "76b813ed-08dd-4479-91d4-c06d9bcc80d4",
+          "name": "Traveler's Handy Sword",
+          "source_id": "11303",
+          "score": 0.474
+        },
+        {
+          "id": "622da646-f647-4556-b83b-ee018bdada30",
+          "name": "Favonius Sword",
+          "source_id": "11401",
+          "score": 0.471
+        },
+        {
+          "id": "0899b360-112d-419d-9247-f8f6f3371a84",
+          "name": "Silver Sword",
+          "source_id": "11201",
+          "score": 0.471
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "vesna",
+          "character_name": "Vesna",
+          "build_id": "genshin-impact-vesna-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "7.1 Gacha 4-Star Sword",
+      "normalized_name": "71gacha4starsword",
+      "source_ref": "icons/weapons/generic-sword.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-sword.webp); normalized name has no exact canonical match (71gacha4starsword)",
+      "closest_matches": [
+        {
+          "id": "c6c53bc7-968d-4279-afd6-718eb60a667a",
+          "name": "Sacrificial Sword",
+          "source_id": "11403",
+          "score": 0.412
+        },
+        {
+          "id": "1e7c8691-56da-49fa-9e1a-f158ac9e951d",
+          "name": "Royal Greatsword",
+          "source_id": "12404",
+          "score": 0.412
+        },
+        {
+          "id": "516524bb-1703-404d-a1ad-02bd68bbd063",
+          "name": "Sacrificial Greatsword",
+          "source_id": "12403",
+          "score": 0.381
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "vesna",
+          "character_name": "Vesna",
+          "build_id": "genshin-impact-vesna-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other 5-Star Polearms Options",
+      "normalized_name": "other5starpolearmsoptions",
+      "source_ref": "icons/weapons/generic-polearm.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-polearm.webp); normalized name has no exact canonical match (other5starpolearmsoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.4
+        },
+        {
+          "id": "d854793f-413a-438a-9d21-e105eb4b7f70",
+          "name": "Athame Artis",
+          "source_id": "11518",
+          "score": 0.36
+        },
+        {
+          "id": "36527b59-05a7-4bf8-8184-802e3257137c",
+          "name": "Eye of Perception",
+          "source_id": "14409",
+          "score": 0.36
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "xiao",
+          "character_name": "Xiao",
+          "build_id": "genshin-impact-xiao-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other 5-Star Stat Sticks",
+      "normalized_name": "other5starstatsticks",
+      "source_ref": null,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (other5starstatsticks)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.4
+        },
+        {
+          "id": "9adf434b-7d5c-47c8-9f00-66b6674ca897",
+          "name": "The First Great Magic",
+          "source_id": "15512",
+          "score": 0.4
+        },
+        {
+          "id": "46a75b02-baf9-42f6-8713-c8968273a436",
+          "name": "Silvershower Heartstrings",
+          "source_id": "15513",
+          "score": 0.375
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "ororon",
+          "character_name": "Ororon",
+          "build_id": "genshin-impact-ororon-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "alternative_weapon",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other 5-Star Sword Options",
+      "normalized_name": "other5starswordoptions",
+      "source_ref": "icons/weapons/generic-sword.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-sword.webp); normalized name has no exact canonical match (other5starswordoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.409
+        },
+        {
+          "id": "d4928725-7c70-4103-af53-59529b6340fe",
+          "name": "The Black Sword",
+          "source_id": "11409",
+          "score": 0.364
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "alhaitham",
+          "character_name": "Alhaitham",
+          "build_id": "genshin-impact-alhaitham-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other 5-Stat Statsticks",
+      "normalized_name": "other5statstatsticks",
+      "source_ref": null,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (other5statstatsticks)",
+      "closest_matches": [
+        {
+          "id": "d854793f-413a-438a-9d21-e105eb4b7f70",
+          "name": "Athame Artis",
+          "source_id": "11518",
+          "score": 0.35
+        },
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.35
+        },
+        {
+          "id": "9adf434b-7d5c-47c8-9f00-66b6674ca897",
+          "name": "The First Great Magic",
+          "source_id": "15512",
+          "score": 0.35
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "fischl",
+          "character_name": "Fischl",
+          "build_id": "genshin-impact-fischl-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "alternative_weapon",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Bow Options",
+      "normalized_name": "otherbowoptions",
+      "source_ref": "icons/weapons/generic-bow.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-bow.webp); normalized name has no exact canonical match (otherbowoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.412
+        },
+        {
+          "id": "d2a3164e-2beb-4b9b-9b67-5b2f5dcb5da8",
+          "name": "Vivid Notions",
+          "source_id": "14519",
+          "score": 0.4
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "diona",
+          "character_name": "Diona",
+          "build_id": "genshin-impact-diona-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 3
+        },
+        {
+          "character_slug": "aloy",
+          "character_name": "Aloy",
+          "build_id": "genshin-impact-aloy-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Catalyst Options",
+      "normalized_name": "othercatalystoptions",
+      "source_ref": "icons/weapons/generic-catalyst.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-catalyst.webp); normalized name has no exact canonical match (othercatalystoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.45
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "wriothesley",
+          "character_name": "Wriothesley",
+          "build_id": "genshin-impact-wriothesley-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 4
+        },
+        {
+          "character_slug": "wriothesley",
+          "character_name": "Wriothesley",
+          "build_id": "genshin-impact-wriothesley-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 6
+        },
+        {
+          "character_slug": "baizhu",
+          "character_name": "Baizhu",
+          "build_id": "genshin-impact-baizhu-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Claymore Options",
+      "normalized_name": "otherclaymoreoptions",
+      "source_ref": "icons/weapons/generic-claymore.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-claymore.webp); normalized name has no exact canonical match (otherclaymoreoptions)",
+      "closest_matches": [
+        {
+          "id": "d854793f-413a-438a-9d21-e105eb4b7f70",
+          "name": "Athame Artis",
+          "source_id": "11518",
+          "score": 0.4
+        },
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.35
+        },
+        {
+          "id": "36527b59-05a7-4bf8-8184-802e3257137c",
+          "name": "Eye of Perception",
+          "source_id": "14409",
+          "score": 0.35
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "varka",
+          "character_name": "Varka",
+          "build_id": "genshin-impact-varka-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 4
+        },
+        {
+          "character_slug": "varka",
+          "character_name": "Varka",
+          "build_id": "genshin-impact-varka-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 7
+        },
+        {
+          "character_slug": "chongyun",
+          "character_name": "Chongyun",
+          "build_id": "genshin-impact-chongyun-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Polearms Options",
+      "normalized_name": "otherpolearmsoptions",
+      "source_ref": "icons/weapons/generic-polearm.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-polearm.webp); normalized name has no exact canonical match (otherpolearmsoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.45
+        },
+        {
+          "id": "d854793f-413a-438a-9d21-e105eb4b7f70",
+          "name": "Athame Artis",
+          "source_id": "11518",
+          "score": 0.4
+        },
+        {
+          "id": "36527b59-05a7-4bf8-8184-802e3257137c",
+          "name": "Eye of Perception",
+          "source_id": "14409",
+          "score": 0.4
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "xiao",
+          "character_name": "Xiao",
+          "build_id": "genshin-impact-xiao-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 7
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Sword Options",
+      "normalized_name": "otherswordoptions",
+      "source_ref": "icons/weapons/generic-sword.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-sword.webp); normalized name has no exact canonical match (otherswordoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.529
+        },
+        {
+          "id": "36527b59-05a7-4bf8-8184-802e3257137c",
+          "name": "Eye of Perception",
+          "source_id": "14409",
+          "score": 0.412
+        },
+        {
+          "id": "d854793f-413a-438a-9d21-e105eb4b7f70",
+          "name": "Athame Artis",
+          "source_id": "11518",
+          "score": 0.353
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "alhaitham",
+          "character_name": "Alhaitham",
+          "build_id": "genshin-impact-alhaitham-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 7
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Skyward Harp R1",
+      "normalized_name": "skywardharpr1",
+      "source_ref": "icons/weapons/skyward-harp.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/skyward-harp.webp); normalized name has no exact canonical match (skywardharpr1)",
+      "closest_matches": [
+        {
+          "id": "90a6dfb7-9e18-4204-9cce-0c10bb729c65",
+          "name": "Skyward Harp",
+          "source_id": "15501",
+          "score": 0.85
+        },
+        {
+          "id": "dcc36937-7c5f-4d94-bc42-8fd86fe554a7",
+          "name": "Skyward Pride",
+          "source_id": "12501",
+          "score": 0.615
+        },
+        {
+          "id": "49b94d39-94ea-4079-9a54-bfbe674873c2",
+          "name": "Skyward Atlas",
+          "source_id": "14501",
+          "score": 0.615
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "linnea",
+          "character_name": "Linnea",
+          "build_id": "genshin-impact-linnea-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Snare Hook R5",
+      "normalized_name": "snarehookr5",
+      "source_ref": "icons/weapons/snare-hook.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/snare-hook.webp); normalized name has no exact canonical match (snarehookr5)",
+      "closest_matches": [
+        {
+          "id": "a7a35790-a1b4-429e-ac7b-99715fc8619d",
+          "name": "Snare Hook",
+          "source_id": "15433",
+          "score": 0.85
+        },
+        {
+          "id": "8843367b-dcca-415f-9fa2-49d8d219021a",
+          "name": "Sharpshooter's Oath",
+          "source_id": "15302",
+          "score": 0.412
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "linnea",
+          "character_name": "Linnea",
+          "build_id": "genshin-impact-linnea-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 6
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Vesna's Signature Weapon",
+      "normalized_name": "vesnassignatureweapon",
+      "source_ref": "icons/weapons/generic-sword.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-sword.webp); normalized name has no exact canonical match (vesnassignatureweapon)",
+      "closest_matches": [],
+      "occurrences": [
+        {
+          "character_slug": "vesna",
+          "character_name": "Vesna",
+          "build_id": "genshin-impact-vesna-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Vodyanitsa Signature Weapon",
+      "normalized_name": "vodyanitsasignatureweapon",
+      "source_ref": "icons/weapons/vodyanitsa-signature.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/vodyanitsa-signature.webp); normalized name has no exact canonical match (vodyanitsasignatureweapon)",
+      "closest_matches": [],
+      "occurrences": [
+        {
+          "character_slug": "vodyanitsa",
+          "character_name": "Vodyanitsa",
+          "build_id": "genshin-impact-vodyanitsa-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_weapon",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "unmatched_artifact_sets": [
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "2-Piece +18% ATK Set +18% ATk Set",
+      "normalized_name": "2piece18atkset18atkset",
+      "source_ref": null,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (2piece18atkset18atkset)",
+      "closest_matches": [],
+      "occurrences": [
+        {
+          "character_slug": "xianyun",
+          "character_name": "Xianyun",
+          "build_id": "genshin-impact-xianyun-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_artifact",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "2-piece ATK % Set Combinations",
+      "normalized_name": "2pieceatksetcombinations",
+      "source_ref": "portraits/artifacts/gladiators-finale.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (portraits/artifacts/gladiators-finale.webp); normalized name has no exact canonical match (2pieceatksetcombinations)",
+      "closest_matches": [
+        {
+          "id": "fb470d9f-999b-46ce-84ea-4eccd269fcec",
+          "name": "Prayers for Illumination",
+          "source_id": "15009",
+          "score": 0.375
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "beidou",
+          "character_name": "Beidou",
+          "build_id": "genshin-impact-beidou-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "alternative_artifact",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "2-Piece HP + 2 Piece HP",
+      "normalized_name": "2piecehp2piecehp",
+      "source_ref": null,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (2piecehp2piecehp)",
+      "closest_matches": [],
+      "occurrences": [
+        {
+          "character_slug": "dahlia",
+          "character_name": "Dahlia",
+          "build_id": "genshin-impact-dahlia-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_artifact",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "Alternatively 2x 2p ATK % sets or 2p ATK % / Energy Recharge",
+      "normalized_name": "alternatively2x2patksetsor2patkenergyrecharge",
+      "source_ref": null,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (alternatively2x2patksetsor2patkenergyrecharge)",
+      "closest_matches": [],
+      "occurrences": [
+        {
+          "character_slug": "shenhe",
+          "character_name": "Shenhe",
+          "build_id": "genshin-impact-shenhe-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_artifact",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "Furina",
+      "normalized_name": "furina",
+      "source_ref": null,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (furina)",
+      "closest_matches": [],
+      "occurrences": [
+        {
+          "character_slug": "klee",
+          "character_name": "Klee",
+          "build_id": "genshin-impact-klee-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_artifact",
+          "rank": 2
+        },
+        {
+          "character_slug": "kamisato-ayato",
+          "character_name": "Kamisato Ayato",
+          "build_id": "genshin-impact-kamisato-ayato-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_artifact",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "Noblesse Oblige / Thundering Fury",
+      "normalized_name": "noblesseobligethunderingfury",
+      "source_ref": "portraits/artifacts/noblesse-oblige.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (portraits/artifacts/noblesse-oblige.webp); normalized name has no exact canonical match (noblesseobligethunderingfury)",
+      "closest_matches": [
+        {
+          "id": "73935781-421e-4cd1-a1b2-7a44e6b8ae43",
+          "name": "Thundering Fury",
+          "source_id": "15005",
+          "score": 0.85
+        },
+        {
+          "id": "63481f32-8f86-4fca-a648-87595d13afd6",
+          "name": "Noblesse Oblige",
+          "source_id": "15007",
+          "score": 0.85
+        }
+      ],
+      "occurrences": [
+        {
+          "character_slug": "beidou",
+          "character_name": "Beidou",
+          "build_id": "genshin-impact-beidou-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "alternative_artifact",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "Two 2-Piece EM Sets",
+      "normalized_name": "two2pieceemsets",
+      "source_ref": "portraits/artifacts/gilded-dreams.webp",
+      "failure_reason": "sourceRef present but no canonical source_id match (portraits/artifacts/gilded-dreams.webp); normalized name has no exact canonical match (two2pieceemsets)",
+      "closest_matches": [],
+      "occurrences": [
+        {
+          "character_slug": "illuga",
+          "character_name": "Illuga",
+          "build_id": "genshin-impact-illuga-icy-veins-default",
+          "build_source": "icy-veins",
+          "recommendation_group": "best_artifact",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "all_weapon_rows": [
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other 5-Star Sword Options",
+      "normalized_name": "other5starswordoptions",
+      "source_ref": "icons/weapons/generic-sword.webp",
+      "character_slug": "alhaitham",
+      "character_name": "Alhaitham",
+      "build_id": "genshin-impact-alhaitham-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 4,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-sword.webp); normalized name has no exact canonical match (other5starswordoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.409
+        },
+        {
+          "id": "d4928725-7c70-4103-af53-59529b6340fe",
+          "name": "The Black Sword",
+          "source_id": "11409",
+          "score": 0.364
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Sword Options",
+      "normalized_name": "otherswordoptions",
+      "source_ref": "icons/weapons/generic-sword.webp",
+      "character_slug": "alhaitham",
+      "character_name": "Alhaitham",
+      "build_id": "genshin-impact-alhaitham-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 7,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-sword.webp); normalized name has no exact canonical match (otherswordoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.529
+        },
+        {
+          "id": "36527b59-05a7-4bf8-8184-802e3257137c",
+          "name": "Eye of Perception",
+          "source_id": "14409",
+          "score": 0.412
+        },
+        {
+          "id": "d854793f-413a-438a-9d21-e105eb4b7f70",
+          "name": "Athame Artis",
+          "source_id": "11518",
+          "score": 0.353
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Bow Options",
+      "normalized_name": "otherbowoptions",
+      "source_ref": "icons/weapons/generic-bow.webp",
+      "character_slug": "aloy",
+      "character_name": "Aloy",
+      "build_id": "genshin-impact-aloy-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 4,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-bow.webp); normalized name has no exact canonical match (otherbowoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.412
+        },
+        {
+          "id": "d2a3164e-2beb-4b9b-9b67-5b2f5dcb5da8",
+          "name": "Vivid Notions",
+          "source_id": "14519",
+          "score": 0.4
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Catalyst Options",
+      "normalized_name": "othercatalystoptions",
+      "source_ref": "icons/weapons/generic-catalyst.webp",
+      "character_slug": "baizhu",
+      "character_name": "Baizhu",
+      "build_id": "genshin-impact-baizhu-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 3,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-catalyst.webp); normalized name has no exact canonical match (othercatalystoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.45
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Claymore Options",
+      "normalized_name": "otherclaymoreoptions",
+      "source_ref": "icons/weapons/generic-claymore.webp",
+      "character_slug": "chongyun",
+      "character_name": "Chongyun",
+      "build_id": "genshin-impact-chongyun-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 5,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-claymore.webp); normalized name has no exact canonical match (otherclaymoreoptions)",
+      "closest_matches": [
+        {
+          "id": "d854793f-413a-438a-9d21-e105eb4b7f70",
+          "name": "Athame Artis",
+          "source_id": "11518",
+          "score": 0.4
+        },
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.35
+        },
+        {
+          "id": "36527b59-05a7-4bf8-8184-802e3257137c",
+          "name": "Eye of Perception",
+          "source_id": "14409",
+          "score": 0.35
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Bow Options",
+      "normalized_name": "otherbowoptions",
+      "source_ref": "icons/weapons/generic-bow.webp",
+      "character_slug": "diona",
+      "character_name": "Diona",
+      "build_id": "genshin-impact-diona-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 3,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-bow.webp); normalized name has no exact canonical match (otherbowoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.412
+        },
+        {
+          "id": "d2a3164e-2beb-4b9b-9b67-5b2f5dcb5da8",
+          "name": "Vivid Notions",
+          "source_id": "14519",
+          "score": 0.4
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other 5-Stat Statsticks",
+      "normalized_name": "other5statstatsticks",
+      "source_ref": null,
+      "character_slug": "fischl",
+      "character_name": "Fischl",
+      "build_id": "genshin-impact-fischl-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "alternative_weapon",
+      "rank": 4,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (other5statstatsticks)",
+      "closest_matches": [
+        {
+          "id": "d854793f-413a-438a-9d21-e105eb4b7f70",
+          "name": "Athame Artis",
+          "source_id": "11518",
+          "score": 0.35
+        },
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.35
+        },
+        {
+          "id": "9adf434b-7d5c-47c8-9f00-66b6674ca897",
+          "name": "The First Great Magic",
+          "source_id": "15512",
+          "score": 0.35
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Skyward Harp R1",
+      "normalized_name": "skywardharpr1",
+      "source_ref": "icons/weapons/skyward-harp.webp",
+      "character_slug": "linnea",
+      "character_name": "Linnea",
+      "build_id": "genshin-impact-linnea-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 4,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/skyward-harp.webp); normalized name has no exact canonical match (skywardharpr1)",
+      "closest_matches": [
+        {
+          "id": "90a6dfb7-9e18-4204-9cce-0c10bb729c65",
+          "name": "Skyward Harp",
+          "source_id": "15501",
+          "score": 0.85
+        },
+        {
+          "id": "dcc36937-7c5f-4d94-bc42-8fd86fe554a7",
+          "name": "Skyward Pride",
+          "source_id": "12501",
+          "score": 0.615
+        },
+        {
+          "id": "49b94d39-94ea-4079-9a54-bfbe674873c2",
+          "name": "Skyward Atlas",
+          "source_id": "14501",
+          "score": 0.615
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Snare Hook R5",
+      "normalized_name": "snarehookr5",
+      "source_ref": "icons/weapons/snare-hook.webp",
+      "character_slug": "linnea",
+      "character_name": "Linnea",
+      "build_id": "genshin-impact-linnea-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 6,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/snare-hook.webp); normalized name has no exact canonical match (snarehookr5)",
+      "closest_matches": [
+        {
+          "id": "a7a35790-a1b4-429e-ac7b-99715fc8619d",
+          "name": "Snare Hook",
+          "source_id": "15433",
+          "score": 0.85
+        },
+        {
+          "id": "8843367b-dcca-415f-9fa2-49d8d219021a",
+          "name": "Sharpshooter's Oath",
+          "source_id": "15302",
+          "score": 0.412
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other 5-Star Stat Sticks",
+      "normalized_name": "other5starstatsticks",
+      "source_ref": null,
+      "character_slug": "ororon",
+      "character_name": "Ororon",
+      "build_id": "genshin-impact-ororon-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "alternative_weapon",
+      "rank": 3,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (other5starstatsticks)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.4
+        },
+        {
+          "id": "9adf434b-7d5c-47c8-9f00-66b6674ca897",
+          "name": "The First Great Magic",
+          "source_id": "15512",
+          "score": 0.4
+        },
+        {
+          "id": "46a75b02-baf9-42f6-8713-c8968273a436",
+          "name": "Silvershower Heartstrings",
+          "source_id": "15513",
+          "score": 0.375
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Claymore Options",
+      "normalized_name": "otherclaymoreoptions",
+      "source_ref": "icons/weapons/generic-claymore.webp",
+      "character_slug": "varka",
+      "character_name": "Varka",
+      "build_id": "genshin-impact-varka-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 4,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-claymore.webp); normalized name has no exact canonical match (otherclaymoreoptions)",
+      "closest_matches": [
+        {
+          "id": "d854793f-413a-438a-9d21-e105eb4b7f70",
+          "name": "Athame Artis",
+          "source_id": "11518",
+          "score": 0.4
+        },
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.35
+        },
+        {
+          "id": "36527b59-05a7-4bf8-8184-802e3257137c",
+          "name": "Eye of Perception",
+          "source_id": "14409",
+          "score": 0.35
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Claymore Options",
+      "normalized_name": "otherclaymoreoptions",
+      "source_ref": "icons/weapons/generic-claymore.webp",
+      "character_slug": "varka",
+      "character_name": "Varka",
+      "build_id": "genshin-impact-varka-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 7,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-claymore.webp); normalized name has no exact canonical match (otherclaymoreoptions)",
+      "closest_matches": [
+        {
+          "id": "d854793f-413a-438a-9d21-e105eb4b7f70",
+          "name": "Athame Artis",
+          "source_id": "11518",
+          "score": 0.4
+        },
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.35
+        },
+        {
+          "id": "36527b59-05a7-4bf8-8184-802e3257137c",
+          "name": "Eye of Perception",
+          "source_id": "14409",
+          "score": 0.35
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "7.1 Event 4-Star Sword",
+      "normalized_name": "71event4starsword",
+      "source_ref": "icons/weapons/generic-sword.webp",
+      "character_slug": "vesna",
+      "character_name": "Vesna",
+      "build_id": "genshin-impact-vesna-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 3,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-sword.webp); normalized name has no exact canonical match (71event4starsword)",
+      "closest_matches": [
+        {
+          "id": "76b813ed-08dd-4479-91d4-c06d9bcc80d4",
+          "name": "Traveler's Handy Sword",
+          "source_id": "11303",
+          "score": 0.474
+        },
+        {
+          "id": "622da646-f647-4556-b83b-ee018bdada30",
+          "name": "Favonius Sword",
+          "source_id": "11401",
+          "score": 0.471
+        },
+        {
+          "id": "0899b360-112d-419d-9247-f8f6f3371a84",
+          "name": "Silver Sword",
+          "source_id": "11201",
+          "score": 0.471
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "7.1 Gacha 4-Star Sword",
+      "normalized_name": "71gacha4starsword",
+      "source_ref": "icons/weapons/generic-sword.webp",
+      "character_slug": "vesna",
+      "character_name": "Vesna",
+      "build_id": "genshin-impact-vesna-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 4,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-sword.webp); normalized name has no exact canonical match (71gacha4starsword)",
+      "closest_matches": [
+        {
+          "id": "c6c53bc7-968d-4279-afd6-718eb60a667a",
+          "name": "Sacrificial Sword",
+          "source_id": "11403",
+          "score": 0.412
+        },
+        {
+          "id": "1e7c8691-56da-49fa-9e1a-f158ac9e951d",
+          "name": "Royal Greatsword",
+          "source_id": "12404",
+          "score": 0.412
+        },
+        {
+          "id": "516524bb-1703-404d-a1ad-02bd68bbd063",
+          "name": "Sacrificial Greatsword",
+          "source_id": "12403",
+          "score": 0.381
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Vesna's Signature Weapon",
+      "normalized_name": "vesnassignatureweapon",
+      "source_ref": "icons/weapons/generic-sword.webp",
+      "character_slug": "vesna",
+      "character_name": "Vesna",
+      "build_id": "genshin-impact-vesna-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 1,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-sword.webp); normalized name has no exact canonical match (vesnassignatureweapon)",
+      "closest_matches": []
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Vodyanitsa Signature Weapon",
+      "normalized_name": "vodyanitsasignatureweapon",
+      "source_ref": "icons/weapons/vodyanitsa-signature.webp",
+      "character_slug": "vodyanitsa",
+      "character_name": "Vodyanitsa",
+      "build_id": "genshin-impact-vodyanitsa-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 1,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/vodyanitsa-signature.webp); normalized name has no exact canonical match (vodyanitsasignatureweapon)",
+      "closest_matches": []
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Catalyst Options",
+      "normalized_name": "othercatalystoptions",
+      "source_ref": "icons/weapons/generic-catalyst.webp",
+      "character_slug": "wriothesley",
+      "character_name": "Wriothesley",
+      "build_id": "genshin-impact-wriothesley-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 4,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-catalyst.webp); normalized name has no exact canonical match (othercatalystoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.45
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Catalyst Options",
+      "normalized_name": "othercatalystoptions",
+      "source_ref": "icons/weapons/generic-catalyst.webp",
+      "character_slug": "wriothesley",
+      "character_name": "Wriothesley",
+      "build_id": "genshin-impact-wriothesley-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 6,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-catalyst.webp); normalized name has no exact canonical match (othercatalystoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.45
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other 5-Star Polearms Options",
+      "normalized_name": "other5starpolearmsoptions",
+      "source_ref": "icons/weapons/generic-polearm.webp",
+      "character_slug": "xiao",
+      "character_name": "Xiao",
+      "build_id": "genshin-impact-xiao-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 4,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-polearm.webp); normalized name has no exact canonical match (other5starpolearmsoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.4
+        },
+        {
+          "id": "d854793f-413a-438a-9d21-e105eb4b7f70",
+          "name": "Athame Artis",
+          "source_id": "11518",
+          "score": 0.36
+        },
+        {
+          "id": "36527b59-05a7-4bf8-8184-802e3257137c",
+          "name": "Eye of Perception",
+          "source_id": "14409",
+          "score": 0.36
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "recommendation_name": "Other Polearms Options",
+      "normalized_name": "otherpolearmsoptions",
+      "source_ref": "icons/weapons/generic-polearm.webp",
+      "character_slug": "xiao",
+      "character_name": "Xiao",
+      "build_id": "genshin-impact-xiao-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_weapon",
+      "rank": 7,
+      "failure_reason": "sourceRef present but no canonical source_id match (icons/weapons/generic-polearm.webp); normalized name has no exact canonical match (otherpolearmsoptions)",
+      "closest_matches": [
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "source_id": "14303",
+          "score": 0.45
+        },
+        {
+          "id": "d854793f-413a-438a-9d21-e105eb4b7f70",
+          "name": "Athame Artis",
+          "source_id": "11518",
+          "score": 0.4
+        },
+        {
+          "id": "36527b59-05a7-4bf8-8184-802e3257137c",
+          "name": "Eye of Perception",
+          "source_id": "14409",
+          "score": 0.4
+        }
+      ]
+    }
+  ],
+  "all_artifact_rows": [
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "2-piece ATK % Set Combinations",
+      "normalized_name": "2pieceatksetcombinations",
+      "source_ref": "portraits/artifacts/gladiators-finale.webp",
+      "character_slug": "beidou",
+      "character_name": "Beidou",
+      "build_id": "genshin-impact-beidou-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "alternative_artifact",
+      "rank": 3,
+      "failure_reason": "sourceRef present but no canonical source_id match (portraits/artifacts/gladiators-finale.webp); normalized name has no exact canonical match (2pieceatksetcombinations)",
+      "closest_matches": [
+        {
+          "id": "fb470d9f-999b-46ce-84ea-4eccd269fcec",
+          "name": "Prayers for Illumination",
+          "source_id": "15009",
+          "score": 0.375
+        }
+      ]
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "Noblesse Oblige / Thundering Fury",
+      "normalized_name": "noblesseobligethunderingfury",
+      "source_ref": "portraits/artifacts/noblesse-oblige.webp",
+      "character_slug": "beidou",
+      "character_name": "Beidou",
+      "build_id": "genshin-impact-beidou-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "alternative_artifact",
+      "rank": 2,
+      "failure_reason": "sourceRef present but no canonical source_id match (portraits/artifacts/noblesse-oblige.webp); normalized name has no exact canonical match (noblesseobligethunderingfury)",
+      "closest_matches": [
+        {
+          "id": "73935781-421e-4cd1-a1b2-7a44e6b8ae43",
+          "name": "Thundering Fury",
+          "source_id": "15005",
+          "score": 0.85
+        },
+        {
+          "id": "63481f32-8f86-4fca-a648-87595d13afd6",
+          "name": "Noblesse Oblige",
+          "source_id": "15007",
+          "score": 0.85
+        }
+      ]
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "2-Piece HP + 2 Piece HP",
+      "normalized_name": "2piecehp2piecehp",
+      "source_ref": null,
+      "character_slug": "dahlia",
+      "character_name": "Dahlia",
+      "build_id": "genshin-impact-dahlia-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_artifact",
+      "rank": 2,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (2piecehp2piecehp)",
+      "closest_matches": []
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "Two 2-Piece EM Sets",
+      "normalized_name": "two2pieceemsets",
+      "source_ref": "portraits/artifacts/gilded-dreams.webp",
+      "character_slug": "illuga",
+      "character_name": "Illuga",
+      "build_id": "genshin-impact-illuga-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_artifact",
+      "rank": 1,
+      "failure_reason": "sourceRef present but no canonical source_id match (portraits/artifacts/gilded-dreams.webp); normalized name has no exact canonical match (two2pieceemsets)",
+      "closest_matches": []
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "Furina",
+      "normalized_name": "furina",
+      "source_ref": null,
+      "character_slug": "kamisato-ayato",
+      "character_name": "Kamisato Ayato",
+      "build_id": "genshin-impact-kamisato-ayato-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_artifact",
+      "rank": 3,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (furina)",
+      "closest_matches": []
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "Furina",
+      "normalized_name": "furina",
+      "source_ref": null,
+      "character_slug": "klee",
+      "character_name": "Klee",
+      "build_id": "genshin-impact-klee-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_artifact",
+      "rank": 2,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (furina)",
+      "closest_matches": []
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "Alternatively 2x 2p ATK % sets or 2p ATK % / Energy Recharge",
+      "normalized_name": "alternatively2x2patksetsor2patkenergyrecharge",
+      "source_ref": null,
+      "character_slug": "shenhe",
+      "character_name": "Shenhe",
+      "build_id": "genshin-impact-shenhe-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_artifact",
+      "rank": 2,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (alternatively2x2patksetsor2patkenergyrecharge)",
+      "closest_matches": []
+    },
+    {
+      "kind": "artifact_set",
+      "recommendation_name": "2-Piece +18% ATK Set +18% ATk Set",
+      "normalized_name": "2piece18atkset18atkset",
+      "source_ref": null,
+      "character_slug": "xianyun",
+      "character_name": "Xianyun",
+      "build_id": "genshin-impact-xianyun-icy-veins-default",
+      "build_source": "icy-veins",
+      "recommendation_group": "best_artifact",
+      "rank": 4,
+      "failure_reason": "no usable source ID on recommendation; normalized name has no exact canonical match (2piece18atkset18atkset)",
+      "closest_matches": []
+    }
+  ]
+}

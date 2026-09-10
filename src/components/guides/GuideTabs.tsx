@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, type ReactNode } from "react";
+import { EquipmentDetailsPanel } from "@/components/guides/EquipmentDetailsPanel";
 import { MissingAssetIcon } from "@/components/guides/MissingAssetIcon";
 import type { GuideCharacterDetail } from "@/lib/guides/genshin";
 
@@ -109,12 +110,19 @@ function BuildTab({ character }: { character: GuideCharacterDetail }) {
   return (
     <div className="space-y-4">
       <GuidePanel title="Best Weapons">
-        <RankingList items={[...build.bestWeapons, ...build.alternativeWeapons, ...build.f2pWeapons]} />
+        <RankingList
+          items={[...build.bestWeapons, ...build.alternativeWeapons, ...build.f2pWeapons]}
+          expandableDescriptions
+        />
       </GuidePanel>
 
       {build.bestArtifacts.length || build.alternativeArtifacts.length ? (
         <GuidePanel title="Best Artifacts">
-          <RankingList items={[...build.bestArtifacts, ...build.alternativeArtifacts]} compact expandableDescriptions />
+          <RankingList
+            items={[...build.bestArtifacts, ...build.alternativeArtifacts]}
+            compact
+            expandableDescriptions
+          />
         </GuidePanel>
       ) : null}
 
@@ -284,6 +292,7 @@ function RankingList({
             </div>
             <span className="min-w-0 flex-1 truncate text-sm font-medium text-white">{item.name}</span>
           </div>
+          {item.canonical ? <EquipmentDetailsPanel canonical={item.canonical} /> : null}
           {expandableDescriptions && item.description ? (
             <details className="mt-2 rounded-lg border border-white/10 bg-white/[0.03] px-3 py-2 text-xs leading-5 text-zinc-400">
               <summary className="cursor-pointer text-zinc-300">Why use this</summary>

@@ -17,6 +17,8 @@
     "android:sync:prod": "node scripts/capacitor-sync-prod.mjs",
     "android:sync:dev": "node scripts/capacitor-sync-dev.mjs",
     "guides:import:genshin": "node scripts/guides/genshin/import-guides.mjs",
+    "guides:import:equipment": "node scripts/guides/genshin/import-equipment.mjs",
+    "guides:test:equipment": "node --test scripts/guides/genshin/nanoka-equipment.test.mjs",
     "guides:import:genshin:sample": "node scripts/guides/genshin/import-guides.mjs --sample"
   },
   "dependencies": {
