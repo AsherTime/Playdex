@@ -48,77 +48,19 @@ export async function upsertOwnProfile(input: ProfileUpdateInput) {
   } = await supabase.auth.getUser();
   if (!user) throw new Error("Not signed in");
 
-  if (input.username) {
-    const usernameError = validateUsername(input.username);
-    if (usernameError) {
-      throw new Error(usernameError);
-    }
-  }
-
-  const insertPayload: Database["public"]["Tables"]["profiles"]["Insert"] = {
+  // Production profiles currently only has: id, email, name, age, created_at, updated_at, app_role.
+  // Gaming-identity columns were postponed; never PATCH them or clients get PGRST204.
+  // Never write app_role, email, id, or timestamps through this form path.
+  const insertPayload = {
     id: user.id,
     email: input.email ?? user.email ?? "",
     name: input.name,
     age: input.age,
   };
-  const updatePayload: Database["public"]["Tables"]["profiles"]["Update"] = {
+  const updatePayload = {
     name: input.name,
     age: input.age,
   };
-
-  if (input.username !== undefined) {
-    const username = input.username ? normalizeUsername(input.username) : null;
-    insertPayload.username = username;
-    updatePayload.username = username;
-  }
-  if (input.bio !== undefined) {
-    insertPayload.bio = input.bio;
-    updatePayload.bio = input.bio;
-  }
-  if (input.avatarUrl !== undefined) {
-    insertPayload.avatar_url = input.avatarUrl;
-    updatePayload.avatar_url = input.avatarUrl;
-  }
-  if (input.profileVisibility !== undefined) {
-    insertPayload.profile_visibility = input.profileVisibility;
-    updatePayload.profile_visibility = input.profileVisibility;
-  }
-  if (input.showPlaytime !== undefined) {
-    insertPayload.show_playtime = input.showPlaytime;
-    updatePayload.show_playtime = input.showPlaytime;
-  }
-  if (input.showWeeklyPlaytime !== undefined) {
-    insertPayload.show_weekly_playtime = input.showWeeklyPlaytime;
-    updatePayload.show_weekly_playtime = input.showWeeklyPlaytime;
-  }
-  if (input.showRecentGames !== undefined) {
-    insertPayload.show_recent_games = input.showRecentGames;
-    updatePayload.show_recent_games = input.showRecentGames;
-  }
-  if (input.showImprovementPlan !== undefined) {
-    insertPayload.show_improvement_plan = input.showImprovementPlan;
-    updatePayload.show_improvement_plan = input.showImprovementPlan;
-  }
-  if (input.showFavoriteGames !== undefined) {
-    insertPayload.show_favorite_games = input.showFavoriteGames;
-    updatePayload.show_favorite_games = input.showFavoriteGames;
-  }
-  if (input.showStreak !== undefined) {
-    insertPayload.show_streak = input.showStreak;
-    updatePayload.show_streak = input.showStreak;
-  }
-  if (input.showPlatform !== undefined) {
-    insertPayload.show_platform = input.showPlatform;
-    updatePayload.show_platform = input.showPlatform;
-  }
-  if (input.mainGameSlug !== undefined) {
-    insertPayload.main_game_slug = input.mainGameSlug;
-    updatePayload.main_game_slug = input.mainGameSlug;
-  }
-  if (input.improvementSnapshot !== undefined) {
-    insertPayload.improvement_snapshot = input.improvementSnapshot;
-    updatePayload.improvement_snapshot = input.improvementSnapshot;
-  }
 
   const { data: updated, error: updateError } = await supabase
     .from("profiles")
@@ -127,12 +69,7 @@ export async function upsertOwnProfile(input: ProfileUpdateInput) {
     .select("*")
     .maybeSingle();
 
-  if (updateError) {
-    if (updateError.code === "23505") {
-      throw new Error("That username is already taken.");
-    }
-    throw updateError;
-  }
+  if (updateError) throw updateError;
   if (updated) return updated;
 
   const { data: inserted, error: insertError } = await supabase
@@ -150,10 +87,7 @@ export async function upsertOwnProfile(input: ProfileUpdateInput) {
         .select("*")
         .single();
 
-      if (retryError) {
-        if (retryError.code === "23505") throw new Error("That username is already taken.");
-        throw retryError;
-      }
+      if (retryError) throw retryError;
       return retried;
     }
     throw insertError;

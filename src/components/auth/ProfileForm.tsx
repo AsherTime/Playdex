@@ -17,7 +17,7 @@ import {
   upsertOwnProfile,
 } from "@/lib/auth-profile";
 import { buildImprovementSnapshotFromLocal } from "@/lib/improvement-snapshot";
-import { profilePath, validateUsername } from "@/lib/username";
+import { profilePath } from "@/lib/username";
 
 export function ProfileForm() {
   const { user, loading: authLoading, signOut } = useAuth();
@@ -97,29 +97,9 @@ export function ProfileForm() {
       if (parsedAge !== null && (!Number.isFinite(parsedAge) || parsedAge < 1 || parsedAge > 120)) {
         throw new Error("Enter a valid age between 1 and 120.");
       }
-      if (username.trim()) {
-        const usernameError = validateUsername(username);
-        if (usernameError) throw new Error(usernameError);
-      }
-
-      const improvementSnapshot = buildImprovementSnapshotFromLocal();
-
       await upsertOwnProfile({
         name: name.trim(),
         age: parsedAge,
-        username: username.trim() || null,
-        bio: bio.trim() || null,
-        avatarUrl: avatarUrl.trim() || null,
-        mainGameSlug: mainGameSlug || null,
-        profileVisibility,
-        showPlaytime,
-        showWeeklyPlaytime,
-        showRecentGames,
-        showImprovementPlan,
-        showFavoriteGames,
-        showStreak,
-        showPlatform,
-        improvementSnapshot,
       });
       await setFollowedGames(followed);
       setMessage("Profile saved.");
