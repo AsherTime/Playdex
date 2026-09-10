@@ -1,0 +1,1257 @@
+{
+  "source_url": "https://game8.co/games/Genshin-Impact/archives/297465",
+  "source_version": "7.0",
+  "source_updated_at": "2026-08-31T21:15:04-04:00",
+  "fetched_at": "2026-09-10T19:54:11.174Z",
+  "tiers": [
+    "SSS",
+    "SS",
+    "S",
+    "A+",
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "roles": [
+    "Main DPS",
+    "Sub-DPS",
+    "Support"
+  ],
+  "entries": [
+    {
+      "name": "Sandrone",
+      "tier": "SS",
+      "role": "Main DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-sandrone",
+      "slug": "sandrone"
+    },
+    {
+      "name": "Traveler (Cryo)",
+      "tier": "SS",
+      "role": "Main DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-traveler-cryo",
+      "slug": "traveler-cryo"
+    },
+    {
+      "name": "Wriothesley",
+      "tier": "SS",
+      "role": "Main DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-wriothesley",
+      "slug": "wriothesley"
+    },
+    {
+      "name": "Cyno",
+      "tier": "SS",
+      "role": "Main DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-cyno",
+      "slug": "cyno"
+    },
+    {
+      "name": "Zibai",
+      "tier": "SS",
+      "role": "Main DPS",
+      "sort_order": 4,
+      "character_id": "genshin-impact-zibai",
+      "slug": "zibai"
+    },
+    {
+      "name": "Mavuika",
+      "tier": "SS",
+      "role": "Main DPS",
+      "sort_order": 5,
+      "character_id": "genshin-impact-mavuika",
+      "slug": "mavuika"
+    },
+    {
+      "name": "Nefer",
+      "tier": "SS",
+      "role": "Main DPS",
+      "sort_order": 6,
+      "character_id": "genshin-impact-nefer",
+      "slug": "nefer"
+    },
+    {
+      "name": "Flins",
+      "tier": "SS",
+      "role": "Main DPS",
+      "sort_order": 7,
+      "character_id": "genshin-impact-flins",
+      "slug": "flins"
+    },
+    {
+      "name": "Odette",
+      "tier": "SS",
+      "role": "Sub-DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-odette",
+      "slug": "odette"
+    },
+    {
+      "name": "Yae Miko",
+      "tier": "SS",
+      "role": "Sub-DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-yae-miko",
+      "slug": "yae-miko"
+    },
+    {
+      "name": "Columbina",
+      "tier": "SS",
+      "role": "Sub-DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-columbina",
+      "slug": "columbina"
+    },
+    {
+      "name": "Ineffa",
+      "tier": "SS",
+      "role": "Sub-DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-ineffa",
+      "slug": "ineffa"
+    },
+    {
+      "name": "Linnea",
+      "tier": "SS",
+      "role": "Sub-DPS",
+      "sort_order": 4,
+      "character_id": "genshin-impact-linnea",
+      "slug": "linnea"
+    },
+    {
+      "name": "Lauma",
+      "tier": "SS",
+      "role": "Sub-DPS",
+      "sort_order": 5,
+      "character_id": "genshin-impact-lauma",
+      "slug": "lauma"
+    },
+    {
+      "name": "Odette",
+      "tier": "SS",
+      "role": "Support",
+      "sort_order": 0,
+      "character_id": "genshin-impact-odette",
+      "slug": "odette"
+    },
+    {
+      "name": "Columbina",
+      "tier": "SS",
+      "role": "Support",
+      "sort_order": 1,
+      "character_id": "genshin-impact-columbina",
+      "slug": "columbina"
+    },
+    {
+      "name": "Linnea",
+      "tier": "SS",
+      "role": "Support",
+      "sort_order": 2,
+      "character_id": "genshin-impact-linnea",
+      "slug": "linnea"
+    },
+    {
+      "name": "Lauma",
+      "tier": "SS",
+      "role": "Support",
+      "sort_order": 3,
+      "character_id": "genshin-impact-lauma",
+      "slug": "lauma"
+    },
+    {
+      "name": "Nicole",
+      "tier": "SS",
+      "role": "Support",
+      "sort_order": 4,
+      "character_id": "genshin-impact-nicole",
+      "slug": "nicole"
+    },
+    {
+      "name": "Bennett",
+      "tier": "SS",
+      "role": "Support",
+      "sort_order": 5,
+      "character_id": "genshin-impact-bennett",
+      "slug": "bennett"
+    },
+    {
+      "name": "Iansan",
+      "tier": "SS",
+      "role": "Support",
+      "sort_order": 6,
+      "character_id": "genshin-impact-iansan",
+      "slug": "iansan"
+    },
+    {
+      "name": "Citlali",
+      "tier": "SS",
+      "role": "Support",
+      "sort_order": 7,
+      "character_id": "genshin-impact-citlali",
+      "slug": "citlali"
+    },
+    {
+      "name": "Ineffa",
+      "tier": "SS",
+      "role": "Support",
+      "sort_order": 8,
+      "character_id": "genshin-impact-ineffa",
+      "slug": "ineffa"
+    },
+    {
+      "name": "Sucrose",
+      "tier": "SS",
+      "role": "Support",
+      "sort_order": 9,
+      "character_id": "genshin-impact-sucrose",
+      "slug": "sucrose"
+    },
+    {
+      "name": "Mizuki",
+      "tier": "S",
+      "role": "Main DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-yumemizuki-mizuki",
+      "slug": "yumemizuki-mizuki"
+    },
+    {
+      "name": "Varka",
+      "tier": "S",
+      "role": "Main DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-varka",
+      "slug": "varka"
+    },
+    {
+      "name": "Skirk",
+      "tier": "S",
+      "role": "Main DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-skirk",
+      "slug": "skirk"
+    },
+    {
+      "name": "Durin",
+      "tier": "S",
+      "role": "Sub-DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-durin",
+      "slug": "durin"
+    },
+    {
+      "name": "Mavuika",
+      "tier": "S",
+      "role": "Sub-DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-mavuika",
+      "slug": "mavuika"
+    },
+    {
+      "name": "Furina",
+      "tier": "S",
+      "role": "Sub-DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-furina",
+      "slug": "furina"
+    },
+    {
+      "name": "Escoffier",
+      "tier": "S",
+      "role": "Sub-DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-escoffier",
+      "slug": "escoffier"
+    },
+    {
+      "name": "Fischl",
+      "tier": "S",
+      "role": "Sub-DPS",
+      "sort_order": 4,
+      "character_id": "genshin-impact-fischl",
+      "slug": "fischl"
+    },
+    {
+      "name": "Qiqi",
+      "tier": "S",
+      "role": "Support",
+      "sort_order": 0,
+      "character_id": "genshin-impact-qiqi",
+      "slug": "qiqi"
+    },
+    {
+      "name": "Furina",
+      "tier": "S",
+      "role": "Support",
+      "sort_order": 1,
+      "character_id": "genshin-impact-furina",
+      "slug": "furina"
+    },
+    {
+      "name": "Chevreuse",
+      "tier": "S",
+      "role": "Support",
+      "sort_order": 2,
+      "character_id": "genshin-impact-chevreuse",
+      "slug": "chevreuse"
+    },
+    {
+      "name": "Alyosha",
+      "tier": "S",
+      "role": "Support",
+      "sort_order": 3,
+      "character_id": "genshin-impact-alyosha",
+      "slug": "alyosha"
+    },
+    {
+      "name": "Xilonen",
+      "tier": "S",
+      "role": "Support",
+      "sort_order": 4,
+      "character_id": "genshin-impact-xilonen",
+      "slug": "xilonen"
+    },
+    {
+      "name": "Escoffier",
+      "tier": "S",
+      "role": "Support",
+      "sort_order": 5,
+      "character_id": "genshin-impact-escoffier",
+      "slug": "escoffier"
+    },
+    {
+      "name": "Mualani",
+      "tier": "A+",
+      "role": "Main DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-mualani",
+      "slug": "mualani"
+    },
+    {
+      "name": "Varesa",
+      "tier": "A+",
+      "role": "Main DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-varesa",
+      "slug": "varesa"
+    },
+    {
+      "name": "Chasca",
+      "tier": "A+",
+      "role": "Main DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-chasca",
+      "slug": "chasca"
+    },
+    {
+      "name": "Kinich",
+      "tier": "A+",
+      "role": "Main DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-kinich",
+      "slug": "kinich"
+    },
+    {
+      "name": "Lohen",
+      "tier": "A+",
+      "role": "Main DPS",
+      "sort_order": 4,
+      "character_id": "genshin-impact-lohen",
+      "slug": "lohen"
+    },
+    {
+      "name": "Venti",
+      "tier": "A+",
+      "role": "Sub-DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-venti",
+      "slug": "venti"
+    },
+    {
+      "name": "Nahida",
+      "tier": "A+",
+      "role": "Sub-DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-nahida",
+      "slug": "nahida"
+    },
+    {
+      "name": "Emilie",
+      "tier": "A+",
+      "role": "Sub-DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-emilie",
+      "slug": "emilie"
+    },
+    {
+      "name": "Yelan",
+      "tier": "A+",
+      "role": "Sub-DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-yelan",
+      "slug": "yelan"
+    },
+    {
+      "name": "Xingqiu",
+      "tier": "A+",
+      "role": "Sub-DPS",
+      "sort_order": 4,
+      "character_id": "genshin-impact-xingqiu",
+      "slug": "xingqiu"
+    },
+    {
+      "name": "Xiangling",
+      "tier": "A+",
+      "role": "Sub-DPS",
+      "sort_order": 5,
+      "character_id": "genshin-impact-xiangling",
+      "slug": "xiangling"
+    },
+    {
+      "name": "Albedo",
+      "tier": "A+",
+      "role": "Sub-DPS",
+      "sort_order": 6,
+      "character_id": "genshin-impact-albedo",
+      "slug": "albedo"
+    },
+    {
+      "name": "Nahida",
+      "tier": "A+",
+      "role": "Support",
+      "sort_order": 0,
+      "character_id": "genshin-impact-nahida",
+      "slug": "nahida"
+    },
+    {
+      "name": "Prune",
+      "tier": "A+",
+      "role": "Support",
+      "sort_order": 1,
+      "character_id": "genshin-impact-prune",
+      "slug": "prune"
+    },
+    {
+      "name": "Mona",
+      "tier": "A+",
+      "role": "Support",
+      "sort_order": 2,
+      "character_id": "genshin-impact-mona",
+      "slug": "mona"
+    },
+    {
+      "name": "Illuga",
+      "tier": "A+",
+      "role": "Support",
+      "sort_order": 3,
+      "character_id": "genshin-impact-illuga",
+      "slug": "illuga"
+    },
+    {
+      "name": "Kazuha",
+      "tier": "A+",
+      "role": "Support",
+      "sort_order": 4,
+      "character_id": "genshin-impact-kaedehara-kazuha",
+      "slug": "kaedehara-kazuha"
+    },
+    {
+      "name": "Shenhe",
+      "tier": "A+",
+      "role": "Support",
+      "sort_order": 5,
+      "character_id": "genshin-impact-shenhe",
+      "slug": "shenhe"
+    },
+    {
+      "name": "Arlecchino",
+      "tier": "A",
+      "role": "Main DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-arlecchino",
+      "slug": "arlecchino"
+    },
+    {
+      "name": "Neuvillette",
+      "tier": "A",
+      "role": "Main DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-neuvillette",
+      "slug": "neuvillette"
+    },
+    {
+      "name": "Klee",
+      "tier": "A",
+      "role": "Main DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-klee",
+      "slug": "klee"
+    },
+    {
+      "name": "Venti",
+      "tier": "A",
+      "role": "Main DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-venti",
+      "slug": "venti"
+    },
+    {
+      "name": "Raiden",
+      "tier": "A",
+      "role": "Sub-DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-raiden-shogun",
+      "slug": "raiden-shogun"
+    },
+    {
+      "name": "Nilou",
+      "tier": "A",
+      "role": "Sub-DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-nilou",
+      "slug": "nilou"
+    },
+    {
+      "name": "Shinobu",
+      "tier": "A",
+      "role": "Sub-DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-kuki-shinobu",
+      "slug": "kuki-shinobu"
+    },
+    {
+      "name": "Ororon",
+      "tier": "A",
+      "role": "Sub-DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-ororon",
+      "slug": "ororon"
+    },
+    {
+      "name": "Aino",
+      "tier": "A",
+      "role": "Sub-DPS",
+      "sort_order": 4,
+      "character_id": "genshin-impact-aino",
+      "slug": "aino"
+    },
+    {
+      "name": "Prune",
+      "tier": "A",
+      "role": "Sub-DPS",
+      "sort_order": 5,
+      "character_id": "genshin-impact-prune",
+      "slug": "prune"
+    },
+    {
+      "name": "Mona",
+      "tier": "A",
+      "role": "Sub-DPS",
+      "sort_order": 6,
+      "character_id": "genshin-impact-mona",
+      "slug": "mona"
+    },
+    {
+      "name": "Sucrose",
+      "tier": "A",
+      "role": "Sub-DPS",
+      "sort_order": 7,
+      "character_id": "genshin-impact-sucrose",
+      "slug": "sucrose"
+    },
+    {
+      "name": "Chiori",
+      "tier": "A",
+      "role": "Sub-DPS",
+      "sort_order": 8,
+      "character_id": "genshin-impact-chiori",
+      "slug": "chiori"
+    },
+    {
+      "name": "Jahoda",
+      "tier": "A",
+      "role": "Sub-DPS",
+      "sort_order": 9,
+      "character_id": "genshin-impact-jahoda",
+      "slug": "jahoda"
+    },
+    {
+      "name": "Rosaria",
+      "tier": "A",
+      "role": "Sub-DPS",
+      "sort_order": 10,
+      "character_id": "genshin-impact-rosaria",
+      "slug": "rosaria"
+    },
+    {
+      "name": "Xianyun",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 0,
+      "character_id": "genshin-impact-xianyun",
+      "slug": "xianyun"
+    },
+    {
+      "name": "Baizhu",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 1,
+      "character_id": "genshin-impact-baizhu",
+      "slug": "baizhu"
+    },
+    {
+      "name": "Zhongli",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 2,
+      "character_id": "genshin-impact-zhongli",
+      "slug": "zhongli"
+    },
+    {
+      "name": "Jean",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 3,
+      "character_id": "genshin-impact-jean",
+      "slug": "jean"
+    },
+    {
+      "name": "Lan Yan",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 4,
+      "character_id": "genshin-impact-lan-yan",
+      "slug": "lan-yan"
+    },
+    {
+      "name": "Kokomi",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 5,
+      "character_id": "genshin-impact-sangonomiya-kokomi",
+      "slug": "sangonomiya-kokomi"
+    },
+    {
+      "name": "Faruzan",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 6,
+      "character_id": "genshin-impact-faruzan",
+      "slug": "faruzan"
+    },
+    {
+      "name": "Gorou",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 7,
+      "character_id": "genshin-impact-gorou",
+      "slug": "gorou"
+    },
+    {
+      "name": "Diona",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 8,
+      "character_id": "genshin-impact-diona",
+      "slug": "diona"
+    },
+    {
+      "name": "Yaoyao",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 9,
+      "character_id": "genshin-impact-yaoyao",
+      "slug": "yaoyao"
+    },
+    {
+      "name": "Charlotte",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 10,
+      "character_id": "genshin-impact-charlotte",
+      "slug": "charlotte"
+    },
+    {
+      "name": "Layla",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 11,
+      "character_id": "genshin-impact-layla",
+      "slug": "layla"
+    },
+    {
+      "name": "Kirara",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 12,
+      "character_id": "genshin-impact-kirara",
+      "slug": "kirara"
+    },
+    {
+      "name": "Shinobu",
+      "tier": "A",
+      "role": "Support",
+      "sort_order": 13,
+      "character_id": "genshin-impact-kuki-shinobu",
+      "slug": "kuki-shinobu"
+    },
+    {
+      "name": "Ayaka",
+      "tier": "B",
+      "role": "Main DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-kamisato-ayaka",
+      "slug": "kamisato-ayaka"
+    },
+    {
+      "name": "Clorinde",
+      "tier": "B",
+      "role": "Main DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-clorinde",
+      "slug": "clorinde"
+    },
+    {
+      "name": "Gaming",
+      "tier": "B",
+      "role": "Main DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-gaming",
+      "slug": "gaming"
+    },
+    {
+      "name": "Razor",
+      "tier": "B",
+      "role": "Main DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-razor",
+      "slug": "razor"
+    },
+    {
+      "name": "Navia",
+      "tier": "B",
+      "role": "Main DPS",
+      "sort_order": 4,
+      "character_id": "genshin-impact-navia",
+      "slug": "navia"
+    },
+    {
+      "name": "Alhaitham",
+      "tier": "B",
+      "role": "Main DPS",
+      "sort_order": 5,
+      "character_id": "genshin-impact-alhaitham",
+      "slug": "alhaitham"
+    },
+    {
+      "name": "Lyney",
+      "tier": "B",
+      "role": "Main DPS",
+      "sort_order": 6,
+      "character_id": "genshin-impact-lyney",
+      "slug": "lyney"
+    },
+    {
+      "name": "Hu Tao",
+      "tier": "B",
+      "role": "Main DPS",
+      "sort_order": 7,
+      "character_id": "genshin-impact-hu-tao",
+      "slug": "hu-tao"
+    },
+    {
+      "name": "Xiao",
+      "tier": "B",
+      "role": "Main DPS",
+      "sort_order": 8,
+      "character_id": "genshin-impact-xiao",
+      "slug": "xiao"
+    },
+    {
+      "name": "Raiden",
+      "tier": "B",
+      "role": "Main DPS",
+      "sort_order": 9,
+      "character_id": "genshin-impact-raiden-shogun",
+      "slug": "raiden-shogun"
+    },
+    {
+      "name": "Tartaglia",
+      "tier": "B",
+      "role": "Main DPS",
+      "sort_order": 10,
+      "character_id": "genshin-impact-tartaglia",
+      "slug": "tartaglia"
+    },
+    {
+      "name": "Wanderer",
+      "tier": "B",
+      "role": "Main DPS",
+      "sort_order": 11,
+      "character_id": "genshin-impact-wanderer",
+      "slug": "wanderer"
+    },
+    {
+      "name": "Thoma",
+      "tier": "B",
+      "role": "Sub-DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-thoma",
+      "slug": "thoma"
+    },
+    {
+      "name": "Ganyu",
+      "tier": "B",
+      "role": "Sub-DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-ganyu",
+      "slug": "ganyu"
+    },
+    {
+      "name": "Collei",
+      "tier": "B",
+      "role": "Sub-DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-collei",
+      "slug": "collei"
+    },
+    {
+      "name": "Traveler (Pyro)",
+      "tier": "B",
+      "role": "Sub-DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-traveler-pyro",
+      "slug": "traveler-pyro"
+    },
+    {
+      "name": "Kokomi",
+      "tier": "B",
+      "role": "Sub-DPS",
+      "sort_order": 4,
+      "character_id": "genshin-impact-sangonomiya-kokomi",
+      "slug": "sangonomiya-kokomi"
+    },
+    {
+      "name": "Beidou",
+      "tier": "B",
+      "role": "Sub-DPS",
+      "sort_order": 5,
+      "character_id": "genshin-impact-beidou",
+      "slug": "beidou"
+    },
+    {
+      "name": "Kaeya",
+      "tier": "B",
+      "role": "Sub-DPS",
+      "sort_order": 6,
+      "character_id": "genshin-impact-kaeya",
+      "slug": "kaeya"
+    },
+    {
+      "name": "Traveler (Dendro)",
+      "tier": "B",
+      "role": "Sub-DPS",
+      "sort_order": 7,
+      "character_id": "genshin-impact-traveler-dendro",
+      "slug": "traveler-dendro"
+    },
+    {
+      "name": "Lynette",
+      "tier": "B",
+      "role": "Sub-DPS",
+      "sort_order": 8,
+      "character_id": "genshin-impact-lynette",
+      "slug": "lynette"
+    },
+    {
+      "name": "Jahoda",
+      "tier": "B",
+      "role": "Support",
+      "sort_order": 0,
+      "character_id": "genshin-impact-jahoda",
+      "slug": "jahoda"
+    },
+    {
+      "name": "Yun Jin",
+      "tier": "B",
+      "role": "Support",
+      "sort_order": 1,
+      "character_id": "genshin-impact-yun-jin",
+      "slug": "yun-jin"
+    },
+    {
+      "name": "Sara",
+      "tier": "B",
+      "role": "Support",
+      "sort_order": 2,
+      "character_id": "genshin-impact-kujou-sara",
+      "slug": "kujou-sara"
+    },
+    {
+      "name": "Mizuki",
+      "tier": "B",
+      "role": "Support",
+      "sort_order": 3,
+      "character_id": "genshin-impact-yumemizuki-mizuki",
+      "slug": "yumemizuki-mizuki"
+    },
+    {
+      "name": "Sigewinne",
+      "tier": "B",
+      "role": "Support",
+      "sort_order": 4,
+      "character_id": "genshin-impact-sigewinne",
+      "slug": "sigewinne"
+    },
+    {
+      "name": "Thoma",
+      "tier": "B",
+      "role": "Support",
+      "sort_order": 5,
+      "character_id": "genshin-impact-thoma",
+      "slug": "thoma"
+    },
+    {
+      "name": "Dehya",
+      "tier": "B",
+      "role": "Support",
+      "sort_order": 6,
+      "character_id": "genshin-impact-dehya",
+      "slug": "dehya"
+    },
+    {
+      "name": "Yoimiya",
+      "tier": "C",
+      "role": "Main DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-yoimiya",
+      "slug": "yoimiya"
+    },
+    {
+      "name": "Diluc",
+      "tier": "C",
+      "role": "Main DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-diluc",
+      "slug": "diluc"
+    },
+    {
+      "name": "Itto",
+      "tier": "C",
+      "role": "Main DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-arataki-itto",
+      "slug": "arataki-itto"
+    },
+    {
+      "name": "Ayato",
+      "tier": "C",
+      "role": "Main DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-kamisato-ayato",
+      "slug": "kamisato-ayato"
+    },
+    {
+      "name": "Ganyu",
+      "tier": "C",
+      "role": "Main DPS",
+      "sort_order": 4,
+      "character_id": "genshin-impact-ganyu",
+      "slug": "ganyu"
+    },
+    {
+      "name": "Tighnari",
+      "tier": "C",
+      "role": "Main DPS",
+      "sort_order": 5,
+      "character_id": "genshin-impact-tighnari",
+      "slug": "tighnari"
+    },
+    {
+      "name": "Sethos",
+      "tier": "C",
+      "role": "Main DPS",
+      "sort_order": 6,
+      "character_id": "genshin-impact-sethos",
+      "slug": "sethos"
+    },
+    {
+      "name": "Ifa",
+      "tier": "C",
+      "role": "Main DPS",
+      "sort_order": 7,
+      "character_id": "genshin-impact-ifa",
+      "slug": "ifa"
+    },
+    {
+      "name": "Keqing",
+      "tier": "C",
+      "role": "Main DPS",
+      "sort_order": 8,
+      "character_id": "genshin-impact-keqing",
+      "slug": "keqing"
+    },
+    {
+      "name": "Noelle",
+      "tier": "C",
+      "role": "Main DPS",
+      "sort_order": 9,
+      "character_id": "genshin-impact-noelle",
+      "slug": "noelle"
+    },
+    {
+      "name": "Eula",
+      "tier": "C",
+      "role": "Main DPS",
+      "sort_order": 10,
+      "character_id": "genshin-impact-eula",
+      "slug": "eula"
+    },
+    {
+      "name": "Kachina",
+      "tier": "C",
+      "role": "Sub-DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-kachina",
+      "slug": "kachina"
+    },
+    {
+      "name": "Dehya",
+      "tier": "C",
+      "role": "Sub-DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-dehya",
+      "slug": "dehya"
+    },
+    {
+      "name": "Lisa",
+      "tier": "C",
+      "role": "Sub-DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-lisa",
+      "slug": "lisa"
+    },
+    {
+      "name": "Chongyun",
+      "tier": "C",
+      "role": "Sub-DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-chongyun",
+      "slug": "chongyun"
+    },
+    {
+      "name": "Sayu",
+      "tier": "C",
+      "role": "Sub-DPS",
+      "sort_order": 4,
+      "character_id": "genshin-impact-sayu",
+      "slug": "sayu"
+    },
+    {
+      "name": "Mika",
+      "tier": "C",
+      "role": "Support",
+      "sort_order": 0,
+      "character_id": "genshin-impact-mika",
+      "slug": "mika"
+    },
+    {
+      "name": "Sayu",
+      "tier": "C",
+      "role": "Support",
+      "sort_order": 1,
+      "character_id": "genshin-impact-sayu",
+      "slug": "sayu"
+    },
+    {
+      "name": "Dahlia",
+      "tier": "C",
+      "role": "Support",
+      "sort_order": 2,
+      "character_id": "genshin-impact-dahlia",
+      "slug": "dahlia"
+    },
+    {
+      "name": "Barbara",
+      "tier": "C",
+      "role": "Support",
+      "sort_order": 3,
+      "character_id": "genshin-impact-barbara",
+      "slug": "barbara"
+    },
+    {
+      "name": "Traveler (Electro)",
+      "tier": "C",
+      "role": "Support",
+      "sort_order": 4,
+      "character_id": "genshin-impact-traveler-electro",
+      "slug": "traveler-electro"
+    },
+    {
+      "name": "Rosaria",
+      "tier": "C",
+      "role": "Support",
+      "sort_order": 5,
+      "character_id": "genshin-impact-rosaria",
+      "slug": "rosaria"
+    },
+    {
+      "name": "Candace",
+      "tier": "C",
+      "role": "Support",
+      "sort_order": 6,
+      "character_id": "genshin-impact-candace",
+      "slug": "candace"
+    },
+    {
+      "name": "Dori",
+      "tier": "C",
+      "role": "Support",
+      "sort_order": 7,
+      "character_id": "genshin-impact-dori",
+      "slug": "dori"
+    },
+    {
+      "name": "Yanfei",
+      "tier": "D",
+      "role": "Main DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-yanfei",
+      "slug": "yanfei"
+    },
+    {
+      "name": "Heizou",
+      "tier": "D",
+      "role": "Main DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-shikanoin-heizou",
+      "slug": "shikanoin-heizou"
+    },
+    {
+      "name": "Kaveh",
+      "tier": "D",
+      "role": "Main DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-kaveh",
+      "slug": "kaveh"
+    },
+    {
+      "name": "Freminet",
+      "tier": "D",
+      "role": "Main DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-freminet",
+      "slug": "freminet"
+    },
+    {
+      "name": "Ningguang",
+      "tier": "D",
+      "role": "Main DPS",
+      "sort_order": 4,
+      "character_id": "genshin-impact-ningguang",
+      "slug": "ningguang"
+    },
+    {
+      "name": "Dehya",
+      "tier": "D",
+      "role": "Main DPS",
+      "sort_order": 5,
+      "character_id": "genshin-impact-dehya",
+      "slug": "dehya"
+    },
+    {
+      "name": "Xinyan",
+      "tier": "D",
+      "role": "Main DPS",
+      "sort_order": 6,
+      "character_id": "genshin-impact-xinyan",
+      "slug": "xinyan"
+    },
+    {
+      "name": "Aloy",
+      "tier": "D",
+      "role": "Main DPS",
+      "sort_order": 7,
+      "character_id": "genshin-impact-aloy",
+      "slug": "aloy"
+    },
+    {
+      "name": "Xinyan",
+      "tier": "D",
+      "role": "Sub-DPS",
+      "sort_order": 0,
+      "character_id": "genshin-impact-xinyan",
+      "slug": "xinyan"
+    },
+    {
+      "name": "Traveler (Geo)",
+      "tier": "D",
+      "role": "Sub-DPS",
+      "sort_order": 1,
+      "character_id": "genshin-impact-traveler-geo",
+      "slug": "traveler-geo"
+    },
+    {
+      "name": "Amber",
+      "tier": "D",
+      "role": "Sub-DPS",
+      "sort_order": 2,
+      "character_id": "genshin-impact-amber",
+      "slug": "amber"
+    },
+    {
+      "name": "Traveler (Anemo)",
+      "tier": "D",
+      "role": "Sub-DPS",
+      "sort_order": 3,
+      "character_id": "genshin-impact-traveler-anemo",
+      "slug": "traveler-anemo"
+    },
+    {
+      "name": "Traveler (Hydro)",
+      "tier": "D",
+      "role": "Sub-DPS",
+      "sort_order": 4,
+      "character_id": "genshin-impact-traveler-hydro",
+      "slug": "traveler-hydro"
+    },
+    {
+      "name": "Noelle",
+      "tier": "D",
+      "role": "Support",
+      "sort_order": 0,
+      "character_id": "genshin-impact-noelle",
+      "slug": "noelle"
+    },
+    {
+      "name": "Chongyun",
+      "tier": "D",
+      "role": "Support",
+      "sort_order": 1,
+      "character_id": "genshin-impact-chongyun",
+      "slug": "chongyun"
+    },
+    {
+      "name": "Lisa",
+      "tier": "D",
+      "role": "Support",
+      "sort_order": 2,
+      "character_id": "genshin-impact-lisa",
+      "slug": "lisa"
+    },
+    {
+      "name": "Xinyan",
+      "tier": "D",
+      "role": "Support",
+      "sort_order": 3,
+      "character_id": "genshin-impact-xinyan",
+      "slug": "xinyan"
+    }
+  ],
+  "unmatched": [],
+  "missingIcons": []
+}

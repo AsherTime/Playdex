@@ -34,6 +34,10 @@ export default async function AdminPage() {
         Reviews{pendingReviews > 0 ? ` (${pendingReviews})` : ""}
       </Link>
 
+      <Link href="/admin/tier-lists/genshin-impact" className="inline-flex rounded-lg border border-white/10 px-3 py-2 text-sm text-zinc-200 hover:bg-white/5">
+        Edit Genshin Tier List
+      </Link>
+
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         <StatCard label="Games tracked" value={dashboard.totalGamesTracked} />
         <StatCard label="News items" value={dashboard.totalNewsItems} />

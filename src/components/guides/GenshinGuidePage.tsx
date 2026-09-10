@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CharacterGuideBrowser } from "@/components/guides/CharacterGuideBrowser";
 import { getGenshinGuideCharacters } from "@/lib/guides/genshin";
+import { GenshinNavigation } from "@/components/guides/GenshinNavigation";
 
 export async function GenshinGuidePage() {
   const characters = await getGenshinGuideCharacters();
@@ -24,6 +25,7 @@ export async function GenshinGuidePage() {
             All games
           </Link>
         </div>
+        <GenshinNavigation active="guides" />
       </section>
 
       <CharacterGuideBrowser characters={characters} gameSlug="genshin-impact" />

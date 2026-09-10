@@ -385,6 +385,18 @@ type GuideImportRunRow = {
 export interface Database {
   public: {
     Tables: {
+      game_character_tier_lists: {
+        Row: import("@/lib/tier-lists/types").TierListRow;
+        Insert: Pick<import("@/lib/tier-lists/types").TierListRow, "game_id" | "slug" | "name" | "tiers" | "roles"> & Partial<import("@/lib/tier-lists/types").TierListRow>;
+        Update: Partial<import("@/lib/tier-lists/types").TierListRow>;
+        Relationships: [];
+      };
+      game_character_tier_entries: {
+        Row: import("@/lib/tier-lists/types").TierEntryRow;
+        Insert: import("@/lib/tier-lists/types").TierEntryRow;
+        Update: Partial<import("@/lib/tier-lists/types").TierEntryRow>;
+        Relationships: [];
+      };
       game_equipment: {
         Row: EquipmentRow;
         Insert: EquipmentInsert<EquipmentRow> & Pick<EquipmentRow, "equipment_category">;
@@ -763,6 +775,10 @@ export interface Database {
     };
     Views: Record<string, never>;
     Functions: {
+      save_character_tier_list: {
+        Args: { p_id: string; p_revision: number; p_entries: Json };
+        Returns: number;
+      };
       import_game_equipment: {
         Args: { p_record: Json; p_children: Json; p_effects?: Json };
         Returns: string;
