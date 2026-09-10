@@ -4,6 +4,7 @@ import { basename, extname, join, relative } from "node:path";
 import { pathToFileURL } from "node:url";
 import { parse } from "node-html-parser";
 import { createClient } from "@supabase/supabase-js";
+import { cleanKitDescription, normalizeLayoutHints } from "./nanoka-kit-text.mjs";
 
 const GAME_ID = "genshin-impact";
 const NANOKA_HOME = "https://gi.nanoka.cc/";
@@ -1457,24 +1458,7 @@ function buildCharacterAliasMap(characters) {
 }
 
 function cleanRichText(value) {
-  if (!value) return "";
-  return cleanText(
-    normalizeLayoutHints(value)
-      .replace(/<color=[^>]+>/g, "")
-      .replace(/<\/color>/g, "")
-      .replace(/<i>/g, "")
-      .replace(/<\/i>/g, ""),
-  ).replace(/^#(?=\S)/gm, "");
-}
-
-function normalizeLayoutHints(value) {
-  return String(value ?? "").replace(/(?:\{LAYOUT_(?:MOBILE|PC|PS)#[^}]*\})+/g, (tokenGroup) => {
-    const hints = [...tokenGroup.matchAll(/\{LAYOUT_(MOBILE|PC|PS)#([^}]*)\}/g)].map((match) => ({
-      platform: match[1],
-      text: match[2].trim(),
-    }));
-    return hints.find((hint) => hint.platform === "PC")?.text ?? hints[0]?.text ?? "";
-  });
+  return cleanKitDescription(value);
 }
 
 function cleanIcyText(value) {
