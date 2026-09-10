@@ -15,7 +15,9 @@ export function EquipmentDetailsPanel({
   const [details, setDetails] = useState<GuideEquipmentDetails | null>(null);
 
   useEffect(() => {
-    if (!open || details || loading) return;
+    // Do not put `loading` in deps: setLoading(true) would cleanup and mark the
+    // in-flight request cancelled, so finally never clears loading.
+    if (!open || details) return;
 
     let cancelled = false;
     setLoading(true);
@@ -23,8 +25,17 @@ export function EquipmentDetailsPanel({
 
     void fetch(`/api/guides/equipment/${canonical.kind}/${canonical.id}`)
       .then(async (response) => {
-        if (!response.ok) throw new Error("Could not load equipment details.");
-        return (await response.json()) as GuideEquipmentDetails;
+        const payload = (await response.json()) as GuideEquipmentDetails & {
+          error?: string;
+        };
+        if (!response.ok) {
+          throw new Error(
+            typeof payload.error === "string"
+              ? payload.error
+              : "Could not load equipment details.",
+          );
+        }
+        return payload;
       })
       .then((payload) => {
         if (!cancelled) setDetails(payload);
@@ -41,7 +52,7 @@ export function EquipmentDetailsPanel({
     return () => {
       cancelled = true;
     };
-  }, [canonical.id, canonical.kind, details, loading, open]);
+  }, [canonical.id, canonical.kind, details, open]);
 
   return (
     <details
@@ -59,17 +70,19 @@ export function EquipmentDetailsPanel({
           <>
             {details.stats.length ? (
               <div className="space-y-1.5">
-                <p className="font-medium text-zinc-300">Stats</p>
-                {details.stats.map((stat) => (
-                  <div key={stat.key} className="flex items-start justify-between gap-3">
-                    <span>{stat.name}</span>
-                    <span className="text-right text-zinc-200">
-                      {stat.levelOne ?? "—"}
-                      {stat.maxValue ? ` → ${stat.maxValue}` : ""}
-                      {stat.maxLevel ? ` (Lv${stat.maxLevel})` : ""}
-                    </span>
-                  </div>
-                ))}
+                <p className="font-medium text-zinc-300">
+                  Level {details.stats.find((stat) => stat.maxLevel != null)?.maxLevel ?? 90}
+                </p>
+                {details.stats.map((stat) => {
+                  const value = formatWeaponStatValue(stat.key, stat.maxValue);
+                  if (!value) return null;
+                  return (
+                    <div key={stat.key} className="flex items-start justify-between gap-3">
+                      <span>{formatWeaponStatLabel(stat.key, stat.name)}</span>
+                      <span className="text-right text-zinc-200">{value}</span>
+                    </div>
+                  );
+                })}
               </div>
             ) : null}
             {details.effects.length ? (
@@ -105,4 +118,29 @@ export function EquipmentDetailsPanel({
       </div>
     </details>
   );
+}
+
+function formatWeaponStatLabel(key: string, fallbackName: string) {
+  if (key === "base_attack" || fallbackName === "ATK") return "Base ATK";
+  return fallbackName;
+}
+
+/** In-game style: integer ATK, percentages to at most one decimal. */
+function formatWeaponStatValue(key: string, raw: string | null) {
+  if (!raw) return null;
+  const percent = raw.includes("%");
+  const numeric = Number.parseFloat(raw.replace(/[^\d.-]/g, ""));
+  if (!Number.isFinite(numeric)) return raw;
+
+  if (key === "base_attack" || (!percent && key.includes("attack"))) {
+    return String(Math.round(numeric));
+  }
+
+  if (percent) {
+    const rounded = Math.round(numeric * 10) / 10;
+    const text = Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
+    return `${text}%`;
+  }
+
+  return String(Math.round(numeric));
 }

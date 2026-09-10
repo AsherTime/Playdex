@@ -95,77 +95,86 @@ type StatRow = {
   metadata: Json;
 };
 
+/** Genshin weapons currently cap at Lv90. Nanoka curves also include Lv91–100. */
+const GENSHIN_WEAPON_MAX_LEVEL = 90;
+
 function summarizeEquipmentStats(rows: StatRow[]): GuideEquipmentStat[] {
-  const byKey = new Map<
-    string,
-    {
-      name: string;
-      sortOrder: number;
-      levelOne: string | null;
-      maxLevel: number | null;
-      maxCurve: string | null;
-      maxAscensionBonus: number | null;
-      unit: string | null;
-    }
-  >();
+  const keys = [...new Set(rows.map((row) => row.stat_key))];
 
-  for (const row of rows) {
-    const component = readMetaString(row.metadata, "component");
-    const unit = readMetaString(row.metadata, "unit");
-    const current = byKey.get(row.stat_key) ?? {
-      name: row.stat_name ?? humanizeStatKey(row.stat_key),
-      sortOrder: row.sort_order,
-      levelOne: null,
-      maxLevel: null,
-      maxCurve: null,
-      maxAscensionBonus: null,
-      unit,
-    };
+  return keys
+    .map((statKey) => {
+      const keyRows = rows.filter((row) => row.stat_key === statKey);
+      const curveRows = keyRows.filter(
+        (row) =>
+          (readMetaString(row.metadata, "component") === "level_curve" ||
+            (row.level != null && row.ascension == null)) &&
+          row.level != null,
+      );
+      const ascensionRows = keyRows.filter(
+        (row) =>
+          (readMetaString(row.metadata, "component") === "ascension_bonus" ||
+            (row.level == null && row.ascension != null)) &&
+          row.ascension != null &&
+          row.value != null,
+      );
 
-    if (component === "level_curve" || (row.level != null && row.ascension == null)) {
-      if (row.level === 1) current.levelOne = formatStatDisplay(row);
-      if (current.maxLevel == null || (row.level ?? 0) >= current.maxLevel) {
-        current.maxLevel = row.level;
-        current.maxCurve = formatStatDisplay(row);
-      }
-    }
+      const sample = keyRows[0];
+      const unit = sample ? readMetaString(sample.metadata, "unit") : null;
+      const levelOneRow = curveRows.find((row) => row.level === 1) ?? null;
+      const targetLevel = resolveWeaponDisplayMaxLevel(curveRows.map((row) => row.level as number));
+      const maxCurveRow =
+        targetLevel == null ? null : (curveRows.find((row) => row.level === targetLevel) ?? null);
 
-    if (component === "ascension_bonus" || (row.level == null && row.ascension != null)) {
-      if (row.value != null && (current.maxAscensionBonus == null || row.ascension === 6 || row.value > current.maxAscensionBonus)) {
-        // Prefer the highest ascension phase when available.
-        if (current.maxAscensionBonus == null || (row.ascension ?? 0) >= 6) {
-          current.maxAscensionBonus = row.value;
-        }
-      }
-    }
+      const neededAscension =
+        targetLevel == null ? null : fullyAscendedPhaseForWeaponLevel(targetLevel);
+      const ascensionBonusRow =
+        neededAscension == null
+          ? null
+          : (ascensionRows.find((row) => row.ascension === neededAscension) ?? null);
 
-    byKey.set(row.stat_key, current);
-  }
-
-  return [...byKey.entries()]
-    .sort((a, b) => a[1].sortOrder - b[1].sortOrder)
-    .map(([key, value]) => {
-      let maxValue = value.maxCurve;
-      if (value.maxCurve && value.maxAscensionBonus != null) {
-        const curveNumber = Number.parseFloat(value.maxCurve.replace(/[^\d.-]/g, ""));
-        if (Number.isFinite(curveNumber)) {
-          const total = curveNumber + value.maxAscensionBonus * (value.unit === "percent" ? 100 : 1);
-          maxValue =
-            value.unit === "percent"
-              ? `${trimNumber(total)}%`
-              : trimNumber(total);
+      let maxValue = maxCurveRow ? formatStatDisplay(maxCurveRow) : null;
+      if (maxCurveRow?.value != null && ascensionBonusRow?.value != null) {
+        // Weapon ascension bonuses are flat base ATK only; secondaries stay curve-only.
+        if (unit !== "percent") {
+          maxValue = trimNumber(maxCurveRow.value + ascensionBonusRow.value);
         }
       }
 
       return {
-        key,
-        name: value.name,
-        levelOne: value.levelOne,
-        maxLevel: value.maxLevel,
+        key: statKey,
+        name: sample?.stat_name ?? humanizeStatKey(statKey),
+        levelOne: levelOneRow ? formatStatDisplay(levelOneRow) : null,
+        maxLevel: targetLevel,
         maxValue,
+        sortOrder: sample?.sort_order ?? 0,
       };
     })
+    .sort((a, b) => a.sortOrder - b.sortOrder)
+    .map(({ sortOrder: _sortOrder, ...stat }) => stat)
     .filter((stat) => stat.levelOne || stat.maxValue);
+}
+
+/**
+ * Prefer exact Nanoka Lv90 when present. Never promote Lv91–100 just because
+ * those curve keys exist in the source dump.
+ */
+function resolveWeaponDisplayMaxLevel(levels: number[]): number | null {
+  if (!levels.length) return null;
+  if (levels.includes(GENSHIN_WEAPON_MAX_LEVEL)) return GENSHIN_WEAPON_MAX_LEVEL;
+  const playable = levels.filter((level) => level <= GENSHIN_WEAPON_MAX_LEVEL);
+  if (playable.length) return Math.max(...playable);
+  return null;
+}
+
+/** Fully ascended phase required to be at the given weapon level cap. */
+function fullyAscendedPhaseForWeaponLevel(level: number): number {
+  if (level >= 90) return 6;
+  if (level >= 80) return 5;
+  if (level >= 70) return 4;
+  if (level >= 60) return 3;
+  if (level >= 50) return 2;
+  if (level >= 40) return 1;
+  return 0;
 }
 
 function formatStatDisplay(row: StatRow) {
