@@ -5,6 +5,7 @@ import { useState, type ReactNode } from "react";
 import { EquipmentDetailsPanel } from "@/components/guides/EquipmentDetailsPanel";
 import { MissingAssetIcon } from "@/components/guides/MissingAssetIcon";
 import type { GuideCharacterDetail } from "@/lib/guides/genshin";
+import { TeamCalculations } from "@/components/guides/TeamCalculations";
 
 type TabId = "kit" | "build" | "teams";
 
@@ -38,8 +39,25 @@ export function GuideTabs({ character }: { character: GuideCharacterDetail }) {
 
       {activeTab === "kit" ? <KitTab character={character} /> : null}
       {activeTab === "build" ? <BuildTab character={character} /> : null}
-      {activeTab === "teams" ? <TeamsTab character={character} /> : null}
+      {activeTab === "teams" ? <TeamsSection character={character} /> : null}
     </section>
+  );
+}
+
+function TeamsSection({ character }: { character: GuideCharacterDetail }) {
+  const [section, setSection] = useState<"guide" | "calculations">("guide");
+  return (
+    <div className="space-y-4">
+      <div className="flex gap-2" aria-label="Team sections">
+        {([ ["guide", "Team Guide"], ["calculations", "Team Calculations"] ] as const).map(([id, label]) => (
+          <button key={id} type="button" aria-pressed={section === id} onClick={() => setSection(id)}
+            className={`rounded-lg border px-4 py-2 text-sm font-medium ${section === id ? "border-indigo-300/40 bg-indigo-400/10 text-white" : "border-white/10 text-zinc-400 hover:text-white"}`}>
+            {label}
+          </button>
+        ))}
+      </div>
+      {section === "guide" ? <TeamsTab character={character} /> : <TeamCalculations calculations={character.calculations} />}
+    </div>
   );
 }
 

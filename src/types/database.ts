@@ -385,6 +385,18 @@ type GuideImportRunRow = {
 export interface Database {
   public: {
     Tables: {
+      team_damage_calculations: {
+        Row: import("@/lib/guides/team-calculation-types").TeamCalculationRow;
+        Insert: import("@/lib/guides/team-calculation-types").TeamCalculationRow;
+        Update: Partial<import("@/lib/guides/team-calculation-types").TeamCalculationRow>;
+        Relationships: [];
+      };
+      team_damage_calculation_members: {
+        Row: import("@/lib/guides/team-calculation-types").TeamCalculationMemberRow;
+        Insert: import("@/lib/guides/team-calculation-types").TeamCalculationMemberRow;
+        Update: Partial<import("@/lib/guides/team-calculation-types").TeamCalculationMemberRow>;
+        Relationships: [];
+      };
       game_character_tier_lists: {
         Row: import("@/lib/tier-lists/types").TierListRow;
         Insert: Pick<import("@/lib/tier-lists/types").TierListRow, "game_id" | "slug" | "name" | "tiers" | "roles"> & Partial<import("@/lib/tier-lists/types").TierListRow>;

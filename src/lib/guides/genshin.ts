@@ -1,4 +1,6 @@
 import "server-only";
+import { getGuideTeamCalculations } from "@/lib/guides/team-calculations";
+import type { GuideCalculations } from "@/lib/guides/team-calculation-types";
 
 import { createPublicSupabaseClient } from "@/lib/supabase/public";
 import {
@@ -106,6 +108,7 @@ export type GuideMissingAsset = {
 };
 
 export type GuideCharacterDetail = GuideCharacterCard & {
+  calculations: GuideCalculations;
   releaseDate: string | null;
   kit: {
     sourceUrl: string;
@@ -327,6 +330,7 @@ export async function getGenshinGuideCharacter(
       : null,
     build,
     teams,
+    calculations: await getGuideTeamCalculations(character.id),
     sourceRecords: (sourceRecordsResult.data ?? []).map((record) => ({
       sourceSite: record.source_site,
       sourceType: record.source_type,
