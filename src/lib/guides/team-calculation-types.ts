@@ -18,6 +18,7 @@ export type TeamCalculationMemberRow = {
   character_id: string;
   character_name: string;
   weapon_name: string | null;
+  equipment_id: string | null;
   role: string | null;
   element: string | null;
   damage: number | null;

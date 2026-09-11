@@ -4,74 +4,866 @@
   "unmatchedCharacters": [],
   "explicitMemberDamageCount": 0,
   "unresolvedWeaponLabels": [
-    "Emberwell",
-    "Frostbreath",
-    "Echoes of the Heart",
-    "Blade of Atonement",
-    "Gacha Sword",
-    "Exaiphanes",
-    "Event 7.1",
-    "Finale od the deep",
-    "Thrlling tales of dragon",
-    "Fav Sword",
-    "TTDS",
-    "Fragments",
-    "Favonius",
-    "Spindle",
-    "Widsith",
-    "Exaiphanes Blade",
-    "favonious codex",
-    "wolf",
-    "Thrilling tales of dragin slayer",
-    "Finale",
-    "Fav Lance",
-    "Spine",
-    "Thrilling tale of",
-    "Alley Flash",
-    "Craftable R5",
-    "Staredge R5",
-    "haRBINGER OF ",
-    "kitain cross",
-    "etherlight",
-    "Emberwell R5",
-    "thrilling tales of ",
-    "lion",
-    "Stringless",
-    "thrilling tales of dragon slayer",
-    "Festering",
-    "P. Amber",
-    "favounious codex",
-    "Tidal",
-    "Purity",
-    "Oathsworn",
-    "Prototype",
-    "Thrilling Tales of",
-    "thrilling tales of dra",
-    "favonious sword",
-    "Thrilling tales of",
-    "Shaker",
-    "W Fang",
-    "Favonious codex",
-    "TIDAL",
-    "Favonious greatswor",
-    "fav",
-    "Wolf",
-    "Blackmarrow ",
-    "xiphos",
-    "favonious greatswor",
-    "Favonious bow",
-    "Alley flash",
-    "wolf f",
-    "Weapon: Stringless",
-    "widsith",
-    "oathsworn",
-    "Favonious ",
-    "Sacrificial fragement",
-    "BLACKMARROW",
-    "FAVONIOUS CODEX",
-    "fAVONIOUS LANCE",
-    "Favonious Greatswor",
-    "Thrilling tales of "
+    {
+      "calculation": "6fe41ea1-17e9-4849-b50d-f362e665ae57",
+      "slot": 1,
+      "raw": "Gacha Sword",
+      "character": "Vesna",
+      "weapon_type": "Sword",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        },
+        {
+          "id": "622da646-f647-4556-b83b-ee018bdada30",
+          "name": "Favonius Sword",
+          "type": "sword"
+        },
+        {
+          "id": "e6a64e29-82a3-495e-bbaa-dcb06e67a0f7",
+          "name": "Skyrider Sword",
+          "type": "sword"
+        },
+        {
+          "id": "c6c53bc7-968d-4279-afd6-718eb60a667a",
+          "name": "Sacrificial Sword",
+          "type": "sword"
+        },
+        {
+          "id": "db3ed326-ee03-4dbc-8cc0-2b8ba87e0ac2",
+          "name": "The Flute",
+          "type": "sword"
+        }
+      ]
+    },
+    {
+      "calculation": "6fe41ea1-17e9-4849-b50d-f362e665ae57",
+      "slot": 4,
+      "raw": "Event 7.1",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        },
+        {
+          "id": "622da646-f647-4556-b83b-ee018bdada30",
+          "name": "Favonius Sword",
+          "type": "sword"
+        },
+        {
+          "id": "e6a64e29-82a3-495e-bbaa-dcb06e67a0f7",
+          "name": "Skyrider Sword",
+          "type": "sword"
+        },
+        {
+          "id": "c6c53bc7-968d-4279-afd6-718eb60a667a",
+          "name": "Sacrificial Sword",
+          "type": "sword"
+        },
+        {
+          "id": "db3ed326-ee03-4dbc-8cc0-2b8ba87e0ac2",
+          "name": "The Flute",
+          "type": "sword"
+        }
+      ]
+    },
+    {
+      "calculation": "dd5a89b6-d3ac-4550-aaae-a1dd4e1911ba",
+      "slot": 1,
+      "raw": "Gacha Sword",
+      "character": "Vesna",
+      "weapon_type": "Sword",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        },
+        {
+          "id": "622da646-f647-4556-b83b-ee018bdada30",
+          "name": "Favonius Sword",
+          "type": "sword"
+        },
+        {
+          "id": "e6a64e29-82a3-495e-bbaa-dcb06e67a0f7",
+          "name": "Skyrider Sword",
+          "type": "sword"
+        },
+        {
+          "id": "c6c53bc7-968d-4279-afd6-718eb60a667a",
+          "name": "Sacrificial Sword",
+          "type": "sword"
+        },
+        {
+          "id": "db3ed326-ee03-4dbc-8cc0-2b8ba87e0ac2",
+          "name": "The Flute",
+          "type": "sword"
+        }
+      ]
+    },
+    {
+      "calculation": "dd5a89b6-d3ac-4550-aaae-a1dd4e1911ba",
+      "slot": 3,
+      "raw": "TTDS",
+      "character": "Vodyanitsa",
+      "weapon_type": "Catalyst",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "64f04a2c-2531-4203-bddd-a405fca9751c",
+          "name": "Twin Nephrite",
+          "type": "catalyst"
+        },
+        {
+          "id": "46dfc63b-1c15-40d3-a741-86dee922239e",
+          "name": "Magic Guide",
+          "type": "catalyst"
+        },
+        {
+          "id": "9b6029e4-243a-4dcc-8e99-e4520e0af61e",
+          "name": "Thrilling Tales of Dragon Slayers",
+          "type": "catalyst"
+        },
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "type": "catalyst"
+        },
+        {
+          "id": "735f7e92-7312-4324-9099-f4b381e5bd0c",
+          "name": "Emerald Orb",
+          "type": "catalyst"
+        }
+      ]
+    },
+    {
+      "calculation": "02bd75aa-fb05-42b5-b082-d71796efc185",
+      "slot": 1,
+      "raw": "Gacha Sword",
+      "character": "Vesna",
+      "weapon_type": "Sword",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        },
+        {
+          "id": "622da646-f647-4556-b83b-ee018bdada30",
+          "name": "Favonius Sword",
+          "type": "sword"
+        },
+        {
+          "id": "e6a64e29-82a3-495e-bbaa-dcb06e67a0f7",
+          "name": "Skyrider Sword",
+          "type": "sword"
+        },
+        {
+          "id": "c6c53bc7-968d-4279-afd6-718eb60a667a",
+          "name": "Sacrificial Sword",
+          "type": "sword"
+        },
+        {
+          "id": "db3ed326-ee03-4dbc-8cc0-2b8ba87e0ac2",
+          "name": "The Flute",
+          "type": "sword"
+        }
+      ]
+    },
+    {
+      "calculation": "02bd75aa-fb05-42b5-b082-d71796efc185",
+      "slot": 2,
+      "raw": "TTDS",
+      "character": "Vodyanitsa",
+      "weapon_type": "Catalyst",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "64f04a2c-2531-4203-bddd-a405fca9751c",
+          "name": "Twin Nephrite",
+          "type": "catalyst"
+        },
+        {
+          "id": "46dfc63b-1c15-40d3-a741-86dee922239e",
+          "name": "Magic Guide",
+          "type": "catalyst"
+        },
+        {
+          "id": "9b6029e4-243a-4dcc-8e99-e4520e0af61e",
+          "name": "Thrilling Tales of Dragon Slayers",
+          "type": "catalyst"
+        },
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "type": "catalyst"
+        },
+        {
+          "id": "735f7e92-7312-4324-9099-f4b381e5bd0c",
+          "name": "Emerald Orb",
+          "type": "catalyst"
+        }
+      ]
+    },
+    {
+      "calculation": "02bd75aa-fb05-42b5-b082-d71796efc185",
+      "slot": 4,
+      "raw": "Event 7.1",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        },
+        {
+          "id": "622da646-f647-4556-b83b-ee018bdada30",
+          "name": "Favonius Sword",
+          "type": "sword"
+        },
+        {
+          "id": "e6a64e29-82a3-495e-bbaa-dcb06e67a0f7",
+          "name": "Skyrider Sword",
+          "type": "sword"
+        },
+        {
+          "id": "c6c53bc7-968d-4279-afd6-718eb60a667a",
+          "name": "Sacrificial Sword",
+          "type": "sword"
+        },
+        {
+          "id": "db3ed326-ee03-4dbc-8cc0-2b8ba87e0ac2",
+          "name": "The Flute",
+          "type": "sword"
+        }
+      ]
+    },
+    {
+      "calculation": "8dfd7783-7308-400d-bea6-778050d81c03",
+      "slot": 1,
+      "raw": "Gacha Sword",
+      "character": "Vesna",
+      "weapon_type": "Sword",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        },
+        {
+          "id": "622da646-f647-4556-b83b-ee018bdada30",
+          "name": "Favonius Sword",
+          "type": "sword"
+        },
+        {
+          "id": "e6a64e29-82a3-495e-bbaa-dcb06e67a0f7",
+          "name": "Skyrider Sword",
+          "type": "sword"
+        },
+        {
+          "id": "c6c53bc7-968d-4279-afd6-718eb60a667a",
+          "name": "Sacrificial Sword",
+          "type": "sword"
+        },
+        {
+          "id": "db3ed326-ee03-4dbc-8cc0-2b8ba87e0ac2",
+          "name": "The Flute",
+          "type": "sword"
+        }
+      ]
+    },
+    {
+      "calculation": "9f759bcd-0264-486a-9f7a-f3989cc71494",
+      "slot": 4,
+      "raw": "Event 7.1",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        },
+        {
+          "id": "622da646-f647-4556-b83b-ee018bdada30",
+          "name": "Favonius Sword",
+          "type": "sword"
+        },
+        {
+          "id": "e6a64e29-82a3-495e-bbaa-dcb06e67a0f7",
+          "name": "Skyrider Sword",
+          "type": "sword"
+        },
+        {
+          "id": "c6c53bc7-968d-4279-afd6-718eb60a667a",
+          "name": "Sacrificial Sword",
+          "type": "sword"
+        },
+        {
+          "id": "db3ed326-ee03-4dbc-8cc0-2b8ba87e0ac2",
+          "name": "The Flute",
+          "type": "sword"
+        }
+      ]
+    },
+    {
+      "calculation": "464abc72-958a-4ad4-a3d7-40f7bec62cc1",
+      "slot": 1,
+      "raw": "serpentspine",
+      "character": "Varka",
+      "weapon_type": "Claymore",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "4a5cbc9b-c075-4459-b11b-afa5f2312961",
+          "name": "Serpent Spine",
+          "type": "claymore"
+        },
+        {
+          "id": "2084cfea-e222-4271-a67c-8c814afcb5fe",
+          "name": "White Iron Greatsword",
+          "type": "claymore"
+        },
+        {
+          "id": "95495e97-08bc-41d6-84e7-6698f9c46656",
+          "name": "Bloodtainted Greatsword",
+          "type": "claymore"
+        },
+        {
+          "id": "6cfa670c-1fa1-4ea4-baa0-eadcbbce1fb5",
+          "name": "Skyrider Greatsword",
+          "type": "claymore"
+        },
+        {
+          "id": "da6103f8-2bdf-43cf-8b35-c6a08b0bff6f",
+          "name": "Prototype Archaic",
+          "type": "claymore"
+        }
+      ]
+    },
+    {
+      "calculation": "464abc72-958a-4ad4-a3d7-40f7bec62cc1",
+      "slot": 4,
+      "raw": "Thrilling tales of dragin slayer",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "9b6029e4-243a-4dcc-8e99-e4520e0af61e",
+          "name": "Thrilling Tales of Dragon Slayers",
+          "type": "catalyst"
+        },
+        {
+          "id": "4077bca6-073e-4ac6-8615-3772a676cb80",
+          "name": "Dodoco Tales",
+          "type": "catalyst"
+        },
+        {
+          "id": "64f04a2c-2531-4203-bddd-a405fca9751c",
+          "name": "Twin Nephrite",
+          "type": "catalyst"
+        },
+        {
+          "id": "46dfc63b-1c15-40d3-a741-86dee922239e",
+          "name": "Magic Guide",
+          "type": "catalyst"
+        },
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "type": "catalyst"
+        }
+      ]
+    },
+    {
+      "calculation": "109341fb-ddeb-4fe3-a963-095eb523e3c8",
+      "slot": 4,
+      "raw": "Event 7.1",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        },
+        {
+          "id": "622da646-f647-4556-b83b-ee018bdada30",
+          "name": "Favonius Sword",
+          "type": "sword"
+        },
+        {
+          "id": "e6a64e29-82a3-495e-bbaa-dcb06e67a0f7",
+          "name": "Skyrider Sword",
+          "type": "sword"
+        },
+        {
+          "id": "c6c53bc7-968d-4279-afd6-718eb60a667a",
+          "name": "Sacrificial Sword",
+          "type": "sword"
+        },
+        {
+          "id": "db3ed326-ee03-4dbc-8cc0-2b8ba87e0ac2",
+          "name": "The Flute",
+          "type": "sword"
+        }
+      ]
+    },
+    {
+      "calculation": "2f946069-5050-4e9b-8d87-4f11b709c914",
+      "slot": 1,
+      "raw": "Craftable R5",
+      "character": "Varka",
+      "weapon_type": "Claymore",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "09d14669-2cdc-4e81-ac9d-41ce24f9af0e",
+          "name": "Portable Power Saw",
+          "type": "claymore"
+        },
+        {
+          "id": "1e7c8691-56da-49fa-9e1a-f158ac9e951d",
+          "name": "Royal Greatsword",
+          "type": "claymore"
+        },
+        {
+          "id": "68dbc930-1ca8-42c9-98e9-eb91dc78de98",
+          "name": "Fruitful Hook",
+          "type": "claymore"
+        },
+        {
+          "id": "2dda2027-f3ca-4832-83d4-756389a41626",
+          "name": "Flame-Forged Insight",
+          "type": "claymore"
+        },
+        {
+          "id": "a52e305b-34df-40df-8932-258fb74a1a7f",
+          "name": "Wolf's Gravestone",
+          "type": "claymore"
+        }
+      ]
+    },
+    {
+      "calculation": "2f946069-5050-4e9b-8d87-4f11b709c914",
+      "slot": 3,
+      "raw": "Staredge R5",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "33ce81c8-bde9-4868-8107-ce26ee695561",
+          "name": "Sturdy Bone",
+          "type": "sword"
+        },
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        },
+        {
+          "id": "622da646-f647-4556-b83b-ee018bdada30",
+          "name": "Favonius Sword",
+          "type": "sword"
+        },
+        {
+          "id": "e6a64e29-82a3-495e-bbaa-dcb06e67a0f7",
+          "name": "Skyrider Sword",
+          "type": "sword"
+        },
+        {
+          "id": "c6c53bc7-968d-4279-afd6-718eb60a667a",
+          "name": "Sacrificial Sword",
+          "type": "sword"
+        }
+      ]
+    },
+    {
+      "calculation": "c6a465ca-fae0-4c55-a28d-24408af28931",
+      "slot": 4,
+      "raw": "TTDS",
+      "character": "Vodyanitsa",
+      "weapon_type": "Catalyst",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "64f04a2c-2531-4203-bddd-a405fca9751c",
+          "name": "Twin Nephrite",
+          "type": "catalyst"
+        },
+        {
+          "id": "46dfc63b-1c15-40d3-a741-86dee922239e",
+          "name": "Magic Guide",
+          "type": "catalyst"
+        },
+        {
+          "id": "9b6029e4-243a-4dcc-8e99-e4520e0af61e",
+          "name": "Thrilling Tales of Dragon Slayers",
+          "type": "catalyst"
+        },
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "type": "catalyst"
+        },
+        {
+          "id": "735f7e92-7312-4324-9099-f4b381e5bd0c",
+          "name": "Emerald Orb",
+          "type": "catalyst"
+        }
+      ]
+    },
+    {
+      "calculation": "7fa2a973-dbe4-410b-9860-d02741d982b9",
+      "slot": 4,
+      "raw": "Event 7.1",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        },
+        {
+          "id": "622da646-f647-4556-b83b-ee018bdada30",
+          "name": "Favonius Sword",
+          "type": "sword"
+        },
+        {
+          "id": "e6a64e29-82a3-495e-bbaa-dcb06e67a0f7",
+          "name": "Skyrider Sword",
+          "type": "sword"
+        },
+        {
+          "id": "c6c53bc7-968d-4279-afd6-718eb60a667a",
+          "name": "Sacrificial Sword",
+          "type": "sword"
+        },
+        {
+          "id": "db3ed326-ee03-4dbc-8cc0-2b8ba87e0ac2",
+          "name": "The Flute",
+          "type": "sword"
+        }
+      ]
+    },
+    {
+      "calculation": "4be0cdb2-0b3f-4f56-9cea-66e42435e2cf",
+      "slot": 2,
+      "raw": "favounious codex",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "6818ea50-58be-49a0-92c2-5f1a0b994e74",
+          "name": "Favonius Codex",
+          "type": "catalyst"
+        },
+        {
+          "id": "64f04a2c-2531-4203-bddd-a405fca9751c",
+          "name": "Twin Nephrite",
+          "type": "catalyst"
+        },
+        {
+          "id": "46dfc63b-1c15-40d3-a741-86dee922239e",
+          "name": "Magic Guide",
+          "type": "catalyst"
+        },
+        {
+          "id": "9b6029e4-243a-4dcc-8e99-e4520e0af61e",
+          "name": "Thrilling Tales of Dragon Slayers",
+          "type": "catalyst"
+        },
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "type": "catalyst"
+        }
+      ]
+    },
+    {
+      "calculation": "9d1646fa-b9aa-4c2d-a236-be6b2643dbed",
+      "slot": 2,
+      "raw": "Tamayura-tei no Ohanashi",
+      "character": "Iansan",
+      "weapon_type": "Polearm",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "40dcf2ea-f3bb-4b2b-9dd6-17312d4092a3",
+          "name": "Halberd",
+          "type": "polearm"
+        },
+        {
+          "id": "19c2b926-4655-4a55-a46e-bfcdbea07b80",
+          "name": "Dragon's Bane",
+          "type": "polearm"
+        },
+        {
+          "id": "afbd10b7-557a-45a5-898e-784d4bd0df98",
+          "name": "Crescent Pike",
+          "type": "polearm"
+        },
+        {
+          "id": "c2562024-e57c-465c-9e71-405aa9bb5355",
+          "name": "Dragonspine Spear",
+          "type": "polearm"
+        },
+        {
+          "id": "96e78a98-5b11-4c7f-b3b1-8838d4dddfd4",
+          "name": "Prototype Starglitter",
+          "type": "polearm"
+        }
+      ]
+    },
+    {
+      "calculation": "3a121d57-4883-4cba-a44b-059a71d22ae6",
+      "slot": 2,
+      "raw": "Tamayura-tei no Ohanashi",
+      "character": "Iansan",
+      "weapon_type": "Polearm",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "40dcf2ea-f3bb-4b2b-9dd6-17312d4092a3",
+          "name": "Halberd",
+          "type": "polearm"
+        },
+        {
+          "id": "19c2b926-4655-4a55-a46e-bfcdbea07b80",
+          "name": "Dragon's Bane",
+          "type": "polearm"
+        },
+        {
+          "id": "afbd10b7-557a-45a5-898e-784d4bd0df98",
+          "name": "Crescent Pike",
+          "type": "polearm"
+        },
+        {
+          "id": "c2562024-e57c-465c-9e71-405aa9bb5355",
+          "name": "Dragonspine Spear",
+          "type": "polearm"
+        },
+        {
+          "id": "96e78a98-5b11-4c7f-b3b1-8838d4dddfd4",
+          "name": "Prototype Starglitter",
+          "type": "polearm"
+        }
+      ]
+    },
+    {
+      "calculation": "3a121d57-4883-4cba-a44b-059a71d22ae6",
+      "slot": 3,
+      "raw": "favounious codex",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "6818ea50-58be-49a0-92c2-5f1a0b994e74",
+          "name": "Favonius Codex",
+          "type": "catalyst"
+        },
+        {
+          "id": "64f04a2c-2531-4203-bddd-a405fca9751c",
+          "name": "Twin Nephrite",
+          "type": "catalyst"
+        },
+        {
+          "id": "46dfc63b-1c15-40d3-a741-86dee922239e",
+          "name": "Magic Guide",
+          "type": "catalyst"
+        },
+        {
+          "id": "9b6029e4-243a-4dcc-8e99-e4520e0af61e",
+          "name": "Thrilling Tales of Dragon Slayers",
+          "type": "catalyst"
+        },
+        {
+          "id": "478754a8-295d-461a-b182-ee2c918b81c0",
+          "name": "Otherworldly Story",
+          "type": "catalyst"
+        }
+      ]
+    },
+    {
+      "calculation": "2ba928b4-511a-4aa0-8deb-d3c92ff21b85",
+      "slot": 2,
+      "raw": "Favonious bow",
+      "character": "Faruzan",
+      "weapon_type": "Bow",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "a559f7d3-2e83-4550-8ff7-62a53c2c614c",
+          "name": "Raven Bow",
+          "type": "bow"
+        },
+        {
+          "id": "e3e4b4af-b7f3-4554-a306-0c56f5317b81",
+          "name": "Amos' Bow",
+          "type": "bow"
+        },
+        {
+          "id": "ce772a27-15aa-4789-b901-3b64c572ec20",
+          "name": "Rainbow Serpent's Rain Bow",
+          "type": "bow"
+        },
+        {
+          "id": "28a68d3e-6eb9-4618-b579-1a70eb77534a",
+          "name": "Seasoned Hunter's Bow",
+          "type": "bow"
+        },
+        {
+          "id": "f823d93a-d98f-4882-a3c2-a748ab5ddb27",
+          "name": "Compound Bow",
+          "type": "bow"
+        }
+      ]
+    },
+    {
+      "calculation": "b842051f-8101-47d4-bf40-d8521b2f15f1",
+      "slot": 1,
+      "raw": null,
+      "character": "Flins",
+      "weapon_type": "Polearm",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "empty_name",
+      "candidates": []
+    },
+    {
+      "calculation": "b842051f-8101-47d4-bf40-d8521b2f15f1",
+      "slot": 2,
+      "raw": null,
+      "character": "Ineffa",
+      "weapon_type": "Polearm",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "empty_name",
+      "candidates": []
+    },
+    {
+      "calculation": "b842051f-8101-47d4-bf40-d8521b2f15f1",
+      "slot": 4,
+      "raw": "Sacrificial fragement",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "equipment_id": null,
+      "canonical": null,
+      "method": "unresolved",
+      "reason": "no_clear_high_confidence_match",
+      "candidates": [
+        {
+          "id": "3e54a423-fa65-4401-ace5-142a89736b75",
+          "name": "Sacrificial Fragments",
+          "type": "catalyst"
+        },
+        {
+          "id": "29283380-9833-4998-8efe-03e0248a21dc",
+          "name": "Lost Prayer to the Sacred Winds",
+          "type": "catalyst"
+        },
+        {
+          "id": "9b6029e4-243a-4dcc-8e99-e4520e0af61e",
+          "name": "Thrilling Tales of Dragon Slayers",
+          "type": "catalyst"
+        },
+        {
+          "id": "d607b02a-6290-4cea-9842-ea56124a601d",
+          "name": "Ash-Graven Drinking Horn",
+          "type": "catalyst"
+        },
+        {
+          "id": "46dfc63b-1c15-40d3-a741-86dee922239e",
+          "name": "Magic Guide",
+          "type": "catalyst"
+        }
+      ]
+    }
   ],
   "example": {
     "id": "8b63ea26-6a4f-4fce-9134-4df522b1c7ea",

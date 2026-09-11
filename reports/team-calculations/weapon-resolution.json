@@ -1,0 +1,4195 @@
+{
+  "total": 300,
+  "exact": 179,
+  "alias": 0,
+  "partial": 63,
+  "weapon_type_assisted": 22,
+  "fuzzy": 12,
+  "unresolved": 24,
+  "updates": 0,
+  "failures": [
+    {
+      "calculation": "02bd75aa-fb05-42b5-b082-d71796efc185",
+      "team": "Vesna, Vodyanitsa, Cryo Traveler, Odette",
+      "slot": 1,
+      "raw": "Gacha Sword",
+      "character": "Vesna",
+      "weapon_type": "Sword",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "000cffdc-a354-42fb-be10-b2cb5e6dfa4c",
+          "name": "Silver Light",
+          "type": "sword"
+        },
+        {
+          "id": "07f6adc0-5a04-4dbd-a555-64b5e7129ece",
+          "name": "Amenoma Kageuchi",
+          "type": "sword"
+        },
+        {
+          "id": "0899b360-112d-419d-9247-f8f6f3371a84",
+          "name": "Silver Sword",
+          "type": "sword"
+        },
+        {
+          "id": "0e7b1e90-ba64-4107-a778-2c347f9a6ec7",
+          "name": "Toukabou Shigure",
+          "type": "sword"
+        },
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "02bd75aa-fb05-42b5-b082-d71796efc185",
+      "team": "Vesna, Vodyanitsa, Cryo Traveler, Odette",
+      "slot": 2,
+      "raw": "TTDS",
+      "character": "Vodyanitsa",
+      "weapon_type": "Catalyst",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "05226d14-b40f-48e1-8f54-7d938bcf92da",
+          "name": "Nocturne's Curtain Call",
+          "type": "catalyst"
+        },
+        {
+          "id": "1ec6c70a-6e81-4861-a0a9-3a2c1935e326",
+          "name": "Sunny Morning Sleep-In",
+          "type": "catalyst"
+        },
+        {
+          "id": "1ed4f46b-ec6c-4ebe-b2da-b63a7c057ba2",
+          "name": "Angelos' Heptades",
+          "type": "catalyst"
+        },
+        {
+          "id": "21d1dd4f-59fa-4250-b2d9-639023e19832",
+          "name": "Flowing Purity",
+          "type": "catalyst"
+        },
+        {
+          "id": "29283380-9833-4998-8efe-03e0248a21dc",
+          "name": "Lost Prayer to the Sacred Winds",
+          "type": "catalyst"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "02bd75aa-fb05-42b5-b082-d71796efc185",
+      "team": "Vesna, Vodyanitsa, Cryo Traveler, Odette",
+      "slot": 4,
+      "raw": "Event 7.1",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "000cffdc-a354-42fb-be10-b2cb5e6dfa4c",
+          "name": "Silver Light",
+          "type": "sword"
+        },
+        {
+          "id": "07f6adc0-5a04-4dbd-a555-64b5e7129ece",
+          "name": "Amenoma Kageuchi",
+          "type": "sword"
+        },
+        {
+          "id": "0899b360-112d-419d-9247-f8f6f3371a84",
+          "name": "Silver Sword",
+          "type": "sword"
+        },
+        {
+          "id": "0e7b1e90-ba64-4107-a778-2c347f9a6ec7",
+          "name": "Toukabou Shigure",
+          "type": "sword"
+        },
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "109341fb-ddeb-4fe3-a963-095eb523e3c8",
+      "team": "Mizuki C1, Faruzan, Cryo Traveler, Odette",
+      "slot": 4,
+      "raw": "Event 7.1",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "000cffdc-a354-42fb-be10-b2cb5e6dfa4c",
+          "name": "Silver Light",
+          "type": "sword"
+        },
+        {
+          "id": "07f6adc0-5a04-4dbd-a555-64b5e7129ece",
+          "name": "Amenoma Kageuchi",
+          "type": "sword"
+        },
+        {
+          "id": "0899b360-112d-419d-9247-f8f6f3371a84",
+          "name": "Silver Sword",
+          "type": "sword"
+        },
+        {
+          "id": "0e7b1e90-ba64-4107-a778-2c347f9a6ec7",
+          "name": "Toukabou Shigure",
+          "type": "sword"
+        },
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "2ba928b4-511a-4aa0-8deb-d3c92ff21b85",
+      "team": "Venti Bennet",
+      "slot": 2,
+      "raw": "Favonious bow",
+      "character": "Faruzan",
+      "weapon_type": "Bow",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "a559f7d3-2e83-4550-8ff7-62a53c2c614c",
+          "name": "Raven Bow",
+          "type": "bow"
+        },
+        {
+          "id": "ce772a27-15aa-4789-b901-3b64c572ec20",
+          "name": "Rainbow Serpent's Rain Bow",
+          "type": "bow"
+        },
+        {
+          "id": "e3e4b4af-b7f3-4554-a306-0c56f5317b81",
+          "name": "Amos' Bow",
+          "type": "bow"
+        },
+        {
+          "id": "28a68d3e-6eb9-4618-b579-1a70eb77534a",
+          "name": "Seasoned Hunter's Bow",
+          "type": "bow"
+        },
+        {
+          "id": "8211c909-24df-419b-aa05-6cc2430e9bcf",
+          "name": "Hunter's Bow",
+          "type": "bow"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "2f946069-5050-4e9b-8d87-4f11b709c914",
+      "team": "Varka, Prune C6, Cryo Traveler C6, Odette",
+      "slot": 1,
+      "raw": "Craftable R5",
+      "character": "Varka",
+      "weapon_type": "Claymore",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "09d14669-2cdc-4e81-ac9d-41ce24f9af0e",
+          "name": "Portable Power Saw",
+          "type": "claymore"
+        },
+        {
+          "id": "1e7c8691-56da-49fa-9e1a-f158ac9e951d",
+          "name": "Royal Greatsword",
+          "type": "claymore"
+        },
+        {
+          "id": "2dda2027-f3ca-4832-83d4-756389a41626",
+          "name": "Flame-Forged Insight",
+          "type": "claymore"
+        },
+        {
+          "id": "68dbc930-1ca8-42c9-98e9-eb91dc78de98",
+          "name": "Fruitful Hook",
+          "type": "claymore"
+        },
+        {
+          "id": "a52e305b-34df-40df-8932-258fb74a1a7f",
+          "name": "Wolf's Gravestone",
+          "type": "claymore"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "2f946069-5050-4e9b-8d87-4f11b709c914",
+      "team": "Varka, Prune C6, Cryo Traveler C6, Odette",
+      "slot": 3,
+      "raw": "Staredge R5",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "33ce81c8-bde9-4868-8107-ce26ee695561",
+          "name": "Sturdy Bone",
+          "type": "sword"
+        },
+        {
+          "id": "0899b360-112d-419d-9247-f8f6f3371a84",
+          "name": "Silver Sword",
+          "type": "sword"
+        },
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        },
+        {
+          "id": "173feb38-dc54-46c2-b04f-624fe771dd2c",
+          "name": "Primordial Jade Cutter",
+          "type": "sword"
+        },
+        {
+          "id": "2d91ed94-5777-47a8-be0d-58b8ebdeb557",
+          "name": "Sword of Narzissenkreuz",
+          "type": "sword"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "3a121d57-4883-4cba-a44b-059a71d22ae6",
+      "team": "Varesa Iansan Hexerei",
+      "slot": 2,
+      "raw": "Tamayura-tei no Ohanashi",
+      "character": "Iansan",
+      "weapon_type": "Polearm",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "03354e40-2d0c-4c15-b3a6-5737cb2b4607",
+          "name": "Bloodsoaked Ruins",
+          "type": "polearm"
+        },
+        {
+          "id": "05a6c178-fad6-4887-8cdb-e2f3a9257da0",
+          "name": "Primordial Jade Winged-Spear",
+          "type": "polearm"
+        },
+        {
+          "id": "0b811d89-fd82-48c2-84c8-69b3fae66416",
+          "name": "Engulfing Lightning",
+          "type": "polearm"
+        },
+        {
+          "id": "0c540f3c-cf64-41b5-a6b9-70dda0be99ad",
+          "name": "Black Tassel",
+          "type": "polearm"
+        },
+        {
+          "id": "0f8a4658-916c-40c5-82d2-a460b25a10f0",
+          "name": "Kitain Cross Spear",
+          "type": "polearm"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "3a121d57-4883-4cba-a44b-059a71d22ae6",
+      "team": "Varesa Iansan Hexerei",
+      "slot": 3,
+      "raw": "favounious codex",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "6818ea50-58be-49a0-92c2-5f1a0b994e74",
+          "name": "Favonius Codex",
+          "type": "catalyst"
+        },
+        {
+          "id": "05226d14-b40f-48e1-8f54-7d938bcf92da",
+          "name": "Nocturne's Curtain Call",
+          "type": "catalyst"
+        },
+        {
+          "id": "1ec6c70a-6e81-4861-a0a9-3a2c1935e326",
+          "name": "Sunny Morning Sleep-In",
+          "type": "catalyst"
+        },
+        {
+          "id": "1ed4f46b-ec6c-4ebe-b2da-b63a7c057ba2",
+          "name": "Angelos' Heptades",
+          "type": "catalyst"
+        },
+        {
+          "id": "21d1dd4f-59fa-4250-b2d9-639023e19832",
+          "name": "Flowing Purity",
+          "type": "catalyst"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "464abc72-958a-4ad4-a3d7-40f7bec62cc1",
+      "team": "Varka Premium Prune",
+      "slot": 1,
+      "raw": "serpentspine",
+      "character": "Varka",
+      "weapon_type": "Claymore",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "4a5cbc9b-c075-4459-b11b-afa5f2312961",
+          "name": "Serpent Spine",
+          "type": "claymore"
+        },
+        {
+          "id": "1e7c8691-56da-49fa-9e1a-f158ac9e951d",
+          "name": "Royal Greatsword",
+          "type": "claymore"
+        },
+        {
+          "id": "2084cfea-e222-4271-a67c-8c814afcb5fe",
+          "name": "White Iron Greatsword",
+          "type": "claymore"
+        },
+        {
+          "id": "516524bb-1703-404d-a1ad-02bd68bbd063",
+          "name": "Sacrificial Greatsword",
+          "type": "claymore"
+        },
+        {
+          "id": "6cfa670c-1fa1-4ea4-baa0-eadcbbce1fb5",
+          "name": "Skyrider Greatsword",
+          "type": "claymore"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "464abc72-958a-4ad4-a3d7-40f7bec62cc1",
+      "team": "Varka Premium Prune",
+      "slot": 4,
+      "raw": "Thrilling tales of dragin slayer",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "9b6029e4-243a-4dcc-8e99-e4520e0af61e",
+          "name": "Thrilling Tales of Dragon Slayers",
+          "type": "catalyst"
+        },
+        {
+          "id": "4077bca6-073e-4ac6-8615-3772a676cb80",
+          "name": "Dodoco Tales",
+          "type": "catalyst"
+        },
+        {
+          "id": "05226d14-b40f-48e1-8f54-7d938bcf92da",
+          "name": "Nocturne's Curtain Call",
+          "type": "catalyst"
+        },
+        {
+          "id": "1ec6c70a-6e81-4861-a0a9-3a2c1935e326",
+          "name": "Sunny Morning Sleep-In",
+          "type": "catalyst"
+        },
+        {
+          "id": "1ed4f46b-ec6c-4ebe-b2da-b63a7c057ba2",
+          "name": "Angelos' Heptades",
+          "type": "catalyst"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "4be0cdb2-0b3f-4f56-9cea-66e42435e2cf",
+      "team": "Varesa Nicole Durin ",
+      "slot": 2,
+      "raw": "favounious codex",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "6818ea50-58be-49a0-92c2-5f1a0b994e74",
+          "name": "Favonius Codex",
+          "type": "catalyst"
+        },
+        {
+          "id": "05226d14-b40f-48e1-8f54-7d938bcf92da",
+          "name": "Nocturne's Curtain Call",
+          "type": "catalyst"
+        },
+        {
+          "id": "1ec6c70a-6e81-4861-a0a9-3a2c1935e326",
+          "name": "Sunny Morning Sleep-In",
+          "type": "catalyst"
+        },
+        {
+          "id": "1ed4f46b-ec6c-4ebe-b2da-b63a7c057ba2",
+          "name": "Angelos' Heptades",
+          "type": "catalyst"
+        },
+        {
+          "id": "21d1dd4f-59fa-4250-b2d9-639023e19832",
+          "name": "Flowing Purity",
+          "type": "catalyst"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "6fe41ea1-17e9-4849-b50d-f362e665ae57",
+      "team": "Vesna, Faruzan, Cryo Traveler, Odette",
+      "slot": 1,
+      "raw": "Gacha Sword",
+      "character": "Vesna",
+      "weapon_type": "Sword",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "000cffdc-a354-42fb-be10-b2cb5e6dfa4c",
+          "name": "Silver Light",
+          "type": "sword"
+        },
+        {
+          "id": "07f6adc0-5a04-4dbd-a555-64b5e7129ece",
+          "name": "Amenoma Kageuchi",
+          "type": "sword"
+        },
+        {
+          "id": "0899b360-112d-419d-9247-f8f6f3371a84",
+          "name": "Silver Sword",
+          "type": "sword"
+        },
+        {
+          "id": "0e7b1e90-ba64-4107-a778-2c347f9a6ec7",
+          "name": "Toukabou Shigure",
+          "type": "sword"
+        },
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "6fe41ea1-17e9-4849-b50d-f362e665ae57",
+      "team": "Vesna, Faruzan, Cryo Traveler, Odette",
+      "slot": 4,
+      "raw": "Event 7.1",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "000cffdc-a354-42fb-be10-b2cb5e6dfa4c",
+          "name": "Silver Light",
+          "type": "sword"
+        },
+        {
+          "id": "07f6adc0-5a04-4dbd-a555-64b5e7129ece",
+          "name": "Amenoma Kageuchi",
+          "type": "sword"
+        },
+        {
+          "id": "0899b360-112d-419d-9247-f8f6f3371a84",
+          "name": "Silver Sword",
+          "type": "sword"
+        },
+        {
+          "id": "0e7b1e90-ba64-4107-a778-2c347f9a6ec7",
+          "name": "Toukabou Shigure",
+          "type": "sword"
+        },
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "7fa2a973-dbe4-410b-9860-d02741d982b9",
+      "team": "Mizuki C1, Vodyanitsa, Cryo Traveler, Odette",
+      "slot": 4,
+      "raw": "Event 7.1",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "000cffdc-a354-42fb-be10-b2cb5e6dfa4c",
+          "name": "Silver Light",
+          "type": "sword"
+        },
+        {
+          "id": "07f6adc0-5a04-4dbd-a555-64b5e7129ece",
+          "name": "Amenoma Kageuchi",
+          "type": "sword"
+        },
+        {
+          "id": "0899b360-112d-419d-9247-f8f6f3371a84",
+          "name": "Silver Sword",
+          "type": "sword"
+        },
+        {
+          "id": "0e7b1e90-ba64-4107-a778-2c347f9a6ec7",
+          "name": "Toukabou Shigure",
+          "type": "sword"
+        },
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "8dfd7783-7308-400d-bea6-778050d81c03",
+      "team": "Vesna, Faruzan, Qiqi, Odette",
+      "slot": 1,
+      "raw": "Gacha Sword",
+      "character": "Vesna",
+      "weapon_type": "Sword",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "000cffdc-a354-42fb-be10-b2cb5e6dfa4c",
+          "name": "Silver Light",
+          "type": "sword"
+        },
+        {
+          "id": "07f6adc0-5a04-4dbd-a555-64b5e7129ece",
+          "name": "Amenoma Kageuchi",
+          "type": "sword"
+        },
+        {
+          "id": "0899b360-112d-419d-9247-f8f6f3371a84",
+          "name": "Silver Sword",
+          "type": "sword"
+        },
+        {
+          "id": "0e7b1e90-ba64-4107-a778-2c347f9a6ec7",
+          "name": "Toukabou Shigure",
+          "type": "sword"
+        },
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "9d1646fa-b9aa-4c2d-a236-be6b2643dbed",
+      "team": "Varesa Premium",
+      "slot": 2,
+      "raw": "Tamayura-tei no Ohanashi",
+      "character": "Iansan",
+      "weapon_type": "Polearm",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "03354e40-2d0c-4c15-b3a6-5737cb2b4607",
+          "name": "Bloodsoaked Ruins",
+          "type": "polearm"
+        },
+        {
+          "id": "05a6c178-fad6-4887-8cdb-e2f3a9257da0",
+          "name": "Primordial Jade Winged-Spear",
+          "type": "polearm"
+        },
+        {
+          "id": "0b811d89-fd82-48c2-84c8-69b3fae66416",
+          "name": "Engulfing Lightning",
+          "type": "polearm"
+        },
+        {
+          "id": "0c540f3c-cf64-41b5-a6b9-70dda0be99ad",
+          "name": "Black Tassel",
+          "type": "polearm"
+        },
+        {
+          "id": "0f8a4658-916c-40c5-82d2-a460b25a10f0",
+          "name": "Kitain Cross Spear",
+          "type": "polearm"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "9f759bcd-0264-486a-9f7a-f3989cc71494",
+      "team": "Mizuki C2, Faruzan, Cryo Traveler, Odette",
+      "slot": 4,
+      "raw": "Event 7.1",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "000cffdc-a354-42fb-be10-b2cb5e6dfa4c",
+          "name": "Silver Light",
+          "type": "sword"
+        },
+        {
+          "id": "07f6adc0-5a04-4dbd-a555-64b5e7129ece",
+          "name": "Amenoma Kageuchi",
+          "type": "sword"
+        },
+        {
+          "id": "0899b360-112d-419d-9247-f8f6f3371a84",
+          "name": "Silver Sword",
+          "type": "sword"
+        },
+        {
+          "id": "0e7b1e90-ba64-4107-a778-2c347f9a6ec7",
+          "name": "Toukabou Shigure",
+          "type": "sword"
+        },
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "b842051f-8101-47d4-bf40-d8521b2f15f1",
+      "team": "flins ineffa",
+      "slot": 1,
+      "raw": null,
+      "character": "Flins",
+      "weapon_type": "Polearm",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [],
+      "reason": "empty_name"
+    },
+    {
+      "calculation": "b842051f-8101-47d4-bf40-d8521b2f15f1",
+      "team": "flins ineffa",
+      "slot": 2,
+      "raw": null,
+      "character": "Ineffa",
+      "weapon_type": "Polearm",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [],
+      "reason": "empty_name"
+    },
+    {
+      "calculation": "b842051f-8101-47d4-bf40-d8521b2f15f1",
+      "team": "flins ineffa",
+      "slot": 4,
+      "raw": "Sacrificial fragement",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "3e54a423-fa65-4401-ace5-142a89736b75",
+          "name": "Sacrificial Fragments",
+          "type": "catalyst"
+        },
+        {
+          "id": "29283380-9833-4998-8efe-03e0248a21dc",
+          "name": "Lost Prayer to the Sacred Winds",
+          "type": "catalyst"
+        },
+        {
+          "id": "9b6029e4-243a-4dcc-8e99-e4520e0af61e",
+          "name": "Thrilling Tales of Dragon Slayers",
+          "type": "catalyst"
+        },
+        {
+          "id": "d607b02a-6290-4cea-9842-ea56124a601d",
+          "name": "Ash-Graven Drinking Horn",
+          "type": "catalyst"
+        },
+        {
+          "id": "46dfc63b-1c15-40d3-a741-86dee922239e",
+          "name": "Magic Guide",
+          "type": "catalyst"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "c6a465ca-fae0-4c55-a28d-24408af28931",
+      "team": "Skirk, Shenhe, Furina, Vodyanitsa",
+      "slot": 4,
+      "raw": "TTDS",
+      "character": "Vodyanitsa",
+      "weapon_type": "Catalyst",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "05226d14-b40f-48e1-8f54-7d938bcf92da",
+          "name": "Nocturne's Curtain Call",
+          "type": "catalyst"
+        },
+        {
+          "id": "1ec6c70a-6e81-4861-a0a9-3a2c1935e326",
+          "name": "Sunny Morning Sleep-In",
+          "type": "catalyst"
+        },
+        {
+          "id": "1ed4f46b-ec6c-4ebe-b2da-b63a7c057ba2",
+          "name": "Angelos' Heptades",
+          "type": "catalyst"
+        },
+        {
+          "id": "21d1dd4f-59fa-4250-b2d9-639023e19832",
+          "name": "Flowing Purity",
+          "type": "catalyst"
+        },
+        {
+          "id": "29283380-9833-4998-8efe-03e0248a21dc",
+          "name": "Lost Prayer to the Sacred Winds",
+          "type": "catalyst"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "dd5a89b6-d3ac-4550-aaae-a1dd4e1911ba",
+      "team": "Vesna, Faruzan, Vodyanitsa, Odette",
+      "slot": 1,
+      "raw": "Gacha Sword",
+      "character": "Vesna",
+      "weapon_type": "Sword",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "000cffdc-a354-42fb-be10-b2cb5e6dfa4c",
+          "name": "Silver Light",
+          "type": "sword"
+        },
+        {
+          "id": "07f6adc0-5a04-4dbd-a555-64b5e7129ece",
+          "name": "Amenoma Kageuchi",
+          "type": "sword"
+        },
+        {
+          "id": "0899b360-112d-419d-9247-f8f6f3371a84",
+          "name": "Silver Sword",
+          "type": "sword"
+        },
+        {
+          "id": "0e7b1e90-ba64-4107-a778-2c347f9a6ec7",
+          "name": "Toukabou Shigure",
+          "type": "sword"
+        },
+        {
+          "id": "13864db0-e7ba-43be-b4a0-a257907cd4c6",
+          "name": "Dark Iron Sword",
+          "type": "sword"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    },
+    {
+      "calculation": "dd5a89b6-d3ac-4550-aaae-a1dd4e1911ba",
+      "team": "Vesna, Faruzan, Vodyanitsa, Odette",
+      "slot": 3,
+      "raw": "TTDS",
+      "character": "Vodyanitsa",
+      "weapon_type": "Catalyst",
+      "method": "unresolved",
+      "canonical": null,
+      "candidates": [
+        {
+          "id": "05226d14-b40f-48e1-8f54-7d938bcf92da",
+          "name": "Nocturne's Curtain Call",
+          "type": "catalyst"
+        },
+        {
+          "id": "1ec6c70a-6e81-4861-a0a9-3a2c1935e326",
+          "name": "Sunny Morning Sleep-In",
+          "type": "catalyst"
+        },
+        {
+          "id": "1ed4f46b-ec6c-4ebe-b2da-b63a7c057ba2",
+          "name": "Angelos' Heptades",
+          "type": "catalyst"
+        },
+        {
+          "id": "21d1dd4f-59fa-4250-b2d9-639023e19832",
+          "name": "Flowing Purity",
+          "type": "catalyst"
+        },
+        {
+          "id": "29283380-9833-4998-8efe-03e0248a21dc",
+          "name": "Lost Prayer to the Sacred Winds",
+          "type": "catalyst"
+        }
+      ],
+      "reason": "no_clear_high_confidence_match"
+    }
+  ],
+  "matches": [
+    {
+      "calculation": "0122bcb7-9d92-44c4-ad7d-e22b971252a6",
+      "team": "Klee c1 Nicole Durin",
+      "slot": 1,
+      "raw": "Widsith",
+      "character": "Klee",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0122bcb7-9d92-44c4-ad7d-e22b971252a6",
+      "team": "Klee c1 Nicole Durin",
+      "slot": 2,
+      "raw": "Stringless",
+      "character": "Fischl",
+      "weapon_type": "Bow",
+      "method": "partial",
+      "canonical": "The Stringless",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0122bcb7-9d92-44c4-ad7d-e22b971252a6",
+      "team": "Klee c1 Nicole Durin",
+      "slot": 3,
+      "raw": "thrilling tales of dragon slayer",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Thrilling Tales of Dragon Slayers",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0122bcb7-9d92-44c4-ad7d-e22b971252a6",
+      "team": "Klee c1 Nicole Durin",
+      "slot": 4,
+      "raw": "Lion’s Roar",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Lion's Roar",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "02bd75aa-fb05-42b5-b082-d71796efc185",
+      "team": "Vesna, Vodyanitsa, Cryo Traveler, Odette",
+      "slot": 3,
+      "raw": "Exaiphanes",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "09035b62-de34-4fa0-94e4-175d874e9da9",
+      "team": "Wrio Melt",
+      "slot": 1,
+      "raw": "widsith",
+      "character": "Wriothesley",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "09035b62-de34-4fa0-94e4-175d874e9da9",
+      "team": "Wrio Melt",
+      "slot": 2,
+      "raw": "Deathmatch",
+      "character": "Emilie",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "09035b62-de34-4fa0-94e4-175d874e9da9",
+      "team": "Wrio Melt",
+      "slot": 3,
+      "raw": "oathsworn",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Oathsworn Eye",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "09035b62-de34-4fa0-94e4-175d874e9da9",
+      "team": "Wrio Melt",
+      "slot": 4,
+      "raw": "Wolf",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "weapon_type_assisted",
+      "canonical": "Wolf-Fang",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0b76b0d5-bc1b-4bf5-9612-2fbc305bf4fc",
+      "team": "Kinich Durin",
+      "slot": 1,
+      "raw": "Shaker",
+      "character": "Kinich",
+      "weapon_type": "Claymore",
+      "method": "partial",
+      "canonical": "Earth Shaker",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0b76b0d5-bc1b-4bf5-9612-2fbc305bf4fc",
+      "team": "Kinich Durin",
+      "slot": 2,
+      "raw": "W Fang",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "weapon_type_assisted",
+      "canonical": "Wolf-Fang",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0b76b0d5-bc1b-4bf5-9612-2fbc305bf4fc",
+      "team": "Kinich Durin",
+      "slot": 3,
+      "raw": "Deathmatch",
+      "character": "Emilie",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0b76b0d5-bc1b-4bf5-9612-2fbc305bf4fc",
+      "team": "Kinich Durin",
+      "slot": 4,
+      "raw": "Tamayuratei no Ohanashi",
+      "character": "Iansan",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Tamayuratei no Ohanashi",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0c9d656c-a440-4d24-8ccd-5e8c459b5f93",
+      "team": "Arle Overload Durin",
+      "slot": 1,
+      "raw": "Weapon: Deathmatch",
+      "character": "Arlecchino",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0c9d656c-a440-4d24-8ccd-5e8c459b5f93",
+      "team": "Arle Overload Durin",
+      "slot": 2,
+      "raw": "Weapon: Stringless",
+      "character": "Fischl",
+      "weapon_type": "Bow",
+      "method": "partial",
+      "canonical": "The Stringless",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0c9d656c-a440-4d24-8ccd-5e8c459b5f93",
+      "team": "Arle Overload Durin",
+      "slot": 3,
+      "raw": "Weapon: Favonius Lance",
+      "character": "Chevreuse",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0c9d656c-a440-4d24-8ccd-5e8c459b5f93",
+      "team": "Arle Overload Durin",
+      "slot": 4,
+      "raw": "Lion’s Roar",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Lion's Roar",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0cdccc88-2ea2-47cc-8560-da3f4fe57b90",
+      "team": "Varka Venti Durin",
+      "slot": 1,
+      "raw": "Spine",
+      "character": "Varka",
+      "weapon_type": "Claymore",
+      "method": "weapon_type_assisted",
+      "canonical": "Serpent Spine",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0cdccc88-2ea2-47cc-8560-da3f4fe57b90",
+      "team": "Varka Venti Durin",
+      "slot": 2,
+      "raw": "Stringless",
+      "character": "Venti",
+      "weapon_type": "Bow",
+      "method": "partial",
+      "canonical": "The Stringless",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0cdccc88-2ea2-47cc-8560-da3f4fe57b90",
+      "team": "Varka Venti Durin",
+      "slot": 3,
+      "raw": "Wolf Fang",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Wolf-Fang",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0cdccc88-2ea2-47cc-8560-da3f4fe57b90",
+      "team": "Varka Venti Durin",
+      "slot": 4,
+      "raw": "Alley Flash",
+      "character": "Bennett",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "The Alley Flash",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0f90cc87-f56d-4354-97c0-d10f31161945",
+      "team": "Navia Lunar Crytallize",
+      "slot": 1,
+      "raw": "Tidal Shadow",
+      "character": "Navia",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Tidal Shadow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0f90cc87-f56d-4354-97c0-d10f31161945",
+      "team": "Navia Lunar Crytallize",
+      "slot": 2,
+      "raw": "Sacrificial Jade",
+      "character": "Columbina",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Sacrificial Jade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0f90cc87-f56d-4354-97c0-d10f31161945",
+      "team": "Navia Lunar Crytallize",
+      "slot": 3,
+      "raw": "Favonius Sword",
+      "character": "Furina",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "0f90cc87-f56d-4354-97c0-d10f31161945",
+      "team": "Navia Lunar Crytallize",
+      "slot": 4,
+      "raw": "Slingshot",
+      "character": "Linnea",
+      "weapon_type": "Bow",
+      "method": "exact",
+      "canonical": "Slingshot",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "109341fb-ddeb-4fe3-a963-095eb523e3c8",
+      "team": "Mizuki C1, Faruzan, Cryo Traveler, Odette",
+      "slot": 1,
+      "raw": "Widsith",
+      "character": "Yumemizuki Mizuki",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "109341fb-ddeb-4fe3-a963-095eb523e3c8",
+      "team": "Mizuki C1, Faruzan, Cryo Traveler, Odette",
+      "slot": 2,
+      "raw": "The Viridescent Hunt",
+      "character": "Faruzan",
+      "weapon_type": "Bow",
+      "method": "exact",
+      "canonical": "The Viridescent Hunt",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "109341fb-ddeb-4fe3-a963-095eb523e3c8",
+      "team": "Mizuki C1, Faruzan, Cryo Traveler, Odette",
+      "slot": 3,
+      "raw": "Exaiphanes",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "124aef03-9d31-4855-b9c1-50e5acaa8ad9",
+      "team": "Lohen Melt with Xilonen",
+      "slot": 1,
+      "raw": "deathmatch",
+      "character": "Lohen",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "124aef03-9d31-4855-b9c1-50e5acaa8ad9",
+      "team": "Lohen Melt with Xilonen",
+      "slot": 2,
+      "raw": "thrilling tales of dra",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Thrilling Tales of Dragon Slayers",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "124aef03-9d31-4855-b9c1-50e5acaa8ad9",
+      "team": "Lohen Melt with Xilonen",
+      "slot": 3,
+      "raw": "wolf",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "weapon_type_assisted",
+      "canonical": "Wolf-Fang",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "124aef03-9d31-4855-b9c1-50e5acaa8ad9",
+      "team": "Lohen Melt with Xilonen",
+      "slot": 4,
+      "raw": "favonious sword",
+      "character": "Xilonen",
+      "weapon_type": "Sword",
+      "method": "fuzzy",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "156f964b-e245-4bbf-9330-7fa163298ca4",
+      "team": "Klee c1 Nicole",
+      "slot": 1,
+      "raw": "the Widsith",
+      "character": "Klee",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "156f964b-e245-4bbf-9330-7fa163298ca4",
+      "team": "Klee c1 Nicole",
+      "slot": 2,
+      "raw": "the stringless",
+      "character": "Fischl",
+      "weapon_type": "Bow",
+      "method": "exact",
+      "canonical": "The Stringless",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "156f964b-e245-4bbf-9330-7fa163298ca4",
+      "team": "Klee c1 Nicole",
+      "slot": 3,
+      "raw": "Favonius Lance",
+      "character": "Chevreuse",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "156f964b-e245-4bbf-9330-7fa163298ca4",
+      "team": "Klee c1 Nicole",
+      "slot": 4,
+      "raw": "thrilling tales of dragon slayers",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Thrilling Tales of Dragon Slayers",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "1f18b4d7-bd45-449d-bd3f-9064a9604727",
+      "team": "Kinich Premium",
+      "slot": 1,
+      "raw": "Spine",
+      "character": "Kinich",
+      "weapon_type": "Claymore",
+      "method": "weapon_type_assisted",
+      "canonical": "Serpent Spine",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "1f18b4d7-bd45-449d-bd3f-9064a9604727",
+      "team": "Kinich Premium",
+      "slot": 2,
+      "raw": "Deathmatch",
+      "character": "Emilie",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "1f18b4d7-bd45-449d-bd3f-9064a9604727",
+      "team": "Kinich Premium",
+      "slot": 3,
+      "raw": "Oathsworn Eye",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Oathsworn Eye",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "1f18b4d7-bd45-449d-bd3f-9064a9604727",
+      "team": "Kinich Premium",
+      "slot": 4,
+      "raw": "Lion’s Roar",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Lion's Roar",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2ba928b4-511a-4aa0-8deb-d3c92ff21b85",
+      "team": "Venti Bennet",
+      "slot": 1,
+      "raw": "Rust",
+      "character": "Venti",
+      "weapon_type": "Bow",
+      "method": "exact",
+      "canonical": "Rust",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2ba928b4-511a-4aa0-8deb-d3c92ff21b85",
+      "team": "Venti Bennet",
+      "slot": 3,
+      "raw": "Alley flash",
+      "character": "Bennett",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "The Alley Flash",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2ba928b4-511a-4aa0-8deb-d3c92ff21b85",
+      "team": "Venti Bennet",
+      "slot": 4,
+      "raw": "wolf f",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "weapon_type_assisted",
+      "canonical": "Wolf-Fang",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2efff6cd-db30-411f-a864-1d1955b53d84",
+      "team": "Lohen, Yae Miko C1, Odette, Nicole",
+      "slot": 1,
+      "raw": "Deathmatch",
+      "character": "Lohen",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2efff6cd-db30-411f-a864-1d1955b53d84",
+      "team": "Lohen, Yae Miko C1, Odette, Nicole",
+      "slot": 2,
+      "raw": "Echoes of the Heart",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Echoes of the Heart",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2efff6cd-db30-411f-a864-1d1955b53d84",
+      "team": "Lohen, Yae Miko C1, Odette, Nicole",
+      "slot": 3,
+      "raw": "Exaiphanes Blade",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2efff6cd-db30-411f-a864-1d1955b53d84",
+      "team": "Lohen, Yae Miko C1, Odette, Nicole",
+      "slot": 4,
+      "raw": "Flowing Purity",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Flowing Purity",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2f946069-5050-4e9b-8d87-4f11b709c914",
+      "team": "Varka, Prune C6, Cryo Traveler C6, Odette",
+      "slot": 2,
+      "raw": "Oathsworn Eye",
+      "character": "Prune",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Oathsworn Eye",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2f946069-5050-4e9b-8d87-4f11b709c914",
+      "team": "Varka, Prune C6, Cryo Traveler C6, Odette",
+      "slot": 4,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2fe473c8-7b8d-4a37-9941-25e05d6a861e",
+      "team": "Nefer Premium",
+      "slot": 1,
+      "raw": "Blackmarrow lantern",
+      "character": "Nefer",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Blackmarrow Lantern",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2fe473c8-7b8d-4a37-9941-25e05d6a861e",
+      "team": "Nefer Premium",
+      "slot": 2,
+      "raw": "Favonius",
+      "character": "Columbina",
+      "weapon_type": "Catalyst",
+      "method": "weapon_type_assisted",
+      "canonical": "Favonius Codex",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2fe473c8-7b8d-4a37-9941-25e05d6a861e",
+      "team": "Nefer Premium",
+      "slot": 3,
+      "raw": "etherlight",
+      "character": "Lauma",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Etherlight Spindlelute",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "2fe473c8-7b8d-4a37-9941-25e05d6a861e",
+      "team": "Nefer Premium",
+      "slot": 4,
+      "raw": "Fragments",
+      "character": "Nahida",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "3a121d57-4883-4cba-a44b-059a71d22ae6",
+      "team": "Varesa Iansan Hexerei",
+      "slot": 1,
+      "raw": "Widsith",
+      "character": "Varesa",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "3a121d57-4883-4cba-a44b-059a71d22ae6",
+      "team": "Varesa Iansan Hexerei",
+      "slot": 4,
+      "raw": "Lion’s Roar",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Lion's Roar",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "3b62bdc3-1869-4b03-9fdb-f58368213220",
+      "team": "Clorinde Durin",
+      "slot": 1,
+      "raw": "Harbinger of dawn",
+      "character": "Clorinde",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Harbinger of Dawn",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "3b62bdc3-1869-4b03-9fdb-f58368213220",
+      "team": "Clorinde Durin",
+      "slot": 2,
+      "raw": "Stringless",
+      "character": "Fischl",
+      "weapon_type": "Bow",
+      "method": "partial",
+      "canonical": "The Stringless",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "3b62bdc3-1869-4b03-9fdb-f58368213220",
+      "team": "Clorinde Durin",
+      "slot": 3,
+      "raw": "Weapon: Favonius Lance",
+      "character": "Chevreuse",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "3b62bdc3-1869-4b03-9fdb-f58368213220",
+      "team": "Clorinde Durin",
+      "slot": 4,
+      "raw": "Lion’s Roar ",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Lion's Roar",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "3e7927c0-a2e0-4160-8e2a-4b4d13f684cb",
+      "team": "Nefer f2p",
+      "slot": 1,
+      "raw": "BLACKMARROW",
+      "character": "Nefer",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Blackmarrow Lantern",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "3e7927c0-a2e0-4160-8e2a-4b4d13f684cb",
+      "team": "Nefer f2p",
+      "slot": 2,
+      "raw": "FAVONIOUS CODEX",
+      "character": "Nahida",
+      "weapon_type": "Catalyst",
+      "method": "fuzzy",
+      "canonical": "Favonius Codex",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "3e7927c0-a2e0-4160-8e2a-4b4d13f684cb",
+      "team": "Nefer f2p",
+      "slot": 3,
+      "raw": "fAVONIOUS LANCE",
+      "character": "Zhongli",
+      "weapon_type": "Polearm",
+      "method": "fuzzy",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "3e7927c0-a2e0-4160-8e2a-4b4d13f684cb",
+      "team": "Nefer f2p",
+      "slot": 4,
+      "raw": "Favonius Greatsword",
+      "character": "Aino",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Favonius Greatsword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "406555aa-7cf6-484e-ae23-6c848e66738b",
+      "team": "Zibai Premium",
+      "slot": 1,
+      "raw": "Harbinger of dawn",
+      "character": "Zibai",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Harbinger of Dawn",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "406555aa-7cf6-484e-ae23-6c848e66738b",
+      "team": "Zibai Premium",
+      "slot": 2,
+      "raw": "Prototype Amber",
+      "character": "Columbina",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Prototype Amber",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "406555aa-7cf6-484e-ae23-6c848e66738b",
+      "team": "Zibai Premium",
+      "slot": 3,
+      "raw": "Favonius lance",
+      "character": "Illuga",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "406555aa-7cf6-484e-ae23-6c848e66738b",
+      "team": "Zibai Premium",
+      "slot": 4,
+      "raw": "Slingshot",
+      "character": "Linnea",
+      "weapon_type": "Bow",
+      "method": "exact",
+      "canonical": "Slingshot",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "464abc72-958a-4ad4-a3d7-40f7bec62cc1",
+      "team": "Varka Premium Prune",
+      "slot": 2,
+      "raw": "favonious codex",
+      "character": "Prune",
+      "weapon_type": "Catalyst",
+      "method": "fuzzy",
+      "canonical": "Favonius Codex",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "464abc72-958a-4ad4-a3d7-40f7bec62cc1",
+      "team": "Varka Premium Prune",
+      "slot": 3,
+      "raw": "wolf",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "weapon_type_assisted",
+      "canonical": "Wolf-Fang",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "4be0cdb2-0b3f-4f56-9cea-66e42435e2cf",
+      "team": "Varesa Nicole Durin ",
+      "slot": 1,
+      "raw": "Widsith",
+      "character": "Varesa",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "4be0cdb2-0b3f-4f56-9cea-66e42435e2cf",
+      "team": "Varesa Nicole Durin ",
+      "slot": 3,
+      "raw": "Favonius Lance",
+      "character": "Chevreuse",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "4be0cdb2-0b3f-4f56-9cea-66e42435e2cf",
+      "team": "Varesa Nicole Durin ",
+      "slot": 4,
+      "raw": "Lion’s Roar",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Lion's Roar",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "510c773f-db9e-4428-a4aa-0f93aa8cdf63",
+      "team": "Sandrone, Yae Miko C1, Odette, Qiqi C2",
+      "slot": 1,
+      "raw": "Tidal Shadow",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Tidal Shadow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "510c773f-db9e-4428-a4aa-0f93aa8cdf63",
+      "team": "Sandrone, Yae Miko C1, Odette, Qiqi C2",
+      "slot": 2,
+      "raw": "Echoes of the Heart",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Echoes of the Heart",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "510c773f-db9e-4428-a4aa-0f93aa8cdf63",
+      "team": "Sandrone, Yae Miko C1, Odette, Qiqi C2",
+      "slot": 3,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "510c773f-db9e-4428-a4aa-0f93aa8cdf63",
+      "team": "Sandrone, Yae Miko C1, Odette, Qiqi C2",
+      "slot": 4,
+      "raw": "Favonius Sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "51844913-056a-4e5b-b194-5977b68074d7",
+      "team": "Venti Premium",
+      "slot": 1,
+      "raw": "rust",
+      "character": "Venti",
+      "weapon_type": "Bow",
+      "method": "exact",
+      "canonical": "Rust",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "51844913-056a-4e5b-b194-5977b68074d7",
+      "team": "Venti Premium",
+      "slot": 2,
+      "raw": "Favonious codex",
+      "character": "Prune",
+      "weapon_type": "Catalyst",
+      "method": "fuzzy",
+      "canonical": "Favonius Codex",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "51844913-056a-4e5b-b194-5977b68074d7",
+      "team": "Venti Premium",
+      "slot": 3,
+      "raw": "Oathsworn",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Oathsworn Eye",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "51844913-056a-4e5b-b194-5977b68074d7",
+      "team": "Venti Premium",
+      "slot": 4,
+      "raw": "wolf",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "weapon_type_assisted",
+      "canonical": "Wolf-Fang",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "528ff0ff-6980-4918-80fe-737ab3ce223b",
+      "team": "Cyno C1, Yae Miko C1, Odette, Alyosha C6",
+      "slot": 1,
+      "raw": "Deathmatch",
+      "character": "Cyno",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "528ff0ff-6980-4918-80fe-737ab3ce223b",
+      "team": "Cyno C1, Yae Miko C1, Odette, Alyosha C6",
+      "slot": 2,
+      "raw": "The Widsith",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "528ff0ff-6980-4918-80fe-737ab3ce223b",
+      "team": "Cyno C1, Yae Miko C1, Odette, Alyosha C6",
+      "slot": 3,
+      "raw": "Emberwell",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Emberwell",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "528ff0ff-6980-4918-80fe-737ab3ce223b",
+      "team": "Cyno C1, Yae Miko C1, Odette, Alyosha C6",
+      "slot": 4,
+      "raw": "Frostbreath",
+      "character": "Alyosha",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Frostbreath",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "529ad4df-79cf-404b-9d53-5513aacd67eb",
+      "team": "Mizuki, Sucrose, Qiqi, Cryo Traveler C2",
+      "slot": 1,
+      "raw": "The Widsith",
+      "character": "Yumemizuki Mizuki",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "529ad4df-79cf-404b-9d53-5513aacd67eb",
+      "team": "Mizuki, Sucrose, Qiqi, Cryo Traveler C2",
+      "slot": 2,
+      "raw": "Sacrificial Fragments",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "529ad4df-79cf-404b-9d53-5513aacd67eb",
+      "team": "Mizuki, Sucrose, Qiqi, Cryo Traveler C2",
+      "slot": 3,
+      "raw": "Iron Sting",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Iron Sting",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "529ad4df-79cf-404b-9d53-5513aacd67eb",
+      "team": "Mizuki, Sucrose, Qiqi, Cryo Traveler C2",
+      "slot": 4,
+      "raw": "Exaiphanes Blade",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "59307185-7c9c-49bf-b9e0-d6c28210f795",
+      "team": "Mizuki, Sucrose, Odette, Qiqi",
+      "slot": 1,
+      "raw": "The Widsith",
+      "character": "Yumemizuki Mizuki",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "59307185-7c9c-49bf-b9e0-d6c28210f795",
+      "team": "Mizuki, Sucrose, Odette, Qiqi",
+      "slot": 2,
+      "raw": "Sacrificial Fragments",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "59307185-7c9c-49bf-b9e0-d6c28210f795",
+      "team": "Mizuki, Sucrose, Odette, Qiqi",
+      "slot": 3,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "59307185-7c9c-49bf-b9e0-d6c28210f795",
+      "team": "Mizuki, Sucrose, Odette, Qiqi",
+      "slot": 4,
+      "raw": "Iron Sting",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Iron Sting",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "5c465987-e4ee-4965-aff2-cd5e36452528",
+      "team": "Cyno C1, Yae Miko C1, Odette, Alyosha C2",
+      "slot": 1,
+      "raw": "Deathmatch",
+      "character": "Cyno",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "5c465987-e4ee-4965-aff2-cd5e36452528",
+      "team": "Cyno C1, Yae Miko C1, Odette, Alyosha C2",
+      "slot": 2,
+      "raw": "The Widsith",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "5c465987-e4ee-4965-aff2-cd5e36452528",
+      "team": "Cyno C1, Yae Miko C1, Odette, Alyosha C2",
+      "slot": 3,
+      "raw": "Emberwell",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Emberwell",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "5c465987-e4ee-4965-aff2-cd5e36452528",
+      "team": "Cyno C1, Yae Miko C1, Odette, Alyosha C2",
+      "slot": 4,
+      "raw": "Frostbreath",
+      "character": "Alyosha",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Frostbreath",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6269f18d-7d68-4da9-a642-75735c93ab3a",
+      "team": "Skirk, Yae Miko C1, Odette, Escoffier",
+      "slot": 1,
+      "raw": "Exaiphanes Blade",
+      "character": "Skirk",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6269f18d-7d68-4da9-a642-75735c93ab3a",
+      "team": "Skirk, Yae Miko C1, Odette, Escoffier",
+      "slot": 2,
+      "raw": "Echoes of the Heart",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Echoes of the Heart",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6269f18d-7d68-4da9-a642-75735c93ab3a",
+      "team": "Skirk, Yae Miko C1, Odette, Escoffier",
+      "slot": 3,
+      "raw": "Emberwell R5",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Emberwell",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6269f18d-7d68-4da9-a642-75735c93ab3a",
+      "team": "Skirk, Yae Miko C1, Odette, Escoffier",
+      "slot": 4,
+      "raw": "Deathmatch R1",
+      "character": "Escoffier",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "62e70718-2fba-450a-8876-6fd6b4b46ffa",
+      "team": "Sandrone, Odette, Alyosha C2, Qiqi C2",
+      "slot": 1,
+      "raw": "Tidal Shadow",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Tidal Shadow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "62e70718-2fba-450a-8876-6fd6b4b46ffa",
+      "team": "Sandrone, Odette, Alyosha C2, Qiqi C2",
+      "slot": 2,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "62e70718-2fba-450a-8876-6fd6b4b46ffa",
+      "team": "Sandrone, Odette, Alyosha C2, Qiqi C2",
+      "slot": 3,
+      "raw": "Frostbreath",
+      "character": "Alyosha",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Frostbreath",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "62e70718-2fba-450a-8876-6fd6b4b46ffa",
+      "team": "Sandrone, Odette, Alyosha C2, Qiqi C2",
+      "slot": 4,
+      "raw": "Favonius Sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "695bc64b-c1fa-40f0-a070-9f3928a9c8f8",
+      "team": "Cryo Traveler C6, Qiqi, Yae Miko C1, Odette",
+      "slot": 1,
+      "raw": "Exaiphanes Blade",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "695bc64b-c1fa-40f0-a070-9f3928a9c8f8",
+      "team": "Cryo Traveler C6, Qiqi, Yae Miko C1, Odette",
+      "slot": 2,
+      "raw": "Favonius Sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "695bc64b-c1fa-40f0-a070-9f3928a9c8f8",
+      "team": "Cryo Traveler C6, Qiqi, Yae Miko C1, Odette",
+      "slot": 3,
+      "raw": "Echoes of the Heart",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Echoes of the Heart",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "695bc64b-c1fa-40f0-a070-9f3928a9c8f8",
+      "team": "Cryo Traveler C6, Qiqi, Yae Miko C1, Odette",
+      "slot": 4,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6eb04bad-0f34-4ca9-ab7c-370de4251d44",
+      "team": "Nefer Lauma",
+      "slot": 1,
+      "raw": "Blackmarrow ",
+      "character": "Nefer",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Blackmarrow Lantern",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6eb04bad-0f34-4ca9-ab7c-370de4251d44",
+      "team": "Nefer Lauma",
+      "slot": 2,
+      "raw": "etherlight",
+      "character": "Lauma",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Etherlight Spindlelute",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6eb04bad-0f34-4ca9-ab7c-370de4251d44",
+      "team": "Nefer Lauma",
+      "slot": 3,
+      "raw": "xiphos",
+      "character": "Kuki Shinobu",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Xiphos' Moonlight",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6eb04bad-0f34-4ca9-ab7c-370de4251d44",
+      "team": "Nefer Lauma",
+      "slot": 4,
+      "raw": "favonious greatswor",
+      "character": "Aino",
+      "weapon_type": "Claymore",
+      "method": "fuzzy",
+      "canonical": "Favonius Greatsword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6f246c92-6fc7-43b9-b0bf-ee93276b2908",
+      "team": "Mualani Premium",
+      "slot": 1,
+      "raw": "Widsith",
+      "character": "Mualani",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6f246c92-6fc7-43b9-b0bf-ee93276b2908",
+      "team": "Mualani Premium",
+      "slot": 2,
+      "raw": "Sacrificial Fragments",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6f246c92-6fc7-43b9-b0bf-ee93276b2908",
+      "team": "Mualani Premium",
+      "slot": 3,
+      "raw": "Favonius",
+      "character": "Mona",
+      "weapon_type": "Catalyst",
+      "method": "weapon_type_assisted",
+      "canonical": "Favonius Codex",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6f246c92-6fc7-43b9-b0bf-ee93276b2908",
+      "team": "Mualani Premium",
+      "slot": 4,
+      "raw": "Spine",
+      "character": "Mavuika",
+      "weapon_type": "Claymore",
+      "method": "weapon_type_assisted",
+      "canonical": "Serpent Spine",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6fe41ea1-17e9-4849-b50d-f362e665ae57",
+      "team": "Vesna, Faruzan, Cryo Traveler, Odette",
+      "slot": 2,
+      "raw": "The Viridescent Hunt",
+      "character": "Faruzan",
+      "weapon_type": "Bow",
+      "method": "exact",
+      "canonical": "The Viridescent Hunt",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "6fe41ea1-17e9-4849-b50d-f362e665ae57",
+      "team": "Vesna, Faruzan, Cryo Traveler, Odette",
+      "slot": 3,
+      "raw": "Exaiphanes",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "7122b422-fd21-4236-abad-9176d30bb589",
+      "team": "Lohen emillie reverse melt",
+      "slot": 1,
+      "raw": "deathmatch",
+      "character": "Lohen",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "7122b422-fd21-4236-abad-9176d30bb589",
+      "team": "Lohen emillie reverse melt",
+      "slot": 2,
+      "raw": "thrilling tales of ",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Thrilling Tales of Dragon Slayers",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "7122b422-fd21-4236-abad-9176d30bb589",
+      "team": "Lohen emillie reverse melt",
+      "slot": 3,
+      "raw": "lion",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Lion's Roar",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "7122b422-fd21-4236-abad-9176d30bb589",
+      "team": "Lohen emillie reverse melt",
+      "slot": 4,
+      "raw": "deathmatch",
+      "character": "Emilie",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "738446a8-ff30-4ac8-b19c-19d22d2a108c",
+      "team": "Mizuki, Sucrose, Qiqi, Cryo Traveler C6",
+      "slot": 1,
+      "raw": "The Widsith",
+      "character": "Yumemizuki Mizuki",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "738446a8-ff30-4ac8-b19c-19d22d2a108c",
+      "team": "Mizuki, Sucrose, Qiqi, Cryo Traveler C6",
+      "slot": 2,
+      "raw": "Sacrificial Fragments",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "738446a8-ff30-4ac8-b19c-19d22d2a108c",
+      "team": "Mizuki, Sucrose, Qiqi, Cryo Traveler C6",
+      "slot": 3,
+      "raw": "Iron Sting",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Iron Sting",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "738446a8-ff30-4ac8-b19c-19d22d2a108c",
+      "team": "Mizuki, Sucrose, Qiqi, Cryo Traveler C6",
+      "slot": 4,
+      "raw": "Exaiphanes Blade",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "74776ad6-6662-484c-b8cd-a0210294ed0a",
+      "team": "Cryo Traveler C2, Qiqi, Yae Miko C1, Odette",
+      "slot": 1,
+      "raw": "Exaiphanes Blade",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "74776ad6-6662-484c-b8cd-a0210294ed0a",
+      "team": "Cryo Traveler C2, Qiqi, Yae Miko C1, Odette",
+      "slot": 2,
+      "raw": "Favonius Sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "74776ad6-6662-484c-b8cd-a0210294ed0a",
+      "team": "Cryo Traveler C2, Qiqi, Yae Miko C1, Odette",
+      "slot": 3,
+      "raw": "Echoes of the Heart",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Echoes of the Heart",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "74776ad6-6662-484c-b8cd-a0210294ed0a",
+      "team": "Cryo Traveler C2, Qiqi, Yae Miko C1, Odette",
+      "slot": 4,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "77ed6181-0b19-42d4-bdc0-b4584c4a1b5b",
+      "team": "Sandrone, Sucrose, Odette, Qiqi",
+      "slot": 1,
+      "raw": "Tidal Shadow",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Tidal Shadow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "77ed6181-0b19-42d4-bdc0-b4584c4a1b5b",
+      "team": "Sandrone, Sucrose, Odette, Qiqi",
+      "slot": 2,
+      "raw": "Sacrificial Fragments",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "77ed6181-0b19-42d4-bdc0-b4584c4a1b5b",
+      "team": "Sandrone, Sucrose, Odette, Qiqi",
+      "slot": 3,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "77ed6181-0b19-42d4-bdc0-b4584c4a1b5b",
+      "team": "Sandrone, Sucrose, Odette, Qiqi",
+      "slot": 4,
+      "raw": "Favonius Sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "7e33a219-de74-43ab-949b-471d050f16ee",
+      "team": "Sandrone, Yae Miko C1, Odette, Qiqi C6",
+      "slot": 1,
+      "raw": "Tidal Shadow",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Tidal Shadow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "7e33a219-de74-43ab-949b-471d050f16ee",
+      "team": "Sandrone, Yae Miko C1, Odette, Qiqi C6",
+      "slot": 2,
+      "raw": "Echoes of the Heart",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Echoes of the Heart",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "7e33a219-de74-43ab-949b-471d050f16ee",
+      "team": "Sandrone, Yae Miko C1, Odette, Qiqi C6",
+      "slot": 3,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "7e33a219-de74-43ab-949b-471d050f16ee",
+      "team": "Sandrone, Yae Miko C1, Odette, Qiqi C6",
+      "slot": 4,
+      "raw": "Favonius Sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "7fa2a973-dbe4-410b-9860-d02741d982b9",
+      "team": "Mizuki C1, Vodyanitsa, Cryo Traveler, Odette",
+      "slot": 1,
+      "raw": "Widsith",
+      "character": "Yumemizuki Mizuki",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "7fa2a973-dbe4-410b-9860-d02741d982b9",
+      "team": "Mizuki C1, Vodyanitsa, Cryo Traveler, Odette",
+      "slot": 2,
+      "raw": "P. Amber",
+      "character": "Vodyanitsa",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Prototype Amber",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "7fa2a973-dbe4-410b-9860-d02741d982b9",
+      "team": "Mizuki C1, Vodyanitsa, Cryo Traveler, Odette",
+      "slot": 3,
+      "raw": "Exaiphanes",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "84d8ae6e-f85d-4996-973d-fafd559ad64e",
+      "team": "Sandrone, Yae Miko C1, Qiqi C2, Alyosha C6",
+      "slot": 1,
+      "raw": "Blade of Atonement",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Blade of Atonement",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "84d8ae6e-f85d-4996-973d-fafd559ad64e",
+      "team": "Sandrone, Yae Miko C1, Qiqi C2, Alyosha C6",
+      "slot": 2,
+      "raw": "The Widsith",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "84d8ae6e-f85d-4996-973d-fafd559ad64e",
+      "team": "Sandrone, Yae Miko C1, Qiqi C2, Alyosha C6",
+      "slot": 3,
+      "raw": "Favonius Sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "84d8ae6e-f85d-4996-973d-fafd559ad64e",
+      "team": "Sandrone, Yae Miko C1, Qiqi C2, Alyosha C6",
+      "slot": 4,
+      "raw": "Frostbreath",
+      "character": "Alyosha",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Frostbreath",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8b63ea26-6a4f-4fce-9134-4df522b1c7ea",
+      "team": "mavuika premium",
+      "slot": 1,
+      "raw": "Spine",
+      "character": "Mavuika",
+      "weapon_type": "Claymore",
+      "method": "weapon_type_assisted",
+      "canonical": "Serpent Spine",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8b63ea26-6a4f-4fce-9134-4df522b1c7ea",
+      "team": "mavuika premium",
+      "slot": 2,
+      "raw": "Thrilling tale of",
+      "character": "Citlali",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Thrilling Tales of Dragon Slayers",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8b63ea26-6a4f-4fce-9134-4df522b1c7ea",
+      "team": "mavuika premium",
+      "slot": 3,
+      "raw": "Tamayuratei no Ohanashi ",
+      "character": "Iansan",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Tamayuratei no Ohanashi",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8b63ea26-6a4f-4fce-9134-4df522b1c7ea",
+      "team": "mavuika premium",
+      "slot": 4,
+      "raw": "Alley Flash",
+      "character": "Bennett",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "The Alley Flash",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8bf47ce4-8cf7-4bf0-9f40-b30a20c671f5",
+      "team": "Sandrone, Yae Miko C1, Qiqi, Beidou C6",
+      "slot": 1,
+      "raw": "Tidal Shadow",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Tidal Shadow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8bf47ce4-8cf7-4bf0-9f40-b30a20c671f5",
+      "team": "Sandrone, Yae Miko C1, Qiqi, Beidou C6",
+      "slot": 2,
+      "raw": "Echoes of the Heart",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Echoes of the Heart",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8bf47ce4-8cf7-4bf0-9f40-b30a20c671f5",
+      "team": "Sandrone, Yae Miko C1, Qiqi, Beidou C6",
+      "slot": 3,
+      "raw": "Favonius Sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8bf47ce4-8cf7-4bf0-9f40-b30a20c671f5",
+      "team": "Sandrone, Yae Miko C1, Qiqi, Beidou C6",
+      "slot": 4,
+      "raw": "Favonius Greatsword",
+      "character": "Beidou",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Favonius Greatsword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8c03d211-69c5-4de1-866d-c1446679120e",
+      "team": "Wriothesley, Yae Miko C1, Odette, Nicole",
+      "slot": 1,
+      "raw": "The Widsith",
+      "character": "Wriothesley",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8c03d211-69c5-4de1-866d-c1446679120e",
+      "team": "Wriothesley, Yae Miko C1, Odette, Nicole",
+      "slot": 2,
+      "raw": "Echoes of the Heart",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Echoes of the Heart",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8c03d211-69c5-4de1-866d-c1446679120e",
+      "team": "Wriothesley, Yae Miko C1, Odette, Nicole",
+      "slot": 3,
+      "raw": "Exaiphanes Blade",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8c03d211-69c5-4de1-866d-c1446679120e",
+      "team": "Wriothesley, Yae Miko C1, Odette, Nicole",
+      "slot": 4,
+      "raw": "Flowing Purity",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Flowing Purity",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8dfd7783-7308-400d-bea6-778050d81c03",
+      "team": "Vesna, Faruzan, Qiqi, Odette",
+      "slot": 2,
+      "raw": "The Viridescent Hunt",
+      "character": "Faruzan",
+      "weapon_type": "Bow",
+      "method": "exact",
+      "canonical": "The Viridescent Hunt",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8dfd7783-7308-400d-bea6-778050d81c03",
+      "team": "Vesna, Faruzan, Qiqi, Odette",
+      "slot": 3,
+      "raw": "Exaiphanes",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "8dfd7783-7308-400d-bea6-778050d81c03",
+      "team": "Vesna, Faruzan, Qiqi, Odette",
+      "slot": 4,
+      "raw": "Exaiphanes",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "90639e64-c858-40ae-9039-451c638f74b5",
+      "team": "sandrone qiqi",
+      "slot": 1,
+      "raw": "TIDAL",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "partial",
+      "canonical": "Tidal Shadow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "90639e64-c858-40ae-9039-451c638f74b5",
+      "team": "sandrone qiqi",
+      "slot": 2,
+      "raw": "Favonious greatswor",
+      "character": "Beidou",
+      "weapon_type": "Claymore",
+      "method": "fuzzy",
+      "canonical": "Favonius Greatsword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "90639e64-c858-40ae-9039-451c638f74b5",
+      "team": "sandrone qiqi",
+      "slot": 3,
+      "raw": "favonious sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "fuzzy",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "90639e64-c858-40ae-9039-451c638f74b5",
+      "team": "sandrone qiqi",
+      "slot": 4,
+      "raw": "fav",
+      "character": "Escoffier",
+      "weapon_type": "Polearm",
+      "method": "weapon_type_assisted",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9529fb94-73b5-4fb2-9f8f-dbcd59df6b10",
+      "team": "Zibai no Columbina",
+      "slot": 1,
+      "raw": "haRBINGER OF ",
+      "character": "Zibai",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Harbinger of Dawn",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9529fb94-73b5-4fb2-9f8f-dbcd59df6b10",
+      "team": "Zibai no Columbina",
+      "slot": 2,
+      "raw": "slingshot",
+      "character": "Linnea",
+      "weapon_type": "Bow",
+      "method": "exact",
+      "canonical": "Slingshot",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9529fb94-73b5-4fb2-9f8f-dbcd59df6b10",
+      "team": "Zibai no Columbina",
+      "slot": 3,
+      "raw": "harbinger of dawn",
+      "character": "Furina",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Harbinger of Dawn",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9529fb94-73b5-4fb2-9f8f-dbcd59df6b10",
+      "team": "Zibai no Columbina",
+      "slot": 4,
+      "raw": "kitain cross",
+      "character": "Illuga",
+      "weapon_type": "Polearm",
+      "method": "partial",
+      "canonical": "Kitain Cross Spear",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9a8a9d50-1958-427a-a2c7-d8d28a76c2ab",
+      "team": "Skirk, Vodyanitsa, Furina, Escoffier",
+      "slot": 1,
+      "raw": "Finale od the deep",
+      "character": "Skirk",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9a8a9d50-1958-427a-a2c7-d8d28a76c2ab",
+      "team": "Skirk, Vodyanitsa, Furina, Escoffier",
+      "slot": 2,
+      "raw": "Thrlling tales of dragon",
+      "character": "Vodyanitsa",
+      "weapon_type": "Catalyst",
+      "method": "fuzzy",
+      "canonical": "Thrilling Tales of Dragon Slayers",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9a8a9d50-1958-427a-a2c7-d8d28a76c2ab",
+      "team": "Skirk, Vodyanitsa, Furina, Escoffier",
+      "slot": 3,
+      "raw": "Fav Sword",
+      "character": "Furina",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9a8a9d50-1958-427a-a2c7-d8d28a76c2ab",
+      "team": "Skirk, Vodyanitsa, Furina, Escoffier",
+      "slot": 4,
+      "raw": "Deathmatch",
+      "character": "Escoffier",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9b2ad237-97fc-496a-b65f-914cb353c0ae",
+      "team": "Sandrone, Sucrose, Cryo Traveler C6, Qiqi",
+      "slot": 1,
+      "raw": "Tidal Shadow",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Tidal Shadow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9b2ad237-97fc-496a-b65f-914cb353c0ae",
+      "team": "Sandrone, Sucrose, Cryo Traveler C6, Qiqi",
+      "slot": 2,
+      "raw": "Sacrificial Fragments",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9b2ad237-97fc-496a-b65f-914cb353c0ae",
+      "team": "Sandrone, Sucrose, Cryo Traveler C6, Qiqi",
+      "slot": 3,
+      "raw": "Exaiphanes Blade",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9b2ad237-97fc-496a-b65f-914cb353c0ae",
+      "team": "Sandrone, Sucrose, Cryo Traveler C6, Qiqi",
+      "slot": 4,
+      "raw": "Favonius Sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9d1646fa-b9aa-4c2d-a236-be6b2643dbed",
+      "team": "Varesa Premium",
+      "slot": 1,
+      "raw": "Widsith",
+      "character": "Varesa",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9d1646fa-b9aa-4c2d-a236-be6b2643dbed",
+      "team": "Varesa Premium",
+      "slot": 3,
+      "raw": "Favonius Lance",
+      "character": "Chevreuse",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9d1646fa-b9aa-4c2d-a236-be6b2643dbed",
+      "team": "Varesa Premium",
+      "slot": 4,
+      "raw": "Lion’s Roar",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Lion's Roar",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9e189e94-a0c0-49c2-899c-0e7ac1d09e1a",
+      "team": "Nefer Premium",
+      "slot": 1,
+      "raw": "Fragments",
+      "character": "Nefer",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9e189e94-a0c0-49c2-899c-0e7ac1d09e1a",
+      "team": "Nefer Premium",
+      "slot": 2,
+      "raw": "Favonius",
+      "character": "Columbina",
+      "weapon_type": "Catalyst",
+      "method": "weapon_type_assisted",
+      "canonical": "Favonius Codex",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9e189e94-a0c0-49c2-899c-0e7ac1d09e1a",
+      "team": "Nefer Premium",
+      "slot": 3,
+      "raw": "Spindle",
+      "character": "Lauma",
+      "weapon_type": "Catalyst",
+      "method": "weapon_type_assisted",
+      "canonical": "Etherlight Spindlelute",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9e189e94-a0c0-49c2-899c-0e7ac1d09e1a",
+      "team": "Nefer Premium",
+      "slot": 4,
+      "raw": "Sacrificial Fragments",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9e65e165-f301-42cd-b8ac-c365e3d5ffed",
+      "team": "Cyno C1, Yae Miko C1, Odette, Nicole",
+      "slot": 1,
+      "raw": "Ballad of the Fjords",
+      "character": "Cyno",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Ballad of the Fjords",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9e65e165-f301-42cd-b8ac-c365e3d5ffed",
+      "team": "Cyno C1, Yae Miko C1, Odette, Nicole",
+      "slot": 2,
+      "raw": "The Widsith",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9e65e165-f301-42cd-b8ac-c365e3d5ffed",
+      "team": "Cyno C1, Yae Miko C1, Odette, Nicole",
+      "slot": 3,
+      "raw": "Emberwell",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Emberwell",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9e65e165-f301-42cd-b8ac-c365e3d5ffed",
+      "team": "Cyno C1, Yae Miko C1, Odette, Nicole",
+      "slot": 4,
+      "raw": "Flowing Purity",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Flowing Purity",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9f759bcd-0264-486a-9f7a-f3989cc71494",
+      "team": "Mizuki C2, Faruzan, Cryo Traveler, Odette",
+      "slot": 1,
+      "raw": "Widsith",
+      "character": "Yumemizuki Mizuki",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9f759bcd-0264-486a-9f7a-f3989cc71494",
+      "team": "Mizuki C2, Faruzan, Cryo Traveler, Odette",
+      "slot": 2,
+      "raw": "The Viridescent Hunt",
+      "character": "Faruzan",
+      "weapon_type": "Bow",
+      "method": "exact",
+      "canonical": "The Viridescent Hunt",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "9f759bcd-0264-486a-9f7a-f3989cc71494",
+      "team": "Mizuki C2, Faruzan, Cryo Traveler, Odette",
+      "slot": 3,
+      "raw": "Exaiphanes",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "a8c8bea6-cd3c-4489-9292-b6bcc637d05b",
+      "team": "Mizuki, Sucrose, Odette, Cryo Traveler C6",
+      "slot": 1,
+      "raw": "The Widsith",
+      "character": "Yumemizuki Mizuki",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "a8c8bea6-cd3c-4489-9292-b6bcc637d05b",
+      "team": "Mizuki, Sucrose, Odette, Cryo Traveler C6",
+      "slot": 2,
+      "raw": "Sacrificial Fragments",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "a8c8bea6-cd3c-4489-9292-b6bcc637d05b",
+      "team": "Mizuki, Sucrose, Odette, Cryo Traveler C6",
+      "slot": 3,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "a8c8bea6-cd3c-4489-9292-b6bcc637d05b",
+      "team": "Mizuki, Sucrose, Odette, Cryo Traveler C6",
+      "slot": 4,
+      "raw": "Exaiphanes Blade",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "a975fb7f-dfa3-4a69-ab3b-3f3a4eb80df2",
+      "team": "Skirk Premium",
+      "slot": 1,
+      "raw": "Finale of the deep",
+      "character": "Skirk",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "a975fb7f-dfa3-4a69-ab3b-3f3a4eb80df2",
+      "team": "Skirk Premium",
+      "slot": 2,
+      "raw": "Fleuve Cendre Ferryman",
+      "character": "Furina",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Fleuve Cendre Ferryman",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "a975fb7f-dfa3-4a69-ab3b-3f3a4eb80df2",
+      "team": "Skirk Premium",
+      "slot": 3,
+      "raw": "Favonius",
+      "character": "Escoffier",
+      "weapon_type": "Polearm",
+      "method": "weapon_type_assisted",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "a975fb7f-dfa3-4a69-ab3b-3f3a4eb80df2",
+      "team": "Skirk Premium",
+      "slot": 4,
+      "raw": "Favonius",
+      "character": "Yelan",
+      "weapon_type": "Bow",
+      "method": "weapon_type_assisted",
+      "canonical": "Favonius Warbow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ab12c059-d03a-4f4b-a4af-d90222a69cc0",
+      "team": "Sandrone, Yae Miko C1, Odette, Alyosha C2",
+      "slot": 1,
+      "raw": "Blade of Atonement",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Blade of Atonement",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ab12c059-d03a-4f4b-a4af-d90222a69cc0",
+      "team": "Sandrone, Yae Miko C1, Odette, Alyosha C2",
+      "slot": 2,
+      "raw": "The Widsith",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ab12c059-d03a-4f4b-a4af-d90222a69cc0",
+      "team": "Sandrone, Yae Miko C1, Odette, Alyosha C2",
+      "slot": 3,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ab12c059-d03a-4f4b-a4af-d90222a69cc0",
+      "team": "Sandrone, Yae Miko C1, Odette, Alyosha C2",
+      "slot": 4,
+      "raw": "Frostbreath",
+      "character": "Alyosha",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Frostbreath",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ac2df369-4515-4ad8-93eb-00ef99d4784b",
+      "team": "Lohen Premium",
+      "slot": 1,
+      "raw": "Deathmatch",
+      "character": "Lohen",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ac2df369-4515-4ad8-93eb-00ef99d4784b",
+      "team": "Lohen Premium",
+      "slot": 2,
+      "raw": "Thrlling tales of dragon",
+      "character": "Citlali",
+      "weapon_type": "Catalyst",
+      "method": "fuzzy",
+      "canonical": "Thrilling Tales of Dragon Slayers",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ac2df369-4515-4ad8-93eb-00ef99d4784b",
+      "team": "Lohen Premium",
+      "slot": 3,
+      "raw": "Wolf Fang",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Wolf-Fang",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ac2df369-4515-4ad8-93eb-00ef99d4784b",
+      "team": "Lohen Premium",
+      "slot": 4,
+      "raw": "Favonius",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "weapon_type_assisted",
+      "canonical": "Favonius Codex",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ae28018c-1247-47e2-ad2a-133206d2a4c5",
+      "team": "Sandrone, Yae Miko C1, Qiqi C2, Alyosha C2",
+      "slot": 1,
+      "raw": "Blade of Atonement",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Blade of Atonement",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ae28018c-1247-47e2-ad2a-133206d2a4c5",
+      "team": "Sandrone, Yae Miko C1, Qiqi C2, Alyosha C2",
+      "slot": 2,
+      "raw": "The Widsith",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ae28018c-1247-47e2-ad2a-133206d2a4c5",
+      "team": "Sandrone, Yae Miko C1, Qiqi C2, Alyosha C2",
+      "slot": 3,
+      "raw": "Favonius Sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ae28018c-1247-47e2-ad2a-133206d2a4c5",
+      "team": "Sandrone, Yae Miko C1, Qiqi C2, Alyosha C2",
+      "slot": 4,
+      "raw": "Frostbreath",
+      "character": "Alyosha",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Frostbreath",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b0c079b2-1927-4ed8-9ac1-f179956ba82d",
+      "team": "Sandrone, Yae Miko C1, Odette, Alyosha C6",
+      "slot": 1,
+      "raw": "Blade of Atonement",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Blade of Atonement",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b0c079b2-1927-4ed8-9ac1-f179956ba82d",
+      "team": "Sandrone, Yae Miko C1, Odette, Alyosha C6",
+      "slot": 2,
+      "raw": "The Widsith",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b0c079b2-1927-4ed8-9ac1-f179956ba82d",
+      "team": "Sandrone, Yae Miko C1, Odette, Alyosha C6",
+      "slot": 3,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b0c079b2-1927-4ed8-9ac1-f179956ba82d",
+      "team": "Sandrone, Yae Miko C1, Odette, Alyosha C6",
+      "slot": 4,
+      "raw": "Frostbreath",
+      "character": "Alyosha",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Frostbreath",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b4764567-c960-454a-9681-a6c0ac20e08b",
+      "team": "Flins Premium",
+      "slot": 1,
+      "raw": "Prospector’s Shovel",
+      "character": "Flins",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Prospector's Shovel",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b4764567-c960-454a-9681-a6c0ac20e08b",
+      "team": "Flins Premium",
+      "slot": 2,
+      "raw": "Deathmatch",
+      "character": "Ineffa",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b4764567-c960-454a-9681-a6c0ac20e08b",
+      "team": "Flins Premium",
+      "slot": 3,
+      "raw": "Prototype Amber",
+      "character": "Columbina",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Prototype Amber",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b4764567-c960-454a-9681-a6c0ac20e08b",
+      "team": "Flins Premium",
+      "slot": 4,
+      "raw": "Sacrificial Fragments",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b693795b-7969-4802-8259-bec0771fc344",
+      "team": "Skirk, Shenhe, Furina, Escoffier",
+      "slot": 1,
+      "raw": "Finale",
+      "character": "Skirk",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b693795b-7969-4802-8259-bec0771fc344",
+      "team": "Skirk, Shenhe, Furina, Escoffier",
+      "slot": 2,
+      "raw": "Fav Lance",
+      "character": "Shenhe",
+      "weapon_type": "Polearm",
+      "method": "partial",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b693795b-7969-4802-8259-bec0771fc344",
+      "team": "Skirk, Shenhe, Furina, Escoffier",
+      "slot": 3,
+      "raw": "Fav Sword",
+      "character": "Furina",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b693795b-7969-4802-8259-bec0771fc344",
+      "team": "Skirk, Shenhe, Furina, Escoffier",
+      "slot": 4,
+      "raw": "Fav Lance",
+      "character": "Escoffier",
+      "weapon_type": "Polearm",
+      "method": "partial",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b842051f-8101-47d4-bf40-d8521b2f15f1",
+      "team": "flins ineffa",
+      "slot": 3,
+      "raw": "Favonious ",
+      "character": "Aino",
+      "weapon_type": "Claymore",
+      "method": "fuzzy",
+      "canonical": "Favonius Greatsword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b9e480cd-5dc6-46e6-acd4-8b292c82d90d",
+      "team": "Sandrone",
+      "slot": 1,
+      "raw": "Tidal",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "partial",
+      "canonical": "Tidal Shadow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b9e480cd-5dc6-46e6-acd4-8b292c82d90d",
+      "team": "Sandrone",
+      "slot": 2,
+      "raw": "Purity",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Flowing Purity",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b9e480cd-5dc6-46e6-acd4-8b292c82d90d",
+      "team": "Sandrone",
+      "slot": 3,
+      "raw": "Widsith",
+      "character": "Yae Miko",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "b9e480cd-5dc6-46e6-acd4-8b292c82d90d",
+      "team": "Sandrone",
+      "slot": 4,
+      "raw": "deathmatch",
+      "character": "Escoffier",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "c6a465ca-fae0-4c55-a28d-24408af28931",
+      "team": "Skirk, Shenhe, Furina, Vodyanitsa",
+      "slot": 1,
+      "raw": "Finale",
+      "character": "Skirk",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "c6a465ca-fae0-4c55-a28d-24408af28931",
+      "team": "Skirk, Shenhe, Furina, Vodyanitsa",
+      "slot": 2,
+      "raw": "Fav Lance",
+      "character": "Shenhe",
+      "weapon_type": "Polearm",
+      "method": "partial",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "c6a465ca-fae0-4c55-a28d-24408af28931",
+      "team": "Skirk, Shenhe, Furina, Vodyanitsa",
+      "slot": 3,
+      "raw": "Festering",
+      "character": "Furina",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Festering Desire",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "cbc3ccbf-3b3d-4703-b6ed-f9ade4a21ccf",
+      "team": "Mizuki, Sucrose, Odette, Cryo Traveler C2",
+      "slot": 1,
+      "raw": "The Widsith",
+      "character": "Yumemizuki Mizuki",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "cbc3ccbf-3b3d-4703-b6ed-f9ade4a21ccf",
+      "team": "Mizuki, Sucrose, Odette, Cryo Traveler C2",
+      "slot": 2,
+      "raw": "Sacrificial Fragments",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "cbc3ccbf-3b3d-4703-b6ed-f9ade4a21ccf",
+      "team": "Mizuki, Sucrose, Odette, Cryo Traveler C2",
+      "slot": 3,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "cbc3ccbf-3b3d-4703-b6ed-f9ade4a21ccf",
+      "team": "Mizuki, Sucrose, Odette, Cryo Traveler C2",
+      "slot": 4,
+      "raw": "Exaiphanes Blade",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "cf6e9f92-2b5f-4641-ac9c-08889528d94b",
+      "team": "Flins f2p",
+      "slot": 1,
+      "raw": "Prospector's Shovel",
+      "character": "Flins",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Prospector's Shovel",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "cf6e9f92-2b5f-4641-ac9c-08889528d94b",
+      "team": "Flins f2p",
+      "slot": 2,
+      "raw": "Stringless",
+      "character": "Fischl",
+      "weapon_type": "Bow",
+      "method": "partial",
+      "canonical": "The Stringless",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "cf6e9f92-2b5f-4641-ac9c-08889528d94b",
+      "team": "Flins f2p",
+      "slot": 3,
+      "raw": "Favonious Greatswor",
+      "character": "Aino",
+      "weapon_type": "Claymore",
+      "method": "fuzzy",
+      "canonical": "Favonius Greatsword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "cf6e9f92-2b5f-4641-ac9c-08889528d94b",
+      "team": "Flins f2p",
+      "slot": 4,
+      "raw": "Thrilling tales of ",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Thrilling Tales of Dragon Slayers",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "d5c8a5eb-7dc3-4510-adea-bc3de0bac487",
+      "team": "Clorinde Nicole overload",
+      "slot": 1,
+      "raw": "harbinger of dawn",
+      "character": "Clorinde",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Harbinger of Dawn",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "d5c8a5eb-7dc3-4510-adea-bc3de0bac487",
+      "team": "Clorinde Nicole overload",
+      "slot": 2,
+      "raw": "Weapon: Oathsworn Eye",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Oathsworn Eye",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "d5c8a5eb-7dc3-4510-adea-bc3de0bac487",
+      "team": "Clorinde Nicole overload",
+      "slot": 3,
+      "raw": "Weapon: Favonius Lance",
+      "character": "Chevreuse",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "d5c8a5eb-7dc3-4510-adea-bc3de0bac487",
+      "team": "Clorinde Nicole overload",
+      "slot": 4,
+      "raw": " Lion’s Roar",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Lion's Roar",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "da836e4e-bd0f-4c23-8662-75a12de22188",
+      "team": "Varka Hydro Swirl",
+      "slot": 1,
+      "raw": "Tidal Shadow",
+      "character": "Varka",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Tidal Shadow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "da836e4e-bd0f-4c23-8662-75a12de22188",
+      "team": "Varka Hydro Swirl",
+      "slot": 2,
+      "raw": "Oathsworn",
+      "character": "Prune",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Oathsworn Eye",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "da836e4e-bd0f-4c23-8662-75a12de22188",
+      "team": "Varka Hydro Swirl",
+      "slot": 3,
+      "raw": "Prototype",
+      "character": "Vodyanitsa",
+      "weapon_type": "Catalyst",
+      "method": "weapon_type_assisted",
+      "canonical": "Prototype Amber",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "da836e4e-bd0f-4c23-8662-75a12de22188",
+      "team": "Varka Hydro Swirl",
+      "slot": 4,
+      "raw": "Thrilling Tales of",
+      "character": "Mona",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Thrilling Tales of Dragon Slayers",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "dd5a89b6-d3ac-4550-aaae-a1dd4e1911ba",
+      "team": "Vesna, Faruzan, Vodyanitsa, Odette",
+      "slot": 2,
+      "raw": "The Viridescent Hunt",
+      "character": "Faruzan",
+      "weapon_type": "Bow",
+      "method": "exact",
+      "canonical": "The Viridescent Hunt",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "dd5a89b6-d3ac-4550-aaae-a1dd4e1911ba",
+      "team": "Vesna, Faruzan, Vodyanitsa, Odette",
+      "slot": 4,
+      "raw": "Exaiphanes",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "partial",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "e5086e0d-1ffe-40d8-912e-dd0cd71555fd",
+      "team": "Sandrone, Odette, Alyosha C6, Qiqi C2",
+      "slot": 1,
+      "raw": "Tidal Shadow",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Tidal Shadow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "e5086e0d-1ffe-40d8-912e-dd0cd71555fd",
+      "team": "Sandrone, Odette, Alyosha C6, Qiqi C2",
+      "slot": 2,
+      "raw": "Finale of the Deep",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Finale of the Deep",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "e5086e0d-1ffe-40d8-912e-dd0cd71555fd",
+      "team": "Sandrone, Odette, Alyosha C6, Qiqi C2",
+      "slot": 3,
+      "raw": "Frostbreath",
+      "character": "Alyosha",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Frostbreath",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "e5086e0d-1ffe-40d8-912e-dd0cd71555fd",
+      "team": "Sandrone, Odette, Alyosha C6, Qiqi C2",
+      "slot": 4,
+      "raw": "Favonius Sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "e792bde9-acc5-475b-a8e8-c1edd64562cf",
+      "team": "Sandrone, Sucrose, Cryo Traveler C2, Qiqi",
+      "slot": 1,
+      "raw": "Tidal Shadow",
+      "character": "Sandrone",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Tidal Shadow",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "e792bde9-acc5-475b-a8e8-c1edd64562cf",
+      "team": "Sandrone, Sucrose, Cryo Traveler C2, Qiqi",
+      "slot": 2,
+      "raw": "Sacrificial Fragments",
+      "character": "Sucrose",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Sacrificial Fragments",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "e792bde9-acc5-475b-a8e8-c1edd64562cf",
+      "team": "Sandrone, Sucrose, Cryo Traveler C2, Qiqi",
+      "slot": 3,
+      "raw": "Exaiphanes Blade",
+      "character": "Traveler (Cryo)",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Exaiphanes Blade",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "e792bde9-acc5-475b-a8e8-c1edd64562cf",
+      "team": "Sandrone, Sucrose, Cryo Traveler C2, Qiqi",
+      "slot": 4,
+      "raw": "Favonius Sword",
+      "character": "Qiqi",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ecfafe79-d693-429d-9839-5b26c2dae5f9",
+      "team": "Varka Durin Nicole",
+      "slot": 1,
+      "raw": "Spine",
+      "character": "Varka",
+      "weapon_type": "Claymore",
+      "method": "weapon_type_assisted",
+      "canonical": "Serpent Spine",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ecfafe79-d693-429d-9839-5b26c2dae5f9",
+      "team": "Varka Durin Nicole",
+      "slot": 2,
+      "raw": "Stringless",
+      "character": "Venti",
+      "weapon_type": "Bow",
+      "method": "partial",
+      "canonical": "The Stringless",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ecfafe79-d693-429d-9839-5b26c2dae5f9",
+      "team": "Varka Durin Nicole",
+      "slot": 3,
+      "raw": "Wolf Fang",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Wolf-Fang",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ecfafe79-d693-429d-9839-5b26c2dae5f9",
+      "team": "Varka Durin Nicole",
+      "slot": 4,
+      "raw": "Oathsworn Eye",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Oathsworn Eye",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ef5c23c8-fb33-4d8a-b11f-1009d8068e5d",
+      "team": "Lohen Freeze Team",
+      "slot": 1,
+      "raw": "Deathmatch",
+      "character": "Lohen",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ef5c23c8-fb33-4d8a-b11f-1009d8068e5d",
+      "team": "Lohen Freeze Team",
+      "slot": 2,
+      "raw": "Thrilling tales of",
+      "character": "Mona",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Thrilling Tales of Dragon Slayers",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ef5c23c8-fb33-4d8a-b11f-1009d8068e5d",
+      "team": "Lohen Freeze Team",
+      "slot": 3,
+      "raw": "Favonius Sword",
+      "character": "Furina",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "ef5c23c8-fb33-4d8a-b11f-1009d8068e5d",
+      "team": "Lohen Freeze Team",
+      "slot": 4,
+      "raw": "Deathmatch",
+      "character": "Escoffier",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "f2c6afc3-6ab1-4685-ad4e-78bf96316718",
+      "team": "Navia Hexerei",
+      "slot": 1,
+      "raw": "Spine",
+      "character": "Navia",
+      "weapon_type": "Claymore",
+      "method": "weapon_type_assisted",
+      "canonical": "Serpent Spine",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "f2c6afc3-6ab1-4685-ad4e-78bf96316718",
+      "team": "Navia Hexerei",
+      "slot": 2,
+      "raw": "Favonius sword",
+      "character": "Xilonen",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Favonius Sword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "f2c6afc3-6ab1-4685-ad4e-78bf96316718",
+      "team": "Navia Hexerei",
+      "slot": 3,
+      "raw": "Oathsworn Eye",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Oathsworn Eye",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "f2c6afc3-6ab1-4685-ad4e-78bf96316718",
+      "team": "Navia Hexerei",
+      "slot": 4,
+      "raw": "Wolf",
+      "character": "Durin",
+      "weapon_type": "Sword",
+      "method": "weapon_type_assisted",
+      "canonical": "Wolf-Fang",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "f482099e-c9b5-4215-95b8-74368b343ddb",
+      "team": "Wriothesley, Beidou C6, Odette, Nicole",
+      "slot": 1,
+      "raw": "The Widsith",
+      "character": "Wriothesley",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "The Widsith",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "f482099e-c9b5-4215-95b8-74368b343ddb",
+      "team": "Wriothesley, Beidou C6, Odette, Nicole",
+      "slot": 2,
+      "raw": "Favonius Greatsword",
+      "character": "Beidou",
+      "weapon_type": "Claymore",
+      "method": "exact",
+      "canonical": "Favonius Greatsword",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "f482099e-c9b5-4215-95b8-74368b343ddb",
+      "team": "Wriothesley, Beidou C6, Odette, Nicole",
+      "slot": 3,
+      "raw": "Emberwell",
+      "character": "Odette",
+      "weapon_type": "Sword",
+      "method": "exact",
+      "canonical": "Emberwell",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "f482099e-c9b5-4215-95b8-74368b343ddb",
+      "team": "Wriothesley, Beidou C6, Odette, Nicole",
+      "slot": 4,
+      "raw": "Flowing Purity",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "exact",
+      "canonical": "Flowing Purity",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "fff69b5e-5f44-4634-bb94-53e86e11b513",
+      "team": "Arle Overload Nicole",
+      "slot": 1,
+      "raw": "Weapon: Deathmatch",
+      "character": "Arlecchino",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Deathmatch",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "fff69b5e-5f44-4634-bb94-53e86e11b513",
+      "team": "Arle Overload Nicole",
+      "slot": 2,
+      "raw": "Weapon: Stringless",
+      "character": "Fischl",
+      "weapon_type": "Bow",
+      "method": "partial",
+      "canonical": "The Stringless",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "fff69b5e-5f44-4634-bb94-53e86e11b513",
+      "team": "Arle Overload Nicole",
+      "slot": 3,
+      "raw": "Weapon: Favonius Lance",
+      "character": "Chevreuse",
+      "weapon_type": "Polearm",
+      "method": "exact",
+      "canonical": "Favonius Lance",
+      "candidates": [],
+      "reason": null
+    },
+    {
+      "calculation": "fff69b5e-5f44-4634-bb94-53e86e11b513",
+      "team": "Arle Overload Nicole",
+      "slot": 4,
+      "raw": "thrilling tales of ",
+      "character": "Nicole",
+      "weapon_type": "Catalyst",
+      "method": "partial",
+      "canonical": "Thrilling Tales of Dragon Slayers",
+      "candidates": [],
+      "reason": null
+    }
+  ],
+  "verified": [
+    "Actual workbook SHA256 matches parsed snapshot",
+    "All canonical full names",
+    "Five Favonius weapon types",
+    "Etherlight partial and typo",
+    "Cross-type rejection",
+    "All local resolved icons exist",
+    "All non-identity fields unchanged"
+  ]
+}

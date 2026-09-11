@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
-import { readFile, writeFile, readdir } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import { createClient } from '@supabase/supabase-js';
+import { createWeaponResolver } from './resolve-calculation-weapon.mjs';
 
 const folder = 'reports/team-calculations';
 const snapshot = JSON.parse(await readFile(`${folder}/source-snapshot.json`, 'utf8'));
@@ -16,7 +17,8 @@ function normalize(value) {
   return value.toLowerCase().replace(/\b[cr]\d+(?:r\d+)?\b/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 }
 const aliases = { bennet: 'bennett', kuki: 'kuki shinobu', mizuki: 'yumemizuki mizuki', yae: 'yae miko' };
-const roster = checked(await db.from('game_characters').select('id,slug,name,display_name,element').eq('game_id', 'genshin-impact'));
+const roster = checked(await db.from('game_characters').select('id,slug,name,display_name,element,weapon_type').eq('game_id', 'genshin-impact'));
+const resolveWeapon = createWeaponResolver(checked(await db.from('game_equipment').select('id,game_id,equipment_category,equipment_type,name,slug,metadata').eq('game_id', 'genshin-impact').eq('equipment_category', 'weapon')));
 function match(member) {
   let key = normalize(member.character_name);
   if (key === 'traveler') key = `${member.element.toLowerCase()} traveler`;
@@ -46,6 +48,7 @@ const teams = snapshot.teams.map(team => ({
 const members = snapshot.members.map(member => ({
   calculation_id: member.team_id, slot: member.slot, character_id: match(member).id,
   character_name: member.character_name, weapon_name: member.weapon_name,
+  equipment_id: resolveWeapon(member.weapon_name, match(member).weapon_type).weapon?.id ?? null,
   role: member.role, element: member.element,
   damage: scale(member.source_damage_m, 1_000_000), damage_share: member.share_pct,
   details: member,
@@ -81,9 +84,15 @@ for (const member of exampleMembers) {
   assert.deepEqual(found, example);
   guides.push({ character: character.display_name, slug: character.slug, character_id: character.id });
 }
-const weaponFiles = await readdir('public/assets/characters/genshin-impact/weapons');
-const assetKey = value => value.toLowerCase().replace(/[^a-z0-9]/g, '');
-const unresolvedWeaponLabels = [...new Set(members.map(member => member.weapon_name).filter(Boolean))].filter(name => !weaponFiles.some(file => assetKey(file.replace(/\.[^.]+$/, '')) === assetKey(name.replace(/\bR\d+\b/gi, '').replace(/^Weapon:\s*/i, ''))));
+const weaponResolutions = members.map(member => {
+  const character = roster.find(c => c.id === member.character_id);
+  const { weapon, ...resolution } = resolveWeapon(member.weapon_name, character.weapon_type);
+  return { calculation: member.calculation_id, slot: member.slot, raw: member.weapon_name,
+    character: character.name, weapon_type: character.weapon_type, equipment_id: weapon?.id ?? null,
+    canonical: weapon?.name ?? null, ...resolution };
+});
+const unresolvedWeaponLabels = weaponResolutions.filter(r => !r.equipment_id);
+await writeFile(`${folder}/import-weapon-resolution.json`, JSON.stringify(weaponResolutions, null, 2));
 const report = { uniqueTeams: savedTeams.length, relationships: savedMembers.length, unmatchedCharacters: unmatched,
   explicitMemberDamageCount: members.filter(member => member.damage !== null).length,
   unresolvedWeaponLabels, example: { id: example.id, name: example.team_name, guides },

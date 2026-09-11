@@ -28,6 +28,11 @@ export async function getGuideTeamCalculations(characterId: string): Promise<Gui
     const characters = await db.from("game_characters").select("id,slug,display_name,portrait_url")
       .eq("game_id", "genshin-impact").in("id", [...new Set(members.data.map(row => row.character_id))]);
     if (characters.error) throw characters.error;
+    const equipmentIds = [...new Set(members.data.flatMap(row => row.equipment_id ? [row.equipment_id] : []))];
+    const equipment = equipmentIds.length ? await db.from("game_equipment")
+      .select("id,name,icon_url").eq("game_id", "genshin-impact").eq("equipment_category", "weapon").in("id", equipmentIds)
+      : { data: [], error: null };
+    if (equipment.error) throw equipment.error;
     return {
       unavailable: false,
       teams: teams.data.map(team => ({
@@ -36,11 +41,13 @@ export async function getGuideTeamCalculations(characterId: string): Promise<Gui
           const character = characters.data.find(row => row.id === member.character_id);
           if (!character) throw new Error(`Missing calculation character: ${member.character_id}`);
           const weaponName = (member.weapon_name ?? "").replace(/^Weapon:\s*/i, "").replace(/\bR\d+\b/gi, "").trim();
+          const weapon = equipment.data.find(row => row.id === member.equipment_id);
           return {
             ...member,
+            weapon_name: weapon?.name ?? member.weapon_name,
             characterSlug: character.slug,
             portraitPath: character.portrait_url ?? resolveCharacterIcon("genshin-impact", character.slug, character.display_name).path ?? "",
-            weaponPath: resolveWeaponIcon("genshin-impact", weaponName).path ?? "",
+            weaponPath: weapon?.icon_url ?? resolveWeaponIcon("genshin-impact", weapon?.name ?? weaponName).path ?? "",
             note: note(member.details),
           };
         }),
