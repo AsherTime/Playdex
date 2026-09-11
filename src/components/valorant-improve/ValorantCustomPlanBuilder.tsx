@@ -52,8 +52,8 @@ export function ValorantCustomPlanBuilder() {
   const [planName, setPlanName] = useState("My custom Valorant plan");
   const [rank, setRank] = useState<ValorantRank>("Gold");
   const [role, setRole] = useState<ValorantRole>("Duelist");
-  const [goal, setGoal] = useState("Reach the next rank");
-  const [practiceTime, setPracticeTime] = useState<PracticeTime>("30 minutes");
+  const [goal, setGoal] = useState("Rank Up");
+  const [practiceTime, setPracticeTime] = useState<PracticeTime>("45 min");
   const [selectedModules, setSelectedModules] = useState<TaskModule[]>(["A", "C", "E"]);
   const [customTasks, setCustomTasks] = useState<CustomTaskDraft[]>([
     { title: "", duration: "10 min", reason: "" },
@@ -107,7 +107,7 @@ export function ValorantCustomPlanBuilder() {
 
     saveQuestionnaire(stubQuestionnaire);
     savePlan(plan);
-    router.push("/games/valorant/improve/plan");
+    router.push("/games/valorant/improve/dashboard?tab=plan");
   };
 
   return (

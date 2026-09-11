@@ -1,3 +1,4 @@
+import { routineSizeFromTime } from "@/lib/valorant-coach/practice-time";
 import type {
   ImprovementPlan,
   PlanDay,
@@ -32,9 +33,7 @@ export interface ValorantCustomPlanInput {
 }
 
 function routineSize(practiceTime: PracticeTime): ImprovementPlan["summary"]["routineSize"] {
-  if (practiceTime === "15 minutes") return "short";
-  if (practiceTime === "30 minutes" || practiceTime === "45 minutes") return "medium";
-  return "full";
+  return routineSizeFromTime(practiceTime);
 }
 
 export function buildValorantCustomPlan(input: ValorantCustomPlanInput): ImprovementPlan {

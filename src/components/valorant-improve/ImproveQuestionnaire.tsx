@@ -14,35 +14,26 @@ import type {
   ValorantWeakness,
 } from "@/types/valorant-improve";
 import {
-  CONSISTENCY_OPTIONS,
   IMPROVE_GOALS,
   LOST_ROUND_CAUSES,
-  MATCHES_PER_DAY,
   PRACTICE_METHODS,
   PRACTICE_TIMES,
   VALORANT_RANKS,
   VALORANT_ROLES,
   VALORANT_WEAKNESSES,
-  VALORANT_WEAPONS,
 } from "@/types/valorant-improve";
 
-const TOTAL_STEPS = 12;
+const TOTAL_STEPS = 6;
 
 const DEFAULT_FORM: ImproveQuestionnaire = {
   rank: "Gold",
   role: "Duelist",
   agents: [],
   weaknesses: [],
-  bestWeapon: "Vandal",
   lostRoundCause: "Losing aim duels",
-  matchesPerDay: "2",
-  practiceTime: "30 minutes",
+  practiceTime: "45 min",
   practiceMethod: "Deathmatch",
-  dpi: 800,
-  sensitivity: 0.35,
-  scopedSensitivity: 1,
-  goal: "Reach the next rank",
-  consistency: "Most days",
+  goal: "Rank Up",
 };
 
 function OptionChip({
@@ -99,17 +90,13 @@ export function ImproveQuestionnaire() {
   const router = useRouter();
   const [step, setStep] = useState(1);
   const [form, setForm] = useState<ImproveQuestionnaire>(DEFAULT_FORM);
-
   const progress = useMemo(() => Math.round((step / TOTAL_STEPS) * 100), [step]);
 
   const toggleWeakness = (weakness: ValorantWeakness) => {
     setForm((current) => {
       const exists = current.weaknesses.includes(weakness);
       if (exists) {
-        return {
-          ...current,
-          weaknesses: current.weaknesses.filter((item) => item !== weakness),
-        };
+        return { ...current, weaknesses: current.weaknesses.filter((item) => item !== weakness) };
       }
       if (current.weaknesses.length >= 3) return current;
       return { ...current, weaknesses: [...current.weaknesses, weakness] };
@@ -117,21 +104,17 @@ export function ImproveQuestionnaire() {
   };
 
   const toggleAgent = (agentId: string) => {
-    setForm((current) => {
-      const exists = current.agents.includes(agentId);
-      return {
-        ...current,
-        agents: exists
-          ? current.agents.filter((id) => id !== agentId)
-          : [...current.agents, agentId],
-      };
-    });
+    setForm((current) => ({
+      ...current,
+      agents: current.agents.includes(agentId)
+        ? current.agents.filter((id) => id !== agentId)
+        : [...current.agents, agentId],
+    }));
   };
 
   const canContinue = () => {
     if (step === 3) return form.agents.length > 0;
     if (step === 4) return form.weaknesses.length > 0;
-    if (step === 10) return form.dpi > 0 && form.sensitivity > 0;
     return true;
   };
 
@@ -144,26 +127,26 @@ export function ImproveQuestionnaire() {
 
     saveQuestionnaire(form);
     savePlan(generateImprovementPlan(form));
-    router.push("/games/valorant/improve/plan");
+    router.push("/games/valorant/improve/dashboard");
   };
 
   return (
     <div className="space-y-4">
-      <ProgressBar value={progress} label={`Questionnaire progress · Step ${step} of ${TOTAL_STEPS}`} />
+      <ProgressBar value={progress} label={`Setup · Step ${step} of ${TOTAL_STEPS}`} />
 
       {step === 1 ? (
         <QuestionShell
           step={1}
-          title="What is your current rank?"
-          description="We use this to calibrate the difficulty of your routines."
+          title="What is your primary goal?"
+          description="Riot can read matches later. This is what you want the training to optimize for."
         >
           <div className="flex flex-wrap gap-2">
-            {VALORANT_RANKS.map((rank) => (
-              <RankBadge
-                key={rank}
-                rank={rank}
-                selected={form.rank === rank}
-                onClick={() => setForm((current) => ({ ...current, rank }))}
+            {IMPROVE_GOALS.map((goal) => (
+              <OptionChip
+                key={goal}
+                label={goal}
+                selected={form.goal === goal}
+                onClick={() => setForm((current) => ({ ...current, goal }))}
               />
             ))}
           </div>
@@ -173,8 +156,29 @@ export function ImproveQuestionnaire() {
       {step === 2 ? (
         <QuestionShell
           step={2}
-          title="What is your main role?"
-          description="Your plan will lean toward the responsibilities of this role."
+          title="How much time can you train each day?"
+          description="Today's plan is sized to this budget."
+        >
+          <div className="flex flex-wrap gap-2">
+            {PRACTICE_TIMES.map((value) => (
+              <OptionChip
+                key={value}
+                label={value}
+                selected={form.practiceTime === value}
+                onClick={() =>
+                  setForm((current) => ({ ...current, practiceTime: value as PracticeTime }))
+                }
+              />
+            ))}
+          </div>
+        </QuestionShell>
+      ) : null}
+
+      {step === 3 ? (
+        <QuestionShell
+          step={3}
+          title="Preferred role and agents"
+          description="Pick the role you want to climb on, then the agents you actually queue."
         >
           <div className="flex flex-wrap gap-2">
             {VALORANT_ROLES.map((role) => (
@@ -186,16 +190,7 @@ export function ImproveQuestionnaire() {
               />
             ))}
           </div>
-        </QuestionShell>
-      ) : null}
-
-      {step === 3 ? (
-        <QuestionShell
-          step={3}
-          title="Which agents do you play most?"
-          description="Select all agents you regularly queue with."
-        >
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+          <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
             {VALORANT_AGENTS.map((agent) => (
               <button
                 key={agent.id}
@@ -222,8 +217,8 @@ export function ImproveQuestionnaire() {
       {step === 4 ? (
         <QuestionShell
           step={4}
-          title="What are your biggest weaknesses?"
-          description="Choose up to 3 areas you want the plan to target first."
+          title="What do you feel you struggle with?"
+          description="Riot will measure this later. Your read still matters for today's plan."
         >
           <div className="flex flex-wrap gap-2">
             {VALORANT_WEAKNESSES.map((weakness) => (
@@ -241,25 +236,10 @@ export function ImproveQuestionnaire() {
       ) : null}
 
       {step === 5 ? (
-        <QuestionShell step={5} title="What is your best weapon?" description="Helps tune aim drills.">
-          <div className="flex flex-wrap gap-2">
-            {VALORANT_WEAPONS.map((weapon) => (
-              <OptionChip
-                key={weapon}
-                label={weapon}
-                selected={form.bestWeapon === weapon}
-                onClick={() => setForm((current) => ({ ...current, bestWeapon: weapon }))}
-              />
-            ))}
-          </div>
-        </QuestionShell>
-      ) : null}
-
-      {step === 6 ? (
         <QuestionShell
-          step={6}
-          title="What usually causes lost rounds?"
-          description="We add focused tasks to address your most common round losses."
+          step={5}
+          title="What usually costs you the round?"
+          description="The feeling after a lost round — not a tracker stat."
         >
           <div className="flex flex-wrap gap-2">
             {LOST_ROUND_CAUSES.map((cause) => (
@@ -274,52 +254,13 @@ export function ImproveQuestionnaire() {
         </QuestionShell>
       ) : null}
 
-      {step === 7 ? (
+      {step === 6 ? (
         <QuestionShell
-          step={7}
-          title="How many competitive matches do you play per day?"
-          description="Used to size your ranked goals."
+          step={6}
+          title="Warm-up method and current rank"
+          description="Rank is self-reported until Riot is connected. Warm-up is how you like to start."
         >
-          <div className="flex flex-wrap gap-2">
-            {MATCHES_PER_DAY.map((value) => (
-              <OptionChip
-                key={value}
-                label={value}
-                selected={form.matchesPerDay === value}
-                onClick={() => setForm((current) => ({ ...current, matchesPerDay: value }))}
-              />
-            ))}
-          </div>
-        </QuestionShell>
-      ) : null}
-
-      {step === 8 ? (
-        <QuestionShell
-          step={8}
-          title="How much practice time can you commit daily?"
-          description="Your routine length is built around this time budget."
-        >
-          <div className="flex flex-wrap gap-2">
-            {PRACTICE_TIMES.map((value) => (
-              <OptionChip
-                key={value}
-                label={value}
-                selected={form.practiceTime === value}
-                onClick={() =>
-                  setForm((current) => ({ ...current, practiceTime: value as PracticeTime }))
-                }
-              />
-            ))}
-          </div>
-        </QuestionShell>
-      ) : null}
-
-      {step === 9 ? (
-        <QuestionShell
-          step={9}
-          title="What is your current practice method?"
-          description="We reference this in your warm-up task wording."
-        >
+          <p className="mb-2 text-xs uppercase tracking-[0.16em] text-zinc-500">Warm-up</p>
           <div className="flex flex-wrap gap-2">
             {PRACTICE_METHODS.map((method) => (
               <OptionChip
@@ -330,100 +271,16 @@ export function ImproveQuestionnaire() {
               />
             ))}
           </div>
-        </QuestionShell>
-      ) : null}
-
-      {step === 10 ? (
-        <QuestionShell
-          step={10}
-          title="What is your sensitivity setup?"
-          description="Keep a record of your current sensitivity settings."
-        >
-          <div className="grid gap-4 sm:grid-cols-3">
-            <label className="space-y-2">
-              <span className="text-xs font-medium uppercase tracking-wide text-zinc-500">DPI</span>
-              <input
-                type="number"
-                min={100}
-                value={form.dpi}
-                onChange={(event) =>
-                  setForm((current) => ({ ...current, dpi: Number(event.target.value) || 0 }))
-                }
-                className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2.5 text-sm text-white focus:border-rose-400/40 focus:outline-none"
-              />
-            </label>
-            <label className="space-y-2">
-              <span className="text-xs font-medium uppercase tracking-wide text-zinc-500">
-                In-game sensitivity
-              </span>
-              <input
-                type="number"
-                min={0.01}
-                step={0.01}
-                value={form.sensitivity}
-                onChange={(event) =>
-                  setForm((current) => ({
-                    ...current,
-                    sensitivity: Number(event.target.value) || 0,
-                  }))
-                }
-                className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2.5 text-sm text-white focus:border-rose-400/40 focus:outline-none"
-              />
-            </label>
-            <label className="space-y-2">
-              <span className="text-xs font-medium uppercase tracking-wide text-zinc-500">
-                Scoped sensitivity (optional)
-              </span>
-              <input
-                type="number"
-                min={0.1}
-                step={0.1}
-                value={form.scopedSensitivity ?? 1}
-                onChange={(event) =>
-                  setForm((current) => ({
-                    ...current,
-                    scopedSensitivity: Number(event.target.value) || undefined,
-                  }))
-                }
-                className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2.5 text-sm text-white focus:border-rose-400/40 focus:outline-none"
-              />
-            </label>
-          </div>
-        </QuestionShell>
-      ) : null}
-
-      {step === 11 ? (
-        <QuestionShell
-          step={11}
-          title="What is your biggest goal right now?"
-          description="Your ranked focus tasks will align with this goal."
-        >
+          <p className="mb-2 mt-5 text-xs uppercase tracking-[0.16em] text-zinc-500">
+            Self-reported rank
+          </p>
           <div className="flex flex-wrap gap-2">
-            {IMPROVE_GOALS.map((goal) => (
-              <OptionChip
-                key={goal}
-                label={goal}
-                selected={form.goal === goal}
-                onClick={() => setForm((current) => ({ ...current, goal }))}
-              />
-            ))}
-          </div>
-        </QuestionShell>
-      ) : null}
-
-      {step === 12 ? (
-        <QuestionShell
-          step={12}
-          title="How consistent can you practice?"
-          description="Helps set expectations for your weekly rhythm."
-        >
-          <div className="flex flex-wrap gap-2">
-            {CONSISTENCY_OPTIONS.map((option) => (
-              <OptionChip
-                key={option}
-                label={option}
-                selected={form.consistency === option}
-                onClick={() => setForm((current) => ({ ...current, consistency: option }))}
+            {VALORANT_RANKS.map((rank) => (
+              <RankBadge
+                key={rank}
+                rank={rank}
+                selected={form.rank === rank}
+                onClick={() => setForm((current) => ({ ...current, rank }))}
               />
             ))}
           </div>
@@ -445,7 +302,7 @@ export function ImproveQuestionnaire() {
           disabled={!canContinue()}
           className="rounded-full border border-rose-400/35 bg-rose-500/15 px-5 py-2.5 text-sm font-medium text-rose-50 transition hover:bg-rose-500/25 disabled:cursor-not-allowed disabled:opacity-40"
         >
-          {step === TOTAL_STEPS ? "Generate my plan" : "Continue"}
+          {step === TOTAL_STEPS ? "Open my dashboard" : "Continue"}
         </button>
       </div>
     </div>

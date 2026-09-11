@@ -57,13 +57,7 @@ export const LOST_ROUND_CAUSES = [
 
 export const MATCHES_PER_DAY = ["1", "2", "3", "4+", "Depends"] as const;
 
-export const PRACTICE_TIMES = [
-  "15 minutes",
-  "30 minutes",
-  "45 minutes",
-  "1 hour",
-  "2+ hours",
-] as const;
+export const PRACTICE_TIMES = ["20 min", "45 min", "60 min", "90+ min"] as const;
 
 export const PRACTICE_METHODS = [
   "Aim Labs",
@@ -76,13 +70,11 @@ export const PRACTICE_METHODS = [
 ] as const;
 
 export const IMPROVE_GOALS = [
-  "Reach the next rank",
-  "Improve aim",
-  "Improve game sense",
-  "Become a better teammate",
-  "Join a competitive team",
-  "Play tournaments",
-  "Other",
+  "Rank Up",
+  "Improve Aim",
+  "Improve Game Sense",
+  "Become More Consistent",
+  "Master an Agent/Role",
 ] as const;
 
 export const CONSISTENCY_OPTIONS = [
@@ -108,19 +100,21 @@ export interface ImproveQuestionnaire {
   role: ValorantRole;
   agents: string[];
   weaknesses: ValorantWeakness[];
-  bestWeapon: string;
+  bestWeapon?: string;
   lostRoundCause: string;
-  matchesPerDay: string;
-  practiceTime: PracticeTime;
+  matchesPerDay?: string;
+  practiceTime: PracticeTime | string;
   practiceMethod: string;
-  dpi: number;
-  sensitivity: number;
+  dpi?: number;
+  sensitivity?: number;
   scopedSensitivity?: number;
   goal: string;
-  consistency: string;
+  consistency?: string;
 }
 
 export type TaskModule = "A" | "B" | "C" | "D" | "E" | "F" | "G";
+
+export type PlanTaskKind = "warmup" | "drill" | "deathmatch" | "ranked" | "review" | "utility";
 
 export interface PlanTask {
   id: string;
@@ -128,6 +122,7 @@ export interface PlanTask {
   title: string;
   duration: string;
   reason: string;
+  kind?: PlanTaskKind;
 }
 
 export interface PlanDay {
@@ -155,6 +150,8 @@ export interface ImprovementPlan {
   days: PlanDay[];
   activeDay: number;
   completedTasks: Record<number, string[]>;
+  startedTasks?: Record<number, string[]>;
+  skippedTasks?: Record<number, string[]>;
 }
 
 export interface RecheckDraft {

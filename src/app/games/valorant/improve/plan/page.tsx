@@ -1,10 +1,5 @@
-import { ImprovePlanView } from "@/components/valorant-improve/ImprovePlanView";
-import { ImproveShell } from "@/components/valorant-improve/ImproveShell";
+import { redirect } from "next/navigation";
 
 export default function ValorantImprovePlanPage() {
-  return (
-    <ImproveShell breadcrumb="Plan">
-      <ImprovePlanView />
-    </ImproveShell>
-  );
+  redirect("/games/valorant/improve/dashboard?tab=plan");
 }
