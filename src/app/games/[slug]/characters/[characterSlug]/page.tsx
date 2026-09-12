@@ -10,8 +10,11 @@ import { isCalcGame } from "@/lib/team-games";
 import { getWuwaCharacter } from "@/lib/guides/wuwa";
 import { WuwaCharacterGuide } from "@/components/guides/WuwaCharacterGuide";
 
+export const dynamicParams = true;
+
 export function generateStaticParams() {
-  return getAllCalcCharacterParams();
+  // Database-backed WuWa guides load on demand, not during deployment.
+  return getAllCalcCharacterParams().filter(({ slug }) => slug !== "wuthering-waves");
 }
 
 export default async function CharacterDetailPage({
