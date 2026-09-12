@@ -10,11 +10,7 @@ export function TrendingGamesPanel({ games }: { games: GameWithTrend[] }) {
       <div className="sticky top-6 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-indigo-400/40 to-transparent" />
         <div className="border-b border-white/10 px-4 py-4">
-          <p className="text-[10px] font-medium uppercase tracking-[0.22em] text-indigo-300/80">
-            Pulse
-          </p>
-          <h2 className="mt-1 text-sm font-semibold text-white">Trending games</h2>
-          <p className="mt-1 text-xs text-zinc-500">Games getting attention right now.</p>
+          <h2 className="text-sm font-semibold text-white">Trending games</h2>
         </div>
 
         <div className="space-y-2 p-3">

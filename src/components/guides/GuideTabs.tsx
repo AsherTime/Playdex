@@ -51,7 +51,7 @@ export function GuideTabs({ character }: { character: GuideCharacterDetail }) {
 
 function KitTab({ character }: { character: GuideCharacterDetail }) {
   const kit = character.kit;
-  if (!kit) return <UnavailableState label="Kit data unavailable." />;
+  if (!kit) return <UnavailableState label="Kit coming soon." />;
 
   return (
     <div className="space-y-5">
@@ -109,7 +109,7 @@ function KitTab({ character }: { character: GuideCharacterDetail }) {
 
 function BuildTab({ character }: { character: GuideCharacterDetail }) {
   const build = character.build;
-  if (!build) return <UnavailableState label="Build guide data unavailable." />;
+  if (!build) return <UnavailableState label="Build guide coming soon." />;
 
   return (
     <div className="space-y-5">
@@ -190,7 +190,7 @@ function BuildTab({ character }: { character: GuideCharacterDetail }) {
 }
 
 function TeamsTab({ character }: { character: GuideCharacterDetail }) {
-  if (!character.teams.length) return <UnavailableState label="Team data unavailable." />;
+  if (!character.teams.length) return <UnavailableState label="Team recommendations coming soon." />;
 
   return (
     <div className="grid gap-4 lg:grid-cols-2">
@@ -274,7 +274,7 @@ function RankingList({
   compact?: boolean;
   expandableDescriptions?: boolean;
 }) {
-  if (!items.length) return <UnavailableState label="Guide data unavailable." compact />;
+  if (!items.length) return <UnavailableState label="Coming soon." compact />;
 
   return (
     <ol className={`grid gap-3 ${compact ? "md:grid-cols-2" : ""}`}>

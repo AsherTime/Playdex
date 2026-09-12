@@ -45,7 +45,7 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
           latestNews.map((item) => <NewsCard key={item.id} item={item} />)
         ) : (
           <p className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-6 text-sm text-zinc-400">
-            No news to show yet. Check back soon.
+            News coming soon.
           </p>
         )}
       </div>

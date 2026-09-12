@@ -1,7 +1,6 @@
 import { GamingDashboard } from "@/components/home/GamingDashboard";
 import { HomeNewsExplorer } from "@/components/home/HomeNewsExplorer";
 import { HomeTodayPlanCard } from "@/components/home/HomeTodayPlanCard";
-import { ImproveQuickStartCard } from "@/components/improve-quick-start-card";
 import { TrendingGamesPanel } from "@/components/trending-games-panel";
 import {
   getServerFollowedGameSlugs,
@@ -39,9 +38,7 @@ export default async function HomePage() {
 
       <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_280px]">
         <div className="min-w-0">
-          <HomeNewsExplorer items={feedNews}>
-            <ImproveQuickStartCard />
-          </HomeNewsExplorer>
+          <HomeNewsExplorer items={feedNews} />
         </div>
 
         <TrendingGamesPanel games={trendingGames} />

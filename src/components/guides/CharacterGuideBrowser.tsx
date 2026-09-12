@@ -70,7 +70,7 @@ export function CharacterGuideBrowser({
         </div>
       ) : (
         <p className="rounded-xl border border-dashed border-white/10 bg-black/20 px-4 py-8 text-center text-sm text-zinc-400">
-          {characters.length ? "No characters found" : "Guide data unavailable."}
+          {characters.length ? "No matching characters." : "Guides coming soon."}
         </p>
       )}
     </section>
@@ -113,7 +113,7 @@ function CharacterGuideCard({
           {character.name}
         </h3>
         <p className="mt-0.5 truncate text-[11px] font-medium uppercase tracking-wide text-zinc-400">
-          {character.element} · {character.role ?? "Role unavailable"}
+          {character.role ? `${character.element} · ${character.role}` : character.element}
         </p>
         <div className="mt-1.5 flex gap-1">
           <GuideDataDot active={character.hasKit} label="Kit" />

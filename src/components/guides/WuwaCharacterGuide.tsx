@@ -31,35 +31,35 @@ export function WuwaCharacterGuide({ character }: { character: WuwaGuide }) {
       <p className="max-w-4xl whitespace-pre-line py-3 text-sm leading-7 text-zinc-300">{a.description}</p>
     </details>)}</div> : <div className="space-y-8">
       {character.writtenNotes.map((note,i) => <p key={i} className="whitespace-pre-line text-sm leading-7 text-zinc-300">{note}</p>)}
-      <EquipmentSection title="Weapons" recommendations={character.weapons} comparisons={character.comparisons.filter(c => c.comparison_type === "weapon")} />
-      <EquipmentSection title="Echoes" recommendations={character.sets} comparisons={character.comparisons.filter(c => c.comparison_type === "echo_setup")} />
+      <EquipmentSection title="Weapons" recommendations={character.weapons} comparisons={character.comparisons.filter(c => c.comparison_type === "weapon")} emptyComparison="Weapon comparisons coming soon." emptyRecommendations="Weapon recommendations coming soon." />
+      <EquipmentSection title="Echoes" recommendations={character.sets} comparisons={character.comparisons.filter(c => c.comparison_type === "echo_setup")} emptyComparison="Echo comparisons coming soon." emptyRecommendations="Echo recommendations coming soon." />
       <section className="space-y-4"><h2 className="text-lg font-semibold text-white">Sequence Comparison</h2>
-        <ComparisonGroup comparisons={character.comparisons.filter(c => c.comparison_type === "sequence")} />
+        <ComparisonGroup comparisons={character.comparisons.filter(c => c.comparison_type === "sequence")} emptyLabel="Sequence comparisons coming soon." />
       </section>
     </div>}
   </div>;
 }
 
-function EquipmentSection({ title, recommendations, comparisons }: { title: string; recommendations: WuwaRecommendation[]; comparisons: BuildComparison[] }) {
+function EquipmentSection({ title, recommendations, comparisons, emptyComparison, emptyRecommendations }: { title: string; recommendations: WuwaRecommendation[]; comparisons: BuildComparison[]; emptyComparison: string; emptyRecommendations: string }) {
   const [view, setView] = useState(comparisons.length ? "Comparison" : "Recommended");
   return <section className="min-w-0 space-y-4"><div className="flex flex-wrap items-center justify-between gap-3">
     <h2 className="text-lg font-semibold text-white">{title}</h2>
     <Segments label={`${title} view`} values={["Recommended", "Comparison"]} value={view} onChange={setView} />
   </div>
-    {view === "Comparison" ? <ComparisonGroup comparisons={comparisons} /> : recommendations.length ? <div className="divide-y divide-white/10">
+    {view === "Comparison" ? <ComparisonGroup comparisons={comparisons} emptyLabel={emptyComparison} /> : recommendations.length ? <div className="divide-y divide-white/10">
       {recommendations.map((r,i) => <div key={`${r.id}-${i}`} className="flex items-center gap-4 py-4">
         {r.icon_url && <img src={r.icon_url} alt="" className="h-16 w-16 shrink-0 object-contain" loading="lazy" />}
         <div><h3 className="text-sm font-semibold text-white">{r.pieces ? `${r.pieces}pc ` : ""}{r.name}</h3>{r.note && <p className="mt-2 text-sm text-zinc-400">{r.note}</p>}</div>
       </div>)}
-    </div> : <p className="text-sm text-zinc-500">No recommendations yet.</p>}
+    </div> : <p className="text-sm text-zinc-500">{emptyRecommendations}</p>}
   </section>;
 }
 
-function ComparisonGroup({ comparisons }: { comparisons: BuildComparison[] }) {
+function ComparisonGroup({ comparisons, emptyLabel }: { comparisons: BuildComparison[]; emptyLabel: string }) {
   const [selected, setSelected] = useState(comparisons[0]?.id ?? "");
   const [basis, setBasis] = useState("vs S0");
   const comparison = comparisons.find(c => c.id === selected) ?? comparisons[0];
-  if (!comparison) return <p className="text-sm text-zinc-500">No comparison available yet.</p>;
+  if (!comparison) return <p className="text-sm text-zinc-500">{emptyLabel}</p>;
   const sequence = comparison.comparison_type === "sequence";
   const best = Math.max(0, ...comparison.entries.map(e => e.damage ?? 0));
   const ratio = (e: BuildComparisonEntryRow) => sequence ? (basis === "vs S0" ? e.details.relative_to_s0 : e.details.relative_to_previous) ?? null : best && e.damage != null ? e.damage / best : null;

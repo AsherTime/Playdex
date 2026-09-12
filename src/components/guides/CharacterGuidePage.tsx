@@ -79,10 +79,10 @@ export function CharacterGuidePage({
             {!character.hasBuild || !character.hasTeams ? (
               <p className="mt-3 text-sm text-zinc-400">
                 {!character.hasBuild && !character.hasTeams
-                  ? "Build and team guide unavailable."
+                  ? "Build and team guides coming soon."
                   : !character.hasBuild
-                    ? "Build guide unavailable."
-                    : "Team guide unavailable."}
+                    ? "Build guide coming soon."
+                    : "Team recommendations coming soon."}
               </p>
             ) : null}
 

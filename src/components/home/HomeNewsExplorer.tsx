@@ -1,8 +1,7 @@
 "use client";
 
-import { useMemo, useState, type ReactNode } from "react";
+import { useMemo, useState } from "react";
 import { NewsCard } from "@/components/news-card";
-import { NewsTrackerStrip } from "@/components/news-tracker-strip";
 import { hasFeedThumbnail } from "@/lib/news-images";
 import type { GameNews } from "@/types/gamedex";
 
@@ -10,12 +9,8 @@ const ALL_GAMES = "all";
 
 export function HomeNewsExplorer({
   items,
-  trackerLimit = 12,
-  children,
 }: {
   items: GameNews[];
-  trackerLimit?: number;
-  children?: ReactNode;
 }) {
   const [selectedGame, setSelectedGame] = useState(ALL_GAMES);
   const [query, setQuery] = useState("");
@@ -52,7 +47,6 @@ export function HomeNewsExplorer({
   }, [feedItems, selectedGame, normalizedQuery]);
 
   const isFiltered = selectedGame !== ALL_GAMES || Boolean(normalizedQuery);
-  const trackerItems = visibleItems.slice(0, trackerLimit);
 
   return (
     <div className="space-y-6">
@@ -62,8 +56,8 @@ export function HomeNewsExplorer({
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search news & updates..."
-            aria-label="Search news and updates"
+            placeholder="Search news"
+            aria-label="Search news"
             className="w-full rounded-xl border border-white/10 bg-black/25 py-2.5 pl-3.5 pr-9 text-sm text-white outline-none transition placeholder:text-zinc-500 focus:border-indigo-300/40 [&::-webkit-search-cancel-button]:appearance-none"
           />
           {query ? (
@@ -110,36 +104,21 @@ export function HomeNewsExplorer({
       </div>
 
       {visibleItems.length ? (
-        <>
-          <NewsTrackerStrip items={trackerItems} />
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
+            News
+          </h2>
 
-          {children}
-
-          <section className="space-y-4">
-            <div className="space-y-1">
-              <p className="text-[10px] font-medium uppercase tracking-[0.24em] text-indigo-300/80">
-                News
-              </p>
-              <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
-                Latest Gaming News
-              </h2>
-            </div>
-
-            <div className="space-y-3">
-              {visibleItems.map((item) => (
-                <NewsCard key={item.id} item={item} />
-              ))}
-            </div>
-          </section>
-        </>
+          <div className="space-y-3">
+            {visibleItems.map((item) => (
+              <NewsCard key={item.id} item={item} />
+            ))}
+          </div>
+        </section>
       ) : (
-        <>
-          <p className="rounded-2xl border border-dashed border-white/10 bg-black/20 px-4 py-10 text-center text-sm text-zinc-400">
-            {isFiltered ? "No news found" : "News is not available right now."}
-          </p>
-
-          {children}
-        </>
+        <p className="rounded-2xl border border-dashed border-white/10 bg-black/20 px-4 py-10 text-center text-sm text-zinc-400">
+          {isFiltered ? "No matching stories." : "News coming soon."}
+        </p>
       )}
     </div>
   );

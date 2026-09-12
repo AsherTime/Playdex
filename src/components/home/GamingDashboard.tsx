@@ -175,11 +175,10 @@ export function GamingDashboard({
             Gamedex
           </p>
           <h1 className="max-w-xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Your gaming identity, history, and improvement — in one place.
+            Your games, history, and training in one place.
           </h1>
           <p className="max-w-xl text-sm leading-7 text-zinc-400">
-            Track playtime on Android, build your gaming profile, and share it like a social
-            profile when you&apos;re ready.
+            Track playtime on Android and keep a public gaming profile when you want one.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -324,7 +323,7 @@ export function GamingDashboard({
           </div>
         ) : (
           <p className="rounded-xl border border-white/10 bg-black/20 px-4 py-5 text-sm text-zinc-500">
-            No supported game activity yet. Play a tracked game, then refresh.
+            Playtime will show after your next session.
           </p>
         )}
       </div>

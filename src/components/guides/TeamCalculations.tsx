@@ -9,10 +9,10 @@ function metric(value: number | null, divisor: number, suffix: string) {
 
 export function TeamCalculations({ calculations }: { calculations: GuideCalculations }) {
   if (calculations.unavailable) {
-    return <p className="py-6 text-sm text-zinc-400">Team calculations are temporarily unavailable.</p>;
+    return <p className="py-6 text-sm text-zinc-400">Team calculations coming soon.</p>;
   }
   if (!calculations.teams.length) {
-    return <p className="py-6 text-sm text-zinc-400">No team calculations available yet.</p>;
+    return <p className="py-6 text-sm text-zinc-400">Team calculations coming soon.</p>;
   }
 
   return (
