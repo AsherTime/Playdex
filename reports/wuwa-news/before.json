@@ -1,0 +1,1280 @@
+[
+  {
+    "source": "wuthering-waves-game8-banners",
+    "bytes": 582634,
+    "cards": 32,
+    "rows": [
+      {
+        "title": "State of the Meta (3.0 to 3.5)",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/573467",
+        "published": "2026-08-27T18:30:00.000Z",
+        "confidence": "source",
+        "quality": 76,
+        "importance": 0,
+        "filter": "below homepage threshold",
+        "exists": false
+      },
+      {
+        "title": "Player's Report (Ver. 3.5)",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/616616",
+        "published": "2026-08-25T18:30:00.000Z",
+        "confidence": "source",
+        "quality": 76,
+        "importance": 7,
+        "filter": "below homepage threshold",
+        "exists": false
+      },
+      {
+        "title": "Player's Report (Ver. 3.4)",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/610898",
+        "published": "2026-07-14T18:30:00.000Z",
+        "confidence": "source",
+        "quality": 76,
+        "importance": 7,
+        "filter": "below homepage threshold",
+        "exists": false
+      },
+      {
+        "title": "Player's Report (Ver. 3.3)",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/606414",
+        "published": "2026-06-24T18:30:00.000Z",
+        "confidence": "source",
+        "quality": 76,
+        "importance": 7,
+        "filter": "below homepage threshold",
+        "exists": false
+      },
+      {
+        "title": "Where Santu Beckons Icon",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614637",
+        "published": "2026-09-12T18:17:20.400Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Thousand Futures Mirrored In Snow Icon",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/595037",
+        "published": "2026-09-12T18:17:20.400Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Distant May the Starlights Be Icon",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/570877",
+        "published": "2026-09-12T18:17:20.400Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Absolute Pulsation (Thousandfold Deliverance) Icon",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455400",
+        "published": "2026-09-12T18:17:20.400Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Beginner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453554",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 0,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Utterance of Marvels Icon",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455422",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Tidal Chorus Icon",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455430",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 0,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Weapon Permanent Convene Icon",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455431",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — News and Updates",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/452488",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Tips and Tricks",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453304",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Characters",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/452489",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Echoes",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/452491",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Weapons",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/452490",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Quests",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453485",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Events",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453473",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Enemies",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453459",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Bosses",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453458",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Character Tier List Partial Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/454729",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 42,
+        "importance": 0,
+        "filter": "guide/tutorial content",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Maps and Locations",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453476",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Items.png",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453477",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves Character Skins",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/492671",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Trophies Partial Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455441",
+        "published": "2026-09-12T18:17:20.401Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves Profile Cosmetics.png",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/564676",
+        "published": "2026-09-12T18:17:20.402Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves Weekly Activities Partial Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605757",
+        "published": "2026-09-12T18:17:20.402Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Tower of Adversity",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453474",
+        "published": "2026-09-12T18:17:20.402Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Whimpering Wastes Guide",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/498614",
+        "published": "2026-09-12T18:17:20.402Z",
+        "confidence": "fallback",
+        "quality": 54,
+        "importance": 0,
+        "filter": "guide/tutorial content",
+        "exists": false
+      },
+      {
+        "title": "Endstate Matrix",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/572518",
+        "published": "2026-09-12T18:17:20.402Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 0,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves Dreaming Deep Partial Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/523117",
+        "published": "2026-09-12T18:17:20.402Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      }
+    ]
+  },
+  {
+    "source": "wuthering-waves-game8-news",
+    "bytes": 609708,
+    "cards": 31,
+    "rows": [
+      {
+        "title": "State of the Meta (3.0 to 3.5)",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/573467",
+        "published": "2026-08-27T18:30:00.000Z",
+        "confidence": "source",
+        "quality": 76,
+        "importance": 0,
+        "filter": "below homepage threshold",
+        "exists": false
+      },
+      {
+        "title": "Player's Report (Ver. 3.5)",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/616616",
+        "published": "2026-08-25T18:30:00.000Z",
+        "confidence": "source",
+        "quality": 76,
+        "importance": 7,
+        "filter": "below homepage threshold",
+        "exists": false
+      },
+      {
+        "title": "Player's Report (Ver. 3.4)",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/610898",
+        "published": "2026-07-14T18:30:00.000Z",
+        "confidence": "source",
+        "quality": 76,
+        "importance": 7,
+        "filter": "below homepage threshold",
+        "exists": false
+      },
+      {
+        "title": "Player's Report (Ver. 3.3)",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/606414",
+        "published": "2026-06-24T18:30:00.000Z",
+        "confidence": "source",
+        "quality": 76,
+        "importance": 7,
+        "filter": "below homepage threshold",
+        "exists": false
+      },
+      {
+        "title": "2.5 Version Patch",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/530601",
+        "published": "2026-09-12T18:17:22.067Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 7,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Gifts of Drifting Mist",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614684",
+        "published": "2026-09-12T18:17:22.067Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Resonance Sim Realm",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614775",
+        "published": "2026-09-12T18:17:22.067Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Second Coming of Solaris: Coded Deception",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614757",
+        "published": "2026-09-12T18:17:22.067Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — The Strings Remember",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614773",
+        "published": "2026-09-12T18:17:22.067Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Ascendant Aces",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/456482",
+        "published": "2026-09-12T18:17:22.067Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — If Dreams Still Reverberate",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614765",
+        "published": "2026-09-12T18:17:22.067Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Tips and Tricks",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453304",
+        "published": "2026-09-12T18:17:22.067Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Characters",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/452489",
+        "published": "2026-09-12T18:17:22.067Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Echoes",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/452491",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Weapons",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/452490",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Convenes",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453303",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Quests",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453485",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Events",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453473",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Enemies",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453459",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Bosses",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453458",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Character Tier List Partial Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/454729",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 42,
+        "importance": 0,
+        "filter": "guide/tutorial content",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Maps and Locations",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453476",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Items.png",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453477",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves Character Skins",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/492671",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Trophies Partial Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455441",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves Profile Cosmetics.png",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/564676",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves Weekly Activities Partial Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605757",
+        "published": "2026-09-12T18:17:22.068Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Tower of Adversity",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453474",
+        "published": "2026-09-12T18:17:22.069Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Whimpering Wastes Guide",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/498614",
+        "published": "2026-09-12T18:17:22.069Z",
+        "confidence": "fallback",
+        "quality": 54,
+        "importance": 0,
+        "filter": "guide/tutorial content",
+        "exists": false
+      },
+      {
+        "title": "Endstate Matrix",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/572518",
+        "published": "2026-09-12T18:17:22.069Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 0,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves Dreaming Deep Partial Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/523117",
+        "published": "2026-09-12T18:17:22.069Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      }
+    ]
+  },
+  {
+    "source": "wuthering-waves-game8-v34",
+    "bytes": 630762,
+    "cards": 27,
+    "rows": [
+      {
+        "title": "Wuthering Waves — State of the Meta",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/573467",
+        "published": "2026-09-12T18:17:24.913Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Redeem Codes",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453149",
+        "published": "2026-09-12T18:17:24.914Z",
+        "confidence": "fallback",
+        "quality": 59,
+        "importance": 0,
+        "filter": "code/filler content",
+        "exists": false
+      },
+      {
+        "title": "3.4 Livestream",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/602038",
+        "published": "2026-09-12T18:17:24.914Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 0,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Lucy Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/602619",
+        "published": "2026-09-12T18:17:24.914Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 7,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Rebecca Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/602623",
+        "published": "2026-09-12T18:17:24.914Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 7,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Lucilla Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/602627",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 7,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves Cartethyia Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/524282",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Side Story — At Dream",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603079",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Night City",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603092",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 0,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Phantasma Dreamland Rhapsody",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/538468",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Instant Flashlight",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603084",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Night City Roaming",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603610",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Gifts of Dreamchasers",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603544",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Matrix Reform",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603593",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 0,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Sweetdream Tuning",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603717",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 0,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Depths of Illusive Realm Dreamchasers",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603842",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Milestone Challenge Event Guide Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/604697",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 54,
+        "importance": 0,
+        "filter": "guide/tutorial content",
+        "exists": false
+      },
+      {
+        "title": "Startorch Racing, Rerun",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603651",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Dream of Azure Sky",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603529",
+        "published": "2026-09-12T18:17:24.915Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Qingxiao Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614636",
+        "published": "2026-09-12T18:17:24.916Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 7,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Jingran Wuwa 3.6 Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614637",
+        "published": "2026-09-12T18:17:24.916Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Hiyuki Wuwa 3.6 Rerun Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/595037",
+        "published": "2026-09-12T18:17:24.916Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Mornye Wuwa 3.6 Rerun Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/570877",
+        "published": "2026-09-12T18:17:24.916Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Cyberpunk Collab Info",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/514612",
+        "published": "2026-09-12T18:17:24.916Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Persona Sonic Collab Event",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/570896",
+        "published": "2026-09-12T18:17:24.916Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Muse Dash Collab",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/586426",
+        "published": "2026-09-12T18:17:24.916Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Escape from Duckov Collab",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/610160",
+        "published": "2026-09-12T18:17:24.916Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      }
+    ]
+  },
+  {
+    "source": "wuthering-waves-game8-v35",
+    "bytes": 656753,
+    "cards": 35,
+    "rows": [
+      {
+        "title": "Wuthering Waves — State of the Meta",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/573467",
+        "published": "2026-09-12T18:17:26.831Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Redeem Codes",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453149",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 59,
+        "importance": 0,
+        "filter": "code/filler content",
+        "exists": false
+      },
+      {
+        "title": "3.5 Special Broadcast Livestream Article Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605996",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Yangyang Xuanling Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/606710",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Luuk Herssen Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/575845",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Lynae Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/570865",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 7,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Suisui Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/451864",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 7,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves Aemeath Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/575840",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Starpath Reverbs Convene",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/606968",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Tideforge Reverbs Convene",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/606976",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "The Wind Before the Storm",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/606975",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Xuanling Sings, Storm Quelled",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/606977",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "The Chant of Unseen Ties",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/606978",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Mengzhou Xuanfang",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607103",
+        "published": "2026-09-12T18:17:26.832Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 0,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Tactical Hologram Denia",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607047",
+        "published": "2026-09-12T18:17:26.833Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Lynae Deluxe Outfit",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/606980",
+        "published": "2026-09-12T18:17:26.833Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Chisa Deluxe Outfit",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/606981",
+        "published": "2026-09-12T18:17:26.833Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Virtual Crisis Event",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607412",
+        "published": "2026-09-12T18:17:26.833Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Recaptured Action Highlights",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607256",
+        "published": "2026-09-12T18:17:26.833Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Lament Recon Tacet Crisis",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607645",
+        "published": "2026-09-12T18:17:26.833Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Lollo Campaign New Journey",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/458245",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Shape of Yesterday",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607277",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "A Glimpse of Xuanfang",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/608345",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Gifts of Aftertune",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607276",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "In Search of Lost Jade",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/608347",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 0,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Gifts of Starpath",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607465",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 0,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Mingshen Notices",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/608357",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 0,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Qingxiao Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614636",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 51,
+        "importance": 7,
+        "filter": "title too short",
+        "exists": false
+      },
+      {
+        "title": "Jingran Wuwa 3.6 Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614637",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Hiyuki Wuwa 3.6 Rerun Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/595037",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Mornye Wuwa 3.6 Rerun Banner",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/570877",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Cyberpunk Collab Info",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/514612",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Persona Sonic Collab Event",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/570896",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Wuthering Waves — Muse Dash Collab",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/586426",
+        "published": "2026-09-12T18:17:26.834Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      },
+      {
+        "title": "Escape from Duckov Collab",
+        "url": "https://game8.co/games/Wuthering-Waves/archives/610160",
+        "published": "2026-09-12T18:17:26.835Z",
+        "confidence": "fallback",
+        "quality": 76,
+        "importance": 7,
+        "filter": "missing reliable publication date",
+        "exists": false
+      }
+    ]
+  }
+]

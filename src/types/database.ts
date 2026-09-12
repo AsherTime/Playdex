@@ -385,6 +385,24 @@ type GuideImportRunRow = {
 export interface Database {
   public: {
     Tables: {
+      character_abilities: {
+        Row: import("@/lib/guides/build-comparison-types").CharacterAbilityRow;
+        Insert: Partial<import("@/lib/guides/build-comparison-types").CharacterAbilityRow>;
+        Update: Partial<import("@/lib/guides/build-comparison-types").CharacterAbilityRow>;
+        Relationships: [];
+      };
+      character_build_comparisons: {
+        Row: import("@/lib/guides/build-comparison-types").BuildComparisonRow;
+        Insert: Partial<import("@/lib/guides/build-comparison-types").BuildComparisonRow>;
+        Update: Partial<import("@/lib/guides/build-comparison-types").BuildComparisonRow>;
+        Relationships: [];
+      };
+      character_build_comparison_entries: {
+        Row: import("@/lib/guides/build-comparison-types").BuildComparisonEntryRow;
+        Insert: Partial<import("@/lib/guides/build-comparison-types").BuildComparisonEntryRow>;
+        Update: Partial<import("@/lib/guides/build-comparison-types").BuildComparisonEntryRow>;
+        Relationships: [];
+      };
       team_damage_calculations: {
         Row: import("@/lib/guides/team-calculation-types").TeamCalculationRow;
         Insert: import("@/lib/guides/team-calculation-types").TeamCalculationRow;

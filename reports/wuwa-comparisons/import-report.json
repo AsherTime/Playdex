@@ -1,0 +1,1508 @@
+{
+  "nanoka_version": "3.6",
+  "characters": 58,
+  "abilities": 870,
+  "completed_sheets": 32,
+  "processed_sheets": 31,
+  "wip_skipped": [
+    "Hsin (WIP)",
+    "Suoming (WIP)",
+    "Jingran (WIP)",
+    "Hiyuki (WIP)",
+    "Buling (WIP)",
+    "Galbrena (WIP EN TL)",
+    "Qiuyuan MDPS(WIP EN TL)",
+    "Iuno MDPS (WIP)",
+    "Jinhsi (WIP)",
+    "Changli (WIP)"
+  ],
+  "index_conflicts": [
+    {
+      "name": "Hiyuki",
+      "sheet": "Hiyuki (WIP)",
+      "reason": "WIP sheet conflicts with completed Index"
+    }
+  ],
+  "no_comparison_tables": [
+    {
+      "sheet": "Camellya",
+      "character": "Camellya",
+      "version": "Release Version: 2.0",
+      "sheet_title": "#REF!",
+      "tables": 0
+    },
+    {
+      "sheet": "Mornye",
+      "character": "Mornye",
+      "version": "Release Version: 3.0",
+      "sheet_title": "Mornye Ver 3.0.4",
+      "tables": 0
+    },
+    {
+      "sheet": "Suisui",
+      "character": "Suisui",
+      "version": "Release Version: 3.5",
+      "sheet_title": "Suisui Ver 3.5.6",
+      "tables": 0
+    }
+  ],
+  "counts": {
+    "weapon": {
+      "comparisons": 31,
+      "entries": 139
+    },
+    "echo_setup": {
+      "comparisons": 29,
+      "entries": 127
+    },
+    "sequence": {
+      "comparisons": 32,
+      "entries": 136
+    }
+  },
+  "unresolved": [
+    {
+      "sheet": "Brant",
+      "type": "echo_setup",
+      "label": "Molten Rift 43311 ER/ER (NRider)",
+      "kind": "variant_note",
+      "value": "NRider"
+    },
+    {
+      "sheet": "Brant",
+      "type": "echo_setup",
+      "label": "2pc2Pc MC/TBC (Dragon, healer on Bell)",
+      "kind": "variant_note",
+      "value": "Dragon, healer on Bell"
+    },
+    {
+      "sheet": "Brant",
+      "type": "echo_setup",
+      "label": "2pc2Pc MC/TBC (Fallacy, healer on Bell)",
+      "kind": "variant_note",
+      "value": "Fallacy, healer on Bell"
+    },
+    {
+      "sheet": "Brant",
+      "type": "echo_setup",
+      "label": "Molten Rift 43311 ER/ER (Rider)**",
+      "kind": "variant_note",
+      "value": "Rider"
+    },
+    {
+      "sheet": "Brant",
+      "type": "echo_setup",
+      "label": "MR 43311 ER/ER (Nightmare Rider)",
+      "kind": "variant_note",
+      "value": "Nightmare Rider"
+    },
+    {
+      "sheet": "Brant",
+      "type": "echo_setup",
+      "label": "2pc2Pc MC/TBC (Dragon, healer on Bell)",
+      "kind": "variant_note",
+      "value": "Dragon, healer on Bell"
+    },
+    {
+      "sheet": "Brant",
+      "type": "echo_setup",
+      "label": "2pc2Pc MC/TBC (Fallacy, healer on Bell)",
+      "kind": "variant_note",
+      "value": "Fallacy, healer on Bell"
+    },
+    {
+      "sheet": "Brant",
+      "type": "echo_setup",
+      "label": "MR 43311 ER/ER (Rider)**",
+      "kind": "variant_note",
+      "value": "Rider"
+    },
+    {
+      "sheet": "Carlotta",
+      "type": "echo_setup",
+      "label": "FF 43311 (Lampy) ELE/ELE",
+      "kind": "variant_note",
+      "value": "Lampy"
+    },
+    {
+      "sheet": "Carlotta",
+      "type": "echo_setup",
+      "label": "FF 43311 (Luminscale) ELE/ELE",
+      "kind": "variant_note",
+      "value": "Luminscale"
+    },
+    {
+      "sheet": "Chisa",
+      "type": "echo_setup",
+      "label": "ToFS 43311 ATK/ELE (2pc HE/MV)",
+      "kind": "primary_set",
+      "value": "ToFS"
+    },
+    {
+      "sheet": "Chisa",
+      "type": "echo_setup",
+      "label": "ToFS 43311 ATK/ELE (2pc HE/MV)",
+      "kind": "setup",
+      "value": "ToFS 43311 ATK/ELE (2pc HE/MV)"
+    },
+    {
+      "sheet": "Chisa",
+      "type": "echo_setup",
+      "label": "ToFS 43311 ELE/ELE (2pc HE/MV)",
+      "kind": "primary_set",
+      "value": "ToFS"
+    },
+    {
+      "sheet": "Chisa",
+      "type": "echo_setup",
+      "label": "ToFS 43311 ELE/ELE (2pc HE/MV)",
+      "kind": "setup",
+      "value": "ToFS 43311 ELE/ELE (2pc HE/MV)"
+    },
+    {
+      "sheet": "Iuno",
+      "type": "echo_setup",
+      "label": "MC 43311 ELE/ELE Heron)",
+      "kind": "main_stats",
+      "value": "ELE/ELE Heron)"
+    },
+    {
+      "sheet": "Lucy",
+      "type": "echo_setup",
+      "label": "Smasher + 2pc2pc ELE/ELE | (ELE/ELE 3c)",
+      "kind": "variant_note",
+      "value": "ELE/ELE 3c"
+    },
+    {
+      "sheet": "Lucy",
+      "type": "echo_setup",
+      "label": "Smasher + 2pc2pc ELE/ELE | (ELE/ELE 3c)",
+      "kind": "setup",
+      "value": "Smasher + 2pc2pc ELE/ELE | (ELE/ELE 3c)"
+    },
+    {
+      "sheet": "Lucy",
+      "type": "echo_setup",
+      "label": "Smasher + 2pc2pc ATK/ELE | (ELE/ELE 3c)",
+      "kind": "variant_note",
+      "value": "ELE/ELE 3c"
+    },
+    {
+      "sheet": "Lucy",
+      "type": "echo_setup",
+      "label": "Smasher + 2pc2pc ATK/ELE | (ELE/ELE 3c)",
+      "kind": "setup",
+      "value": "Smasher + 2pc2pc ATK/ELE | (ELE/ELE 3c)"
+    },
+    {
+      "sheet": "Lucy",
+      "type": "echo_setup",
+      "label": "Smasher + 2pc2pc ATK/ATK |  (ELE/ELE 3c)",
+      "kind": "variant_note",
+      "value": "ELE/ELE 3c"
+    },
+    {
+      "sheet": "Lucy",
+      "type": "echo_setup",
+      "label": "Smasher + 2pc2pc ATK/ATK |  (ELE/ELE 3c)",
+      "kind": "setup",
+      "value": "Smasher + 2pc2pc ATK/ATK |  (ELE/ELE 3c)"
+    },
+    {
+      "sheet": "Luuk",
+      "type": "echo_setup",
+      "label": "Rite of Gilded Revelation 43311 ATK/ELE (CR 4c)",
+      "kind": "variant_note",
+      "value": "CR 4c"
+    },
+    {
+      "sheet": "Lynae",
+      "type": "echo_setup",
+      "label": "PotNL 43311 ELE/ELE",
+      "kind": "primary_set",
+      "value": "PotNL"
+    },
+    {
+      "sheet": "Lynae",
+      "type": "echo_setup",
+      "label": "PotNL 43311 ELE/ELE",
+      "kind": "setup",
+      "value": "PotNL 43311 ELE/ELE"
+    },
+    {
+      "sheet": "Lynae",
+      "type": "echo_setup",
+      "label": "PotNL 443311 ATK/ELE",
+      "kind": "setup",
+      "value": "PotNL 443311 ATK/ELE"
+    },
+    {
+      "sheet": "Phoebe",
+      "type": "echo_setup",
+      "label": "2pc2pc ER/CL (Aix)",
+      "kind": "variant_note",
+      "value": "Aix"
+    },
+    {
+      "sheet": "Phoebe",
+      "type": "echo_setup",
+      "label": "2pc2pc ER/CL (Aix)",
+      "kind": "variant_note",
+      "value": "Aix"
+    },
+    {
+      "sheet": "Qiuyuan 2x Forte",
+      "type": "echo_setup",
+      "label": "WP 43311 ATK/ELE (Only with Cia)",
+      "kind": "variant_note",
+      "value": "Only with Cia"
+    },
+    {
+      "sheet": "Qiuyuan 2x Forte",
+      "type": "echo_setup",
+      "label": "LoH 43311 ATK/ELE (SG/WP)",
+      "kind": "variant_note",
+      "value": "SG/WP"
+    },
+    {
+      "sheet": "Qiuyuan 2x Forte",
+      "type": "echo_setup",
+      "label": "LoH 43311 ELE/ELE (SG/WP)",
+      "kind": "variant_note",
+      "value": "SG/WP"
+    },
+    {
+      "sheet": "Rebecca",
+      "type": "echo_setup",
+      "label": "Smasher + 2pc2pc ELE/ATK | (ELE/ELE 3c)",
+      "kind": "variant_note",
+      "value": "ELE/ELE 3c"
+    },
+    {
+      "sheet": "Rebecca",
+      "type": "echo_setup",
+      "label": "Smasher + 2pc2pc ELE/ATK | (ELE/ELE 3c)",
+      "kind": "setup",
+      "value": "Smasher + 2pc2pc ELE/ATK | (ELE/ELE 3c)"
+    },
+    {
+      "sheet": "Rebecca",
+      "type": "echo_setup",
+      "label": "Smasher + 2pc2pc ATK/ATK |  (ELE/ELE 3c)",
+      "kind": "variant_note",
+      "value": "ELE/ELE 3c"
+    },
+    {
+      "sheet": "Rebecca",
+      "type": "echo_setup",
+      "label": "Smasher + 2pc2pc ATK/ATK |  (ELE/ELE 3c)",
+      "kind": "setup",
+      "value": "Smasher + 2pc2pc ATK/ATK |  (ELE/ELE 3c)"
+    },
+    {
+      "sheet": "XLY",
+      "type": "echo_setup",
+      "label": "VT 43311 Atk/Ele (CD 4 Cost)",
+      "kind": "variant_note",
+      "value": "CD 4 Cost"
+    },
+    {
+      "sheet": "XLY",
+      "type": "echo_setup",
+      "label": "VT 43311 Ele/Ele(CD 4 Cost)",
+      "kind": "variant_note",
+      "value": "CD 4 Cost"
+    },
+    {
+      "sheet": "XLY",
+      "type": "echo_setup",
+      "label": "VT 43311 Ele/Ele (CR 4 Cost)",
+      "kind": "variant_note",
+      "value": "CR 4 Cost"
+    },
+    {
+      "sheet": "Xuanling",
+      "type": "echo_setup",
+      "label": "Song of Feather Trace 43311 ELE/ELE (4c CD)",
+      "kind": "variant_note",
+      "value": "4c CD"
+    },
+    {
+      "sheet": "Xuanling",
+      "type": "echo_setup",
+      "label": "Song of Feather Trace 43311 ELE/ELE (4c ATK%)",
+      "kind": "variant_note",
+      "value": "4c ATK%"
+    }
+  ],
+  "parse_errors": [],
+  "examples": {
+    "Augusta": {
+      "weapon": {
+        "id": "wuwa-dpr:augusta:weapon:17:3:18",
+        "comparison_id": "wuwa-dpr:augusta:weapon:17:3",
+        "equipment_id": "69ee2be9-f893-4551-ac85-fe82b9d0e4fb",
+        "set_id": null,
+        "label": "Thunderflare Dominion",
+        "raw_label": "Signature ",
+        "damage": 1217051.433,
+        "relative_value": 1.352292915,
+        "sort_order": 0,
+        "details": {
+          "source_row": 18,
+          "source_damage_column": 2,
+          "source_percent_column": 3,
+          "markers": [],
+          "resolution_source": "Nanoka character recommend.weapon[0]",
+          "rank": null,
+          "variant_note": null,
+          "icon_url": "/assets/characters/wuthering-waves/weapons/Thunderflare Dominion.png"
+        }
+      },
+      "echoes": [
+        {
+          "id": "wuwa-dpr:augusta:echo_setup:26:3:27",
+          "comparison_id": "wuwa-dpr:augusta:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "6818f493-4c1b-4109-a503-bc85f8f99aad",
+          "label": "Crown of Valor",
+          "raw_label": "CoV 43311 ELE/ELE (2pc VT)",
+          "damage": 1217051.433,
+          "relative_value": 1,
+          "sort_order": 0,
+          "details": {
+            "source_row": 27,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "6818f493-4c1b-4109-a503-bc85f8f99aad",
+            "primary_set_name": "Crown of Valor",
+            "set_combinations": [],
+            "secondary_sets": [
+              {
+                "id": "f8a06c5a-e539-44e0-a207-60fdd121517f",
+                "name": "Void Thunder",
+                "pieces": 2
+              }
+            ],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "Electro DMG",
+              "Electro DMG",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "Electro DMG",
+              "Electro DMG"
+            ],
+            "raw_main_stats": "ELE/ELE",
+            "main_echo": null,
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriShield.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:augusta:echo_setup:26:3:28",
+          "comparison_id": "wuwa-dpr:augusta:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "6818f493-4c1b-4109-a503-bc85f8f99aad",
+          "label": "Crown of Valor",
+          "raw_label": "CoV 43311 ELE/ELE (2pc LT)",
+          "damage": 1207560.742,
+          "relative_value": 0.9922018977,
+          "sort_order": 1,
+          "details": {
+            "source_row": 28,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "6818f493-4c1b-4109-a503-bc85f8f99aad",
+            "primary_set_name": "Crown of Valor",
+            "set_combinations": [],
+            "secondary_sets": [
+              {
+                "id": "0e671bb0-3768-4910-a98a-054eca5ab0ca",
+                "name": "Lingering Tunes",
+                "pieces": 2
+              }
+            ],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "Electro DMG",
+              "Electro DMG",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "Electro DMG",
+              "Electro DMG"
+            ],
+            "raw_main_stats": "ELE/ELE",
+            "main_echo": null,
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriShield.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:augusta:echo_setup:26:3:29",
+          "comparison_id": "wuwa-dpr:augusta:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "6818f493-4c1b-4109-a503-bc85f8f99aad",
+          "label": "Crown of Valor",
+          "raw_label": "CoV 43311 ATK/ELE (2pc VT)",
+          "damage": 1177711.7,
+          "relative_value": 0.9676761946,
+          "sort_order": 2,
+          "details": {
+            "source_row": 29,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "6818f493-4c1b-4109-a503-bc85f8f99aad",
+            "primary_set_name": "Crown of Valor",
+            "set_combinations": [],
+            "secondary_sets": [
+              {
+                "id": "f8a06c5a-e539-44e0-a207-60fdd121517f",
+                "name": "Void Thunder",
+                "pieces": 2
+              }
+            ],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "ATK%",
+              "Electro DMG",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "ATK%",
+              "Electro DMG"
+            ],
+            "raw_main_stats": "ATK/ELE",
+            "main_echo": null,
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriShield.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:augusta:echo_setup:26:3:30",
+          "comparison_id": "wuwa-dpr:augusta:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "6818f493-4c1b-4109-a503-bc85f8f99aad",
+          "label": "Crown of Valor",
+          "raw_label": "CoV 43311 ELE/ELE (No 2pc)*",
+          "damage": 1166124.765,
+          "relative_value": 0.9581556976,
+          "sort_order": 3,
+          "details": {
+            "source_row": 30,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [
+              "*"
+            ],
+            "primary_set_id": "6818f493-4c1b-4109-a503-bc85f8f99aad",
+            "primary_set_name": "Crown of Valor",
+            "set_combinations": [],
+            "secondary_sets": [],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "Electro DMG",
+              "Electro DMG",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "Electro DMG",
+              "Electro DMG"
+            ],
+            "raw_main_stats": "ELE/ELE",
+            "main_echo": null,
+            "variant_note": "No additional 2-piece set",
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriShield.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:augusta:echo_setup:26:3:31",
+          "comparison_id": "wuwa-dpr:augusta:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "6818f493-4c1b-4109-a503-bc85f8f99aad",
+          "label": "Crown of Valor",
+          "raw_label": "CoV 43311 ELE/ELE (2pc LT w/ Mech Abomination)**",
+          "damage": 1119116.198,
+          "relative_value": 0.9195307345,
+          "sort_order": 4,
+          "details": {
+            "source_row": 31,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [
+              "**"
+            ],
+            "primary_set_id": "6818f493-4c1b-4109-a503-bc85f8f99aad",
+            "primary_set_name": "Crown of Valor",
+            "set_combinations": [],
+            "secondary_sets": [
+              {
+                "id": "0e671bb0-3768-4910-a98a-054eca5ab0ca",
+                "name": "Lingering Tunes",
+                "pieces": 2
+              }
+            ],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "Electro DMG",
+              "Electro DMG",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "Electro DMG",
+              "Electro DMG"
+            ],
+            "raw_main_stats": "ELE/ELE",
+            "main_echo": null,
+            "variant_note": "w/ Mech Abomination",
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriShield.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:augusta:echo_setup:26:3:32",
+          "comparison_id": "wuwa-dpr:augusta:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "6818f493-4c1b-4109-a503-bc85f8f99aad",
+          "label": "Crown of Valor",
+          "raw_label": "CoV 44111 CR/CD (2pc VT)",
+          "damage": 1110602.956,
+          "relative_value": 0.9125357613,
+          "sort_order": 5,
+          "details": {
+            "source_row": 32,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "6818f493-4c1b-4109-a503-bc85f8f99aad",
+            "primary_set_name": "Crown of Valor",
+            "set_combinations": [],
+            "secondary_sets": [
+              {
+                "id": "f8a06c5a-e539-44e0-a207-60fdd121517f",
+                "name": "Void Thunder",
+                "pieces": 2
+              }
+            ],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              4,
+              1,
+              1,
+              1
+            ],
+            "main_stats": [
+              "CRIT Rate",
+              "CRIT DMG",
+              null,
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "CRIT Rate",
+              "CRIT DMG"
+            ],
+            "raw_main_stats": "CR/CD",
+            "main_echo": null,
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriShield.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:augusta:echo_setup:26:3:33",
+          "comparison_id": "wuwa-dpr:augusta:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "f8a06c5a-e539-44e0-a207-60fdd121517f",
+          "label": "Void Thunder",
+          "raw_label": "VT 43311",
+          "damage": 1097496.024,
+          "relative_value": 0.9017663462,
+          "sort_order": 6,
+          "details": {
+            "source_row": 33,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "f8a06c5a-e539-44e0-a207-60fdd121517f",
+            "primary_set_name": "Void Thunder",
+            "set_combinations": [],
+            "secondary_sets": [],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "stated_main_stats": [],
+            "raw_main_stats": "",
+            "main_echo": null,
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriThunder.webp"
+          }
+        }
+      ],
+      "sequence": [
+        {
+          "id": "wuwa-dpr:augusta:sequence:3:3:4",
+          "comparison_id": "wuwa-dpr:augusta:sequence:3:3",
+          "equipment_id": null,
+          "set_id": null,
+          "label": "S0",
+          "raw_label": "S0",
+          "damage": 1217051.433,
+          "relative_value": 1,
+          "sort_order": 0,
+          "details": {
+            "source_row": 4,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "sequence": 0,
+            "rank": null,
+            "relative_to_previous": 1,
+            "relative_to_s0": 1,
+            "s0_source_row": 11
+          }
+        },
+        {
+          "id": "wuwa-dpr:augusta:sequence:3:3:5",
+          "comparison_id": "wuwa-dpr:augusta:sequence:3:3",
+          "equipment_id": null,
+          "set_id": null,
+          "label": "S1",
+          "raw_label": "S1",
+          "damage": 1434140.229,
+          "relative_value": 1.178372738,
+          "sort_order": 1,
+          "details": {
+            "source_row": 5,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "sequence": 1,
+            "rank": null,
+            "relative_to_previous": 1.178372738,
+            "relative_to_s0": 1.178372738,
+            "s0_source_row": 12
+          }
+        },
+        {
+          "id": "wuwa-dpr:augusta:sequence:3:3:6",
+          "comparison_id": "wuwa-dpr:augusta:sequence:3:3",
+          "equipment_id": null,
+          "set_id": null,
+          "label": "S2",
+          "raw_label": "S2***",
+          "damage": 1822476.441,
+          "relative_value": 1.270779805,
+          "sort_order": 2,
+          "details": {
+            "source_row": 6,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [
+              "***"
+            ],
+            "sequence": 2,
+            "rank": null,
+            "relative_to_previous": 1.270779805,
+            "relative_to_s0": 1.497452278,
+            "s0_source_row": 13
+          }
+        },
+        {
+          "id": "wuwa-dpr:augusta:sequence:3:3:7",
+          "comparison_id": "wuwa-dpr:augusta:sequence:3:3",
+          "equipment_id": null,
+          "set_id": null,
+          "label": "S3",
+          "raw_label": "S3",
+          "damage": 2128811.649,
+          "relative_value": 1.168087335,
+          "sort_order": 3,
+          "details": {
+            "source_row": 7,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "sequence": 3,
+            "rank": null,
+            "relative_to_previous": 1.168087335,
+            "relative_to_s0": 1.74915504,
+            "s0_source_row": 14
+          }
+        }
+      ]
+    },
+    "Zani": {
+      "weapon": {
+        "id": "wuwa-dpr:zani:weapon:17:3:18",
+        "comparison_id": "wuwa-dpr:zani:weapon:17:3",
+        "equipment_id": "821be96f-d4d9-4c1d-a1f6-eeccdda32905",
+        "set_id": null,
+        "label": "Blazing Justice",
+        "raw_label": "Signature",
+        "damage": 1264582.73,
+        "relative_value": 1.224658263,
+        "sort_order": 0,
+        "details": {
+          "source_row": 18,
+          "source_damage_column": 2,
+          "source_percent_column": 3,
+          "markers": [],
+          "resolution_source": "Nanoka character recommend.weapon[0]",
+          "rank": null,
+          "variant_note": null,
+          "icon_url": "/assets/characters/wuthering-waves/weapons/Blazing Justice.png"
+        }
+      },
+      "echoes": [
+        {
+          "id": "wuwa-dpr:zani:echo_setup:24:3:25",
+          "comparison_id": "wuwa-dpr:zani:echo_setup:24:3",
+          "equipment_id": null,
+          "set_id": "b4fcc140-e577-4f3f-a6d5-ecd8833743ab",
+          "label": "Eternal Radiance",
+          "raw_label": "ETR 43311 ELE/ELE (Capitaneus)",
+          "damage": 1264582.73,
+          "relative_value": 1,
+          "sort_order": 0,
+          "details": {
+            "source_row": 25,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "b4fcc140-e577-4f3f-a6d5-ecd8833743ab",
+            "primary_set_name": "Eternal Radiance",
+            "set_combinations": [],
+            "secondary_sets": [],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "Spectro DMG",
+              "Spectro DMG",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "Spectro DMG",
+              "Spectro DMG"
+            ],
+            "raw_main_stats": "ELE/ELE",
+            "main_echo": {
+              "id": "6000104",
+              "name": "Capitaneus",
+              "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconMonsterHead/T_IconMonsterHead_32033_UI.webp"
+            },
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriLightError.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:zani:echo_setup:24:3:26",
+          "comparison_id": "wuwa-dpr:zani:echo_setup:24:3",
+          "equipment_id": null,
+          "set_id": "b4fcc140-e577-4f3f-a6d5-ecd8833743ab",
+          "label": "Eternal Radiance",
+          "raw_label": "ETR 43311 ELE/ATK (Capitaneus)",
+          "damage": 1231472.446,
+          "relative_value": 0.973817226,
+          "sort_order": 1,
+          "details": {
+            "source_row": 26,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "b4fcc140-e577-4f3f-a6d5-ecd8833743ab",
+            "primary_set_name": "Eternal Radiance",
+            "set_combinations": [],
+            "secondary_sets": [],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "Spectro DMG",
+              "ATK%",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "Spectro DMG",
+              "ATK%"
+            ],
+            "raw_main_stats": "ELE/ATK",
+            "main_echo": {
+              "id": "6000104",
+              "name": "Capitaneus",
+              "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconMonsterHead/T_IconMonsterHead_32033_UI.webp"
+            },
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriLightError.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:zani:echo_setup:24:3:27",
+          "comparison_id": "wuwa-dpr:zani:echo_setup:24:3",
+          "equipment_id": null,
+          "set_id": "b4fcc140-e577-4f3f-a6d5-ecd8833743ab",
+          "label": "Eternal Radiance",
+          "raw_label": "ETR 43311 ELE/ELE (Aix)",
+          "damage": 1225804.951,
+          "relative_value": 0.9693355138,
+          "sort_order": 2,
+          "details": {
+            "source_row": 27,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "b4fcc140-e577-4f3f-a6d5-ecd8833743ab",
+            "primary_set_name": "Eternal Radiance",
+            "set_combinations": [],
+            "secondary_sets": [],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "Spectro DMG",
+              "Spectro DMG",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "Spectro DMG",
+              "Spectro DMG"
+            ],
+            "raw_main_stats": "ELE/ELE",
+            "main_echo": {
+              "id": "6000092",
+              "name": "Nightmare: Mourning Aix",
+              "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconMonsterHead/T_IconMonsterHead_YZ_33020_UI.webp"
+            },
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriLightError.webp"
+          }
+        }
+      ],
+      "sequence": [
+        {
+          "id": "wuwa-dpr:zani:sequence:3:3:4",
+          "comparison_id": "wuwa-dpr:zani:sequence:3:3",
+          "equipment_id": null,
+          "set_id": null,
+          "label": "S0",
+          "raw_label": "S0",
+          "damage": 1264582.73,
+          "relative_value": 1,
+          "sort_order": 0,
+          "details": {
+            "source_row": 4,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "sequence": 0,
+            "rank": null,
+            "relative_to_previous": 1,
+            "relative_to_s0": 1,
+            "s0_source_row": 11
+          }
+        },
+        {
+          "id": "wuwa-dpr:zani:sequence:3:3:5",
+          "comparison_id": "wuwa-dpr:zani:sequence:3:3",
+          "equipment_id": null,
+          "set_id": null,
+          "label": "S1",
+          "raw_label": "S1",
+          "damage": 1537504.107,
+          "relative_value": 1.215819313,
+          "sort_order": 1,
+          "details": {
+            "source_row": 5,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "sequence": 1,
+            "rank": null,
+            "relative_to_previous": 1.215819313,
+            "relative_to_s0": 1.215819313,
+            "s0_source_row": 12
+          }
+        },
+        {
+          "id": "wuwa-dpr:zani:sequence:3:3:6",
+          "comparison_id": "wuwa-dpr:zani:sequence:3:3",
+          "equipment_id": null,
+          "set_id": null,
+          "label": "S2",
+          "raw_label": "S2",
+          "damage": 1828548.309,
+          "relative_value": 1.189296536,
+          "sort_order": 2,
+          "details": {
+            "source_row": 6,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "sequence": 2,
+            "rank": null,
+            "relative_to_previous": 1.189296536,
+            "relative_to_s0": 1.445969698,
+            "s0_source_row": 13
+          }
+        },
+        {
+          "id": "wuwa-dpr:zani:sequence:3:3:7",
+          "comparison_id": "wuwa-dpr:zani:sequence:3:3",
+          "equipment_id": null,
+          "set_id": null,
+          "label": "S3",
+          "raw_label": "S3",
+          "damage": 1982115.855,
+          "relative_value": 1.083983314,
+          "sort_order": 3,
+          "details": {
+            "source_row": 7,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "sequence": 3,
+            "rank": null,
+            "relative_to_previous": 1.083983314,
+            "relative_to_s0": 1.567407025,
+            "s0_source_row": 14
+          }
+        }
+      ]
+    },
+    "Phrolova": {
+      "weapon": {
+        "id": "wuwa-dpr:phrolova:weapon:17:3:18",
+        "comparison_id": "wuwa-dpr:phrolova:weapon:17:3",
+        "equipment_id": "d8536b64-6fd2-4df8-a11e-07b6f0953eae",
+        "set_id": null,
+        "label": "Lethean Elegy",
+        "raw_label": "Signature ",
+        "damage": 1028018.102,
+        "relative_value": 1.378657467,
+        "sort_order": 0,
+        "details": {
+          "source_row": 18,
+          "source_damage_column": 2,
+          "source_percent_column": 3,
+          "markers": [],
+          "resolution_source": "Nanoka character recommend.weapon[0]",
+          "rank": null,
+          "variant_note": null,
+          "icon_url": "/assets/characters/wuthering-waves/weapons/Lethean Elegy.png"
+        }
+      },
+      "echoes": [
+        {
+          "id": "wuwa-dpr:phrolova:echo_setup:26:3:27",
+          "comparison_id": "wuwa-dpr:phrolova:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "73ccfa77-3afb-4885-ac38-056fa81c7874",
+          "label": "Dream of the Lost",
+          "raw_label": "DotL 43311 ELE/ELE (2pc HE/MV)",
+          "damage": 1028018.102,
+          "relative_value": 1,
+          "sort_order": 0,
+          "details": {
+            "source_row": 27,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "73ccfa77-3afb-4885-ac38-056fa81c7874",
+            "primary_set_name": "Dream of the Lost",
+            "set_combinations": [],
+            "secondary_sets": [
+              {
+                "id": "0012b020-098b-4579-ad97-0e5dd556c0ee",
+                "name": "Havoc Eclipse",
+                "pieces": 2
+              },
+              {
+                "id": "ee3cf7ac-f736-4968-a837-3088b6be74c1",
+                "name": "Midnight Veil",
+                "pieces": 2
+              }
+            ],
+            "secondary_relation": "alternatives",
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "Havoc DMG",
+              "Havoc DMG",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "Havoc DMG",
+              "Havoc DMG"
+            ],
+            "raw_main_stats": "ELE/ELE",
+            "main_echo": null,
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriDarkVision.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:phrolova:echo_setup:26:3:28",
+          "comparison_id": "wuwa-dpr:phrolova:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "73ccfa77-3afb-4885-ac38-056fa81c7874",
+          "label": "Dream of the Lost",
+          "raw_label": "DotL 43311 ELE/ELE (2pc LT)",
+          "damage": 1020971.359,
+          "relative_value": 0.9931453122,
+          "sort_order": 1,
+          "details": {
+            "source_row": 28,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "73ccfa77-3afb-4885-ac38-056fa81c7874",
+            "primary_set_name": "Dream of the Lost",
+            "set_combinations": [],
+            "secondary_sets": [
+              {
+                "id": "0e671bb0-3768-4910-a98a-054eca5ab0ca",
+                "name": "Lingering Tunes",
+                "pieces": 2
+              }
+            ],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "Havoc DMG",
+              "Havoc DMG",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "Havoc DMG",
+              "Havoc DMG"
+            ],
+            "raw_main_stats": "ELE/ELE",
+            "main_echo": null,
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriDarkVision.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:phrolova:echo_setup:26:3:29",
+          "comparison_id": "wuwa-dpr:phrolova:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "73ccfa77-3afb-4885-ac38-056fa81c7874",
+          "label": "Dream of the Lost",
+          "raw_label": "DotL 43311 ELE/ELE (2pc FR)",
+          "damage": 1009638.517,
+          "relative_value": 0.9821213409,
+          "sort_order": 2,
+          "details": {
+            "source_row": 29,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "73ccfa77-3afb-4885-ac38-056fa81c7874",
+            "primary_set_name": "Dream of the Lost",
+            "set_combinations": [],
+            "secondary_sets": [
+              {
+                "id": "b60b6c17-814c-4b7d-aaa4-1d1df887be00",
+                "name": "Frosty Resolve",
+                "pieces": 2
+              }
+            ],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "Havoc DMG",
+              "Havoc DMG",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "Havoc DMG",
+              "Havoc DMG"
+            ],
+            "raw_main_stats": "ELE/ELE",
+            "main_echo": null,
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriDarkVision.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:phrolova:echo_setup:26:3:30",
+          "comparison_id": "wuwa-dpr:phrolova:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "73ccfa77-3afb-4885-ac38-056fa81c7874",
+          "label": "Dream of the Lost",
+          "raw_label": "DotL 43311 ATK/ELE (2pc HE/MV)",
+          "damage": 997715.1547,
+          "relative_value": 0.9705229436,
+          "sort_order": 3,
+          "details": {
+            "source_row": 30,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "73ccfa77-3afb-4885-ac38-056fa81c7874",
+            "primary_set_name": "Dream of the Lost",
+            "set_combinations": [],
+            "secondary_sets": [
+              {
+                "id": "0012b020-098b-4579-ad97-0e5dd556c0ee",
+                "name": "Havoc Eclipse",
+                "pieces": 2
+              },
+              {
+                "id": "ee3cf7ac-f736-4968-a837-3088b6be74c1",
+                "name": "Midnight Veil",
+                "pieces": 2
+              }
+            ],
+            "secondary_relation": "alternatives",
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "ATK%",
+              "Havoc DMG",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "ATK%",
+              "Havoc DMG"
+            ],
+            "raw_main_stats": "ATK/ELE",
+            "main_echo": null,
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriDarkVision.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:phrolova:echo_setup:26:3:31",
+          "comparison_id": "wuwa-dpr:phrolova:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "73ccfa77-3afb-4885-ac38-056fa81c7874",
+          "label": "Dream of the Lost",
+          "raw_label": "DotL 43311 ELE/ELE (No 2pc)*",
+          "damage": 985519.1124,
+          "relative_value": 0.9586592982,
+          "sort_order": 4,
+          "details": {
+            "source_row": 31,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [
+              "*"
+            ],
+            "primary_set_id": "73ccfa77-3afb-4885-ac38-056fa81c7874",
+            "primary_set_name": "Dream of the Lost",
+            "set_combinations": [],
+            "secondary_sets": [],
+            "secondary_relation": null,
+            "cost_pattern": [
+              4,
+              3,
+              3,
+              1,
+              1
+            ],
+            "main_stats": [
+              null,
+              "Havoc DMG",
+              "Havoc DMG",
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "Havoc DMG",
+              "Havoc DMG"
+            ],
+            "raw_main_stats": "ELE/ELE",
+            "main_echo": null,
+            "variant_note": "No additional 2-piece set",
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriDarkVision.webp"
+          }
+        },
+        {
+          "id": "wuwa-dpr:phrolova:echo_setup:26:3:32",
+          "comparison_id": "wuwa-dpr:phrolova:echo_setup:26:3",
+          "equipment_id": null,
+          "set_id": "73ccfa77-3afb-4885-ac38-056fa81c7874",
+          "label": "Dream of the Lost",
+          "raw_label": "DotL 44111 CD/CD (2pc HE/MV)",
+          "damage": 919142.2647,
+          "relative_value": 0.8940915171,
+          "sort_order": 5,
+          "details": {
+            "source_row": 32,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "primary_set_id": "73ccfa77-3afb-4885-ac38-056fa81c7874",
+            "primary_set_name": "Dream of the Lost",
+            "set_combinations": [],
+            "secondary_sets": [
+              {
+                "id": "0012b020-098b-4579-ad97-0e5dd556c0ee",
+                "name": "Havoc Eclipse",
+                "pieces": 2
+              },
+              {
+                "id": "ee3cf7ac-f736-4968-a837-3088b6be74c1",
+                "name": "Midnight Veil",
+                "pieces": 2
+              }
+            ],
+            "secondary_relation": "alternatives",
+            "cost_pattern": [
+              4,
+              4,
+              1,
+              1,
+              1
+            ],
+            "main_stats": [
+              "CRIT DMG",
+              "CRIT DMG",
+              null,
+              null,
+              null
+            ],
+            "stated_main_stats": [
+              "CRIT DMG",
+              "CRIT DMG"
+            ],
+            "raw_main_stats": "CD/CD",
+            "main_echo": null,
+            "variant_note": null,
+            "unresolved": [],
+            "icon_url": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconElementAttri/T_IconElementAttriDarkVision.webp"
+          }
+        }
+      ],
+      "sequence": [
+        {
+          "id": "wuwa-dpr:phrolova:sequence:3:3:4",
+          "comparison_id": "wuwa-dpr:phrolova:sequence:3:3",
+          "equipment_id": null,
+          "set_id": null,
+          "label": "S0",
+          "raw_label": "S0",
+          "damage": 1028018.102,
+          "relative_value": 1,
+          "sort_order": 0,
+          "details": {
+            "source_row": 4,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "sequence": 0,
+            "rank": null,
+            "relative_to_previous": 1,
+            "relative_to_s0": 1,
+            "s0_source_row": 11
+          }
+        },
+        {
+          "id": "wuwa-dpr:phrolova:sequence:3:3:5",
+          "comparison_id": "wuwa-dpr:phrolova:sequence:3:3",
+          "equipment_id": null,
+          "set_id": null,
+          "label": "S1",
+          "raw_label": "S1",
+          "damage": 1157380.426,
+          "relative_value": 1.12583662,
+          "sort_order": 1,
+          "details": {
+            "source_row": 5,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "sequence": 1,
+            "rank": null,
+            "relative_to_previous": 1.12583662,
+            "relative_to_s0": 1.12583662,
+            "s0_source_row": 12
+          }
+        },
+        {
+          "id": "wuwa-dpr:phrolova:sequence:3:3:6",
+          "comparison_id": "wuwa-dpr:phrolova:sequence:3:3",
+          "equipment_id": null,
+          "set_id": null,
+          "label": "S2",
+          "raw_label": "S2",
+          "damage": 1605665.976,
+          "relative_value": 1.387327745,
+          "sort_order": 2,
+          "details": {
+            "source_row": 6,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [],
+            "sequence": 2,
+            "rank": null,
+            "relative_to_previous": 1.387327745,
+            "relative_to_s0": 1.56190438,
+            "s0_source_row": 13
+          }
+        },
+        {
+          "id": "wuwa-dpr:phrolova:sequence:3:3:7",
+          "comparison_id": "wuwa-dpr:phrolova:sequence:3:3",
+          "equipment_id": null,
+          "set_id": null,
+          "label": "S3",
+          "raw_label": "S3*",
+          "damage": 1935406.552,
+          "relative_value": 1.20536063,
+          "sort_order": 3,
+          "details": {
+            "source_row": 7,
+            "source_damage_column": 2,
+            "source_percent_column": 3,
+            "markers": [
+              "*"
+            ],
+            "sequence": 3,
+            "rank": null,
+            "relative_to_previous": 1.20536063,
+            "relative_to_s0": 1.882658046,
+            "s0_source_row": 14
+          }
+        }
+      ]
+    }
+  },
+  "verified": [
+    "Source workbook SHA256 unchanged",
+    "Existing Genshin characters/equipment/sets/calculations unchanged",
+    "All written fields match prepared data",
+    "Public comparison reads",
+    "Three required examples passed before writes"
+  ],
+  "mode": "write"
+}

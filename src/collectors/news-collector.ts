@@ -2,6 +2,8 @@ import { createHash } from "node:crypto";
 import { parse } from "node-html-parser";
 import Parser from "rss-parser";
 import { collectGame8Source } from "@/collectors/game8-collector";
+import { collectWuwaOfficialSource } from './wuwa-official-collector';
+import type { NewsSourceTrace } from './news-source-trace';
 import { collectRiotNextSource, isRiotNextNewsSource } from "@/collectors/riot-next-collector";
 import { enrichNewsItemImage, extractRssImage, type RssItem } from "@/lib/news-image-extract";
 import {
@@ -66,6 +68,7 @@ type FinalizeResult = {
   duplicates: number;
   withoutImages: number;
   homepageEligible: number;
+  outcomes: { url: string; stage: string; reason?: string }[];
 };
 
 const rssParser = new Parser({
@@ -99,12 +102,17 @@ async function collectSourcesInParallel(
   supabase: ReturnType<typeof createServiceSupabaseClient>,
   errors: CollectorError[],
   collected: NewsItemInsert[],
+  traces: NewsSourceTrace[],
+  owners: Map<string, Set<string>>,
 ) {
+  const pageCache = new Map<string, Promise<string>>();
   for (let index = 0; index < sources.length; index += SOURCE_CONCURRENCY) {
     const batch = sources.slice(index, index + SOURCE_CONCURRENCY);
 
     await Promise.all(
       batch.map(async (source) => {
+        const trace: NewsSourceTrace = { sourceId: source.id, gameId: source.game_id, fetches: 0, discovered: 0, parsed: 0, known: 0, filtered: 0, inserted: 0, parseErrors: [], articles: [] };
+        traces.push(trace);
         try {
           const attemptedAt = new Date().toISOString();
           await supabase
@@ -116,21 +124,38 @@ async function collectSourcesInParallel(
             })
             .eq("id", source.id);
 
-          const items = await collectSource(source);
-          collected.push(...items);
+          const items = await collectSource(source, trace, pageCache);
+          trace.fetches ||= 1;
+          trace.parsed = items.length;
+          trace.discovered ||= items.length;
+          // Check persisted identities before enrichment, so old Steam posts are not rewritten hourly.
+          const known = new Set<string>();
+          for (let i=0;i<items.length;i+=100) {
+            const part = items.slice(i,i+100);
+            const {data, error} = await supabase.from('news_items').select('content_hash,url').in('url',part.map(item=>item.url));
+            if (error) throw new Error(error.message);
+            data?.forEach(row=>known.add(row.url));
+          }
+          for (const item of items) {
+            const exists = known.has(item.url);
+            trace.articles.push({url:item.url,title:item.title,stage:exists ? 'known' : 'parsed'});
+            if (exists) { trace.known++; continue; }
+            const sourceIds = owners.get(item.content_hash) ?? new Set<string>();
+            sourceIds.add(source.id);
+            owners.set(item.content_hash,sourceIds);
+            collected.push(item);
+          }
           const completedAt = new Date().toISOString();
-          const lastItemDiscoveredAt = latestPublishedAt(items);
 
           await supabase
             .from("game_sources")
             .update({
-              status: "Healthy",
+              status: "Delayed",
               last_collected_at: completedAt,
               last_attempted_at: attemptedAt,
               last_success_at: completedAt,
-              last_error: null,
+              last_error: items.length ? 'Articles parsed; awaiting storage validation' : 'Fetch succeeded but no articles discovered',
               consecutive_failures: 0,
-              last_item_discovered_at: lastItemDiscoveredAt,
               disabled_reason: null,
               updated_at: completedAt,
             })
@@ -138,6 +163,7 @@ async function collectSourcesInParallel(
         } catch (error) {
           const message = error instanceof Error ? error.message : "Unknown collector error";
           errors.push({ sourceId: source.id, sourceName: source.name, message });
+          trace.parseErrors.push(message);
           const failedAt = new Date().toISOString();
 
           await supabase
@@ -166,15 +192,6 @@ function absoluteUrl(href: string, baseUrl: string) {
   } catch {
     return "";
   }
-}
-
-function latestPublishedAt(items: NewsItemInsert[]) {
-  const latest = items
-    .map((item) => new Date(item.published_at).getTime())
-    .filter((time) => Number.isFinite(time))
-    .sort((left, right) => right - left)[0];
-
-  return latest ? new Date(latest).toISOString() : null;
 }
 
 function parsePublishedDate(value: string | null | undefined): {
@@ -378,9 +395,12 @@ async function collectWebsiteSource(source: GameSourceRow) {
   return enriched;
 }
 
-async function collectSource(source: GameSourceRow) {
+async function collectSource(source: GameSourceRow, trace: NewsSourceTrace, cache: Map<string, Promise<string>>) {
   if (source.source_type === "trusted_site" || source.external_ref === "game8") {
-    return collectGame8Source(source);
+    return collectGame8Source(source,trace,cache);
+  }
+  if (source.game_id === 'wuthering-waves' && source.url && new URL(source.url).hostname === 'wutheringwaves.kurogames.com') {
+    return collectWuwaOfficialSource(input => createNewsItem(source,input),trace);
   }
   if (isRiotNextNewsSource(source)) {
     return collectRiotNextSource(source, createNewsItem);
@@ -437,8 +457,13 @@ function preferNewsItem(left: NewsItemInsert, right: NewsItemInsert) {
 }
 
 async function finalizeCollectedItems(items: NewsItemInsert[]): Promise<FinalizeResult> {
+  const unique = new Map<string, NewsItemInsert>();
+  for (const item of items) {
+    const previous = unique.get(item.content_hash);
+    unique.set(item.content_hash,previous ? preferNewsItem(previous,item) : item);
+  }
   const enriched = await Promise.all(
-    items.map(async (item) => {
+    [...unique.values()].map(async (item) => {
       if (item.source_type === "trusted_site" || item.image_url) {
         return withRescoredImage(item);
       }
@@ -454,7 +479,7 @@ async function finalizeCollectedItems(items: NewsItemInsert[]): Promise<Finalize
   const deduped = new Map<string, NewsItemInsert>();
   const titleDeduped = new Map<string, NewsItemInsert>();
   let filtered = 0;
-  let duplicates = 0;
+  let duplicates = items.length - unique.size;
 
   for (const item of enriched) {
     if (!shouldStoreCollectedItem(item)) {
@@ -486,17 +511,24 @@ async function finalizeCollectedItems(items: NewsItemInsert[]): Promise<Finalize
   }
 
   const finalized = [...deduped.values()];
+  const storedHashes = new Set(finalized.map(item=>item.content_hash));
   return {
     items: finalized,
     filtered,
     duplicates,
     withoutImages: finalized.filter((item) => !item.image_url).length,
     homepageEligible: finalized.filter((item) => item.homepage_eligible).length,
+    outcomes: enriched.filter(item=>!storedHashes.has(item.content_hash)).map(item=>({
+      url:item.url, stage:shouldStoreCollectedItem(item) ? 'duplicate' : 'filtered',
+      reason:shouldStoreCollectedItem(item) ? 'Duplicate title and publication day' : `${item.filtering_reason ?? 'Below storage threshold'} (quality ${item.quality_score}, importance ${item.importance_score})`,
+    })),
   };
 }
 
 export async function runNewsCollector(options?: {
   force?: boolean;
+  gameId?: string;
+  onTrace?: (traces: NewsSourceTrace[]) => void | Promise<void>;
 }): Promise<CollectorRunResult> {
   const startedAt = new Date().toISOString();
   const force = options?.force ?? false;
@@ -510,6 +542,7 @@ export async function runNewsCollector(options?: {
     }
 
     const sources = (sourceRows ?? [])
+      .filter(source => !options?.gameId || source.game_id === options.gameId)
       .filter(
         (source) =>
           source.source_type === "trusted_site" ||
@@ -522,9 +555,11 @@ export async function runNewsCollector(options?: {
 
     const errors: CollectorError[] = [];
     const collected: NewsItemInsert[] = [];
+    const traces: NewsSourceTrace[] = [];
+    const owners = new Map<string, Set<string>>();
 
     if (sources.length) {
-      await collectSourcesInParallel(sources, supabase, errors, collected);
+      await collectSourcesInParallel(sources, supabase, errors, collected, traces, owners);
     }
 
     let insertedRecords = 0;
@@ -539,11 +574,17 @@ export async function runNewsCollector(options?: {
       withoutImages = finalized.withoutImages;
       homepageEligible = finalized.homepageEligible;
       const finalizedCollected = finalized.items;
+      for (const trace of traces) for (const article of trace.articles) {
+        if (article.stage === 'known') continue;
+        const outcome = finalized.outcomes.find(row=>row.url===article.url);
+        if (outcome) Object.assign(article,outcome);
+      }
 
-      const { data: upserted, error: upsertError } = await supabase
+      const { data: upserted, error: upsertError } = finalizedCollected.length ? await supabase
         .from("news_items")
-        .upsert(finalizedCollected, { onConflict: "content_hash" })
-        .select("id");
+        .upsert(finalizedCollected, { onConflict: "content_hash", ignoreDuplicates: true })
+        .select("id,content_hash") : {data: [], error: null};
+      let insertedHashes = upserted?.map(row=>row.content_hash) ?? [];
 
       if (upsertError) {
         const missingOptionalColumns =
@@ -557,21 +598,45 @@ export async function runNewsCollector(options?: {
           });
           const retry = await supabase
             .from("news_items")
-            .upsert(fallbackPayload, { onConflict: "content_hash" })
-            .select("id");
+            .upsert(fallbackPayload, { onConflict: "content_hash", ignoreDuplicates: true })
+            .select("id,content_hash");
 
           if (retry.error) {
             throw new Error(retry.error.message);
           }
 
           insertedRecords = retry.data?.length ?? 0;
+          insertedHashes = retry.data?.map(row=>row.content_hash) ?? [];
         } else {
           throw new Error(upsertError.message);
         }
       } else {
         insertedRecords = upserted?.length ?? 0;
       }
+      for (const item of finalizedCollected) for (const sourceId of owners.get(item.content_hash) ?? []) {
+        const trace = traces.find(t=>t.sourceId===sourceId)!;
+        const article = trace.articles.find(a=>a.url===item.url)!;
+        article.stage = insertedHashes.includes(item.content_hash) ? 'inserted' : 'known';
+        if (article.stage === 'inserted') trace.inserted++;
+        else trace.known++;
+      }
     }
+
+    for (const trace of traces) {
+      trace.filtered = trace.articles.filter(article=>article.stage === 'filtered').length;
+      if (errors.some(error=>error.sourceId===trace.sourceId)) continue;
+      const valid = trace.inserted + trace.known > 0 && !trace.parseErrors.length;
+      const completedAt = new Date().toISOString();
+      const { error } = await supabase.from('game_sources').update({
+        status: valid ? 'Healthy' : 'Delayed',
+        last_error: valid ? null : `Fetch succeeded; ${trace.discovered} discovered, ${trace.parsed} parsed, ${trace.filtered} filtered, ${trace.parseErrors.length} parsing errors, ${trace.inserted} inserted`,
+        ...(trace.inserted ? { last_item_discovered_at: completedAt } : {}),
+        updated_at: completedAt,
+      }).eq('id',trace.sourceId);
+      if (error) throw new Error(error.message);
+      if (trace.parseErrors.length) errors.push({sourceId:trace.sourceId,message:`${trace.parseErrors.length} article parsing failures; see sourceTraces`});
+    }
+    await options?.onTrace?.(traces);
 
     const processedRecords = collected.length;
     const status =
@@ -586,7 +651,7 @@ export async function runNewsCollector(options?: {
       !sources.length
         ? "No sources were due for collection."
         : status === "completed"
-          ? `News collector completed across ${sources.length} source${sources.length === 1 ? "" : "s"} with ${insertedRecords} upserted item${insertedRecords === 1 ? "" : "s"}, ${homepageEligible} homepage eligible, ${filteredRecords} filtered, and ${duplicateRecords} duplicate${duplicateRecords === 1 ? "" : "s"}.`
+          ? `News collector completed across ${sources.length} source${sources.length === 1 ? "" : "s"} with ${insertedRecords} inserted item${insertedRecords === 1 ? "" : "s"}, ${homepageEligible} homepage eligible, ${filteredRecords} filtered, and ${duplicateRecords} duplicate${duplicateRecords === 1 ? "" : "s"}.`
           : `News collector processed ${processedRecords} item${processedRecords === 1 ? "" : "s"} with ${errors.length} source error${errors.length === 1 ? "" : "s"}, ${filteredRecords} filtered, ${duplicateRecords} duplicate${duplicateRecords === 1 ? "" : "s"}, and ${withoutImages} stored without image${withoutImages === 1 ? "" : "s"}.`;
 
     await supabase.from("collector_runs").insert({
@@ -603,6 +668,7 @@ export async function runNewsCollector(options?: {
         withoutImages,
         homepageEligible,
         sourcesChecked: sources.length,
+        sourceTraces: traces,
       },
     });
 

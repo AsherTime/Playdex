@@ -1,0 +1,1171 @@
+[
+  {
+    "sourceId": "wuthering-waves-game8-news",
+    "gameId": "wuthering-waves",
+    "fetches": 41,
+    "discovered": 40,
+    "parsed": 36,
+    "known": 13,
+    "filtered": 23,
+    "inserted": 0,
+    "parseErrors": [
+      "https://game8.co/games/Wuthering-Waves/archives/616616: Game8 article lacks reliable publication metadata",
+      "https://game8.co/games/Wuthering-Waves/archives/606414: Game8 article lacks reliable publication metadata",
+      "https://game8.co/games/Wuthering-Waves/archives/610898: Game8 article lacks reliable publication metadata",
+      "https://game8.co/games/Wuthering-Waves/archives/573467: Game8 article lacks reliable publication metadata"
+    ],
+    "articles": [
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/622037",
+        "title": "3.7 Livestream Codes and Countdown | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/616859",
+        "title": "3.7 Banners, Release Date, and Summary | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614775",
+        "title": "Resonance Sim Realm Event Guide | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614765",
+        "title": "If Dreams Still Reverberate Event Guide | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614757",
+        "title": "Second Coming of Solaris: Coded Deception Event Guide | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614773",
+        "title": "The Strings Remember Event Guide | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614684",
+        "title": "Gifts of Drifting Mist Event Guide | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/611673",
+        "title": "3.6 Banners, Release Date, and Summary | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607103",
+        "title": "Mengzhou Interactive Map & 100% Guide | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605308",
+        "title": "Qingxiao Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605307",
+        "title": "Jingran Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605757",
+        "title": "Weekly Activities Guide and Rewards | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605302",
+        "title": "Suisui Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605253",
+        "title": "3.5 Banners, Release Date, and Summary | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/599097",
+        "title": "3.4 Release Date, Banners, and Summary | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/602059",
+        "title": "Premium Articles | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 42, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605297",
+        "title": "Yangyang: Xuanling Best Builds and Teams | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/585645",
+        "title": "When is WuWa Anniversary 2026? | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 7)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/585664",
+        "title": "3.3 Banners, Features, and Details | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 7)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/593931",
+        "title": "3.3 Livestream Codes — Anniversary Rewards and Details | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "code/filler content (quality 59, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/585681",
+        "title": "Denia Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/582216",
+        "title": "3.2 Banners, Release Date, and Summary | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/572587",
+        "title": "Aemeath Best Builds and Teams | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/572823",
+        "title": "3.1 Banners, Release Date, and Summary | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/568211",
+        "title": "Lynae Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/569554",
+        "title": "3.0 Livestream Release Date, Codes, and Details | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "code/filler content (quality 59, importance 12)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/572518",
+        "title": "Endstate Matrix Reset and Buffs | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/568210",
+        "title": "Luuk Herssen Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/567978",
+        "title": "3.0 Banners, Release Date, and Summary (Christmas Update) | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/566103",
+        "title": "Wuthering Waves Global Release Date and Launch",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/568208",
+        "title": "Sigrika Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/568193",
+        "title": "Mornye Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/558449",
+        "title": "2.8 Banners, Release Date, and Details | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/564676",
+        "title": "List of All Profile Cosmetics | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/559680",
+        "title": "All Version Updates and Release Dates | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 7)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/557981",
+        "title": "Buling Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      }
+    ]
+  },
+  {
+    "sourceId": "wuthering-waves-game8-v34",
+    "gameId": "wuthering-waves",
+    "fetches": 41,
+    "discovered": 40,
+    "parsed": 40,
+    "known": 18,
+    "filtered": 22,
+    "inserted": 0,
+    "parseErrors": [],
+    "articles": [
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/622037",
+        "title": "3.7 Livestream Codes and Countdown | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/616991",
+        "title": "Wuthering Waves (WuWa) Optimization Updates",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 7)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/616859",
+        "title": "3.7 Banners, Release Date, and Summary | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614637",
+        "title": "Jingran Banner Release Date and Characters | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/613925",
+        "title": "3.6 Livestream Codes and Summary | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "code/filler content (quality 59, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614634",
+        "title": "Glint of Clouds — Qingxiao Weapon Skills and Stats | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614635",
+        "title": "Thousandfold Deliverance — Jingran Weapon Skills and Stats | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614636",
+        "title": "Qingxiao Banner Release Date and Characters | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/611673",
+        "title": "3.6 Banners, Release Date, and Summary | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607448",
+        "title": "How to Create a Kuro Games Account | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/606387",
+        "title": "What is the Exostrider? | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/610160",
+        "title": "Escape from Duckov Collab Code and Livery | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "code/filler content (quality 59, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/606332",
+        "title": "Wuthering Waves (WuWa) World Tour 2026 Info and Event Guide",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 37, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605996",
+        "title": "3.5 Livestream Codes, Release Date, and Details | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605308",
+        "title": "Qingxiao Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605307",
+        "title": "Jingran Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605253",
+        "title": "3.5 Banners, Release Date, and Summary | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605021",
+        "title": "Nightmare Security Corpo Enemy Guide | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 42, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605020",
+        "title": "Nightmare Armed Corpo Enemy Guide | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 42, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605022",
+        "title": "Nightmare Spec Ops Corpo Enemy Guide | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 42, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/604234",
+        "title": "Reminiscence: Nightmare Adam Smasher Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/604697",
+        "title": "Milestone Challenge Event Guide | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/604297",
+        "title": "Nameless Explorer Hologram Tactical Challenge Guide | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/604886",
+        "title": "Should You Watch Cyberpunk Edgerunners Before Starting the Collab? | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603842",
+        "title": "3.4 Depths of Illusive Realm: Dreamchasers Event Guide | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603651",
+        "title": "Startorch Racing, Rerun! Event Guide and Track Shortcuts | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/604231",
+        "title": "Nightmare: Adam Smasher Boss Location and Guide | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603717",
+        "title": "Sweetdream Tuning Event Guide | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603593",
+        "title": "All Matrix Reform Solutions and Stages | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603544",
+        "title": "Gifts of Dreamchasers Event Guide | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603610",
+        "title": "Night City Roaming Event Guide | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603529",
+        "title": "Dream of Azure Sky Event Guide | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603092",
+        "title": "Night City 100% Exploration Guide | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603088",
+        "title": "Skull Thrasher (Rebecca Weapon) Skill and Best Character | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603090",
+        "title": "Freeze Frame (Lucilla Weapon) Skills and Best Characters | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603091",
+        "title": "Shadow of Shattered Dreams Sonata Effect and Echoes | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "opinion/listicle content (quality 64, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603081",
+        "title": "Chapter 3 Segue We Choose the Sky Quest Guide | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603084",
+        "title": "How to Get Rebecca for Free — Instant Flashlight Event | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603085",
+        "title": "Spectral Trigger (Lucy Weapon) Skills and Best Character | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/603079",
+        "title": "Chapter 3 Side Story At Dream's Edge Quest Guide | Wuthering Waves",
+        "stage": "known"
+      }
+    ]
+  },
+  {
+    "sourceId": "wuthering-waves-official-news",
+    "gameId": "wuthering-waves",
+    "fetches": 31,
+    "discovered": 30,
+    "parsed": 30,
+    "known": 14,
+    "filtered": 16,
+    "inserted": 0,
+    "parseErrors": [],
+    "articles": [
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5437",
+        "title": "Resonator Review | Astral Mapping — Mornye",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5428",
+        "title": "Upcoming Events in Wuthering Waves Version 3.6",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5431",
+        "title": "[Version 3.6 Featured Resonator/Weapon Convene: Phase Ⅱ]",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5429",
+        "title": "Resonator Review | Futures' Tithe — Hiyuki",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5385",
+        "title": "Post-Lament Anthropocene: Enemies — Calamity Effigy",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 11)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5379",
+        "title": "Post-Lament Anthropocene: Comprehensive Mirror for Historians—Xuanfang Finale Preview",
+        "stage": "filtered",
+        "reason": "opinion/listicle content (quality 64, importance 0)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5399",
+        "title": "Profile Reveal | Nether Qi Art — Jingran",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5398",
+        "title": "Post-Lament Anthropocene: Stars Intertwined | Jingran",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5349",
+        "title": "Wuthering Waves Fan Creation Event \"Lamplight in Mirage, Sword's Resolve in Heart\" is now live!",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 11)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5350",
+        "title": "V3.6 Wuthering Waves Battle Rush",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5365",
+        "title": "Event Preview | [Resonance Sim Realm] Combat Event, Coming Soon!",
+        "stage": "filtered",
+        "reason": "opinion/listicle content (quality 64, importance 0)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5357",
+        "title": "for Version 3.6: Lamplight in Mirage, Sword's Resolve in Heart",
+        "stage": "filtered",
+        "reason": "minor maintenance content (quality 67, importance 11)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5331",
+        "title": "[Wind of Transcendence] Featured Resonator Convene",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 11)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5332",
+        "title": "[Glint of Clouds] Featured Weapon Convene",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 11)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5318",
+        "title": "[Version 3.6 Featured Resonator/Weapon Convene: Phase I]",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5330",
+        "title": "Wuthering Waves Fan Creation Event Winners Reveal",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5310",
+        "title": "Wuthering Waves Update: Content | Version 3.6 \"Lamplight in Mirage, Sword's Resolve in Heart\" Planned for Release on August 20 (UTC+8)",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5294",
+        "title": "Profile Reveal | Heart Sword — Qingxiao",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5292",
+        "title": "Post-Lament Anthropocene: Stars Intertwined | Qingxiao",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 11)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5315",
+        "title": "Resonator Review | Bubbles of Nihility — Denia",
+        "stage": "filtered",
+        "reason": "opinion/listicle content (quality 64, importance 0)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5245",
+        "title": "Wuthering Waves Version Preview | Version 3.6 \"Lamplight in Mirage, Sword's Resolve in Heart\"",
+        "stage": "filtered",
+        "reason": "opinion/listicle content (quality 64, importance 4)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5224",
+        "title": "Resonator Review | Guiding Starlance — Aemeath",
+        "stage": "filtered",
+        "reason": "opinion/listicle content (quality 64, importance 0)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5236",
+        "title": "[Firstlight's Herald] Featured Weapon Convene",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 11)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5281",
+        "title": "Wuthering Waves Version 3.6 Update: Maintenance Notice",
+        "stage": "filtered",
+        "reason": "minor maintenance content (quality 67, importance 11)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5220",
+        "title": "[Version 3.5 Featured Resonator/Weapon Convene: Phase II]",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5208",
+        "title": "Upcoming Events in Wuthering Waves Version 3.5",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5200",
+        "title": "Profile Reveal | Host of Harmony — Suisui",
+        "stage": "known"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5227",
+        "title": "[Blessings From Dewy Winds] Featured Resonator Convene",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 11)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5162",
+        "title": "Post-Lament Anthropocene: Enemies — Myriad Snare: Rustfire Chassis",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 11)"
+      },
+      {
+        "url": "https://wutheringwaves.kurogames.com/en/main/news/detail/5199",
+        "title": "Post-Lament Anthropocene: Stars Intertwined | Suisui",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 11)"
+      }
+    ]
+  },
+  {
+    "sourceId": "wuthering-waves-game8-v35",
+    "gameId": "wuthering-waves",
+    "fetches": 41,
+    "discovered": 40,
+    "parsed": 40,
+    "known": 5,
+    "filtered": 35,
+    "inserted": 0,
+    "parseErrors": [],
+    "articles": [
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/622037",
+        "title": "3.7 Livestream Codes and Countdown | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/616991",
+        "title": "Wuthering Waves (WuWa) Optimization Updates",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 7)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/616859",
+        "title": "3.7 Banners, Release Date, and Summary | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614637",
+        "title": "Jingran Banner Release Date and Characters | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/613925",
+        "title": "3.6 Livestream Codes and Summary | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "code/filler content (quality 59, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614634",
+        "title": "Glint of Clouds — Qingxiao Weapon Skills and Stats | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614635",
+        "title": "Thousandfold Deliverance — Jingran Weapon Skills and Stats | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614636",
+        "title": "Qingxiao Banner Release Date and Characters | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/611673",
+        "title": "3.6 Banners, Release Date, and Summary | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/610160",
+        "title": "Escape from Duckov Collab Code and Livery | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "code/filler content (quality 59, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/610347",
+        "title": "Thousand-Puppet Pavilion Echo and Skills: N91 | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/610348",
+        "title": "Myriad Snare: Rustfire Chassis Echo and Skills: R71 | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/608357",
+        "title": "Mingshen Notices Event Guide | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/608347",
+        "title": "In Search of Lost Jade Event Guide | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607645",
+        "title": "Lament Recon: Tacet Crisis Event Guide | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/608345",
+        "title": "A Glimpse of Xuanfang Event Guide | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607448",
+        "title": "How to Create a Kuro Games Account | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607412",
+        "title": "3.5 Virtual Crisis: Quadrant Trials Event Guide | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607465",
+        "title": "Gifts of Starpath Event Guide | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607319",
+        "title": "Thousand-Puppet Pavilion Location and Guide | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607305",
+        "title": "Stone Picket Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607318",
+        "title": "Myriad Snare: Rustfire Chassis Location and Guide | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607314",
+        "title": "Forbidden Bastion Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607313",
+        "title": "Fog Lionarch Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607304",
+        "title": "Porcelain Picket Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607302",
+        "title": "Smolder Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607303",
+        "title": "Smiter Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607301",
+        "title": "Fog Lionarch: Head Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607298",
+        "title": "Kernel Puppet: Grief Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607297",
+        "title": "Kernel Puppet: Reflection Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607300",
+        "title": "Fog Lionarch: Body Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607299",
+        "title": "Kernel Puppet: Fright Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607295",
+        "title": "Kernel Puppet: Anger Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607296",
+        "title": "Kernel Puppet: Worry Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607288",
+        "title": "Aureate Picket Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607294",
+        "title": "Kernel Puppet: Joy Echo and Skills | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607103",
+        "title": "Mengzhou Interactive Map & 100% Guide | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607277",
+        "title": "Shape of Yesterday Event Guide | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607256",
+        "title": "Recaptured: Action Highlights Event Guide | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/607276",
+        "title": "Gifts of Aftertune Event Guide | Wuthering Waves",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      }
+    ]
+  },
+  {
+    "sourceId": "wuthering-waves-steam-news",
+    "gameId": "wuthering-waves",
+    "fetches": 1,
+    "discovered": 12,
+    "parsed": 12,
+    "known": 11,
+    "filtered": 1,
+    "inserted": 0,
+    "parseErrors": [],
+    "articles": [
+      {
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/GamingOnLinux/1841579228675387",
+        "title": "dwproton-11.0-12 released to fix Wuthering Waves on SteamOS / Linux",
+        "stage": "filtered",
+        "reason": "below homepage threshold (quality 76, importance 11)"
+      },
+      {
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228663631",
+        "title": "New Content in Version 3.6: Lamplight in Mirage, Sword's Resolve in Heart",
+        "stage": "known"
+      },
+      {
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165584478",
+        "title": "New Content in Version 3.5: Blade of Past Resounds, Lingering Dream Hymns",
+        "stage": "known"
+      },
+      {
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721196870",
+        "title": "New Content in Wuthering Waves Version 3.4: The Dream Not Dreamed",
+        "stage": "known"
+      },
+      {
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1831432155566176",
+        "title": "Wuthering Waves-2nd Anniv. V3.3 \"Reverbs From the End of Galaxies\" Now Live!",
+        "stage": "known"
+      },
+      {
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1827626365751305",
+        "title": "New Content in Wuthering Waves Version 3.2: Resolution to Illuminate the Shadows",
+        "stage": "known"
+      },
+      {
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1823825466494991",
+        "title": "New Content in Wuthering Waves Version 3.1: For You Who Walk in Snow",
+        "stage": "known"
+      },
+      {
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1819386365107164",
+        "title": "New Content in Wuthering Waves Version 3.0: We Who See the Stars",
+        "stage": "known"
+      },
+      {
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/CGMagazine/1819386365100211",
+        "title": "Wuthering Waves 3.0 Hands-On: Exploring Lahai-Roi and the Game’s New Motorbike System",
+        "stage": "known"
+      },
+      {
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002008951",
+        "title": "New Content in Wuthering Waves Version 2.8: To the City Set in Amber",
+        "stage": "known"
+      },
+      {
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1813041031225547",
+        "title": "New Content in Wuthering Waves Version 2.7: Dawn Breaks on Dark Tides",
+        "stage": "known"
+      },
+      {
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1813041031184228",
+        "title": "New Content in Wuthering Waves Version 2.7: Dawn Breaks on Dark Tides",
+        "stage": "known"
+      }
+    ]
+  },
+  {
+    "sourceId": "wuthering-waves-game8-banners",
+    "gameId": "wuthering-waves",
+    "fetches": 41,
+    "discovered": 40,
+    "parsed": 36,
+    "known": 22,
+    "filtered": 14,
+    "inserted": 0,
+    "parseErrors": [
+      "https://game8.co/games/Wuthering-Waves/archives/616616: Game8 article lacks reliable publication metadata",
+      "https://game8.co/games/Wuthering-Waves/archives/610898: Game8 article lacks reliable publication metadata",
+      "https://game8.co/games/Wuthering-Waves/archives/606414: Game8 article lacks reliable publication metadata",
+      "https://game8.co/games/Wuthering-Waves/archives/573467: Game8 article lacks reliable publication metadata"
+    ],
+    "articles": [
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/616859",
+        "title": "3.7 Banners, Release Date, and Summary | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614637",
+        "title": "Jingran Banner Release Date and Characters | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/614635",
+        "title": "Thousandfold Deliverance — Jingran Weapon Skills and Stats | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605757",
+        "title": "Weekly Activities Guide and Rewards | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605309",
+        "title": "Hsin Release Date and Attribute | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605307",
+        "title": "Jingran Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/602059",
+        "title": "Premium Articles | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 42, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/595087",
+        "title": "Frostburn — Hiyuki Weapon Skill and Effect | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/605306",
+        "title": "Suoming Release Date and Attribute | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/572518",
+        "title": "Endstate Matrix Reset and Buffs | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/586421",
+        "title": "Hiyuki Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/595037",
+        "title": "Hiyuki Rerun Banner Release Date and Characters | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/568193",
+        "title": "Mornye Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/564676",
+        "title": "List of All Profile Cosmetics | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/570864",
+        "title": "Starfield Calibrator — Mornye Weapon Skill and Effect | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/570877",
+        "title": "Mornye Rerun Banner Release Date and Characters | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/523117",
+        "title": "Dreaming Deep Guide and News | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/494979",
+        "title": "WuWa Banner History (September 2026) | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/492671",
+        "title": "List of All Character Skins (Outfits) | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/498614",
+        "title": "3.6 Whimpering Wastes (WhiWa) Guide — Reset Date and Tokens | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455857",
+        "title": "Best Banner Strategy and Pull Guide (Version 3.6) | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455902",
+        "title": "Novaburst Best Characters and How to Get | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/474514",
+        "title": "Waning Redshift Best Characters and How to Get | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455948",
+        "title": "Discord Best Characters and How to Get | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455441",
+        "title": "3.6 Trophy List and Guides | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455430",
+        "title": "Tidal Chorus — Character Permanent Banner Guide | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455422",
+        "title": "Utterance of Marvels — Novice Banner Guide | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455431",
+        "title": "Winter Brume — Weapon Permanent Banner Guide | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/454219",
+        "title": "Yuanwu Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/454222",
+        "title": "Mortefi Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/455400",
+        "title": "3.6 Absolute Pulsation Weapon Banner Guide | Wuthering Waves (WuWa)",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/454729",
+        "title": "3.6 Tier List and the Best Characters as of September 2026 | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453485",
+        "title": "All Quests | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453477",
+        "title": "List of Items | Wuthering Waves",
+        "stage": "known"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/454214",
+        "title": "Aalto Best Builds and Teams | Wuthering Waves (WuWa)",
+        "stage": "filtered",
+        "reason": "guide/tutorial content (quality 54, importance 0)"
+      },
+      {
+        "url": "https://game8.co/games/Wuthering-Waves/archives/453554",
+        "title": "Beginner's Choice Banner Guide | Wuthering Waves (WuWa)",
+        "stage": "known"
+      }
+    ]
+  }
+]

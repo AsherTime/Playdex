@@ -7,6 +7,8 @@ import { getCharacter, getAllCalcCharacterParams } from "@/lib/characters";
 import { getGenshinGuideCharacter } from "@/lib/guides/genshin";
 import { canEditGuides, getCurrentUserWithRole } from "@/lib/roles";
 import { isCalcGame } from "@/lib/team-games";
+import { getWuwaCharacter } from "@/lib/guides/wuwa";
+import { WuwaCharacterGuide } from "@/components/guides/WuwaCharacterGuide";
 
 export function generateStaticParams() {
   return getAllCalcCharacterParams();
@@ -18,6 +20,11 @@ export default async function CharacterDetailPage({
   params: Promise<{ slug: string; characterSlug: string }>;
 }) {
   const { slug, characterSlug } = await params;
+  if (slug === "wuthering-waves") {
+    const character = await getWuwaCharacter(characterSlug);
+    if (!character) notFound();
+    return <WuwaCharacterGuide character={character} />;
+  }
 
   if (slug === "genshin-impact") {
     const [guideCharacter, user] = await Promise.all([

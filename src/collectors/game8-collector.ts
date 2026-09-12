@@ -4,6 +4,7 @@ import { fetchGame8Html } from "@/lib/game8-fetch";
 import { canonicalNewsUrl, scoreNewsItem, type PublicationDateConfidence } from "@/lib/news-quality";
 import type { Database } from "@/types/database";
 import { cleanNewsText, normalizeNewsSummary, normalizeNewsTitle } from "@/utils/news-normalize";
+import type { NewsSourceTrace } from './news-source-trace';
 
 type GameSourceRow = Database["public"]["Tables"]["game_sources"]["Row"];
 
@@ -247,9 +248,75 @@ function toNewsItem(source: GameSourceRow, card: ParsedGame8Card): Game8NewsItem
   };
 }
 
-export async function collectGame8Source(source: GameSourceRow) {
+export function discoverGame8ArticleUrls(html: string, pageUrl: string) {
+  const root = parse(html);
+  const content = root.querySelector('.archive-style-wrapper');
+  if (!content) throw new Error('Game8 article content container missing');
+  const page = new URL(pageUrl);
+  const gamePath = page.pathname.split('/archives/')[0] + '/archives/';
+  return [...new Set(content.querySelectorAll('a[href]').map(a => canonicalArticleUrl(absoluteUrl(a.getAttribute('href')!,pageUrl))))]
+    .filter(value => {
+      try {
+        const u = new URL(value);
+        return u.origin === page.origin && u.pathname.startsWith(gamePath) && /\/archives\/\d+$/.test(u.pathname) && value !== canonicalArticleUrl(pageUrl);
+      } catch { return false; }
+    })
+    .sort((a,b) => Number(b.split('/').at(-1)) - Number(a.split('/').at(-1))).slice(0,40);
+}
+
+export function parseGame8Article(html: string, pageUrl: string): ParsedGame8Card {
+  const root = parse(html);
+  const objects: Record<string, unknown>[] = [];
+  const visit = (value: unknown) => {
+    if (Array.isArray(value)) return value.forEach(visit);
+    if (!value || typeof value !== 'object') return;
+    const row = value as Record<string,unknown>;
+    if (['Article','NewsArticle','BlogPosting'].includes(String(row['@type']))) objects.push(row);
+    if (row['@graph']) visit(row['@graph']);
+  };
+  for (const script of root.querySelectorAll('script[type="application/ld+json"]')) {
+    try { visit(JSON.parse(script.textContent)); } catch { /* Other widgets may have invalid JSON-LD. */ }
+  }
+  const article = objects.find(a => canonicalArticleUrl(String(a.url ?? pageUrl)) === canonicalArticleUrl(pageUrl));
+  const published = article && typeof article.datePublished === 'string' ? new Date(article.datePublished) : null;
+  if (!article || !article.headline || !published || !Number.isFinite(published.getTime())) throw new Error('Game8 article lacks reliable publication metadata');
+  const image = typeof article.image === 'string' ? article.image : root.querySelector('meta[property="og:image"]')?.getAttribute('content');
+  return { title: cleanNewsText(String(article.headline)), url: canonicalArticleUrl(pageUrl),
+    summary: cleanNewsText(String(article.description ?? '')), publishedAt: published.toISOString(),
+    imageUrl: normalizeImageUrl(image,pageUrl), imageSourceUrl: pageUrl };
+}
+
+export async function collectGame8Source(source: GameSourceRow, trace?: NewsSourceTrace, cache = new Map<string, Promise<string>>()) {
   if (!source.url) return [];
 
+  if (source.game_id === 'wuthering-waves') {
+    const get = (url: string) => {
+      if (!cache.has(url)) cache.set(url, fetchGame8Html(url));
+      return cache.get(url)!;
+    };
+    const html = await get(source.url);
+    if (trace) trace.fetches++;
+    const urls = discoverGame8ArticleUrls(html,source.url);
+    if (trace) trace.discovered = urls.length;
+    const items: Game8NewsItemInsert[] = [];
+    for (let i=0;i<urls.length;i+=4) {
+      await Promise.all(urls.slice(i,i+4).map(async url => {
+        try {
+          const articleHtml = await get(url);
+          if (trace) trace.fetches++;
+          const card = parseGame8Article(articleHtml,url);
+          if (new Date(card.publishedAt!).getTime() > Date.now()) return;
+          const item = toNewsItem(source,card);
+          if(item) items.push(item);
+        } catch(error) {
+          if (!trace) throw error;
+          trace.parseErrors.push(`${url}: ${error instanceof Error ? error.message : String(error)}`);
+        }
+      }));
+    }
+    if (!items.length) throw new Error('Game8 fetched successfully but no valid articles were parsed');
+    return items;
+  }
   const html = await fetchGame8Html(source.url);
   const cards = parseGame8Cards(html, source.url);
 

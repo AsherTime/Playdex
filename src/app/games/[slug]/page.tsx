@@ -3,6 +3,7 @@ import { GameCard } from "@/components/game-card";
 import { GameCalcHubPage } from "@/components/game-calc/GameCalcHubPage";
 import { GameDetailHeader } from "@/components/game-detail-header";
 import { GenshinGuidePage } from "@/components/guides/GenshinGuidePage";
+import { WuwaGuidePage } from "@/components/guides/WuwaGuidePage";
 import { NewsCard } from "@/components/news-card";
 import { SectionHeader } from "@/components/section-header";
 import { games } from "@/data/mock-data";
@@ -19,6 +20,7 @@ export default async function GameDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  if (slug === "wuthering-waves") return <WuwaGuidePage />;
 
   if (slug === "genshin-impact") {
     return <GenshinGuidePage />;
