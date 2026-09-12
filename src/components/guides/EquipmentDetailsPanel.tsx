@@ -56,11 +56,11 @@ export function EquipmentDetailsPanel({
 
   return (
     <details
-      className="mt-2 rounded-lg border border-white/10 bg-white/[0.03] px-3 py-2 text-xs leading-5 text-zinc-400"
+      className="mt-2 text-sm leading-6 text-zinc-400"
       open={open}
       onToggle={(event) => setOpen(event.currentTarget.open)}
     >
-      <summary className="cursor-pointer text-zinc-300">
+      <summary className="cursor-pointer text-zinc-300 transition hover:text-white">
         {canonical.kind === "set" ? "Set bonuses" : "Stats & passive"}
       </summary>
       <div className="mt-2 space-y-3">

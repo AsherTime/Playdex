@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { ReactNode } from "react";
 import { GuideTabs } from "@/components/guides/GuideTabs";
+import { GuideMetaChip } from "@/components/guides/guide-surfaces";
 import { MissingAssetIcon } from "@/components/guides/MissingAssetIcon";
 import { getElementStyle } from "@/lib/character-elements";
 import type { GuideCharacterDetail } from "@/lib/guides/genshin";
@@ -16,49 +16,68 @@ export function CharacterGuidePage({
   canEdit?: boolean;
 }) {
   const elementStyle = getElementStyle(character.element);
+  const stars = character.rarity ? "★".repeat(character.rarity) : null;
 
   return (
-    <div className="space-y-5">
+    <div className="guide-page space-y-6">
       <nav className="text-sm text-zinc-500">
         <Link href={`/games/${gameSlug}`} className="transition hover:text-white">
           Genshin Impact
         </Link>
         <span className="mx-2 text-zinc-700">/</span>
+        <Link href={`/games/${gameSlug}#characters`} className="transition hover:text-white">
+          Characters
+        </Link>
+        <span className="mx-2 text-zinc-700">/</span>
         <span className="text-zinc-300">{character.name}</span>
       </nav>
 
-      <section className="rounded-2xl border border-white/10 bg-white/[0.035] p-4">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-          <div
-            className={`relative h-20 w-20 shrink-0 overflow-hidden rounded-xl bg-gradient-to-br ${elementStyle.bg} ring-1 ${elementStyle.ring}`}
-            style={{ width: 80, height: 80 }}
-          >
-            {character.iconPath ? (
-              <Image
-                src={character.iconPath}
-                alt=""
-                fill
-                sizes="80px"
-                className="object-contain object-bottom p-1"
-                priority
-              />
-            ) : (
-              <MissingAssetIcon label={character.name} />
-            )}
+      <section className="relative overflow-hidden rounded-3xl bg-white/[0.035] shadow-[0_1px_0_rgba(255,255,255,0.06)_inset,0_24px_60px_-32px_rgba(0,0,0,0.75)]">
+        <div
+          className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${elementStyle.bg} opacity-35`}
+        />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_82%_18%,rgba(255,255,255,0.12),transparent_34%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#070811] via-[#070811]/55 to-transparent" />
+
+        <div className="relative flex flex-col gap-5 px-5 py-6 sm:flex-row sm:items-end sm:gap-7 sm:px-7 sm:py-8">
+          <div className="relative mx-auto h-36 w-36 shrink-0 sm:mx-0 sm:h-48 sm:w-48 lg:h-56 lg:w-56">
+            <div className={`absolute -inset-3 rounded-[2rem] bg-gradient-to-br ${elementStyle.bg} blur-2xl`} />
+            <div className="relative h-full overflow-hidden rounded-[1.35rem] bg-black/20 shadow-[0_18px_40px_-20px_rgba(0,0,0,0.8)] ring-1 ring-white/10">
+              {character.iconPath ? (
+                <Image
+                  src={character.iconPath}
+                  alt=""
+                  fill
+                  sizes="(max-width: 640px) 144px, 224px"
+                  className="object-cover object-top"
+                  priority
+                />
+              ) : (
+                <MissingAssetIcon label={character.name} />
+              )}
+            </div>
           </div>
 
-          <div className="min-w-0 flex-1">
-            <div className="mb-2 flex flex-wrap gap-1.5">
-              <GuidePill className={`${elementStyle.text} bg-white/5`}>{character.element}</GuidePill>
-              {character.weaponType ? <GuidePill>{character.weaponType}</GuidePill> : null}
-              {character.rarity ? <GuidePill>{character.rarity}-Star</GuidePill> : null}
-              {character.role ? <GuidePill>{character.role}</GuidePill> : null}
+          <div className="min-w-0 flex-1 text-center sm:pb-1 sm:text-left">
+            <div className="mb-3 flex flex-wrap items-center justify-center gap-2 sm:justify-start">
+              <GuideMetaChip tone="accent">
+                <span className={elementStyle.text}>{character.element}</span>
+              </GuideMetaChip>
+              {character.weaponType ? <GuideMetaChip>{character.weaponType}</GuideMetaChip> : null}
+              {character.role ? <GuideMetaChip>{character.role}</GuideMetaChip> : null}
             </div>
-            <h1 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+
+            <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               {character.name}
             </h1>
+            {stars ? (
+              <p className="mt-2 text-sm tracking-[0.28em] text-amber-200/85" aria-label={`${character.rarity}-star`}>
+                {stars}
+              </p>
+            ) : null}
+
             {!character.hasBuild || !character.hasTeams ? (
-              <p className="mt-1 text-sm text-zinc-400">
+              <p className="mt-3 text-sm text-zinc-400">
                 {!character.hasBuild && !character.hasTeams
                   ? "Build and team guide unavailable."
                   : !character.hasBuild
@@ -66,42 +85,28 @@ export function CharacterGuidePage({
                     : "Team guide unavailable."}
               </p>
             ) : null}
-          </div>
 
-          <div className="flex flex-wrap gap-2">
-            {canEdit ? (
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-3 sm:justify-start">
+              {canEdit ? (
+                <Link
+                  href={`/games/${gameSlug}/characters/${character.slug}/edit`}
+                  className="inline-flex rounded-full bg-cyan-300/12 px-3.5 py-2 text-xs font-medium text-cyan-100 transition hover:bg-cyan-300/18"
+                >
+                  Edit Guide
+                </Link>
+              ) : null}
               <Link
-                href={`/games/${gameSlug}/characters/${character.slug}/edit`}
-                className="inline-flex w-fit rounded-lg border border-cyan-300/25 bg-cyan-300/10 px-3 py-2 text-xs font-medium text-cyan-100 transition hover:bg-cyan-300/15"
+                href={`/games/${gameSlug}#characters`}
+                className="text-sm text-zinc-500 transition hover:text-zinc-200"
               >
-                Edit Guide
+                All characters
               </Link>
-            ) : null}
-            <Link
-              href={`/games/${gameSlug}#characters`}
-              className="inline-flex w-fit rounded-lg border border-white/10 px-3 py-2 text-xs font-medium text-zinc-300 transition hover:bg-white/[0.05] hover:text-white"
-            >
-              Back
-            </Link>
+            </div>
           </div>
         </div>
       </section>
 
       <GuideTabs character={character} />
     </div>
-  );
-}
-
-function GuidePill({
-  children,
-  className = "bg-white/5 text-zinc-300",
-}: {
-  children: ReactNode;
-  className?: string;
-}) {
-  return (
-    <span className={`rounded-md px-2 py-1 text-[11px] font-medium uppercase tracking-wide ${className}`}>
-      {children}
-    </span>
   );
 }
