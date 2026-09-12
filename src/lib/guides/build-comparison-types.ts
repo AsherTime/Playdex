@@ -1,4 +1,5 @@
 import type { Json } from "@/types/database";
+import type { GuideTeamCalculation } from "@/lib/guides/team-calculation-types";
 
 export type CharacterAbilityRow = {
   id: string; game_id: string; character_id: string; source_site: string; source_id: string;
@@ -32,8 +33,24 @@ export type BuildComparisonEntryRow = {
 };
 export type BuildComparison = BuildComparisonRow & { entries: BuildComparisonEntryRow[] };
 export type WuwaRecommendation = { id: string; name: string; icon_url: string | null; note?: string | null; pieces?: number | null };
+export type WuwaTeamMember = {
+  characterId: string | null;
+  name: string;
+  role: string | null;
+  portraitUrl: string | null;
+};
+export type WuwaTeam = {
+  id: string;
+  name: string;
+  type: string | null;
+  description: string | null;
+  members: WuwaTeamMember[];
+  calculation: GuideTeamCalculation | null;
+};
 export type WuwaGuide = {
   id: string; slug: string; name: string; element: string | null; weapon_type: string | null; rarity: number | null;
-  portrait_url: string | null; abilities: Array<Pick<CharacterAbilityRow, "id" | "ability_type" | "name" | "description" | "icon_url">>;
+  portrait_url: string | null;
+  abilities: Array<Pick<CharacterAbilityRow, "id" | "ability_type" | "name" | "description" | "icon_url" | "sort_order">>;
   comparisons: BuildComparison[]; weapons: WuwaRecommendation[]; sets: WuwaRecommendation[]; writtenNotes: string[];
+  teams: WuwaTeam[];
 };
